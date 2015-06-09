@@ -17,8 +17,8 @@ $page-container: ".page";
 @import "compass";
 @import "susy";
 
-@import "normalize";
-@include establish-baseline;
+// @import "normalize";
+// @include establish-baseline;
 
 @import "colors";
 @import "typography";
