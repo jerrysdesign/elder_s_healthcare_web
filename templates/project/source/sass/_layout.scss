@@ -4,14 +4,36 @@
 }
 .sidebar {
 	position: fixed;
+	width: 193px;
 	top: $header-height;
 	bottom: 0;
+	padding-top: 2em;
 	left: 0;
 	z-index: 1000;
 	display: block;
-	padding: 20px;
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color: $parimary;
 	border-right: 1px solid #eee;
+	a {
+		color: #fff;
+	}
+}
+.nav-sidebar {
+	li {
+		a {
+			padding: 20px 15px;
+		}
+		&.active {
+			background-color: #649dd6;
+			> a {
+				background-color: $secondary;
+			}
+		}
+	}
+	&-sub {
+		li > a {
+			padding: 10px 15px;
+		}
+	}
 }

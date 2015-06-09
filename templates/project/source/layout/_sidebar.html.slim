@@ -1,8 +1,14 @@
 ul class="nav nav-sidebar"
+	li: a href="#" 平台管理
 	li class="active"
-		a href="#"
-			| Overview
-			span class="sr-only" (current)
-	-3.times do
-		li
-			a href="#" menu
+		a href="#" 任務管理
+		ul class="nav nav-sidebar nav-sidebar-sub"
+			li: a href='#' 行事曆
+			li: a href='#' 新增事件
+			li: a href='#' 任務列表
+	li: a href="#" 成果管理
+	li: a href="#" 費用管理
+	li: a href="#" 耗材管理
+	li: a href="#" 訊息管理
+
+a href='#' 登出
