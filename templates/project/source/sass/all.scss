@@ -1,5 +1,8 @@
 // bootstrap
-@import "vendor/bootstrap-sass/bootstrap";
+@import "theme/bootstrap-reset-variables";
+@import "theme/bootstrap";
+
+@import "libs/variable";
 
 // vertical rhythm
 $base-font-size: 16px;
