@@ -1,0 +1,19 @@
+# npm
+node_modules/
+
+# bower
+bower_components/
+
+# bower Vendor
+templates/project/source/sass/vendor/
+templates/project/source/vendor/
+templates/project/source/fonts/FontAwesome.otf
+templates/project/source/fonts/fontawesome-webfont.eot
+templates/project/source/fonts/fontawesome-webfont.svg
+templates/project/source/fonts/fontawesome-webfont.ttf
+templates/project/source/fonts/fontawesome-webfont.woff
+templates/project/source/fonts/fontawesome-webfont.woff2
+
+#fire.app complier
+templates/project/source/.sass-cache/
+templates/project/source/stylesheets/

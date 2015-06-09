@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "description": "雙連照護",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10"
+  }
+}
