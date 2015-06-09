@@ -9,9 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-bower": "0.0.10"
+    "gulp-bower": "^0.0.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.2"
   }
 }

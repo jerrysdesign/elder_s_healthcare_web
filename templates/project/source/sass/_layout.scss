@@ -1,6 +1,6 @@
 .header {
 	height: $header-height;
-	@include box-shadow(0 2px 2px rgba(0,0,0,.2));
+	@include box-shadow(0 1px 4px rgba(0,0,0,.15));
 }
 .sidebar {
 	position: fixed;
@@ -18,16 +18,23 @@
 	a {
 		color: #fff;
 	}
+	i {
+		margin-right: 1em;
+	}
 }
 .nav-sidebar {
 	li {
 		a {
 			padding: 20px 15px;
+			&:hover {
+				background-color: $secondary;
+			}
 		}
 		&.active {
 			background-color: #649dd6;
 			> a {
 				background-color: $secondary;
+				@include box-shadow(0 1px 4px rgba(0,0,0,.15));
 			}
 		}
 	}

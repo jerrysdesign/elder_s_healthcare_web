@@ -1,5 +1,7 @@
-var gulp      = require('gulp'), 
-		bower     = require('gulp-bower');
+var gulp			= require('gulp'), 
+		bower			= require('gulp-bower'),
+		rename		= require('gulp-rename'),
+		clean			= require('gulp-clean');
 
 var src = {};
 var hidden_files = '**/_*.*';
@@ -11,11 +13,10 @@ var config = {
 	project	: './templates/project/source' 
 }
 
-
-var source = {
-	vendor : {
-		bootstrapsass: [config.vendor + '/bootstrap-sass/assets/stylesheets/**/*'],
-		jquery: [config.vendor + '/jquery/dist/**/*'],
+var vendor = {
+	source : {
+		bootstrapsass	: config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
+		jquery				: config.vendor + '/jquery/dist/**/*',
 		// font:
 		// [
 		// 	// config.vendor + '/open-sans-fontface/open-sans.css',
@@ -25,55 +26,69 @@ var source = {
 		// 	// config.vendor + '/open-sans-fontface/fonts/Semibold/*',
 		// 	config.vendor + '/open-sans-fontface/**/*'// **所有目錄 // **/*所有目錄包含檔案
 		// ],
-		iconfont : [config.vendor + '/fontawesome/fonts/**.*']
+		iconfont 			: config.vendor + '/fontawesome/fonts/**.*',
+		iconfontsass	: config.vendor + '/fontawesome/scss/**.*'
+	},
+	dist : {
+		iconfont 			: config.project + '/fonts',
+		iconfontsass	: config.project + '/sass/vendor/fontawesome',
+		bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
+		jquery				: config.project + '/vendor/jquery'
 	}
 }
 
-// Build target config 
-var buide = {
-	// iconfont	: './fonts',
-	// font			: './vendor/open-sans-fontface/'
-}
-
-var dist = {
-	iconfont 			: config.project + '/fonts',
-	bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
-	jquery				: config.project + '/vendor/jquery'
-}
 //---------------
 // TASKS
 //---------------
 
-gulp.task('bootstrapsass', function() {
-		gulp.src(source.vendor.bootstrapsass)
-		.pipe(gulp.dest(dist.bootstrapsass))
+gulp.task('vendor', function() {
+	gulp.src(vendor.source.bootstrapsass)
+		.pipe(gulp.dest(vendor.dist.bootstrapsass))
 		;
-});
-gulp.task('jquery', function() {
-		gulp.src(source.vendor.jquery)
-		.pipe(gulp.dest(dist.jquery))
+	gulp.src(vendor.source.jquery)
+		.pipe(gulp.dest(vendor.dist.jquery))
 		;
-});
-gulp.task('iconfont', function() { 
-	return gulp.src(source.vendor.iconfont) 
-		.pipe(gulp.dest(dist.iconfont))
+	gulp.src(vendor.source.iconfont) 
+		.pipe(gulp.dest(vendor.dist.iconfont))
+		; 
+	gulp.src(vendor.source.iconfontsass) 
+		.pipe(gulp.dest(vendor.dist.iconfontsass))
+		; 
+	gulp.src('./templates/project/source/stylesheets/vendor/fontawesome/font-awesome.css' ) 
+		.pipe(gulp.dest('./templates/project/source/stylesheets/'))
 		; 
 });
 
+gulp.task('clean', function() {  
+  return gulp.src([
+  	vendor.dist.iconfontsass + '/font-awesome.scss',
+  	config.project + '/stylesheets/vendor/'
+  	], {read: false})
+    .pipe(clean())
+    ;
+});
+
+// gulp.task('rename', function() {
+// 	gulp.src(vendor.dist.iconfontsass + '/font-awesome.scss') 
+// 		.pipe(rename('_font-awesome.scss'))
+// 		.pipe(gulp.dest(vendor.dist.iconfontsass))
+// 		; 
+// });
 // gulp.task('font', function() {
-// 		gulp.src(source.vendor.font)
+// 		gulp.src(vendor.source.font)
 // 		.pipe(gulp.dest(buide.font))
 // 		;
 // });
-var framework = [
-	'bootstrapsass',
-	'jquery'
-]
+
 var tasks = [
-	'iconfont',
+	'vendor'
+	// 'rename'
+	//'iconfont',
+	// 'iconfontsass',
+	// 'fontawesomerename',
 	// 'font',
-	'bootstrapsass',
-	'jquery'
+	// 'bootstrapsass',
+	// 'jquery'
 ];
 
 gulp.task('default', tasks);
