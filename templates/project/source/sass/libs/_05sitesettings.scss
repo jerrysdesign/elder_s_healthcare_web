@@ -1,0 +1,169 @@
+// ------------------------------------------------------------
+// $Settings
+// :: Base
+// :: Font Family
+// :: Path
+// :: Grid & Breakpoints
+// :: Color
+// :: Typography
+// :: Borders
+// :: Custom
+// ------------------------------------------------------------
+
+
+
+// ------------------------------------------------------------
+// :: Base
+// ------------------------------------------------------------
+
+// Type
+$baseFontSize	  : 12;
+$baseLineHeight	: 1.5;
+
+// Util
+// outputting ems, e.g. 14/$em
+// $em				: $baseFontSize;
+$em						: $baseFontSize;
+$baseLine			: $baseFontSize * $baseLineHeight;//18
+$baseLineInEms: $baseLine / $baseFontSize;//1.5
+
+// ------------------------------------------------------------
+// :: Font Family
+// ------------------------------------------------------------
+
+// Fonts
+$baseFontFamily			: $fontTC;
+$headingsFontFamily	: $baseFontFamily;
+$inputFontFamily		: $baseFontFamily;
+$buttonFontFamily		: $baseFontFamily;
+$codeFontFamily			: $monospace;
+
+// $baseLine				: $base-line-height;
+// $baseFontSize			: 12;
+
+
+// ------------------------------------------------------------
+// :: Path
+// ------------------------------------------------------------
+
+// Assets path - level2
+// 使用方式: background: url(#{$l2}/file) x y no-repeat
+
+$l2	: "../images";
+
+
+// ------------------------------------------------------------
+// :: Grid & Breakpoints
+// ------------------------------------------------------------
+
+// $show-grid-backgrounds  : true;
+// Grid
+$gridWidth				: 1000;
+$gridGutterWidth	: 30;
+
+
+// ------------------------------------------------------------
+// :: Color
+// ------------------------------------------------------------
+
+// Base color
+$bodyBackgroundColor	: $EAEDEF;
+$bodyColor						: $black-80;
+$headingsColor				: $black-85;
+
+$linkColor						: $colorLochmara;
+$linkColorHover				: $primary;
+$action								: $linkColor;
+$actionRespond				: $linkColorHover;
+
+// BackgroundColor
+$markBackgroundColor	: #fe5;
+$codeBackgroundColor	: darken(white, 3%);
+$tfootBackgroundColor	: darken(white, 5%);
+$colorStripedTable		: darken(white, 3%);
+$colorHoveredTable		: darken(white, 2.5%);
+
+// 漸層 Bar
+$barColor1: #518FDB;
+$barColor2: #3C76C8;
+
+// 互動配色
+// 警告，錯誤，成功，提示
+//-----------------------------------------------------
+
+// 每個變數都有三個顏色值，分別為：內文色，背景色，邊框色
+$successColor	: #3c763d #d6e9c6 #d6e9c6;
+$infoColor		: #31708f #d9edf7 #bce8f1;
+$warningColor	: #8a6d3b #fcf8e3 #faebcc;
+$errorColor		: #a94442 #f2dede #ebccd1;
+
+// Form Colors
+$inputError		: $colorPomegranate;
+$inputSuccess	: $colorEmerland;
+$inputGray		: $black-20;
+$inputFocus		: $colorPeterRiver;
+
+//
+$labelLine		: lighten(desaturate($primary, 30%), 20%);
+
+// placeholder
+// 變數分別為：表單的佔位符placeholder樣式，文字顏色
+$placeholder: $colorGray;
+
+
+// ------------------------------------------------------------
+// :: Typesizes/scale
+// ------------------------------------------------------------
+
+$para			: $kappa;	// Paragraph size
+$quote			: $beta;	// Quote size
+
+
+// ------------------------------------------------------------
+// :: Border widths
+// ------------------------------------------------------------
+
+// Borders
+$default-border-width	: 1px; 
+$cellBorder						: 1px solid #eee;
+$cellBorderDark				: 1px solid #ddd;
+$fieldsetBorder				: 1px solid #e3e3e3;
+
+
+// ------------------------------------------------------------
+// Custom
+// ------------------------------------------------------------
+
+// 移除icon
+$removeicon: 32px;
+
+// Misc sizes
+$listsLeft: 2em;
+$columnarWidth: 150px;
+$columnarMargin: 20px;
+
+// Font sizes
+$bigFontSize: 1.2em;
+$smallFontSize: 0.85em;
+$superSmallFontSize: 0.7em;
+
+// FloatingImages
+$floatingMargin: 1em;
+$floatingBackgroundColor: #fff;
+$floatingPadding: 0;
+$floatingBorder: none;
+
+// Page Comaponent
+$styleMenuHeight: 40px;
+$styleMenuColor: $black-0;
+$backTopBorder: #3c74c5;
+
+
+// ------------------------------------------------------------	
+// Add functional stuff
+// ------------------------------------------------------------	
+// @import "functions/functions";
+
+$parimary: #3d85cc;
+$secondary: #39ce8c;
+$header-height: 95px;

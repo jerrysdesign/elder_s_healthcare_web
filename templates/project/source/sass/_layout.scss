@@ -1,46 +1,139 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: $header-height;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+	border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+	display: none;
+}
+
 .header {
 	height: $header-height;
-	@include box-shadow(0 1px 4px rgba(0,0,0,.15));
+	@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
 }
-.sidebar {
-	position: fixed;
-	width: 193px;
-	top: $header-height;
-	bottom: 0;
-	padding-top: 2em;
-	left: 0;
-	z-index: 1000;
-	display: block;
-	overflow-x: hidden;
-	overflow-y: auto;
-	background-color: $parimary;
-	border-right: 1px solid #eee;
-	a {
-		color: #fff;
-	}
-	i {
-		margin-right: 1em;
-	}
-}
-.nav-sidebar {
-	li {
+
+@media (min-width: $screen-md-min) {
+	.sidebar {
+		position: fixed;
+		top: $header-height;
+		bottom: 0;
+		padding-top: 2em;
+		left: 0;
+		z-index: 1000;
+		display: block;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: $parimary;
+		border-right: 1px solid darken(desaturate($parimary, 50%), 0.5%);
 		a {
-			padding: 20px 15px;
+			color: #fff;
+		}
+		i {
+			margin-right: .5em;
+		}
+	}
+}
+
+.nav-sidebar {
+	margin-right: -21px;
+	margin-bottom: 20px;
+	margin-left: -20px;
+}
+
+.nav-list {
+	// padding-right: 20px;
+	// padding-left: 20px;
+	padding: 15px 20px 15px 40px;
+}
+
+.nav-sidebar {
+	> li {
+		a {
 			&:hover {
 				background-color: $secondary;
 			}
+		}
+		> a {
+			@extend .nav-list;
 		}
 		&.active {
 			background-color: #649dd6;
 			> a {
 				background-color: $secondary;
-				@include box-shadow(0 1px 4px rgba(0,0,0,.15));
+				@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
 			}
 		}
 	}
 	&-sub {
 		li > a {
-			padding: 10px 15px;
+			@extend .nav-list;
 		}
 	}
+}
+
+/*
+ * Main content
+ */
+
+.main {
+	padding: 20px;
+}
+
+@media (min-width: $screen-md-min) {
+	.main {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+
+.main .page-header {
+	margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.placeholders h4 {
+	margin-bottom: 0;
+}
+
+.placeholder {
+	margin-bottom: 20px;
+}
+
+.placeholder img {
+	display: inline-block;
+	border-radius: 50%;
 }

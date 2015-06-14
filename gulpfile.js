@@ -1,7 +1,7 @@
 var gulp			= require('gulp'), 
 		bower			= require('gulp-bower'),
 		rename		= require('gulp-rename'),
-		clean			= require('gulp-clean');
+		clean			= require('gulp-clean')
 
 var src = {};
 var hidden_files = '**/_*.*';
@@ -27,13 +27,15 @@ var vendor = {
 		// 	config.vendor + '/open-sans-fontface/**/*'// **所有目錄 // **/*所有目錄包含檔案
 		// ],
 		iconfont 			: config.vendor + '/fontawesome/fonts/**.*',
-		iconfontsass	: config.vendor + '/fontawesome/scss/**.*'
+		iconfontsass	: config.vendor + '/fontawesome/scss/**.*',
+		jQueryValidate: config.vendor + '/jQueryValidate/js/**.*'
 	},
 	dist : {
 		iconfont 			: config.project + '/fonts',
 		iconfontsass	: config.project + '/sass/vendor/fontawesome',
 		bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
-		jquery				: config.project + '/vendor/jquery'
+		jquery				: config.project + '/vendor/jquery',
+		jQueryValidate: config.project + '/vendor/jQueryValidate'
 	}
 }
 
@@ -53,6 +55,9 @@ gulp.task('vendor', function() {
 		; 
 	gulp.src(vendor.source.iconfontsass) 
 		.pipe(gulp.dest(vendor.dist.iconfontsass))
+		; 
+	gulp.src(vendor.source.jQueryValidate) 
+		.pipe(gulp.dest(vendor.dist.jQueryValidate))
 		; 
 	gulp.src('./templates/project/source/stylesheets/vendor/fontawesome/font-awesome.css' ) 
 		.pipe(gulp.dest('./templates/project/source/stylesheets/'))

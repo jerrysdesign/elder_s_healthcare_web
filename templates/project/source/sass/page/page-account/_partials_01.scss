@@ -1,0 +1,18 @@
+.tab-page-wrapper {
+	margin: -20px -40px;
+	padding: 20px 40px 0;
+	background-color: $secondary;
+	@include border-radius(0);
+	.tab-page {
+		border-bottom: 0 solid $secondary;
+		a {
+			color: #fff;
+			border-color: transparent;
+			&:hover {
+				background-color: #fff;
+				border-color: transparent;
+				color: #555;
+			}
+		}
+	}
+}

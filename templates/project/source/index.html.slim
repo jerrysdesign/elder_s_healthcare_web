@@ -1,0 +1,33 @@
+- title = 'Dashboard'
+- header = 'Header'
+/ - tag = "<span>tag!</span>"
+
+h1.page-header #{title}
+div(class='row placeholders')
+	- 2.times do
+		div(class='col-sm-3 placeholder')
+			img.img-responsive alt="200x200" src="http://placehold.it/200/3d85cc/ffffff" /
+			h4 Label
+			span.text-muted Something else
+		div(class='col-sm-3 placeholder')
+			img.img-responsive alt="200x200" src="http://placehold.it/200/39ce8c/333333" /
+			h4 Label
+			span.text-muted Something else
+h2.sub-header Section title
+div(class='table-responsive')
+	table(class='table table-striped')
+		thead
+			tr
+				th #
+				th #{header}
+				th #{header}
+				th #{header}
+				th #{header}
+		tbody
+			- 10.times do
+				tr
+					td 1,001
+					td Lorem
+					td ipsum
+					td dolor
+					td sit

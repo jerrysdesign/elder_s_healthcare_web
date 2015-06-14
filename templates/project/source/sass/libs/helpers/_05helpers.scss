@@ -1,0 +1,208 @@
+// ------------------------------------------------------------
+// $Helpers
+// ------------------------------------------------------------
+
+
+
+// ------------------------------------------------------------
+// Type and rhythm
+// ------------------------------------------------------------
+
+// Fonts
+%serif      {   font-family: $serif }       // Serif Fonts
+%sans-serif {   font-family: $sansSerif }   // Sans-Serif Fonts
+%monospace  {   font-family: $monospace }   // Monospace Fonts
+
+%first-letter, .first-letter::first-letter {
+	@include first-letter;
+}
+
+%supersmall, .supersmall {
+	@include supersmall;
+}
+
+%small, .small {
+	@include small;
+}
+
+%big, .big {
+	@include big;
+}
+
+%inputbig, input.big {
+	@include inputbig;
+}
+
+%text-centered, .text-centered {
+	@include text-centered;
+}
+
+%text-left, .text-left {
+	@include text-left;
+}
+
+%text-right, .text-right {
+	@include text-right;
+}
+
+%text-uppercase, .text-uppercase {
+	@include text-uppercase;
+}
+
+%text-lowercase, .lowercase {
+	@include text-lowercase;
+}
+
+%nowrap, .nowrap {
+	@include nowrap;
+}
+
+%zero, .zero {
+	@include zero;
+}
+
+%clear, .clear {
+	@include clear;
+}
+
+%last, .last {
+	@include last;
+}
+
+%pause, .pause {
+	@include pause;
+}
+
+%end, .end {
+	@include end;
+}
+
+%no-leader, .no-leader {
+	@include no-leader;
+}
+
+%no-trailer, .no-trailer {
+	@include no-trailer;
+}
+
+%handle, .handle {
+	@include handle;
+}
+
+%normal, .normal {
+	@include normal;
+}
+
+%bold, .bold {
+	@include bold;
+}
+
+%italic, .italic {
+	@include italic;
+}
+
+%req,
+.req,
+.required {
+	@include req;
+}
+
+%highlight, .highlight {
+	@include highlight;
+}
+
+%close, .close {
+	@include close;
+}
+
+// ------------------------------------------------------------
+// Placeholders
+// ------------------------------------------------------------
+
+// Show / hides
+.is-hidden, %is-hidden {
+	@include is-hidden;
+}
+
+.is-show-block, %is-show-block {
+	@include is-show-block;
+}
+
+.is-show-inline, %is-shown-inline {
+	@include is-show-inline;
+}
+
+.is-table, %is-table {
+	@include is-table;
+}
+
+// Clearfixes
+// %clearfix {
+//     @include clearfix;
+// }
+
+// %pie-clearfix {
+//     @include pie-clearfix;
+// }
+
+// Images
+%max-width {
+	@include max-width;
+}
+
+// -------------------------------------------------------
+// Custom
+// -------------------------------------------------------
+
+%ir {
+	@include ir;
+}
+
+/* Float-left */
+.fl, %fl {
+	@include fl;
+}
+
+/* Float-right */
+.fr, %fr {
+	@include fr;
+}
+
+/* Rest-float */
+.rf, %rf {
+	@include reset-float;
+}
+
+/* Overflow hidden */
+.oh, %oh {
+	@include clearfix;
+}
+
+/* Center block */
+%center-block, .center-block {
+	@include center-block;
+}
+
+/* Clear float hack */
+.cearfix, %pie-clearfix {
+	@include pie-clearfix;
+}
+
+第一層子元素變行內區塊
+%is-horizontal, .is-horizontal {
+	display: block;
+	@include pie-clearfix;
+	> * {
+		@include is-show-inline;
+		// vertical-align: bottom; //因應頁面-新增題目是非題
+	}
+}
+
+// 第一層子元素變行內區塊
+// %i-b-block, .i-b-block {
+//     @include pie-clearfix;
+//     > * {
+//         display: inline-block !important;
+//         vertical-align: bottom ;//因應頁面-新增題目是非題 
+//     }
+// }

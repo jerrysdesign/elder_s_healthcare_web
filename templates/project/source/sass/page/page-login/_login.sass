@@ -1,0 +1,32 @@
+.panel-login
+	.panel-heading
+		text-align: center
+	.panel-body
+		padding: 0
+		overflow: hidden
+.panel-item
+	padding: 40px 0 20px
+	&.login
+		background-color: $parimary
+	&.forget-password
+		background-color: #C9EFEF
+	a
+		color: #fff
+	input[type='text'], input[type='password'], input[type='submit']
+		@extend .login-input
+		@extend .text-centered
+	.form-group
+		margin-bottom: 1.25em
+.form-control
+	.state-success &
+		border-color: lighten($colorEmerland, 40%)
+		background-color: lighten($colorEmerland, 40%)
+	.state-error &
+		border-color: lighten($colorPomegranate, 40%)
+		background-color: lighten($colorPomegranate, 40%)
+.errorsContainer
+	display: none
+.panel-item
+	display: none
+	&:first-child
+		display: block

@@ -1,0 +1,192 @@
+// ------------------------------------------------------------
+// Varables
+
+// :: Font Family
+// :: Color
+// :: Typography
+// :: Borders
+// ------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+// :: Font Family
+// ------------------------------------------------------------
+
+$fontTC				: Tahoma, Helvetica, Arial, "Heiti TC", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+// Traditional Chinese Fonts
+$fontMing			: 新細明體, 'MingLiU'; 					// 新細明體
+$fontJhengHei	: 微軟正黑體, 'Microsoft JhengHei'; 		// 微軟正黒體
+$fontHeiTi		: 'Heiti TC'; 							// 黑體
+// English Fonts
+$serif				: 'Times New Roman', Times, serif; 		// Serif Fonts
+$sansSerif		: Arial, Helvetica, sans-serif;			// Sans-Serif Fonts
+$monospace		: 'Courier New', Courier, monospace; 	// Monospace Fonts
+
+
+
+// ------------------------------------------------------------
+// :: Color
+// ------------------------------------------------------------
+
+// color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+// lighten($color, $amount)
+// darken($color, $amount)
+// opacify($color, $amount)
+// mix($color1, $color2[, $amount])
+// ------------------------------------------------------------
+// 指定變數到顏色的變數
+// 是描述性(名詞)而不是具體的顏色
+// 整個專案保持項目一致性，使之容易變更
+
+$transparent			: transparent;
+
+// Useless
+
+// $macyGrey					: #777777;	
+// $ronBurgundy 			: #e0006e;
+// $agent-orange			: #c64f24;
+
+$colorMandy				: #e76060;
+$primary					: #3c74c5;
+$EAEDEF						: #EAEDEF;
+$colorLochmara		: #0088cc;
+
+
+$colorGrayLighter	: #e5e5e5;
+$colorGrayLight		: #b1b1b1;
+$colorGray				: #7d7d7d;
+$colorGrayDark		: #585858;
+$colorGrayDarker	: #333333;
+
+$colorRed					: #ef6465;
+$colorOrange			: #f48a30;
+$colorGreen				: #90af45;
+$colorBlue				: #1c7ab4;
+$colorYellow			: #f3c835;
+$colorpink				: #c3325f;
+$colorpurple			: #7a43b6;
+
+
+// W3C Color Name
+$white					: #FFFFFF;
+$red						: #FF0000;
+$orange					: #FFA500;
+$green					: #008000;
+$blue						: #0000FF;
+$yellow					: #FFFF00;
+$pink						: #FFC0CB;
+$purple					: #800080;
+$black					: #000000;
+
+
+// Flat Design Colors
+$colorMountainMeadow	: #1ABC9C;
+$colorGreenSea				: #16a085;
+$colorEmerland				: #2ecc71;
+$colorNephritis				: #27ae60;
+$colorPeterRiver			: #3498db;
+$colorBelizeHole			: #2980b9;
+$colorAmethyst				: #9b59b6;
+$colorWisteria				: #8e44ad;
+$colorWetAsphalt			: #34495e;
+$colorMidnightBlue		: #2c3e50;
+$colorNightShade			: #2c3e50;
+$colorSunFlower				: #f1c40f;
+$colorOrange					: #f39c12;
+$colorCarrot					: #e67e22;
+$colorPumpkin					: #d35400;
+$colorAlizarin				: #e74c3c;
+$colorPomegranate			: #c0392b;
+
+$colorClouds				: #ecf0f1;
+$colorSilver				: #bdc3c7;
+$colorConcrete			: #95a5a6;
+$colorAsbestos			: #7f8c8d;
+
+
+
+// ::: Grayscale
+// ------------------------------------------------------------
+
+// $ffffff
+$black-0: darken(white, 0%);
+
+// #f3f3f3
+$black-5: darken(white, 5%);
+
+// #e5e5e5
+$black-10: darken(white, 10%);
+
+// #d9d9d9
+$black-15: darken(white, 15%);
+
+// #ccc
+$black-20: darken(white, 20%);
+
+// #bfbfbf
+$black-25: darken(white, 25%);
+
+// #b3b3b3
+$black-30: darken(white, 30%);
+
+// #a6a6a6
+$black-35: darken(white, 35%);
+
+// #999
+$black-40: darken(white, 40%);
+
+// #8c8c8c
+$black-45: darken(white, 45%);
+
+// #808080
+$black-50: darken(white, 50%);
+
+// #737373
+$black-55: darken(white, 55%);
+
+// #666
+$black-60: darken(white, 60%);
+
+// #595959
+$black-65: darken(white, 65%);
+
+// #4d4d4d
+$black-70: darken(white, 70%);
+
+// #404040
+$black-75: darken(white, 75%);
+
+// #333
+$black-80: darken(white, 80%);
+
+// #262626
+$black-85: darken(white, 85%);
+
+// #1a1a1a
+$black-90: darken(white, 90%);
+
+// #0d0d0d
+$black-95: darken(white, 95%);
+
+
+
+
+// ------------------------------------------------------------
+// :: Typesizes/scale
+// ------------------------------------------------------------
+
+// Greek alphabet naming system. Obscure, yet hierarchical.
+// Allows us to avoid naming based on html object. 
+// Eg. A h1 can be smaller visually, than a h4.
+$alpha   	: 42px;
+$beta		: 32px;
+$gamma		: 28px;
+$delta		: 26px;
+$epsilon	: 24px;
+$zeta		: 20px;
+$eta		: 18px;
+$theta		: 15px;
+$iota 		: 14px;
+$kappa 		: 12px;
+
+

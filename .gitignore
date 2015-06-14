@@ -17,3 +17,5 @@ templates/project/source/fonts/fontawesome-webfont.woff2
 #fire.app complier
 templates/project/source/.sass-cache/
 templates/project/source/stylesheets/
+templates/project/source/.coffeescript-cache/
+templates/project/source/javascripts
