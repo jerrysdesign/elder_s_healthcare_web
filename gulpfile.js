@@ -28,14 +28,14 @@ var vendor = {
 		// ],
 		iconfont 			: config.vendor + '/fontawesome/fonts/**.*',
 		iconfontsass	: config.vendor + '/fontawesome/scss/**.*',
-		jQueryValidate: config.vendor + '/jQueryValidate/js/**.*'
+		jQueryValidate: config.vendor + '/jquery.validation/dist/**.*'
 	},
 	dist : {
 		iconfont 			: config.project + '/fonts',
 		iconfontsass	: config.project + '/sass/vendor/fontawesome',
 		bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
 		jquery				: config.project + '/vendor/jquery',
-		jQueryValidate: config.project + '/vendor/jQueryValidate'
+		jQueryValidate: config.project + '/vendor/jquery.validation'
 	}
 }
 

@@ -17,6 +17,7 @@
     "fontawesome": "~4.3.0"
   },
   "devDependencies": {
-    "jQueryValidate": "*"
+    "jquery.validation": "*",
+    "jquery-validation": "~1.13.1"
   }
 }
