@@ -1,0 +1,345 @@
+#bootswatch-preview.row
+  .hero-unit
+    h1 StylesGuide
+    p
+      | This is the Hero Unit.
+      a href="#"  A link
+      | .
+  .col-md-12 style=("padding-bottom: 65px;") 
+    .page-header
+      h1
+        | Buttons
+        small Plain, All Sizes
+    table.table.table-striped
+      thead
+        tr
+          th Size
+          th Default
+          th Primary
+          th Info
+          th Success
+          th Warning
+          th Danger
+          th Inverse
+      tbody
+        tr
+          td Mini
+          td
+            a.btn.btn-default.btn-xs Default
+          td
+            a.btn.btn-primary.btn-xs Primary
+          td
+            a.btn.btn-info.btn-xs Info
+          td
+            a.btn.btn-success.btn-xs Success
+          td
+            a.btn.btn-warning.btn-xs Warning
+          td
+            a.btn.btn-danger.btn-xs Danger
+          td
+            a.btn.btn-link.btn-xs Link
+        tr
+          td Small
+          td
+            a.btn.btn-default.btn-sm Default
+          td
+            a.btn.btn-primary.btn-sm Primary
+          td
+            a.btn.btn-info.btn-sm Info
+          td
+            a.btn.btn-success.btn-sm Success
+          td
+            a.btn.btn-warning.btn-sm Warning
+          td
+            a.btn.btn-danger.btn-sm Danger
+          td
+            a.btn.btn-link.btn-sm Link
+        tr
+          td Default
+          td
+            a.btn.btn-default Default
+          td
+            a.btn.btn-primary Primary
+          td
+            a.btn.btn-info Info
+          td
+            a.btn.btn-success Success
+          td
+            a.btn.btn-warning Warning
+          td
+            a.btn.btn-danger Danger
+          td
+            a.btn.btn-link Link
+        tr
+          td Large
+          td
+            a.btn.btn-default.btn-lg Large
+          td
+            a.btn.btn-primary.btn-lg Primary
+          td
+            a.btn.btn-info.btn-lg Info
+          td
+            a.btn.btn-success.btn-lg Success
+          td
+            a.btn.btn-warning.btn-lg Warning
+          td
+            a.btn.btn-danger.btn-lg Danger
+          td
+            a.btn.btn-link.btn-lg Link
+    .page-header
+      h1
+        | Typography
+        small Headings, paragraphs, lists, and other inline type elements
+    .row
+      .col-md-6
+        p
+        h1 Heading H1
+        h2 Heading H2
+        h3 Heading H3
+        h4 Heading H4
+        h5 Heading H5
+        h6 Heading H6
+        p
+      .col-md-5
+        h3 Example body text
+        p Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+        h3 Lead body copy
+        p
+          | Make a paragraph stand out by adding
+          code .lead
+          | .
+        p.lead Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+    .row
+      .col-md-7
+        blockquote
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+          small
+            | Someone famous in
+            cite title=""  Body of work
+    .page-header
+      h1 Labels &amp; Badges
+    .row
+      .col-md-6
+        span.label.label-default Default
+        |  
+        span.label.label-primary Primary
+        |  
+        span.label.label-success Success
+        |  
+        span.label.label-info Info
+        |  
+        span.label.label-warning Warning
+        |  
+        span.label.label-danger Danger
+      .col-md-5
+        span.badge 1
+        |  
+        span.badge 2
+        |  
+        span.badge 4
+        |  
+        span.badge 6
+        |  
+        span.badge 8
+        |  
+    .page-header
+      h1
+        | Tables
+        small Bordered table shown
+    .row
+      .col-md-11
+        table.table.table-bordered
+          thead
+            tr
+              th #
+              th First Name
+              th Last Name
+              th Username
+          tbody
+            tr
+              td rowspan="2"  1
+              td Mark
+              td Otto
+              td @mdo
+            tr
+              td Mark
+              td Otto
+              td @TwBootstrap
+            tr
+              td 2
+              td Jacob
+              td Thornton
+              td @fat
+            tr
+              td 3
+              td colspan="2"  Larry the Bird
+              td @twitter
+    .page-header
+      h1 Forms
+    .row
+      .col-md-11
+        form.form-horizontal
+          fieldset
+            .control-group
+              label.control-label for="focusedInput"  Focused input
+              .controls
+                input#focusedInput.input-lg.focused type="text" value=("This is focused…") /
+            .control-group
+              label.control-label Uneditable input
+              .controls
+                span.input-lg.uneditable-input Some value here
+            .control-group
+              label.control-label for="disabledInput"  Disabled input
+              .controls
+                input#disabledInput.input-lg.disabled disabled="" placeholder=("Disabled input here…") type="text" /
+            .control-group
+              label.control-label for="optionsCheckbox2"  Disabled checkbox
+              .controls
+                label.checkbox
+                  input#optionsCheckbox2 disabled="" type="checkbox" value="option1" /
+                  | This is a disabled checkbox
+            .control-group.has-warning
+              label.control-label for="inputWarning"  Input with warning
+              .controls
+                input#inputWarning type="text" /
+            .control-group.has-error
+              label.control-label for="inputError"  Input with error
+              .controls
+                input#inputError type="text" /
+            .control-group.shas-uccess
+              label.control-label for="inputSuccess"  Input with success
+              .controls
+                input#inputSuccess type="text" /
+            .control-group.has-success
+              label.control-label for="selectError"  Select with success
+              .controls
+                select#selectError
+                  option 1
+                  option 2
+                  option 3
+                  option 4
+                  option 5
+            .form-actions
+              button.btn.btn-primary type="submit"  Save changes
+              |  
+              button.btn Cancel
+    .page-header
+      h1
+        | Nav, tabs, and pills
+        small Highly customizable list-style navigation
+    .row
+      .col-md-6
+        ul.nav.nav-tabs
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Profile
+          li
+            a href="#"  Messages
+        ul.nav.nav-pills
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Profile
+          li
+            a href="#"  Messages
+        ul.nav.nav-tabs.nav-stacked
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Profile
+          li
+            a href="#"  Messages
+        ul.nav.nav-pills.nav-stacked
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Profile
+          li
+            a href="#"  Messages
+        ul.nav.nav-tabs
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Help
+          li.dropdown
+            a.dropdown-toggle data-toggle="dropdown" href="#" 
+              | Dropdown
+              b.caret
+            ul.dropdown-menu
+              li
+                a href="#"  Action
+              li
+                a href="#"  Another action
+              li
+                a href="#"  Something else here
+              li.divider
+              li
+                a href="#"  Separated link
+        ul.nav.nav-pills
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Help
+          li.dropdown
+            a.dropdown-toggle data-toggle="dropdown" href="#" 
+              | Dropdown
+              b.caret
+            ul.dropdown-menu
+              li
+                a href="#"  Action
+              li
+                a href="#"  Another action
+              li
+                a href="#"  Something else here
+              li.divider
+              li
+                a href="#"  Separated link
+      .col-md-5
+        ul.nav.nav-list
+          li.nav-header List header
+          li.active
+            a href="#"  Home
+          li
+            a href="#"  Library
+          li
+            a href="#"  Applications
+          li.nav-header Another list header
+          li
+            a href="#"  Profile
+          li
+            a href="#"  Settings
+          li.divider
+          li
+            a href="#"  Help
+        br/
+        br/
+        br/
+        ul.nav.nav-list
+          li.nav-header List header
+          li.active
+            a href="#" 
+              i.icon-white.icon-home
+              | Home
+          li
+            a href="#" 
+              i.icon-book
+              | Library
+          li
+            a href="#" 
+              i.icon-pencil
+              | Applications
+          li.nav-header Another list header
+          li
+            a href="#" 
+              i.icon-user
+              | Profile
+          li
+            a href="#" 
+              i.icon-cog
+              | Settings
+          li.divider
+          li
+            a href="#" 
+              i.icon-flag
+              | Help
