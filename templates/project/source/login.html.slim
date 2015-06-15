@@ -84,11 +84,11 @@ html lang='zh-TW'
 												.forgot-password style='color: #808080;' 請填寫登入使用的 Email ，稍後將由系統發信並提供更改密碼的連結至您的 Email 信箱，以重新修改密碼
 												a.js__back-login-toggler href='javascript' style='color: #337ab7;' tabindex='3' 返回登入畫面
 
-
-		= render 'layout_foot'
-		= render 'layout_livereload'
+		= render 'layout/layout_foot'
 		script src="javascripts/form-validation.js" type="text/javascript"
 		script src="javascripts/all.js" type="text/javascript"
+		= render 'layout/layout_livereload'
+
 		
 		javascript:
 			$(document).ready(function() { 

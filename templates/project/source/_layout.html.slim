@@ -1,8 +1,12 @@
 doctype 5
 html lang="zh-TW"
 	head
-		= render "/layout_head"
+		/ = render "/layout_head"
 		/ = render "/layout_og"
+		
+		// DevPath
+		= render "layout/layout_head"
+		= render "layout/layout_og"
 	body
 		//header
 		= render 'layout/navbar'
@@ -15,5 +19,7 @@ html lang="zh-TW"
 				// main-content
 				div class='col-md-10 col-md-offset-2 main'
 					= yield
-		= render "/layout_foot"
-		= render "/layout_livereload"
+		
+		// DevPath
+		= render "layout/layout_foot"
+		= render "layout/layout_livereload"
