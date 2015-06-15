@@ -1,6 +1,9 @@
 /*
  * Base structure
  */
+.top-buffer {
+	margin-top: 20px;
+}
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
