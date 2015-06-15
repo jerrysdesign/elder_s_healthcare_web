@@ -16,6 +16,7 @@ var config = {
 var vendor = {
 	source : {
 		bootstrapsass	: config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
+		bootstrap			: config.vendor + '/bootstrap/dist/**/*',
 		jquery				: config.vendor + '/jquery/dist/**/*',
 		// font:
 		// [
@@ -34,6 +35,7 @@ var vendor = {
 		iconfont 			: config.project + '/fonts',
 		iconfontsass	: config.project + '/sass/vendor/fontawesome',
 		bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
+		bootstrap			: config.project + '/vendor/bootstrap/',
 		jquery				: config.project + '/vendor/jquery',
 		jQueryValidate: config.project + '/vendor/jquery.validation'
 	}
@@ -46,6 +48,9 @@ var vendor = {
 gulp.task('vendor', function() {
 	gulp.src(vendor.source.bootstrapsass)
 		.pipe(gulp.dest(vendor.dist.bootstrapsass))
+		;
+	gulp.src(vendor.source.bootstrap)
+		.pipe(gulp.dest(vendor.dist.bootstrap))
 		;
 	gulp.src(vendor.source.jquery)
 		.pipe(gulp.dest(vendor.dist.jquery))
