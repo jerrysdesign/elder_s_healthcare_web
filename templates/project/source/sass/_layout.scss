@@ -4,6 +4,19 @@
 .top-buffer {
 	margin-top: 20px;
 }
+.align-middle {
+	vertical-align: middle;
+}
+.align-middle-table {
+	thead > tr > th,
+	thead > tr > td,
+	tbody > tr > th,
+	tbody > tr > td,
+	tfoot > tr > th,
+	tfoot > tr > td {
+		@extend .align-middle;
+	}
+}
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
