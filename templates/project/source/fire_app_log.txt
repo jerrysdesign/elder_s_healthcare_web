@@ -967,3 +967,591 @@
 2015-06-15 15:12:57      Copy /vendor/smart-themes/purple.css
 2015-06-15 15:12:57      Copy /vendor/smart-themes/red.css
 2015-06-15 15:12:57      Copy /vendor/smart-themes/yellow.css
+2015-06-15 17:05:39    remove javascripts/form-validation.js
+2015-06-15 17:05:39    remove .coffeescript-cache/
+2015-06-15 17:05:39    create javascripts/form-validation.js
+2015-06-15 17:06:46    remove javascripts/form-validation.js
+2015-06-15 17:06:46    remove .coffeescript-cache/
+2015-06-15 17:06:46    create javascripts/form-validation.js
+2015-06-15 17:07:19    remove javascripts/form-validation.js
+2015-06-15 17:07:19    remove .coffeescript-cache/
+2015-06-15 17:07:19    create javascripts/form-validation.js
+2015-06-15 17:08:19    remove javascripts/form-validation.js
+2015-06-15 17:08:19    remove .coffeescript-cache/
+2015-06-15 17:08:19    create javascripts/form-validation.js
+2015-06-15 17:21:09    remove javascripts/form-validation.js
+2015-06-15 17:21:09    remove .coffeescript-cache/
+2015-06-15 17:21:09    create javascripts/form-validation.js
+2015-06-15 17:21:40    Create account_lists_1_in_charge.html
+2015-06-15 17:21:40    Create account_lists_2_administrato.html
+2015-06-15 17:21:40    Create account_lists_3_service_provider.html
+2015-06-15 17:21:40    Create account_lists_4_superviso.html
+2015-06-15 17:21:41    Create account_lists_5_case.html
+2015-06-15 17:21:41    Create layout_01.html
+2015-06-15 17:21:41    Create layout_02.html
+2015-06-15 17:21:41    Create login.html
+2015-06-15 17:21:41    Create styleguide.html
+2015-06-15 17:21:41    Create page-name/index.html
+2015-06-15 17:21:41      Copy /data.yml
+2015-06-15 17:21:41      Copy /view_helpers.rb
+2015-06-15 17:21:41      Copy /fonts/fontawesome-webfont.eot
+2015-06-15 17:21:41      Copy /fonts/fontawesome-webfont.svg
+2015-06-15 17:21:41      Copy /fonts/fontawesome-webfont.ttf
+2015-06-15 17:21:41      Copy /fonts/fontawesome-webfont.woff
+2015-06-15 17:21:41      Copy /fonts/fontawesome-webfont.woff2
+2015-06-15 17:21:41      Copy /fonts/FontAwesome.otf
+2015-06-15 17:21:41      Copy /images/login-brand.png
+2015-06-15 17:21:41      Copy /javascripts/all.js
+2015-06-15 17:21:41      Copy /javascripts/form-validation.js
+2015-06-15 17:21:41      Copy /stylesheets/all.css
+2015-06-15 17:21:41      Copy /stylesheets/font-awesome.css
+2015-06-15 17:21:41      Copy /stylesheets/vendor/fontawesome/font-awesome.css
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap-theme.css
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap-theme.css.map
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap-theme.min.css
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap.css
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap.css.map
+2015-06-15 17:21:41      Copy /vendor/bootstrap/css/bootstrap.min.css
+2015-06-15 17:21:41      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+2015-06-15 17:21:41      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+2015-06-15 17:21:41      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+2015-06-15 17:21:41      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+2015-06-15 17:21:41      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+2015-06-15 17:21:41      Copy /vendor/bootstrap/js/bootstrap.js
+2015-06-15 17:21:41      Copy /vendor/bootstrap/js/bootstrap.min.js
+2015-06-15 17:21:41      Copy /vendor/bootstrap/js/npm.js
+2015-06-15 17:21:41      Copy /vendor/jquery/jquery.js
+2015-06-15 17:21:41      Copy /vendor/jquery/jquery.min.js
+2015-06-15 17:21:41      Copy /vendor/jquery/jquery.min.map
+2015-06-15 17:21:41      Copy /vendor/jquery.validation/additional-methods.js
+2015-06-15 17:21:41      Copy /vendor/jquery.validation/additional-methods.min.js
+2015-06-15 17:21:41      Copy /vendor/jquery.validation/jquery.validate.js
+2015-06-15 17:21:41      Copy /vendor/jquery.validation/jquery.validate.min.js
+2015-06-15 17:21:42      Copy /vendor/smart-themes/black.css
+2015-06-15 17:21:42      Copy /vendor/smart-themes/blue.css
+2015-06-15 17:21:42      Copy /vendor/smart-themes/green.css
+2015-06-15 17:21:42      Copy /vendor/smart-themes/purple.css
+2015-06-15 17:21:42      Copy /vendor/smart-themes/red.css
+2015-06-15 17:21:42      Copy /vendor/smart-themes/yellow.css
+2015-06-15 17:21:45    remove javascripts/form-validation.js
+2015-06-15 17:21:45    remove .coffeescript-cache/
+2015-06-15 17:21:45    create javascripts/form-validation.js
+2015-06-15 17:28:35    remove javascripts/form-validation.js
+2015-06-15 17:28:35    remove .coffeescript-cache/
+2015-06-15 17:28:35    create javascripts/form-validation.js
+2015-06-15 17:29:31    remove javascripts/form-validation.js
+2015-06-15 17:29:31    remove .coffeescript-cache/
+2015-06-15 17:29:32    create javascripts/form-validation.js
+2015-06-15 17:47:43    remove javascripts/form-validation.js
+2015-06-15 17:47:43    remove .coffeescript-cache/
+2015-06-15 17:47:43    create javascripts/form-validation.js
+2015-06-15 17:48:37    remove javascripts/form-validation.js
+2015-06-15 17:48:37    remove .coffeescript-cache/
+2015-06-15 17:48:38    create javascripts/form-validation.js
+2015-06-15 18:02:18    Create account_lists_1_in_charge.html
+2015-06-15 18:02:18    Create account_lists_2_administrato.html
+2015-06-15 18:02:18    Create account_lists_3_service_provider.html
+2015-06-15 18:02:18    Create account_lists_4_superviso.html
+2015-06-15 18:02:18    Create account_lists_5_case.html
+2015-06-15 18:02:18    Create layout_01.html
+2015-06-15 18:02:19    Create layout_02.html
+2015-06-15 18:02:19    Create login.html
+2015-06-15 18:02:19    Create styleguide.html
+2015-06-15 18:02:19    Create page-name/index.html
+2015-06-15 18:02:19      Copy /data.yml
+2015-06-15 18:02:19      Copy /view_helpers.rb
+2015-06-15 18:02:19      Copy /fonts/fontawesome-webfont.eot
+2015-06-15 18:02:19      Copy /fonts/fontawesome-webfont.svg
+2015-06-15 18:02:19      Copy /fonts/fontawesome-webfont.ttf
+2015-06-15 18:02:19      Copy /fonts/fontawesome-webfont.woff
+2015-06-15 18:02:19      Copy /fonts/fontawesome-webfont.woff2
+2015-06-15 18:02:19      Copy /fonts/FontAwesome.otf
+2015-06-15 18:02:19      Copy /images/login-brand.png
+2015-06-15 18:02:19      Copy /javascripts/all.js
+2015-06-15 18:02:19      Copy /javascripts/form-validation.js
+2015-06-15 18:02:19      Copy /stylesheets/all.css
+2015-06-15 18:02:19      Copy /stylesheets/font-awesome.css
+2015-06-15 18:02:19      Copy /stylesheets/vendor/fontawesome/font-awesome.css
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap-theme.css
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap-theme.css.map
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap-theme.min.css
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap.css
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap.css.map
+2015-06-15 18:02:19      Copy /vendor/bootstrap/css/bootstrap.min.css
+2015-06-15 18:02:19      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+2015-06-15 18:02:19      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+2015-06-15 18:02:19      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+2015-06-15 18:02:19      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+2015-06-15 18:02:19      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+2015-06-15 18:02:19      Copy /vendor/bootstrap/js/bootstrap.js
+2015-06-15 18:02:19      Copy /vendor/bootstrap/js/bootstrap.min.js
+2015-06-15 18:02:19      Copy /vendor/bootstrap/js/npm.js
+2015-06-15 18:02:19      Copy /vendor/jquery/jquery.js
+2015-06-15 18:02:19      Copy /vendor/jquery/jquery.min.js
+2015-06-15 18:02:19      Copy /vendor/jquery/jquery.min.map
+2015-06-15 18:02:19      Copy /vendor/jquery.validation/additional-methods.js
+2015-06-15 18:02:19      Copy /vendor/jquery.validation/additional-methods.min.js
+2015-06-15 18:02:19      Copy /vendor/jquery.validation/jquery.validate.js
+2015-06-15 18:02:19      Copy /vendor/jquery.validation/jquery.validate.min.js
+2015-06-15 18:02:19      Copy /vendor/smart-themes/black.css
+2015-06-15 18:02:19      Copy /vendor/smart-themes/blue.css
+2015-06-15 18:02:19      Copy /vendor/smart-themes/green.css
+2015-06-15 18:02:19      Copy /vendor/smart-themes/purple.css
+2015-06-15 18:02:19      Copy /vendor/smart-themes/red.css
+2015-06-15 18:02:19      Copy /vendor/smart-themes/yellow.css
+2015-06-15 18:02:22    remove javascripts/form-validation.js
+2015-06-15 18:02:22    remove .coffeescript-cache/
+2015-06-15 18:02:22    create javascripts/form-validation.js
+2015-06-15 18:33:50    remove javascripts/form-validation.js
+2015-06-15 18:33:50    remove .coffeescript-cache/
+2015-06-15 18:33:50    create javascripts/form-validation.js
+2015-06-15 18:48:00 overwrite javascripts/form-validation.js
+2015-06-15 18:48:00 overwrite javascripts/form-validation.js
+2015-06-15 18:48:03 overwrite javascripts/form-validation.js
+2015-06-15 18:48:03 overwrite javascripts/form-validation.js
+2015-06-15 18:48:37 overwrite javascripts/form-validation.js
+2015-06-15 18:48:37 overwrite javascripts/form-validation.js
+2015-06-15 18:52:44 overwrite javascripts/form-validation.js
+2015-06-15 18:52:44 overwrite javascripts/form-validation.js
+2015-06-15 18:52:54 overwrite javascripts/form-validation.js
+2015-06-15 18:52:54 overwrite javascripts/form-validation.js
+2015-06-15 18:53:25 overwrite javascripts/form-validation.js
+2015-06-15 18:53:25 overwrite javascripts/form-validation.js
+2015-06-15 18:53:37 overwrite javascripts/form-validation.js
+2015-06-15 18:53:37 overwrite javascripts/form-validation.js
+2015-06-15 18:54:07 overwrite javascripts/form-validation.js
+2015-06-15 18:54:07 overwrite javascripts/form-validation.js
+2015-06-15 18:55:49 overwrite javascripts/form-validation.js
+2015-06-15 18:55:49 overwrite javascripts/form-validation.js
+2015-06-15 18:55:53 overwrite javascripts/form-validation.js
+2015-06-15 18:55:53 overwrite javascripts/form-validation.js
+2015-06-15 18:57:57 overwrite javascripts/form-validation.js
+2015-06-15 18:57:57 overwrite javascripts/form-validation.js
+2015-06-15 19:00:03 overwrite javascripts/form-validation.js
+2015-06-15 19:00:04 overwrite javascripts/form-validation.js
+2015-06-15 19:00:08 overwrite javascripts/form-validation.js
+2015-06-15 19:00:08 overwrite javascripts/form-validation.js
+2015-06-15 19:00:34    remove javascripts/form-validation.js
+2015-06-15 19:00:34    remove .coffeescript-cache/
+2015-06-15 19:00:34    create javascripts/form-validation.js
+2015-06-15 19:02:04 overwrite javascripts/form-validation.js
+2015-06-15 19:02:04 overwrite javascripts/form-validation.js
+2015-06-15 19:02:26 overwrite javascripts/form-validation.js
+2015-06-15 19:02:26 overwrite javascripts/form-validation.js
+2015-06-15 19:07:54 overwrite javascripts/form-validation.js
+2015-06-15 19:07:55 overwrite javascripts/form-validation.js
+2015-06-15 19:12:37 overwrite javascripts/form-validation.js
+2015-06-15 19:12:37 overwrite javascripts/form-validation.js
+2015-06-15 19:14:08 overwrite javascripts/form-validation.js
+2015-06-15 19:14:08 overwrite javascripts/form-validation.js
+2015-06-15 19:15:07 overwrite javascripts/form-validation.js
+2015-06-15 19:15:07 overwrite javascripts/form-validation.js
+2015-06-15 19:23:00 overwrite javascripts/form-validation.js
+2015-06-15 19:23:01 overwrite javascripts/form-validation.js
+2015-06-15 19:24:15 overwrite javascripts/form-validation.js
+2015-06-15 19:24:15 overwrite javascripts/form-validation.js
+2015-06-15 19:24:35 overwrite javascripts/form-validation.js
+2015-06-15 19:24:35 overwrite javascripts/form-validation.js
+2015-06-15 19:26:58     error coffeescripts/form-validation.coffee: SyntaxError: unexpected IDENTIFIER
+2015-06-15 19:26:58     error coffeescripts/form-validation.coffee: SyntaxError: unexpected IDENTIFIER
+2015-06-15 19:27:06 overwrite javascripts/form-validation.js
+2015-06-15 19:27:06 overwrite javascripts/form-validation.js
+2015-06-15 19:28:24 overwrite javascripts/form-validation.js
+2015-06-15 19:28:24 overwrite javascripts/form-validation.js
+2015-06-15 19:28:50 overwrite javascripts/form-validation.js
+2015-06-15 19:28:50 overwrite javascripts/form-validation.js
+2015-06-15 19:29:12 overwrite javascripts/form-validation.js
+2015-06-15 19:29:12 overwrite javascripts/form-validation.js
+2015-06-15 19:32:35 overwrite javascripts/form-validation.js
+2015-06-15 19:32:35 overwrite javascripts/form-validation.js
+2015-06-15 19:32:39 overwrite javascripts/form-validation.js
+2015-06-15 19:32:39 overwrite javascripts/form-validation.js
+2015-06-15 19:34:58 overwrite javascripts/form-validation.js
+2015-06-15 19:34:58 overwrite javascripts/form-validation.js
+2015-06-15 19:36:21 overwrite javascripts/form-validation.js
+2015-06-15 19:36:21 overwrite javascripts/form-validation.js
+2015-06-15 19:37:35 overwrite javascripts/form-validation.js
+2015-06-15 19:37:35 overwrite javascripts/form-validation.js
+2015-06-15 19:38:14 overwrite javascripts/form-validation.js
+2015-06-15 19:38:15 overwrite javascripts/form-validation.js
+2015-06-15 19:38:37 overwrite javascripts/form-validation.js
+2015-06-15 19:38:37 overwrite javascripts/form-validation.js
+2015-06-15 19:38:53 overwrite javascripts/form-validation.js
+2015-06-15 19:38:53 overwrite javascripts/form-validation.js
+2015-06-15 19:38:57 overwrite javascripts/form-validation.js
+2015-06-15 19:38:57 overwrite javascripts/form-validation.js
+2015-06-15 19:38:58 overwrite javascripts/form-validation.js
+2015-06-15 19:38:58 overwrite javascripts/form-validation.js
+2015-06-15 19:39:10    remove javascripts/form-validation.js
+2015-06-15 19:39:10    remove .coffeescript-cache/
+2015-06-15 19:39:10    create javascripts/form-validation.js
+2015-06-15 19:40:04 overwrite javascripts/form-validation.js
+2015-06-15 19:40:05 overwrite javascripts/form-validation.js
+2015-06-15 19:40:37 overwrite javascripts/form-validation.js
+2015-06-15 19:40:37 overwrite javascripts/form-validation.js
+2015-06-15 19:44:18 overwrite javascripts/form-validation.js
+2015-06-15 19:44:18 overwrite javascripts/form-validation.js
+2015-06-15 19:46:43 overwrite javascripts/form-validation.js
+2015-06-15 19:46:43 overwrite javascripts/form-validation.js
+2015-06-15 19:48:09 overwrite javascripts/form-validation.js
+2015-06-15 19:48:09 overwrite javascripts/form-validation.js
+2015-06-15 19:49:11 overwrite javascripts/form-validation.js
+2015-06-15 19:49:11 overwrite javascripts/form-validation.js
+2015-06-15 19:49:12 overwrite javascripts/form-validation.js
+2015-06-15 19:49:12 overwrite javascripts/form-validation.js
+2015-06-15 19:51:20 overwrite javascripts/form-validation.js
+2015-06-15 19:51:20 overwrite javascripts/form-validation.js
+2015-06-15 19:54:06 overwrite javascripts/form-validation.js
+2015-06-15 19:54:06 overwrite javascripts/form-validation.js
+2015-06-15 20:04:18 overwrite javascripts/form-validation.js
+2015-06-15 20:04:18 overwrite javascripts/form-validation.js
+2015-06-15 20:04:25 overwrite javascripts/form-validation.js
+2015-06-15 20:04:25 overwrite javascripts/form-validation.js
+2015-06-15 20:04:27 overwrite javascripts/form-validation.js
+2015-06-15 20:04:27 overwrite javascripts/form-validation.js
+2015-06-15 20:05:29 overwrite javascripts/form-validation.js
+2015-06-15 20:05:29 overwrite javascripts/form-validation.js
+2015-06-15 20:05:30 overwrite javascripts/form-validation.js
+2015-06-15 20:05:30 overwrite javascripts/form-validation.js
+2015-06-15 20:06:56 overwrite javascripts/form-validation.js
+2015-06-15 20:06:56 overwrite javascripts/form-validation.js
+2015-06-15 20:07:10 overwrite javascripts/form-validation.js
+2015-06-15 20:07:10 overwrite javascripts/form-validation.js
+2015-06-15 20:08:26 overwrite javascripts/form-validation.js
+2015-06-15 20:08:26 overwrite javascripts/form-validation.js
+2015-06-15 20:08:40 overwrite javascripts/form-validation.js
+2015-06-15 20:08:40 overwrite javascripts/form-validation.js
+2015-06-15 20:08:47 overwrite javascripts/form-validation.js
+2015-06-15 20:08:47 overwrite javascripts/form-validation.js
+2015-06-15 20:09:31 overwrite javascripts/form-validation.js
+2015-06-15 20:09:31 overwrite javascripts/form-validation.js
+2015-06-15 20:15:01 overwrite javascripts/form-validation.js
+2015-06-15 20:15:01 overwrite javascripts/form-validation.js
+2015-06-15 20:15:07 overwrite javascripts/form-validation.js
+2015-06-15 20:15:07 overwrite javascripts/form-validation.js
+2015-06-15 20:15:42 overwrite javascripts/form-validation.js
+2015-06-15 20:15:42 overwrite javascripts/form-validation.js
+2015-06-15 20:18:29 overwrite javascripts/form-validation.js
+2015-06-15 20:18:29 overwrite javascripts/form-validation.js
+2015-06-15 20:20:01 overwrite javascripts/form-validation.js
+2015-06-15 20:20:02 overwrite javascripts/form-validation.js
+2015-06-15 20:20:30 overwrite javascripts/form-validation.js
+2015-06-15 20:20:30 overwrite javascripts/form-validation.js
+2015-06-15 20:20:39 overwrite javascripts/form-validation.js
+2015-06-15 20:20:39 overwrite javascripts/form-validation.js
+2015-06-15 20:21:26 overwrite javascripts/form-validation.js
+2015-06-15 20:21:26 overwrite javascripts/form-validation.js
+2015-06-15 20:22:53 overwrite javascripts/form-validation.js
+2015-06-15 20:22:53 overwrite javascripts/form-validation.js
+2015-06-15 20:23:09 overwrite javascripts/form-validation.js
+2015-06-15 20:23:09 overwrite javascripts/form-validation.js
+2015-06-15 20:23:23 overwrite javascripts/form-validation.js
+2015-06-15 20:23:23 overwrite javascripts/form-validation.js
+2015-06-15 20:23:33 overwrite javascripts/form-validation.js
+2015-06-15 20:23:33 overwrite javascripts/form-validation.js
+2015-06-15 20:24:21 overwrite javascripts/form-validation.js
+2015-06-15 20:24:21 overwrite javascripts/form-validation.js
+2015-06-15 20:24:24 overwrite javascripts/form-validation.js
+2015-06-15 20:24:24 overwrite javascripts/form-validation.js
+2015-06-15 20:24:55 overwrite javascripts/form-validation.js
+2015-06-15 20:24:55 overwrite javascripts/form-validation.js
+2015-06-15 20:25:16 overwrite javascripts/form-validation.js
+2015-06-15 20:25:17 overwrite javascripts/form-validation.js
+2015-06-15 20:25:26 overwrite javascripts/form-validation.js
+2015-06-15 20:25:26 overwrite javascripts/form-validation.js
+2015-06-15 20:27:24 overwrite javascripts/form-validation.js
+2015-06-15 20:27:24 overwrite javascripts/form-validation.js
+2015-06-15 20:28:02 overwrite javascripts/form-validation.js
+2015-06-15 20:28:02 overwrite javascripts/form-validation.js
+2015-06-15 20:28:24 overwrite javascripts/form-validation.js
+2015-06-15 20:28:24 overwrite javascripts/form-validation.js
+2015-06-15 20:28:25 overwrite javascripts/form-validation.js
+2015-06-15 20:28:25 overwrite javascripts/form-validation.js
+2015-06-15 20:28:40 overwrite javascripts/form-validation.js
+2015-06-15 20:28:40 overwrite javascripts/form-validation.js
+2015-06-15 20:28:51 overwrite javascripts/form-validation.js
+2015-06-15 20:28:51 overwrite javascripts/form-validation.js
+2015-06-15 20:29:22 overwrite javascripts/form-validation.js
+2015-06-15 20:29:22 overwrite javascripts/form-validation.js
+2015-06-15 20:29:40     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:29:40     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:29:52     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:29:52     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:29:57     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:29:58     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:30:18     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:30:18     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:30:20     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:30:20     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:31:48     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:31:48     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:05     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:05     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:18     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:19     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:53     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:53     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:59     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:32:59     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:35:06     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:35:06     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:36:12     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:36:12     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:36:16    remove javascripts/form-validation.js
+2015-06-15 20:36:16    remove .coffeescript-cache/
+2015-06-15 20:36:16     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:36:39     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:36:39     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:25     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:25     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:27     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:27     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:29     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:29     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:32     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:32     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:36     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:36     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:40    remove .coffeescript-cache/
+2015-06-15 20:37:40     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:56     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:56     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:59     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:37:59     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:07    remove .coffeescript-cache/
+2015-06-15 20:38:07     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:41     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:41     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:44     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:44     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:38:49    remove .coffeescript-cache/
+2015-06-15 20:38:49     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:39:09    create javascripts/form-validation.js
+2015-06-15 20:39:09 overwrite javascripts/form-validation.js
+2015-06-15 20:39:20 overwrite javascripts/form-validation.js
+2015-06-15 20:39:20 overwrite javascripts/form-validation.js
+2015-06-15 20:39:26 overwrite javascripts/form-validation.js
+2015-06-15 20:39:26 overwrite javascripts/form-validation.js
+2015-06-15 20:39:33     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:39:33     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:39:35     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:39:35     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:39:59    remove javascripts/form-validation.js
+2015-06-15 20:39:59    remove .coffeescript-cache/
+2015-06-15 20:39:59     error coffeescripts/form-validation.coffee: SyntaxError: unexpected INDENT
+2015-06-15 20:40:53    create javascripts/form-validation.js
+2015-06-15 20:40:53 overwrite javascripts/form-validation.js
+2015-06-15 20:41:49 overwrite javascripts/form-validation.js
+2015-06-15 20:41:49 overwrite javascripts/form-validation.js
+2015-06-15 20:42:17 overwrite javascripts/form-validation.js
+2015-06-15 20:42:17 overwrite javascripts/form-validation.js
+2015-06-15 20:42:35 overwrite javascripts/form-validation.js
+2015-06-15 20:42:35 overwrite javascripts/form-validation.js
+2015-06-15 20:42:37 overwrite javascripts/form-validation.js
+2015-06-15 20:42:37 overwrite javascripts/form-validation.js
+2015-06-15 20:43:32 overwrite javascripts/form-validation.js
+2015-06-15 20:43:32 overwrite javascripts/form-validation.js
+2015-06-15 20:43:42 overwrite javascripts/form-validation.js
+2015-06-15 20:43:42 overwrite javascripts/form-validation.js
+2015-06-15 20:43:55 overwrite javascripts/form-validation.js
+2015-06-15 20:43:55 overwrite javascripts/form-validation.js
+2015-06-15 20:43:59 overwrite javascripts/form-validation.js
+2015-06-15 20:43:59 overwrite javascripts/form-validation.js
+2015-06-15 20:44:20 overwrite javascripts/form-validation.js
+2015-06-15 20:44:20 overwrite javascripts/form-validation.js
+2015-06-15 20:44:37 overwrite javascripts/form-validation.js
+2015-06-15 20:44:37 overwrite javascripts/form-validation.js
+2015-06-15 20:44:39    remove javascripts/form-validation.js
+2015-06-15 20:44:39    remove .coffeescript-cache/
+2015-06-15 20:44:40    create javascripts/form-validation.js
+2015-06-15 20:45:25 overwrite javascripts/form-validation.js
+2015-06-15 20:45:25 overwrite javascripts/form-validation.js
+2015-06-15 20:45:51 overwrite javascripts/form-validation.js
+2015-06-15 20:45:52 overwrite javascripts/form-validation.js
+2015-06-15 20:46:41 overwrite javascripts/form-validation.js
+2015-06-15 20:46:41 overwrite javascripts/form-validation.js
+2015-06-15 20:46:43 overwrite javascripts/form-validation.js
+2015-06-15 20:46:43 overwrite javascripts/form-validation.js
+2015-06-15 20:46:44 overwrite javascripts/form-validation.js
+2015-06-15 20:46:44 overwrite javascripts/form-validation.js
+2015-06-15 20:47:47 overwrite javascripts/form-validation.js
+2015-06-15 20:47:47 overwrite javascripts/form-validation.js
+2015-06-15 20:47:57 overwrite javascripts/form-validation.js
+2015-06-15 20:47:57 overwrite javascripts/form-validation.js
+2015-06-15 20:48:26 overwrite javascripts/form-validation.js
+2015-06-15 20:48:26 overwrite javascripts/form-validation.js
+2015-06-15 20:48:26 overwrite javascripts/form-validation.js
+2015-06-15 20:48:26 overwrite javascripts/form-validation.js
+2015-06-15 20:48:31 overwrite javascripts/form-validation.js
+2015-06-15 20:48:31 overwrite javascripts/form-validation.js
+2015-06-15 20:50:01 overwrite javascripts/form-validation.js
+2015-06-15 20:50:01 overwrite javascripts/form-validation.js
+2015-06-15 20:50:09 overwrite javascripts/form-validation.js
+2015-06-15 20:50:09 overwrite javascripts/form-validation.js
+2015-06-15 20:50:16 overwrite javascripts/form-validation.js
+2015-06-15 20:50:16 overwrite javascripts/form-validation.js
+2015-06-15 20:53:04 overwrite javascripts/form-validation.js
+2015-06-15 20:53:04 overwrite javascripts/form-validation.js
+2015-06-15 20:53:07 overwrite javascripts/form-validation.js
+2015-06-15 20:53:07 overwrite javascripts/form-validation.js
+2015-06-15 20:53:37 overwrite javascripts/form-validation.js
+2015-06-15 20:53:37 overwrite javascripts/form-validation.js
+2015-06-15 20:53:39 overwrite javascripts/form-validation.js
+2015-06-15 20:53:39 overwrite javascripts/form-validation.js
+2015-06-15 20:55:28 overwrite javascripts/form-validation.js
+2015-06-15 20:55:29 overwrite javascripts/form-validation.js
+2015-06-15 20:55:29 overwrite javascripts/form-validation.js
+2015-06-15 20:55:29 overwrite javascripts/form-validation.js
+2015-06-15 20:55:31 overwrite javascripts/form-validation.js
+2015-06-15 20:55:31 overwrite javascripts/form-validation.js
+2015-06-15 20:55:42 overwrite javascripts/form-validation.js
+2015-06-15 20:55:42 overwrite javascripts/form-validation.js
+2015-06-15 20:57:20 overwrite javascripts/form-validation.js
+2015-06-15 20:57:20 overwrite javascripts/form-validation.js
+2015-06-15 20:57:27 overwrite javascripts/form-validation.js
+2015-06-15 20:57:27 overwrite javascripts/form-validation.js
+2015-06-15 20:57:29 overwrite javascripts/form-validation.js
+2015-06-15 20:57:29 overwrite javascripts/form-validation.js
+2015-06-15 21:04:38     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:04:38     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:04:40     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:04:40     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:04:54    remove javascripts/form-validation.js
+2015-06-15 21:04:54    remove .coffeescript-cache/
+2015-06-15 21:04:54     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:05:07    create javascripts/form-validation.js
+2015-06-15 21:05:07 overwrite javascripts/form-validation.js
+2015-06-15 21:05:36     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:05:37     error coffeescripts/form-validation.coffee: SyntaxError: unexpected POST_IF
+2015-06-15 21:06:38 overwrite javascripts/form-validation.js
+2015-06-15 21:06:38 overwrite javascripts/form-validation.js
+2015-06-15 21:07:07 overwrite javascripts/form-validation.js
+2015-06-15 21:07:07 overwrite javascripts/form-validation.js
+2015-06-15 21:08:52    Create account_lists_1_in_charge.html
+2015-06-15 21:08:52    Create account_lists_2_administrato.html
+2015-06-15 21:08:52    Create account_lists_3_service_provider.html
+2015-06-15 21:08:52    Create account_lists_4_superviso.html
+2015-06-15 21:08:52    Create account_lists_5_case.html
+2015-06-15 21:08:52    Create layout_01.html
+2015-06-15 21:08:52    Create layout_02.html
+2015-06-15 21:08:52    Create login.html
+2015-06-15 21:08:52    Create styleguide.html
+2015-06-15 21:08:52    Create page-name/index.html
+2015-06-15 21:08:53      Copy /data.yml
+2015-06-15 21:08:53      Copy /view_helpers.rb
+2015-06-15 21:08:53      Copy /fonts/fontawesome-webfont.eot
+2015-06-15 21:08:53      Copy /fonts/fontawesome-webfont.svg
+2015-06-15 21:08:53      Copy /fonts/fontawesome-webfont.ttf
+2015-06-15 21:08:53      Copy /fonts/fontawesome-webfont.woff
+2015-06-15 21:08:53      Copy /fonts/fontawesome-webfont.woff2
+2015-06-15 21:08:53      Copy /fonts/FontAwesome.otf
+2015-06-15 21:08:53      Copy /images/login-brand.png
+2015-06-15 21:08:53      Copy /javascripts/all.js
+2015-06-15 21:08:53      Copy /javascripts/form-validation.js
+2015-06-15 21:08:53      Copy /stylesheets/all.css
+2015-06-15 21:08:53      Copy /stylesheets/font-awesome.css
+2015-06-15 21:08:53      Copy /stylesheets/vendor/fontawesome/font-awesome.css
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap-theme.css
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap-theme.css.map
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap-theme.min.css
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap.css
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap.css.map
+2015-06-15 21:08:53      Copy /vendor/bootstrap/css/bootstrap.min.css
+2015-06-15 21:08:53      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+2015-06-15 21:08:53      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+2015-06-15 21:08:53      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+2015-06-15 21:08:53      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+2015-06-15 21:08:53      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+2015-06-15 21:08:53      Copy /vendor/bootstrap/js/bootstrap.js
+2015-06-15 21:08:53      Copy /vendor/bootstrap/js/bootstrap.min.js
+2015-06-15 21:08:53      Copy /vendor/bootstrap/js/npm.js
+2015-06-15 21:08:53      Copy /vendor/jquery/jquery.js
+2015-06-15 21:08:53      Copy /vendor/jquery/jquery.min.js
+2015-06-15 21:08:53      Copy /vendor/jquery/jquery.min.map
+2015-06-15 21:08:53      Copy /vendor/jquery.validation/additional-methods.js
+2015-06-15 21:08:53      Copy /vendor/jquery.validation/additional-methods.min.js
+2015-06-15 21:08:53      Copy /vendor/jquery.validation/jquery.validate.js
+2015-06-15 21:08:53      Copy /vendor/jquery.validation/jquery.validate.min.js
+2015-06-15 21:08:53      Copy /vendor/smart-themes/black.css
+2015-06-15 21:08:53      Copy /vendor/smart-themes/blue.css
+2015-06-15 21:08:53      Copy /vendor/smart-themes/green.css
+2015-06-15 21:08:53      Copy /vendor/smart-themes/purple.css
+2015-06-15 21:08:53      Copy /vendor/smart-themes/red.css
+2015-06-15 21:08:53      Copy /vendor/smart-themes/yellow.css
+2015-06-15 21:09:44    Create account_lists_1_in_charge.html
+2015-06-15 21:09:44    Create account_lists_2_administrato.html
+2015-06-15 21:09:44    Create account_lists_3_service_provider.html
+2015-06-15 21:09:44    Create account_lists_4_superviso.html
+2015-06-15 21:09:44    Create account_lists_5_case.html
+2015-06-15 21:09:44    Create layout_01.html
+2015-06-15 21:09:44    Create layout_02.html
+2015-06-15 21:09:44    Create login.html
+2015-06-15 21:09:45    Create styleguide.html
+2015-06-15 21:09:45    Create page-name/index.html
+2015-06-15 21:09:45      Copy /data.yml
+2015-06-15 21:09:45      Copy /view_helpers.rb
+2015-06-15 21:09:45      Copy /fonts/fontawesome-webfont.eot
+2015-06-15 21:09:45      Copy /fonts/fontawesome-webfont.svg
+2015-06-15 21:09:45      Copy /fonts/fontawesome-webfont.ttf
+2015-06-15 21:09:45      Copy /fonts/fontawesome-webfont.woff
+2015-06-15 21:09:45      Copy /fonts/fontawesome-webfont.woff2
+2015-06-15 21:09:45      Copy /fonts/FontAwesome.otf
+2015-06-15 21:09:45      Copy /images/login-brand.png
+2015-06-15 21:09:45      Copy /javascripts/all.js
+2015-06-15 21:09:45      Copy /javascripts/form-validation.js
+2015-06-15 21:09:45      Copy /stylesheets/all.css
+2015-06-15 21:09:45      Copy /stylesheets/font-awesome.css
+2015-06-15 21:09:45      Copy /stylesheets/vendor/fontawesome/font-awesome.css
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap-theme.css
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap-theme.css.map
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap-theme.min.css
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap.css
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap.css.map
+2015-06-15 21:09:45      Copy /vendor/bootstrap/css/bootstrap.min.css
+2015-06-15 21:09:45      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.eot
+2015-06-15 21:09:45      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.svg
+2015-06-15 21:09:45      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf
+2015-06-15 21:09:45      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+2015-06-15 21:09:45      Copy /vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2
+2015-06-15 21:09:45      Copy /vendor/bootstrap/js/bootstrap.js
+2015-06-15 21:09:45      Copy /vendor/bootstrap/js/bootstrap.min.js
+2015-06-15 21:09:45      Copy /vendor/bootstrap/js/npm.js
+2015-06-15 21:09:45      Copy /vendor/jquery/jquery.js
+2015-06-15 21:09:45      Copy /vendor/jquery/jquery.min.js
+2015-06-15 21:09:45      Copy /vendor/jquery/jquery.min.map
+2015-06-15 21:09:45      Copy /vendor/jquery.validation/additional-methods.js
+2015-06-15 21:09:45      Copy /vendor/jquery.validation/additional-methods.min.js
+2015-06-15 21:09:45      Copy /vendor/jquery.validation/jquery.validate.js
+2015-06-15 21:09:45      Copy /vendor/jquery.validation/jquery.validate.min.js
+2015-06-15 21:09:45      Copy /vendor/smart-themes/black.css
+2015-06-15 21:09:45      Copy /vendor/smart-themes/blue.css
+2015-06-15 21:09:45      Copy /vendor/smart-themes/green.css
+2015-06-15 21:09:45      Copy /vendor/smart-themes/purple.css
+2015-06-15 21:09:45      Copy /vendor/smart-themes/red.css
+2015-06-15 21:09:45      Copy /vendor/smart-themes/yellow.css
+2015-06-16 09:51:15 overwrite javascripts/form-validation.js
+2015-06-16 09:51:15 overwrite javascripts/form-validation.js
+2015-06-16 09:54:36 overwrite javascripts/form-validation.js
+2015-06-16 09:54:36 overwrite javascripts/form-validation.js
+2015-06-16 09:54:37 overwrite javascripts/form-validation.js
+2015-06-16 09:54:37 overwrite javascripts/form-validation.js
+2015-06-16 09:54:57    remove javascripts/form-validation.js
+2015-06-16 09:54:57    remove .coffeescript-cache/
+2015-06-16 09:54:57    create javascripts/form-validation.js
+2015-06-16 09:55:43 overwrite javascripts/form-validation.js
+2015-06-16 09:55:43 overwrite javascripts/form-validation.js
+2015-06-16 09:57:17 overwrite javascripts/form-validation.js
+2015-06-16 09:57:18 overwrite javascripts/form-validation.js
+2015-06-16 09:57:48 overwrite javascripts/form-validation.js
+2015-06-16 09:57:48 overwrite javascripts/form-validation.js
+2015-06-16 09:57:56 overwrite javascripts/form-validation.js
+2015-06-16 09:57:56 overwrite javascripts/form-validation.js
+2015-06-16 09:58:02    remove javascripts/form-validation.js
+2015-06-16 09:58:02    remove .coffeescript-cache/
+2015-06-16 09:58:02    create javascripts/form-validation.js
+2015-06-16 10:17:34 overwrite javascripts/form-validation.js
+2015-06-16 10:17:34 overwrite javascripts/form-validation.js
+2015-06-16 10:22:02 overwrite javascripts/form-validation.js
+2015-06-16 10:22:02 overwrite javascripts/form-validation.js
+2015-06-16 10:22:38 overwrite javascripts/form-validation.js
+2015-06-16 10:22:38 overwrite javascripts/form-validation.js

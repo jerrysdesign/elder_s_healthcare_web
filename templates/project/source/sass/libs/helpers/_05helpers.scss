@@ -137,9 +137,9 @@
 }
 
 // Clearfixes
-// %clearfix {
-//     @include clearfix;
-// }
+.clearfix, %clearfix {
+  @include pie-clearfix;
+}
 
 // %pie-clearfix {
 //     @include pie-clearfix;

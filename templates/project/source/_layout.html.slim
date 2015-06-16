@@ -7,17 +7,20 @@ html lang="zh-TW"
 		// DevPath
 		= render "layout_head"
 		= render "layout_og"
-	body
-		//header
-		= render 'layout/navbar'
-		//main
-		.container-fluid
-			.row
-				// sidebar
-				div class='col-md-2 sidebar'
-					= render 'layout/sidebar'
-				// main-content
-				div class='col-md-10 col-md-offset-2 main'
+	body.layout-fixed
+		.app-container
+			//header
+			header
+				= render 'layout/navbar'
+			//main
+			aside
+				.sidebar-wrapper
+					// sidebar
+					.sidebar
+						= render 'layout/sidebar'
+			// main-content
+			section.main
+				.container-fluid
 					= yield
 		
 		// DevPath
