@@ -29,17 +29,17 @@ html, body {
 	height: 100%;
 }
 body {
-	overflow-x: hidden;
+
 }
 
 // Main wrapper
 // -----------------------------
 .app-container {
 	position: relative;
-	width: 100%;
+	// width: 100%;
+	min-width: 980px;
 	min-height: 100%;
 	height: auto;
-	overflow-x: hidden;
 	> header {
 		position: relative;
 		z-index: $z-index-header;
@@ -57,7 +57,6 @@ body {
 	// Contains the main content
 	> section {
 		position: relative;
-		overflow: hidden;
 		height: 100%;
 		margin-left: $aside-wd;
 		z-index: $z-index-section;
@@ -94,6 +93,8 @@ body {
 // Fixed layout
 // -----------------------------
 .layout-fixed {
+	overflow-x: scroll;
+	overflow-y: visible;
 	.app-container {
 		> aside,
 		> header {
@@ -153,6 +154,7 @@ body {
  */
 header {
 	height: $header-height;
+	background-color: #fff;
 	@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
 }
 .sidebar {
@@ -201,13 +203,18 @@ header {
  */
 
 .main {
-	padding: $content-padding
+	padding: $content-padding;
+	font-size: 13px;
 }
 
 .main .page-header {
 	margin-top: 0;
 }
 
+.scroll-main {
+	overflow-x: scroll;
+	overflow-y: visible;
+}
 /*
  * Placeholder dashboard ideas
  */
