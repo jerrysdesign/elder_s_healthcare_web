@@ -14,6 +14,9 @@ templates/project/source/fonts/fontawesome-webfont.ttf
 templates/project/source/fonts/fontawesome-webfont.woff
 templates/project/source/fonts/fontawesome-webfont.woff2
 
+#fire.app
+templates/project/source/fire_app_log.txt
+
 #fire.app complier
 templates/project/source/.sass-cache/
 templates/project/source/stylesheets/
