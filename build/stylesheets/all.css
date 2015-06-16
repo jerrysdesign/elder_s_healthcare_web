@@ -2236,6 +2236,9 @@ input.big { padding: 2px 0; font-size: 1.2em; }
 
 .is-table { display: table; width: 100%; }
 
+.clearfix { *zoom: 1; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
 /* Float-left */
 .fl { float: left; display: inline-block; *zoom: 1; }
 .fl:after { content: ""; display: table; clear: both; }
@@ -2262,9 +2265,31 @@ input.big { padding: 2px 0; font-size: 1.2em; }
 .is-horizontal:after { content: ""; display: table; clear: both; }
 .is-horizontal > * { display: inline; display: inline-block; float: none !important; }
 
+/* ========================================================================
+	 Component: layout.scss ========================================================================== */
+html { /* $replace rtl */ direction: ltr; -ms-touch-action: manipulation; touch-action: manipulation; }
+
+html, body { width: 100%; height: 100%; }
+
+body { overflow-x: hidden; }
+
+.app-container { position: relative; width: 100%; min-height: 100%; height: auto; overflow-x: hidden; }
+.app-container > header { position: relative; z-index: 410; }
+.app-container > aside { position: absolute; top: 95px; left: 0; bottom: 0; width: 220px; z-index: 310; }
+.app-container > section { position: relative; overflow: hidden; height: 100%; margin-left: 220px; z-index: 110; }
+
+.sidebar-wrapper { height: 100%; overflow: hidden; }
+
+.sidebar { position: relative; height: 100%; overflow-x: hidden; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
+
+.layout-fixed .app-container > aside, .layout-fixed .app-container > header { position: fixed; }
+.layout-fixed .app-container > header { width: 100%; height: 95px; }
+.layout-fixed .app-container > section { padding-top: 95px; }
+
 /* Base structure */
-/* Move down content because we have a fixed navbar that is 50px tall */
-body { padding-top: 95px; }
+.top-buffer { margin-top: 20px; }
+
+.align-middle, .align-middle-table thead > tr > th, .align-middle-table thead > tr > td, .align-middle-table tbody > tr > th, .align-middle-table tbody > tr > td, .align-middle-table tfoot > tr > th, .align-middle-table tfoot > tr > td { vertical-align: middle; }
 
 /* Global add-ons */
 .sub-header { padding-bottom: 10px; border-bottom: 1px solid #eee; }
@@ -2272,16 +2297,12 @@ body { padding-top: 95px; }
 /* Top navigation Hide default border to remove 1px line. */
 .navbar-fixed-top { border: 0; }
 
-/* Sidebar */
-/* Hide for mobile, show later */
-.sidebar { display: none; }
+/* style */
+header { height: 95px; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 
-.header { height: 95px; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
-
-@media (min-width: 992px) { .sidebar { position: fixed; top: 95px; bottom: 0; padding-top: 2em; left: 0; z-index: 1000; display: block; overflow-x: hidden; overflow-y: auto; background-color: #3d85cc; border-right: 1px solid #79838e; }
-  .sidebar a { color: #fff; }
-  .sidebar i { margin-right: .5em; } }
-.nav-sidebar { margin-right: -21px; margin-bottom: 20px; margin-left: -20px; }
+.sidebar { padding-top: 2em; background-color: #3d85cc; border-right: 1px solid #79838e; }
+.sidebar a { color: #fff; }
+.sidebar i { margin-right: .5em; }
 
 .nav-list, .nav-sidebar > li > a, .nav-sidebar-sub li > a { padding: 15px 20px 15px 40px; }
 
@@ -2290,9 +2311,8 @@ body { padding-top: 95px; }
 .nav-sidebar > li.active > a { background-color: #39ce8c; -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
 
 /* Main content */
-.main { padding: 20px; }
+.main { padding: 20px 40px; }
 
-@media (min-width: 992px) { .main { padding-right: 40px; padding-left: 40px; } }
 .main .page-header { margin-top: 0; }
 
 /* Placeholder dashboard ideas */
@@ -2321,7 +2341,7 @@ body { padding-top: 95px; }
 .panel-item { display: none; }
 .panel-item:first-child { display: block; }
 
-.tab-page-wrapper { margin: -20px -40px; padding: 20px 40px 0; background-color: #39ce8c; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.tab-page-wrapper { margin: 0 -40px; padding: 20px 40px 0; background-color: #39ce8c; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 .tab-page-wrapper .tab-page { border-bottom: 0 solid #39ce8c; }
 .tab-page-wrapper .tab-page a { color: #fff; border-color: transparent; }
 .tab-page-wrapper .tab-page a:hover { background-color: #fff; border-color: transparent; color: #555; }
