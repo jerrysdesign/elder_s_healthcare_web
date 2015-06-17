@@ -85,51 +85,27 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 text-left">
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="text" class="control-label">查詢條件</label>
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <input type="text" class="form-control" placeholder="請輸入長照案號, 個案或居服員姓名">
-                                    </div>
+                        <div class="col-md-8 text-left">
+                            <form class="form-inline" role="form">
+                                <div class="form-group col-md-12">查詢條件
+                                    <input type="text" class="form-control" placeholder="請輸入會議或職訓名稱">
                                 </div>
-                                <div class="form-group"></div>
                             </form>
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="text" class="control-label">查詢條件</label>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <input type="calendar" class="form-control" placeholder="2015-04-17">
-                                    </div>
-                                    <p class="col-sm-1 text-center">-</p>
-                                    <div class="col-sm-2">
-                                        <input type="calendar" class="form-control" placeholder="2015-04-17">
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <label for="text" class="control-label">查詢區別</label>
-                                    </div>
-                                    <div class="btn-group btn-group-lg">
-                                        <div class="col-md-0">
-                                            <select name="sel0" class="input-sm">
-                                                <option value="" ""="">全部地區</option>
-                                                <option value="" "1"="">信義</option>
-                                                <option value="" "1"="">大安</option>
-                                                <option value="" "1"="">文山</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                            <form class="form-inline" role="form">
+                                <div class="form-group col-md-12">日期區間
+                                    <input type="date" class="form-control" placeholder="">~
+                                    <input type="date" class="form-control" placeholder="">查詢區別
+                                    <select class="form-control">
+                                        <option>全部地區</option>
+                                        <option>松山</option>
+                                        <option>信義</option>
+                                        <option>文山</option>
+                                    </select>
                                 </div>
-                                <div class="form-group"></div>
                             </form>
                         </div>
-                        <div class="col-md-2 text-left">
-                            <button type="submit" class="btn btn-default">查詢
-                                <i class="fa fa-star fa-fw"></i>
-                            </button>
+                        <div class="col-md-4 text-left">
+                            <button class="btn btn-default">查詢</button>
                         </div>
                     </div>
                     <div class="row">
@@ -186,7 +162,7 @@
                         </table>
                     </div>
                     <div class="row text-center">
-                        <button type="submit" class="btn btn-default ">輸出 excel</button>
+                        <button type="submit" class="btn btn-default ">匯出 excel</button>
                     </div>
                 </div>
             </div>
