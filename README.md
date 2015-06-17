@@ -11,7 +11,8 @@
 
 ### Directory	Layout
 
-.
+./
+
 └──temp_html/                       # GUI協同作業用
 
 └──	templates/                      # 前端人員用
