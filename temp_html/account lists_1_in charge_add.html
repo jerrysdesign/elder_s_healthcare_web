@@ -67,72 +67,69 @@
                     </ul>
                 </div>
                 <div class="col-md-10 col-md-offset-2 main">
-                    <div class="row">
-                        <div class="col-md-6 text-left">
-                            <ol class="breadcrumb">
-                                <li>
-                                    <a href="#">新增帳號</a>
-                                </li>
-                                <li class="active">安養中心主管</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6 text-right">
+                    <div class="row col-md-12">
+                        <ol class="breadcrumb">
+                            <li class="active">平台管理</li>
+                            <li class="active">帳號設定</li>
+                            <li class="active">安養中心主管</li>
+                            <li class="active">新增帳號</li>
+                        </ol>
+                    </div>
+                    <form class="row col-md-12 form-horizontal">
+                        <div class="text-right">
                             <input class="btn btn-default" type="button" value="取消">
                             <input class="btn btn-default" type="submit" value="送出">
                         </div>
-                    </div>
-                    <div class="row">
-                        <form class="col-md-4 col-md-offset-2 form-horizontal">
-                            <div class="col-md-12 form-group text-center">
-                                <img alt="200x200" class="img-responsive img-thumbnail" src="http://placehold.it/200/3d85cc/ffffff">
-                                <p class="help-block" contenteditable="true">請選擇欲上傳的相片
-                                    <br>
-                                    <input type="file" id="exampleInputFile">
-                                </p>
-                            </div>
-                        </form>
-                        <form class="form-horizontal col-md-4">
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">啟用狀態</label>
-                                <div class="col-md-8">
-                                    <label class="radio-inline">
-                                        <input type="radio" value="option1">啟用</label>
-                                    <label class="radio-inline">
-                                        <input type="radio" value="option2">停用</label>
+                        <!--分隔線，可依最後視覺斟酌刪除-->
+                        <div style="width:100; height:1px; margin:20px auto; padding:0px; background-color:#D5D5D5; overflow:hidden;"></div>
+                        <!--分隔線，可依最後視覺斟酌刪除-->
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-2">
+                                <div class="col-md-12 form-group text-center">
+                                    <img alt="200x200" class="img-responsive img-thumbnail" src="http://placehold.it/200/3d85cc/ffffff">
+                                    <p class="help-block">選擇相片
+                                        <br>
+                                        <input type="file" class="btn btn-default" href="javascript:;">
+                                    </p>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="" class="col-md-4 control-label">Email</label>
-                                <div class="col-md-8">
-                                    <input type="email" class="form-control" placeholder="">
+                            <div class="col-md-4">
+                                <div class="col-md-12 form-group text-center">
+                                    <label class="col-md-4 control-label">啟用狀態</label>
+                                    <div class="col-md-8">
+                                        <label class="radio-inline">
+                                            <input type="radio" value="" name="EnableRadios" checked="">啟用</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" value="" name="EnableRadios">停用</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-md-4 control-label">Email</label>
+                                    <div class="col-md-8">
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-md-4 control-label">密碼</label>
+                                    <div class="col-md-8">
+                                        <input type="password" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-md-4 control-label">姓名</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-md-4 control-label">聯絡電話</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="" class="col-md-4 control-label">密碼</label>
-                                <div class="col-md-8">
-                                    <input type="password" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-md-4 control-label">姓名</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-md-4 control-label">行動電話</label>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-md-4 control-label">住宅電話</label>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
