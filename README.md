@@ -12,6 +12,9 @@
 ### Directory	Layout
 
 .
+└──temp_html/ (GUI協同作業用)
+
+
 └──	templates/
 	└──	project/											# 
 		└──	source/											# 
