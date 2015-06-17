@@ -1,9 +1,16 @@
 .custom-table-01
+	$color-border-th: rgba(0,0,0,.1)
+	$color-border-tb: rgba(0,0,0,.08)
+	$color-border-td: rgba(0,0,0,.03)
 	+border-radius(4px)
-	+box-shadow(rgba(black, 0.05) 0 0 10px, rgba(black, 0.10) 0 0 0 1px inset)
+	+box-shadow(rgba(black, 0.05) 0 0 10px)
+	white-space: pre
 	thead
 		background-color: $black-5
-		border: 1px solid rgba(0,0,0,.05)
-	tbody td
+		border: 1px solid $color-border-th
+	tbody
+		border: 1px solid $color-border-tb
 		background-color white
-	white-space: pre
+		td
+			& + td	
+				border-left: 1px solid $color-border-td
