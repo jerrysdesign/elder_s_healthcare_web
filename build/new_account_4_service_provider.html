@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      未命名頁面
+    </title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="styles/all.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="styles/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link href="styles/all.css" media="screen" rel="stylesheet" type="text/css">
+    <![endif]--><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]--><meta content="未命名頁面" property="og:title">
+    <meta content="未命名網站" property="og:site_name">
+    <meta content="http://localhost:3000" property="og:url">
+    <meta content="http://localhost:3000/fb.png" property="og:image">
+    <meta content="尚未填寫敘述" property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="123456" property="fb:admins">
+  </head>
+  <body class="layout-fixed">
+    <div class="app-container">
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top topnavbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img alt="雙連安養中心" src="http://placehold.it/72x72"></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside>
+        <div class="sidebar-wrapper">
+          <div class="sidebar">
+            <ul class="nav nav-sidebar">
+              <li>
+                <a href="#"><i class="fa fa-lg fa-desktop"></i>平台管理</a>
+              </li>
+              <li class="active">
+                <a href="#"><i class="fa fa-lg fa-bullseye"></i>任務管理</a>
+                <ul class="nav nav-sidebar-sub">
+                  <li>
+                    <a href="#">行事曆</a>
+                  </li>
+                  <li>
+                    <a href="#">新增事件</a>
+                  </li>
+                  <li>
+                    <a href="#">任務列表</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-lg fa-trophy"></i>成果管理</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-lg fa-money"></i>費用管理</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-lg fa-shopping-cart"></i>耗材管理</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-lg fa-comment-o"></i>訊息管理</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <section class="main">
+        <div class="container-fluid">
+          <div class="row top-buffer">
+          	<ol class="breadcrumb">
+          		<li class="active"><a href='javascript:;'>平台管理</a></li>
+          		<li class="active"><a href='javascript:;'>帳號設定</a></li>
+          		<li class="active"><a href='javascript:;'>行政人員</a></li>
+          		<li class="active">新增帳號</li>
+          	</ol>
+          </div>
+          <form class="row top-buffer">
+          	<div class="text-right">
+          		<input class="btn btn-default" type="button" value="取消">
+          		<input class="btn btn-default" type="submit" value="送出">
+          	</div>
+          	<hr>
+          	<div class="row">
+          		<div class="col-md-2 col-md-offset-2">
+          			<div class="form-group text-center">
+          				<img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/200">
+          				<div class="help-block top-buffer">選擇相片
+          					<br>
+          					<input type="file" href="javascript:;">
+          				</div>
+          			</div>
+          		</div>
+          
+          		<div class="col-md-6 form-horizontal">
+          
+          			<div class="form-group">
+          				<label class="col-md-4 control-label">啟用狀態</label>
+          				<div class="col-md-8">
+          					<label class="radio-inline">
+          						<input type="radio" value="" name="EnableRadios" checked="">啟用</label>
+          					<label class="radio-inline">
+          						<input type="radio" value="" name="EnableRadios">停用</label>
+          				</div>
+          			</div>
+          			<div class="form-group">
+          				<label for="" class="col-md-4 control-label">Email</label>
+          				<div class="col-md-8">
+          					<input type="email" class="form-control" placeholder="">
+          				</div>
+          			</div>
+          			<div class="form-group">
+          				<label for="" class="col-md-4 control-label">密碼</label>
+          				<div class="col-md-8">
+          					<input type="password" class="form-control" placeholder="">
+          				</div>
+          			</div>
+          			<div class="form-group">
+          				<label for="" class="col-md-4 control-label">姓名</label>
+          				<div class="col-sm-8">
+          					<input type="text" class="form-control" placeholder="">
+          				</div>
+          			</div>
+          			<div class="form-group">
+          				<label for="" class="col-md-4 control-label">聯絡電話</label>
+          				<div class="col-md-8">
+          					<input type="text" class="form-control" placeholder="">
+          				</div>
+          			</div>
+          			<div class="form-group">
+          				<label for="" class="col-md-4 control-label">隸屬主管</label>
+          				<div class="col-md-8">
+          					<input type="text" class="form-control" placeholder="">
+          				</div>
+          			</div>
+          		
+          		</div>
+          	</div>
+          	<hr>
+          	<div class="row form-horizontal">
+          		<div class="form-group">
+          			<label class="col-md-2 control-label">所屬服務員</label>
+          			<div class="col-md-10">
+          				<div class="checkbox">
+          					<label>
+          						<input type="checkbox" value=""> 全選</label>
+          				</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          			</div>
+          		</div>
+          		<div class="form-group">
+          			<label class="col-md-2 control-label">服務個案</label>
+          			<div class="col-md-10">
+          				<div class="checkbox">
+          					<label>
+          						<input type="checkbox" value=""> 全選</label>
+          				</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          					<div class="col-md-2"
+          						<label class="checkbox-inline">
+          							<input type="checkbox" value=""> 張某某</label>
+          					</div>
+          				
+          			</div>
+          		</div>
+          		<div class="form-group">
+          			<label class="col-md-2 control-label">身分別(一)</label>
+          			<div class="col-md-3">
+          				<select class="form-control">
+          					<option value=""></option>
+          					<option value="">一般民眾</option>
+          					<option value="">原住民</option>
+          					<option value="">低收入戶</option>
+          					<option value="">其他</option>
+          				</select>
+          			</div>
+          		</div>
+          		<div class="form-group">
+          			<label class="col-md-2 control-label">身分別(二)</label>
+          			<div class="col-md-3">
+          				<select class="form-control">
+          					<option value=""></option>
+          					<option value="">中高齡</option>
+          					<option value="">非中高齡</option>
+          				</select>
+          			</div>
+          		</div>
+          	</div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="js/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap/js/bootstrap.min" type="text/javascript"></script>
+    <script src="js/vendor/jquery.validation/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery.validation/additional-methods.min.js" type="text/javascript"></script>
+  </body>
+</html>
