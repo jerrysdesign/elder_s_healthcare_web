@@ -19,6 +19,6 @@ templates/project/source/fire_app_log.txt
 
 #fire.app complier
 templates/project/source/.sass-cache/
-templates/project/source/stylesheets/
+templates/project/source/styles/
 templates/project/source/.coffeescript-cache/
-templates/project/source/javascripts
+templates/project/source/js/
