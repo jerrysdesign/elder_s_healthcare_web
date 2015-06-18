@@ -16,11 +16,12 @@
   └── project/                      # 
     └── source/                     # 
       ├── fonts/                    # font
-      ├── vendor/                   # 第三方資源
-      │ └── jquery/                 # jquery
-      │   ├── jquery.js             # 
-      │   ├── jquery.min.js         # 
-      │   └── jquery.min.map        # 
+      ├── js/                   		# js
+	    │ └── vendor/                   # 第三方資源
+	    │   └── jquery/                 # jquery
+	    │     ├── jquery.js             # 
+	    │     ├── jquery.min.js         # 
+	    │     └── jquery.min.map        # 
       ├── sass/                     # SASS
       │ ├── all.scss                # 集合全部樣式
       │ ├── page/                   # page style
