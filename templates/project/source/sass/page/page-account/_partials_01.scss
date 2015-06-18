@@ -1,7 +1,6 @@
 .tab-page-wrapper {
 	margin: 0 -40px;
 	padding: 20px 40px 0;
-	background-color: $secondary;
 	@include border-radius(0);
 	.tab-page {
 		border-bottom: 0 solid $secondary;
@@ -15,5 +14,11 @@
 				color: #555;
 			}
 		}
+	}
+	&.bg-primary {
+		background-color: $primary;
+	}
+	&.bg-secondary {
+		background-color: $secondary;
 	}
 }
