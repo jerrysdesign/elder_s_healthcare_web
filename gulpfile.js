@@ -15,7 +15,7 @@ var config = {
 
 var vendor = {
 	source : {
-		bootstrapsass	: config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
+		bootstrapsass	: config.vendor + '/bootstrap-sass/assets/styles/**/*',
 		bootstrap			: config.vendor + '/bootstrap/dist/**/*',
 		jquery				: config.vendor + '/jquery/dist/**/*',
 		// font:
@@ -35,9 +35,9 @@ var vendor = {
 		iconfont 			: config.project + '/fonts',
 		iconfontsass	: config.project + '/sass/vendor/fontawesome',
 		bootstrapsass	: config.project + '/sass/vendor/bootstrap-sass',
-		bootstrap			: config.project + '/vendor/bootstrap/',
-		jquery				: config.project + '/vendor/jquery',
-		jQueryValidate: config.project + '/vendor/jquery.validation'
+		bootstrap			: config.project + '/js/vendor/bootstrap/',
+		jquery				: config.project + '/js/vendor/jquery',
+		jQueryValidate: config.project + '/js/vendor/jquery.validation'
 	}
 }
 
@@ -64,15 +64,15 @@ gulp.task('vendor', function() {
 	gulp.src(vendor.source.jQueryValidate) 
 		.pipe(gulp.dest(vendor.dist.jQueryValidate))
 		; 
-	gulp.src('./templates/project/source/stylesheets/vendor/fontawesome/font-awesome.css' ) 
-		.pipe(gulp.dest('./templates/project/source/stylesheets/'))
+	gulp.src('./templates/project/source/styles/vendor/fontawesome/font-awesome.css' ) 
+		.pipe(gulp.dest('./templates/project/source/styles/'))
 		; 
 });
 
 gulp.task('clean', function() {  
   return gulp.src([
   	vendor.dist.iconfontsass + '/font-awesome.scss',
-  	config.project + '/stylesheets/vendor/'
+  	config.project + '/styles/vendor/'
   	], {read: false})
     .pipe(clean())
     ;
