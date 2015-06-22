@@ -1,3 +1,52 @@
+@mixin btn-shadow($color)
+	+gradient-vertical-three-colors(lighten($color, 6%), $color, 60%, darken($color, 4%))
+	+box-shadow(rgba(black, 0.15) 0 2px 3px, rgba(black, 0.2) 0 1px 1px)
+	filter: none
+
+@mixin btn-shadow-inverse($color)
+	+gradient-vertical-three-colors(darken($color, 14%), darken($color, 8%), 40%, darken($color, 4%))
+	filter: none
+
+.btn,
+.btn:hover
+	border-color: rgba(0, 0, 0, 0.1)
+.btn:hover
+	box-shadow: none
+
+.btn-default
+	+btn-shadow($btn-default-bg)
+	&:hover
+		+btn-shadow-inverse($btn-default-bg)
+
+.btn-primary
+	+btn-shadow($btn-primary-bg)
+	&:hover
+		+btn-shadow-inverse($btn-primary-bg)
+
+.btn-success
+	+btn-shadow($btn-success-bg)
+	&:hover
+		+btn-shadow-inverse($btn-success-bg)
+
+.btn-info
+	+btn-shadow($btn-info-bg)
+	&:hover
+		+btn-shadow-inverse($btn-info-bg)
+
+.btn-warning
+	+btn-shadow($btn-warning-bg)
+	&:hover
+		+btn-shadow-inverse($btn-warning-bg)
+
+.btn-danger
+	+btn-shadow($btn-danger-bg)
+	&:hover
+		+btn-shadow-inverse($btn-danger-bg)
+	
+.btn-link,
+.btn-link:hover
+	border-color: transparent
+
 .login-input
 	+border-radius(20px)
 	@extend .text-centered

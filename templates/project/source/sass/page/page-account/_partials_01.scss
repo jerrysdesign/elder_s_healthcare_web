@@ -1,4 +1,7 @@
+$tab-page-wrapper-height: 65px;
+
 .tab-page-wrapper {
+	height: $tab-page-wrapper-height;
 	margin: 0 -40px;
 	padding: 20px 40px 0;
 	@include border-radius(0);
