@@ -22,3 +22,15 @@ templates/project/source/.sass-cache/
 templates/project/source/stylesheets/
 templates/project/source/.coffeescript-cache/
 templates/project/source/javascripts
+
+
+
+#branch html-temp
+templates/
+bower.json
+build/
+gulp.js
+package.json
+
+
+
