@@ -1,0 +1,8 @@
+.setting_item {
+	border-bottom: 1px solid lighten($table-border-color, 5%);
+	@include pie-clearfix;
+	padding: $table-cell-padding;
+}
+.setting_item-log {
+	border-bottom: none;
+}
