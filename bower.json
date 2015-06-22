@@ -13,11 +13,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.4",
+    "bootstrap-sass": "=3.3.4",
     "fontawesome": "^4.3.0"
   },
   "devDependencies": {
     "jquery-validation": "^1.13.1",
-    "bootstrap": "^3.3.4"
+    "bootstrap": "=3.3.4"
   }
 }
