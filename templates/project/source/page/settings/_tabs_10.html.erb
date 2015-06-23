@@ -1,4 +1,3 @@
-
 <div class="row top-buffer">
     <div class="col-md-6 text-left">
         <ol class="breadcrumb">
@@ -14,7 +13,52 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
+    <form class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h3>服務未遇</h3>
+            </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled">
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <label for="" class="form-group">服務未遇</label>
+                </div>
+                <div class="col-md-3">
+                    <label for="" class="form-group">順位</label>
+                </div>
+            </li>
+            <% for i in 1..4 do %>
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                    <a href="javascript:;"><i class="fa fa-2x fa-minus-circle text-danger"></i></a>
+                </div> 
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="" placeholder="系統帶預設值">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="" placeholder="<%= i %>">
+                </div>
+            </li>
+            <% end %>
+            <li class="setting_item setting_item-log">
+                <div class="col-md-12">
+                    <a href="javascript:;" class="text-success"><i class="fa fa-2x fa-plus-circle"></i> 新增項目</a>
+                </div>
+            </li>
+            <li class="setting_item setting_item-log has-success">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="" placeholder="輕輸入項目名稱">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-success btn-block" id="">新增</button>
+                </div>
+            </li>
+        </ul>
+    </form>
 </div>
-
