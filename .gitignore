@@ -6,7 +6,9 @@ bower_components/
 
 # bower Vendor
 templates/project/source/sass/vendor/
-templates/project/source/vendor/
+	#templates/project/source/js/vendor/bootstrap-sass/
+	#templates/project/source/js/vendor/fontawesome/
+templates/project/source/js/vendor/
 templates/project/source/fonts/FontAwesome.otf
 templates/project/source/fonts/fontawesome-webfont.eot
 templates/project/source/fonts/fontawesome-webfont.svg

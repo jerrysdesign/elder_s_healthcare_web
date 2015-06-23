@@ -16,7 +16,9 @@ var config = {
 var vendor = {
   source : {
     bootstrapsass : config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
-    bootstrap     : config.vendor + '/bootstrap/dist/**/*',
+    bootstrapjs   : config.vendor + '/bootstrap/dist/js/**/*',
+    bootstrapcss  : config.vendor + '/bootstrap/dist/css/**/*',
+    bootstrapfont : config.vendor + '/bootstrap/dist/fonts/**/*',
     jquery        : config.vendor + '/jquery/dist/**/*',
     // font:
     // [
@@ -29,14 +31,16 @@ var vendor = {
     // ],
     iconfont      : config.vendor + '/fontawesome/fonts/**.*',
     iconfontsass  : config.vendor + '/fontawesome/scss/**.*',
-    jQueryValidate: config.vendor + '/jquery.validation/dist/**.*'
+    jQueryValidate: config.vendor + '/jquery-validation/dist/**.*'
   },
   dist : {
+    bootstrapsass : config.project + '/sass/vendor/bootstrap-sass',
+    bootstrapjs   : config.project + '/js/vendor/bootstrap/js',
+    bootstrapcss  : config.project + '/styles/vendor/bootstrap/css',
+    bootstrapfont : config.project + '/styles/vendor/bootstrap/fonts',
+    jquery        : config.project + '/js/vendor/jquery',
     iconfont      : config.project + '/fonts',
     iconfontsass  : config.project + '/sass/vendor/fontawesome',
-    bootstrapsass : config.project + '/sass/vendor/bootstrap-sass',
-    bootstrap     : config.project + '/js/vendor/bootstrap/',
-    jquery        : config.project + '/js/vendor/jquery',
     jQueryValidate: config.project + '/js/vendor/jquery.validation'
   }
 }
@@ -49,8 +53,14 @@ gulp.task('vendor', function() {
   gulp.src(vendor.source.bootstrapsass)
     .pipe(gulp.dest(vendor.dist.bootstrapsass))
     ;
-  gulp.src(vendor.source.bootstrap)
-    .pipe(gulp.dest(vendor.dist.bootstrap))
+  gulp.src(vendor.source.bootstrapjs)
+    .pipe(gulp.dest(vendor.dist.bootstrapjs))
+    ;
+  gulp.src(vendor.source.bootstrapjs)
+    .pipe(gulp.dest(vendor.dist.bootstrapjs))
+    ;
+  gulp.src(vendor.source.bootstrapcss)
+    .pipe(gulp.dest(vendor.dist.bootstrapcss))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
