@@ -1,161 +1,73 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <title>未命名頁面</title>
-        <link href="stylesheets/all.css" media="screen" rel="stylesheet"
-        type="text/css">
-        <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet"
-        type="text/css">
-        <!--[if IE]>
-            <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css">
-        <![endif]-->
-        <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <meta content="未命名頁面" property="og:title">
-        <meta content="未命名網站" property="og:site_name">
-        <meta content="http://localhost:3000" property="og:url">
-        <meta content="http://localhost:3000/fb.png" property="og:image">
-        <meta content="尚未填寫敘述" property="og:description">
-        <meta content="website" property="og:type">
-        <meta content="123456" property="fb:admins">
-        <style>
-            .bs-example-modal .modal {
-                                                                                                        position: relative;
-                                                                                                        top: auto;
-                                                                                                        right: auto;
-                                                                                                        bottom: auto;
-                                                                                                        left: auto;
-                                                                                                        z-index: 1;
-                                                                                                        display: block;
-                                                                                                      }
-        </style>
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top header">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img alt="雙連安養中心" src="http://placehold.it/72x72"></a>
+
+<div class="bs-example-modal">
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">服務未遇備註</h4>
                 </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 sidebar">
-                    <ul class="nav nav-sidebar">
-                        <li>
-                            <a href="#"><i class="fa fa-lg fa-desktop"></i>平台管理</a>
-                        </li>
-                        <li class="active">
-                            <a href="#"><i class="fa fa-lg fa-bullseye"></i>任務管理</a>
-                            <ul class="nav nav-sidebar-sub">
-                                <li>
-                                    <a href="#">行事曆</a>
-                                </li>
-                                <li>
-                                    <a href="#">新增事件</a>
-                                </li>
-                                <li>
-                                    <a href="#">任務列表</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-lg fa-trophy"></i>成果管理</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-lg fa-money"></i>費用管理</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-lg fa-shopping-cart"></i>耗材管理</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-lg fa-comment-o"></i>訊息管理</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-10 col-md-offset-2 main>">
-                    <div class="bs-example-modal">
-                        <div class="modal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">服務未遇備註</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <label class="col-md-2">長照案號</label>
-                                            <div class="col-md-10">SL12345678</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">個案姓名</label>
-                                            <div class="col-md-10">王爺爺</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">個案電話</label>
-                                            <div class="col-md-10">0912345678</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">緊急聯絡</label>
-                                            <div class="col-md-10">王先生</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">聯絡電話</label>
-                                            <div class="col-md-10">0988888888</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">居服人員</label>
-                                            <div class="col-md-10">陳小明</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">事件狀態</label>
-                                            <div class="col-md-10">個案不受服務</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">自付金額</label>
-                                            <div class="col-md-10">0</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">補助金額</label>
-                                            <div class="col-md-10">200</div>
-                                        </div>
-                                        <div class="row">
-                                            <label class="col-md-2">結論備註</label>
-                                            <div class="col-md-10">
-                                                <textarea class="form-control" rows="3">第一次發生服務未遇，案家不用收錢，但是安養中心需支付交通費30元給居服員。</textarea>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div class="row">
-                                                <div class="col-md-6 text-left">
-                                                    <a class="btn btn-default">刪除備註</a>
-                                                </div>
-                                                <div class="col-md-6 text-right">
-                                                    <a class="btn btn-primary">確定</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 text-left">請問是否刪除備註?</div>
-                                                <div class="col-md-6 text-right">
-                                                    <a class="btn btn-default">取消</a>
-                                                    <a class="btn btn-primary">刪除</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-md-2">長照案號</label>
+                        <div class="col-md-10">SL12345678</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">個案姓名</label>
+                        <div class="col-md-10">王爺爺</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">個案電話</label>
+                        <div class="col-md-10">0912345678</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">緊急聯絡</label>
+                        <div class="col-md-10">王先生</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">聯絡電話</label>
+                        <div class="col-md-10">0988888888</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">居服人員</label>
+                        <div class="col-md-10">陳小明</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">事件狀態</label>
+                        <div class="col-md-10">個案不受服務</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">自付金額</label>
+                        <div class="col-md-10">0</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">補助金額</label>
+                        <div class="col-md-10">200</div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">結論備註</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" rows="3">第一次發生服務未遇，案家不用收錢，但是安養中心需支付交通費30元給居服員。</textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <a class="btn btn-default">刪除備註</a>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <a class="btn btn-primary">確定</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-left">請問是否刪除備註?</div>
+                            <div class="col-md-6 text-right">
+                                <a class="btn btn-default">取消</a>
+                                <a class="btn btn-primary">刪除</a>
                             </div>
                         </div>
                     </div>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-                    type="text/javascript"></script>
-                    <script src="javascripts/all.js" type="text/javascript"></script>
                 </div>
             </div>
         </div>
-    </body>
-
-</html>
+    </div>
+</div>
