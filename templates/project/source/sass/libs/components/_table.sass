@@ -4,10 +4,14 @@
 	$color-border-td: rgba(0,0,0,.03)
 	+border-radius(4px)
 	+box-shadow(rgba(black, 0.05) 0 0 10px)
-	white-space: pre
 	thead
 		background-color: $black-5
 		border: 1px solid $color-border-th
+		th
+			white-space: pre
+			& + th
+				border-left: 1px solid $color-border-td
+
 	tbody
 		border: 1px solid $color-border-tb
 		background-color white

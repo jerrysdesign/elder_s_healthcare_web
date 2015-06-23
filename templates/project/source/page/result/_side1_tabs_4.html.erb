@@ -1,41 +1,26 @@
-
-<div class="row">
-    <ul class="nav nav-tabs">
-        <li class="active">
-            <a href="#">個案成果</a>
-        </li>
-        <li>
-            <a href="#">投入成果</a>
-        </li>
-        <li>
-            <a href="#">收入區別</a>
-        </li>
-        <li>
-            <a href="#">障礙等級</a>
-        </li>
-    </ul>
-</div>
-<br>
-<form class="form-inline" role="form">
-    <div class="form-group col-md-12">
-        <div>時間區間
-            <input type="date" class="form-control" placeholder="">~
-            <input type="date" class="form-control" placeholder="">
-            <select class="form-control">
-                <option>新制</option>
-                <option>舊制</option>
-            </select>
-            <button class="btn btn-default">查詢
-                <i class="fa fa-search fa-fw"></i>
-            </button>
-            <button class="btn btn-primary pull-right">
-                <i class="fa fa-fw fa-table"></i>匯出 excel</button>
-        </div>
-        <br>
+<div class="row top-buffer">
+    <div class="col-md-8">
+        <form class="form-inline" role="form">
+            <div class="form-group"> 時間區間 
+                <input type="date" class="form-control" placeholder=""> ~ 
+                <input type="date" class="form-control" placeholder="">
+                <select class="form-control">
+                    <option>新制</option>
+                    <option>舊制</option>
+                </select>
+                <button class="btn btn-default">查詢
+                    <i class="fa fa-search fa-fw"></i>
+                </button>
+            </div>
+        </form>
     </div>
-    <br>
-    <br>
-    <table class="table table-bordered table-condensed">
+    <div class="col-md-4 text-right">
+        <button class="btn btn-primary pull-right"><i class="fa fa-fw fa-table"></i>匯出 excel</button>
+    </div>
+</div>
+<hr>
+<div class="row top-buffer">
+    <table class="table align-middle-table custom-table-01 reset-list-style">
         <thead>
             <tr>
                 <th>障礙等級及區別</th>
@@ -258,5 +243,5 @@
             </tr>
         </tbody>
     </table>
-</form>
+
 

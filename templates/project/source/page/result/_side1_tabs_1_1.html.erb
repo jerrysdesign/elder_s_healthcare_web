@@ -1,134 +1,110 @@
-
-<div class="row">
-    <ul class="nav nav-tabs">
-        <li class="active">
-            <a href="#">個案成果</a>
-        </li>
-        <li>
-            <a href="#">投入成果</a>
-        </li>
-        <li>
-            <a href="#">收入區別</a>
-        </li>
-        <li>
-            <a href="#">障礙等級</a>
-        </li>
-    </ul>
+<div class="row top-buffer">
+    <div class="col-md-8">
+        <form class="form-inline" role="form">
+            <div class="form-group">時間區間
+                <input type="date" class="form-control" placeholder="">~
+                <input type="date" class="form-control" placeholder="">
+                <select class="form-control">
+                    <option>新制</option>
+                    <option>舊制</option>
+                </select>
+                <button class="btn btn-default">查詢
+                    <i class="fa fa-search fa-fw"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4 text-right">
+        <button class="btn btn-primary pull-right"><i class="fa fa-fw fa-table"></i>匯出 excel</button>
+    </div>
 </div>
-<br>
-<form class="form-inline" role="form">
-    <div class="form-group col-md-12">
-        <div>時間區間
-            <input type="date" class="form-control" placeholder="">~
-            <input type="date" class="form-control" placeholder="">
-            <select class="form-control">
-                <option>新制</option>
-                <option>舊制</option>
-            </select>
-            <button class="btn btn-default">查詢
-                <i class="fa fa-search fa-fw"></i>
-            </button>
-            <button class="btn btn-primary pull-right">
-                <i class="fa fa-fw fa-table"></i>匯出 excel</button>
-        </div>
-        <br>
-    </div>
-    <br>
-    <br>
-    <div style="overflow: auto; width: 4000px; height: 2000px; border: 1px solid silver;">
-        <div>
-            <table class="table table-bordered table-condensed table-hover text-center text-align">
-                <thead>
-                    <tr>
-                        <th rowspan="2">序號</th>
-                        <th rowspan="2">案號</th>
-                        <th rowspan="2">長照案號</th>
-                        <th rowspan="2">姓名</th>
-                        <th rowspan="2">服務員</th>
-                        <th rowspan="2">督導員</th>
-                        <th rowspan="2">性別</th>
-                        <th rowspan="2">生日</th>
-                        <th rowspan="2">年齡</th>
-                        <th colspan="3">現居地址</th>
-                        <th rowspan="2">宗教信仰</th>
-                        <th rowspan="2">教育程度</th>
-                        <th rowspan="2">婚姻狀況</th>
-                        <th rowspan="2">慣用語言</th>
-                        <th colspan="3">身份別</th>
-                        <th rowspan="2">居住狀況</th>
-                        <th rowspan="2">身心障礙手冊</th>
-                        <th rowspan="2">障別</th>
-                        <th rowspan="2">障礙等級</th>
-                        <th rowspan="2">失能狀況</th>
-                        <th rowspan="2">經濟來源</th>
-                        <th rowspan="2">核定時數</th>
-                        <th rowspan="2">(政府)
-                            <br>補助比例</th>
-                        <th rowspan="2">補助額度</th>
-                        <th rowspan="2">費用
-                            <br>總價 : 服務需求時數 x 200元
-                            <br>補助 : 總價 x 補助比例
-                            <br>自費 : 總價 - 補助</th>
-                        <th rowspan="2">開始提供
-                            <br>服務日期</th>
-                        <th rowspan="2">重新鑑定日期</th>
-                        <th rowspan="2">服務人次</th>
-                        <th rowspan="2">補助時數</th>
-                        <th rowspan="2">自費時數</th>
-                        <th rowspan="2">國定假日時數</th>
-                        <th rowspan="2">備註 ( 編輯 )</th>
-                    </tr>
-                    <tr>
-                        <th>區別</th>
-                        <th>里別</th>
-                        <th>地址</th>
-                        <th>(1)</th>
-                        <th>(2)</th>
-                        <th>(3)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>雙011</td>
-                        <td>淡011</td>
-                        <td>蕭</td>
-                        <td>王小明
-                            <br>王中明</td>
-                        <td>陳督導</td>
-                        <td>男</td>
-                        <td>30.11.20</td>
-                        <td>68</td>
-                        <td>淡水</td>
-                        <td>新春街</td>
-                        <td>104之4號3樓(加州社區大廈)</td>
-                        <td>道教</td>
-                        <td>不識字</td>
-                        <td>未婚</td>
-                        <td>國語</td>
-                        <td>一般戶</td>
-                        <td>榮民、榮眷</td>
-                        <td>長十</td>
-                        <td>獨居</td>
-                        <td>無</td>
-                        <td>一般身心障礙</td>
-                        <td>極重度</td>
-                        <td>極重度</td>
-                        <td>子女奉養10000元/月</td>
-                        <td>50小時/月</td>
-                        <td>100%</td>
-                        <td></td>
-                        <td>每月總價6,000元，政府補助6000元，自費0元</td>
-                        <td>102.08.03</td>
-                        <td>102.08.03</td>
-                        <td>13</td>
-                        <td>29</td>
-                        <td>0.5</td>
-                        <td></td>
-                        <td>於104.02.06發文變更其身分別為長十、中低收1.5倍，補助額度及時數變更，並追溯至104年01月</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</form>
+<hr>
+<div class="row top-buffer">
+    <table class="table align-middle-table custom-table-01 reset-list-style">
+        <thead>
+            <tr>
+                <th rowspan="2">序號</th>
+                <th rowspan="2">案號</th>
+                <th rowspan="2">長照案號</th>
+                <th rowspan="2">姓名</th>
+                <th rowspan="2">服務員</th>
+                <th rowspan="2">督導員</th>
+                <th rowspan="2">性別</th>
+                <th rowspan="2">生日</th>
+                <th rowspan="2">年齡</th>
+                <th colspan="3">現居地址</th>
+                <th rowspan="2">宗教信仰</th>
+                <th rowspan="2">教育程度</th>
+                <th rowspan="2">婚姻狀況</th>
+                <th rowspan="2">慣用語言</th>
+                <th colspan="3">身份別</th>
+                <th rowspan="2">居住狀況</th>
+                <th rowspan="2">身心障礙手冊</th>
+                <th rowspan="2">障別</th>
+                <th rowspan="2">障礙等級</th>
+                <th rowspan="2">失能狀況</th>
+                <th rowspan="2">經濟來源</th>
+                <th rowspan="2">核定時數</th>
+                <th rowspan="2">(政府)<br>補助比例</th>
+                <th rowspan="2">補助額度</th>
+                <th rowspan="2">費用<br>總價 : 服務需求時數 x 200元<br>補助 : 總價 x 補助比例<br>自費 : 總價 - 補助</th>
+                <th rowspan="2">開始提供<br>服務日期</th>
+                <th rowspan="2">重新鑑定日期</th>
+                <th rowspan="2">服務人次</th>
+                <th rowspan="2">補助時數</th>
+                <th rowspan="2">自費時數</th>
+                <th rowspan="2">國定假日時數</th>
+                <th rowspan="2">備註 ( 編輯 )</th>
+            </tr>
+            <tr>
+                <th>區別</th>
+                <th>里別</th>
+                <th>地址</th>
+                <th>(1)</th>
+                <th>(2)</th>
+                <th>(3)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>雙011</td>
+                <td>淡011</td>
+                <td>蕭</td>
+                <td>王小明
+                    <br>王中明</td>
+                <td>陳督導</td>
+                <td>男</td>
+                <td>30.11.20</td>
+                <td>68</td>
+                <td>淡水</td>
+                <td>新春街</td>
+                <td>104之4號3樓(加州社區大廈)</td>
+                <td>道教</td>
+                <td>不識字</td>
+                <td>未婚</td>
+                <td>國語</td>
+                <td>一般戶</td>
+                <td>榮民、榮眷</td>
+                <td>長十</td>
+                <td>獨居</td>
+                <td>無</td>
+                <td>一般身心障礙</td>
+                <td>極重度</td>
+                <td>極重度</td>
+                <td>子女奉養10000元/月</td>
+                <td>50小時/月</td>
+                <td>100%</td>
+                <td></td>
+                <td>每月總價6,000元，政府補助6000元，自費0元</td>
+                <td>102.08.03</td>
+                <td>102.08.03</td>
+                <td>13</td>
+                <td>29</td>
+                <td>0.5</td>
+                <td></td>
+                <td>於104.02.06發文變更其身分別為長十、中低收1.5倍，補助額度及時數變更，並追溯至104年01月</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
