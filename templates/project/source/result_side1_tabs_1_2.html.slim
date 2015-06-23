@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>未命名頁面</title>
+        <link href="stylesheets/all.css" media="screen" rel="stylesheet"
+        type="text/css">
+        <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet"
+        type="text/css">
+        <!--[if IE]>
+            <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css">
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <meta content="未命名頁面" property="og:title">
+        <meta content="未命名網站" property="og:site_name">
+        <meta content="http://localhost:3000" property="og:url">
+        <meta content="http://localhost:3000/fb.png" property="og:image">
+        <meta content="尚未填寫敘述" property="og:description">
+        <meta content="website" property="og:type">
+        <meta content="123456" property="fb:admins">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top header">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img alt="雙連安養中心" src="http://placehold.it/72x72"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li>
+                            <a href="#"><i class="fa fa-lg fa-desktop"></i>平台管理</a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-lg fa-bullseye"></i>任務管理</a>
+                            <ul class="nav nav-sidebar-sub">
+                                <li>
+                                    <a href="#">行事曆</a>
+                                </li>
+                                <li>
+                                    <a href="#">新增事件</a>
+                                </li>
+                                <li>
+                                    <a href="#">任務列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lg fa-trophy"></i>成果管理</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lg fa-money"></i>費用管理</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lg fa-shopping-cart"></i>耗材管理</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lg fa-comment-o"></i>訊息管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-md-offset-2 main">
+                    <div class="row">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">個案成果</a>
+                            </li>
+                            <li>
+                                <a href="#">投入成果</a>
+                            </li>
+                            <li>
+                                <a href="#">收入區別</a>
+                            </li>
+                            <li>
+                                <a href="#">障礙等級</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <form class="form-inline" role="form">
+                        <div class="form-group col-md-12">
+                            <div>時間區間
+                                <input type="date" class="form-control" placeholder="">~
+                                <input type="date" class="form-control" placeholder="">
+                                <select class="form-control">
+                                    <option>新制</option>
+                                    <option>舊制</option>
+                                </select>
+                                <button class="btn btn-default">查詢
+                                    <i class="fa fa-search fa-fw"></i>
+                                </button>
+                                <button class="btn btn-primary pull-right">
+                                    <i class="fa fa-fw fa-table"></i>匯出 excel</button>
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        <div style="overflow: auto; width: 4000px; height: 2000px; border: 1px solid silver;">
+                            <table class="table table-bordered table-condensed table-hover text-center text-align">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">序號</th>
+                                        <th rowspan="2">案號</th>
+                                        <th rowspan="2">長照案號</th>
+                                        <th rowspan="2">姓名</th>
+                                        <th rowspan="2">服務員</th>
+                                        <th rowspan="2">督導員</th>
+                                        <th rowspan="2">性別</th>
+                                        <th rowspan="2">生日</th>
+                                        <th rowspan="2">年齡</th>
+                                        <th colspan="3">現居地址</th>
+                                        <th rowspan="2">宗教信仰</th>
+                                        <th rowspan="2">教育程度</th>
+                                        <th rowspan="2">婚姻狀況</th>
+                                        <th rowspan="2">慣用語言</th>
+                                        <th colspan="3">身份別</th>
+                                        <th rowspan="2">居住狀況</th>
+                                        <th rowspan="2">身心障礙手冊</th>
+                                        <th rowspan="2">障別</th>
+                                        <th rowspan="2">障礙等級</th>
+                                        <th rowspan="2">失能狀況</th>
+                                        <th rowspan="2">經濟來源</th>
+                                        <th rowspan="2">核定時數</th>
+                                        <th rowspan="2">(政府)
+                                            <br>補助比例</th>
+                                        <th rowspan="2">補助額度</th>
+                                        <th rowspan="2">費用
+                                            <br>總價 : 服務需求時數 x 200元
+                                            <br>補助 : 總價 x 補助比例
+                                            <br>自費 : 總價 - 補助</th>
+                                        <th rowspan="2">開始提供
+                                            <br>服務日期</th>
+                                        <th rowspan="2">重新鑑定日期</th>
+                                        <th rowspan="2">服務人次</th>
+                                        <th rowspan="2">補助時數</th>
+                                        <th rowspan="2">自費時數</th>
+                                        <th rowspan="2">國定假日時數</th>
+                                        <th rowspan="2">備註 ( 編輯 )</th>
+                                    </tr>
+                                    <tr>
+                                        <th>區別</th>
+                                        <th>里別</th>
+                                        <th>地址</th>
+                                        <th>(1)</th>
+                                        <th>(2)</th>
+                                        <th>(3)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4">1</td>
+                                        <td rowspan="4">雙011</td>
+                                        <td rowspan="4">淡011</td>
+                                        <td rowspan="4">蕭</td>
+                                        <td rowspan="4">王小明
+                                            <br>王中明</td>
+                                        <td rowspan="4">陳督導</td>
+                                        <td rowspan="4">男</td>
+                                        <td rowspan="4">30.11.20</td>
+                                        <td rowspan="4">68</td>
+                                        <td rowspan="4">淡水</td>
+                                        <td rowspan="4">新春街</td>
+                                        <td rowspan="4">104之4號3樓(加州社區大廈)</td>
+                                        <td rowspan="4">道教</td>
+                                        <td rowspan="4">不識字</td>
+                                        <td rowspan="4">未婚</td>
+                                        <td rowspan="4">國語</td>
+                                        <td rowspan="4">一般戶</td>
+                                        <td rowspan="4">榮民、榮眷</td>
+                                        <td rowspan="4">長十</td>
+                                        <td rowspan="4">&gt;獨居</td>
+                                        <td rowspan="4">無</td>
+                                        <td rowspan="4">一般身心障礙</td>
+                                        <td rowspan="4">極重度</td>
+                                        <td rowspan="4">極重度</td>
+                                        <td rowspan="4">子女奉養10000元/月</td>
+                                        <td rowspan="4">50小時/月</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100%</td>
+                                        <td>10小時</td>
+                                        <td rowspan="4">每月總價6,000元，政府補助6000元，自費0元</td>
+                                        <td rowspan="4">102.08.03</td>
+                                        <td rowspan="4">102.08.03</td>
+                                        <td rowspan="4">13</td>
+                                        <td rowspan="4">29</td>
+                                        <td rowspan="4">0.5</td>
+                                        <td rowspan="4"></td>
+                                        <td rowspan="4">於104.02.06發文變更其身分別為長十、中低收1.5倍，補助額度及時數變更，並追溯至104年01月 於103年02月起變更福利身分，輔助額度與輔助時數</td>
+                                    </tr>
+                                    <tr>
+                                        <td>70%</td>
+                                        <td>10小時</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50%</td>
+                                        <td>30小時</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+            type="text/javascript"></script>
+            <script src="javascripts/all.js" type="text/javascript"></script>
+        </div>
+    </body>
+
+</html>
