@@ -1,1 +1,11 @@
-== render "page/service/add_task2_d"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav4"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "page/service/add_task2_d"
