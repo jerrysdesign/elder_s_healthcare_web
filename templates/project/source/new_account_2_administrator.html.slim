@@ -1,2 +1,12 @@
-== render "layout/page_tab_wrapper--primary"
-== render "page/new_account/2_administrator.html.erb"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav2"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "layout/page_tab_wrapper--primary"
+		== render "page/new_account/2_administrator.html.erb"
