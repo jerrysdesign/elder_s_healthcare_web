@@ -1,3 +1,12 @@
-== render :partial => "layout/page_tab" , :locals => {:f => "menu4"}
-/ == render "layout/page_tab"
-== render "page/account_lists/4_supervisor.html.erb"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav2"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render :partial => "layout/page_tab" , :locals => {:f => "menu4"}
+		== render "page/account_lists/4_supervisor.html.erb"

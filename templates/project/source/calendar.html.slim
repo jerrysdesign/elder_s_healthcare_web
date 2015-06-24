@@ -1,1 +1,11 @@
-== render "page/calendar/calendar.html.erb"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav3"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "page/calendar/calendar.html.erb"

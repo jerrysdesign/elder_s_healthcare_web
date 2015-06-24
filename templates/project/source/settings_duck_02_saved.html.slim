@@ -1,3 +1,13 @@
-== render "layout/page_tab_wrapper"
-== render "page/settings/duck_alert.html.erb"
-== render "page/settings/duck.html.erb"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav1"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "layout/page_tab_wrapper"
+		== render "page/settings/duck_alert.html.erb"
+		== render "page/settings/duck.html.erb"

@@ -1,2 +1,12 @@
-== render :partial => "page/result/nav" , :locals => {:f => "tab1"}
-== render "page/result/side1_search.html.erb"
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav7"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render :partial => "page/result/nav" , :locals => {:f => "tab1"}
+		== render "page/result/side1_search.html.erb"

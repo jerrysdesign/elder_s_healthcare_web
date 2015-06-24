@@ -12,16 +12,8 @@ html lang="zh-TW"
 			//header
 			header
 				= render 'layout/navbar'
-			//main
-			aside
-				.sidebar-wrapper
-					// sidebar
-					.sidebar
-						= render 'layout/sidebar'
-			// main-content
-			section.main
-				.container-fluid
-					= yield
+			= yield
+
 		
 		// DevPath
 		= render "layout_foot"
