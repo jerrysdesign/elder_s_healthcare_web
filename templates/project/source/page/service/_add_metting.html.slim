@@ -1,0 +1,128 @@
+.row
+	.tab-page-wrapper.bg-primary
+		button.btn.btn-default.btn-sm.pull-left type="button" 
+			i.fa.fa-angle-left
+			|  返回
+		button.btn.btn-default.btn-sm.pull-right type="button" 
+			| 確定 
+			i.fa.fa-angle-right
+.row
+	.tab-page-wrapper.bg-info
+		ol.breadcrumb
+			li
+				a href="#"  新增會議
+			li.active 職訓
+.row.add-task
+	.col-md-6
+		.add-task-left-col.js_col-l
+			form.form-horizontal
+				h3
+					small 事件主題
+				.form-group
+					label.col-md-3.control-label 事件標題
+					.col-md-9
+						input.form-control placeholder="" type="text"
+				.form-group
+					label.col-md-3.control-label 服務時數
+					.col-md-9
+						label.radio-inline
+							input type="radio" value=""
+							| 會議
+						label.radio-inline
+							input type="radio" value=""
+							| 職訓
+				hr
+				h3
+					small 事件議題
+				.form-group
+					label.col-md-3.control-label  議題描述
+					.col-md-9
+						input.form-control placeholder="" type="text"
+				hr
+				h3
+					small 時間地點
+				.form-group
+					label.col-md-3.control-label 事件地點
+					.col-md-9
+						input.form-control placeholder="" type="text"
+				.form-group
+					label.col-md-3.control-label 開始時間
+					.col-md-4
+						input.form-control type="text"
+					.col-md-2
+						select.form-control
+							option 08
+					.col-md-1
+						|:
+					.col-md-2
+						select.form-control
+							option 08
+				.form-group
+					label.col-md-3.control-label 結束時間
+					.col-md-4
+						input.form-control type="text"
+					.col-md-2
+						select.form-control
+							option 08
+					.col-md-1
+						|:
+					.col-md-2
+						select.form-control
+							option 08
+				hr
+				h3
+					small 其他備註
+				.form-group
+					label.col-md-3.control-label 內容描述
+					.col-md-9
+						textarea class="form-control" rows="3"
+				
+	.col-md-6
+		.add-task-right-col.js_col-r
+
+			.form-group
+				label.col-md-5.control-label 可參與事件人員列表
+				.col-md-5
+					select.form-control
+						option 全部地區
+			hr
+
+			h3
+				small 單位主管 / 
+				a href="javascript:;"
+					small 全部勾選
+			.form-group
+				- 4.times do
+					.col-md-3
+						.checkbox
+							label.checkbox-inline
+								input type="checkbox"
+								| 主管
+			hr
+			
+			h3
+				small 督導人員 / 
+				a href="javascript:;"
+					small 全部勾選
+			.form-group
+				- 3.times do
+					.checkbox
+						- 4.times do
+							.col-md-3
+								label.checkbox-inline
+									input type="checkbox"
+									| 督導員
+			hr
+			h3
+				small 服務人員 / 
+				a href="javascript:;"
+					small 全部勾選
+			.form-group
+				- 100.times do
+					.checkbox
+						- 4.times do
+							.col-md-3
+								label.checkbox-inline
+									input type="checkbox"
+									| 督導員
+			hr

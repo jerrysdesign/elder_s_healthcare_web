@@ -40,6 +40,8 @@
 	margin-right: -15px;
 	padding-left: 25px;
 	padding-right: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .add-task {
 	margin-right: -55px;
@@ -49,8 +51,6 @@
 		z-index: 1;
 		position: relative;
 		@extend %content-reset;
-		padding-top: 20px;
-		padding-bottom: 20px;
 		@include box-shadow(darken($gray-lighter, 10%) 5px 0 5px,darken($gray-lighter, 10%) 2px 0 2px);
 	}
 	&-right-col {
