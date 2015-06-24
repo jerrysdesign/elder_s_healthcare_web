@@ -1,138 +1,104 @@
+<div class="row">
+    <div class="tab-page-wrapper bg-primary">
+        <button type="button" class="btn btn-default btn-sm pull-left"><i class="fa fa-angle-left"></i> 返回</button>
+        <button type="button" class="btn btn-default btn-sm pull-right">新增會議 / 職訓 <i class="fa fa-angle-right"></i></button>
+    </div>
+</div>
+<div class="row">
+    <div class="tab-page-wrapper bg-info">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label for="" class="control-label" contenteditable="true">查詢條件</label>
+                <input type="text" class="form-control" placeholder="請輸入長照案號, 個案或居服員姓名">
+            </div>
+            <div class="form-group">
+                <label for="" class="control-label" contenteditable="true">查詢區別</label>
+                <select name="" class="form-control">
+                    <option value="" ""="">全部地區</option>
+                    <option value="" "1"="">淡水</option>
+                    <option value="" "1"="">北投</option>
+                    <option value="" "1"="">板橋</option>
+                    <option value="" "1"="">中和</option>
+                </select>   
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default">查詢
+                    <i class="fa fa-search fa-fw"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+        <h3>
+            <a class="btn btn-default">&lt;</a>
+            <small>&nbsp;&nbsp;2015 / 04 &nbsp;&nbsp;</small>
+            <a class="btn btn-default">&gt;</a>
+        </h3>
+    </div>
+</div>
+<hr>
+<ul class="task-card reset-list-style">
+<% 4.times do %>
+    <!--任務列表 item-->
+    <li class="row task-card-item">
+        <div class="col-md-2">
+            <img alt="120" class="img-circle img-thumbnail" src="http://placehold.it/120">
+        </div>
+        <div class="col-md-10">
 
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <br>
-            <div class="col-md-6 text-left">
-                <input class="btn btn-default" type="button" value="返回">
-            </div>
-            <div class="col-md-6 text-right">
-                <input class="btn btn-default" type="button" value="新增會議 / 職訓">
-            </div>
-        </div>
-        <div class="row">
-            <br>
-            <div class="col-md-12">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <div class="col-md-1">
-                            <label for="inputEmail3" class="control-label" contenteditable="true">查詢條件</label>
-                        </div>
-                        <div class=" col-md-4">
-                            <input type="text" class="form-control" placeholder="請輸入長照案號, 個案或居服員姓名">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="inputEmail3" class="control-label" contenteditable="true">查詢區別</label>&nbsp;
-                            <select name="sel0" class="input-md">
-                                <option value="" ""="">全部地區</option>
-                                <option value="" "1"="">淡水</option>
-                                <option value="" "1"="">北投</option>
-                                <option value="" "1"="">板橋</option>
-                                <option value="" "1"="">中和</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button class="btn btn-default">查詢
-                                <i class="fa fa-search fa-fw"></i>
-                            </button>
-                        </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="task-card-item-title">陳祥發</span>
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <br>
-        <div class="col-md-3 col-md-offset-4 text-center">
-            <h3>
-                <a class="btn btn-default">&lt;</a>
-                <small>&nbsp;&nbsp;2015 / 04 &nbsp;&nbsp;</small>
-                <a class="btn btn-default">&gt;</a>
-            </h3>
-        </div>
-    </div>
-</div>
-<div class="section">
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <img src="images\pic01.png" alt="" class="center-block img-responsive img-thumbnail">
-            </div>
-            <div class="col-md-10">
-                <div class="col-md-12">
-                    <div class="col-md-5">
-                        <div class="col-md-5">
-                            <h2>陳祥發</h2>
-                        </div>
-                        <p class="text-center">
-                            <br>
-                            <span class="tags">已用時數</span>
-                            <br>
-                            <strong>20 &nbsp;</strong>/ 50hrs</p>
-                        <hr>
-                        <span class="tags">201504200432</span>
-                        <span class="tags">開案日期:</span>
-                        <span class="tags">20150417</span>
-                        <a class="btn btn-default">編輯</a>
-                        <p></p>
+                    <div class="col-md-8">
+                        <span class="tags">已用時數</span>
+                        <br>
+                        <strong>20 &nbsp;</strong>/ 50hrs
                     </div>
-                    <div class="col-md-5">
-                        <p>
-                            <span class="tags">地區:</span>
-                            <span class="tags">中和</span>&nbsp;&nbsp;
-                            <span class="tags">督導:</span>
-                            <span class="tags">王美麗</span>&nbsp;&nbsp;
-                            <span class="tags">性別:</span>
-                            <span class="tags">男</span>&nbsp;&nbsp;
-                            <span class="tags">年齡:</span>
-                            <span class="tags">72歲</span>&nbsp;</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <p>
-                                    <span class="tags">已派發週期</span>
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-                                <p>
-                                    <span class="tags">一二三五六日</span>&nbsp;&nbsp;</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p>
-                                    <span class="tags">已派發單日</span>
-                                </p>
-                            </div>
-                            <div class="col-md-8">
-                                <p>
-                                    <span class="tags">6、10、11、13、15、16、18、19、21、23、24、25、26、27、28、29</span>&nbsp;&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-md-2 col-md-0 emphasis">
-                        <button class="btn btn-lg btn-primary">
-                            <span class="fa fa-plus-circle"></span>&nbsp;週期派發</button>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="col-md-2 col-md-0 emphasis">
-                        <button class="btn btn-lg btn-warning">
-                            <span class="fa fa-plus-circle"></span>&nbsp;單次派發</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 text-center">
-                        <figure>
-                            <figcaption class="ratings"></figcaption>
-                        </figure>
+                </div>
+                <hr class="space">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="tags-item"><span class="tags-title">編號:</span>201504200432</li>
+                            <li class="tags-item"><span class="tags-title">開案日期:</span>20150417</li>
+                            <li class="tags-item"><a class="btn btn-default btn-xs inline"><i class="fa fa-pencil"></i></a></li>
+                        </ul>
+                        
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-5">
+                <ul class="list-unstyled list-inline">
+                    <li class="tags-item"><span class="tags-title">地區:</span>中和</li>
+                    <li class="tags-item"><span class="tags-title">督導:</span>王美麗</li>
+                    <li class="tags-item"><span class="tags-title">性別:</span>男</li>
+                    <li class="tags-item"><span class="tags-title">年齡:</span>72歲</li>
+                </ul>
+                <hr>
+                <ul class="list-unstyled list-inline">
+                    <li class="tags-item"><span class="tags-title">已派發週期</span>一二三五六日</li>
+                    <li class="tags-item"><span class="tags-title">已派發單日</span>6、10、11、13、15、16、18、19、21、23、24、25、26、27、28、29</li>
+                </ul>
+
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-lg btn-primary btn-task">
+                    <span class="fa fa-plus-circle"></span>&nbsp;週期派發
+                </button>
+
+                <button class="btn btn-lg btn-warning btn-task">
+                    <span class="fa fa-plus-circle"></span>&nbsp;單次派發
+                </button>
+            </div>
+
         </div>
-    </div>
-</div>
-<div class="section">
-    <hr>
-</div>
+    </li>
+<% end %>
+</ul>
+               
