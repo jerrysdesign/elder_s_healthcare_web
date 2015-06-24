@@ -38,13 +38,14 @@
 %content-reset {
 	margin-left: -15px;
 	margin-right: -15px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 .add-task {
 	margin-right: -55px;
 	margin-left: -55px;
 	&-left-col {
+		@include clearfix;
 		z-index: 1;
 		position: relative;
 		@extend %content-reset;
@@ -53,6 +54,7 @@
 		@include box-shadow(darken($gray-lighter, 10%) 5px 0 5px,darken($gray-lighter, 10%) 2px 0 2px);
 	}
 	&-right-col {
+		@include clearfix;
 		z-index: 0;
 		position: relative;
 		@extend %content-reset;
