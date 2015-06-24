@@ -7,12 +7,116 @@
             <li class="active">服務項目</li>
         </ol>
     </div>
-    <div class="col-md-6 text-right top-buffer">
+    <div class="col-md-6 text-right">
         <input class="btn btn-default" type="button" value="取消">
-        <input class="btn btn-default" type="submit" value="送出">
+        <input class="btn btn-default" type="submit" value="儲存">
     </div>
 </div>
 <div class="row">
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
+    <div class="form-group col-md-8 col-md-offset-2">
+        <ul class="list-unstyled">
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                    <label class="form-group"></label>
+                </div> 
+                <div class="col-md-8">
+                    <label class="form-group">服務類別</label>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-group">順位</label>
+                </div>
+            </li>
+            <% for i in 1..2 do %>
+            <li class="setting_item setting_item-log text-right">
+                <div class="col-md-1">
+                    <a href="javascript:;"><i class="fa fa-2x fa-minus-circle text-danger"></i></a>
+                </div> 
+                <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="系統帶預設值">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="<%= i %>">
+                </div>
+            </li>
+            <% end %>
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <a href="javascript:;" class="text-success">＋ 新增項目</a>
+                </div>
+            </li>
+            <li class="setting_item setting_item-log has-success">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="請輸入項目名稱">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-success btn-block">新增</button>
+                </div>
+            </li>
+            <hr>
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                    <label class="form-group"></label>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-group">服務項目</label>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-group">說明文字</label>
+                </div>
+                <div class="col-md-2">
+                    <label class="form-group"></label>
+                </div>
+                <div class="col-md-1">
+                    <label class="form-group">順位</label>
+                </div>
+            </li>
+            <% for i in 1..2 do %>
+            <li class="setting_item setting_item-log text-right">
+                <div class="col-md-1">
+                    <a href="javascript:;"><i class="fa fa-2x fa-minus-circle text-danger"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="系統帶預設值">
+                </div>
+                <div class="col-md-4">
+                    <textarea class="form-control" rows="1"></textarea>
+                </div>
+                <div class="col-md-2">
+                    <input type="file" href="javascript:;">
+                </div>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" placeholder="<%= i %>">
+                </div>
+            </li>
+            <% end %>
+            <li class="setting_item setting_item-log">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <a href="javascript:;" class="text-success">＋ 新增項目</a>
+                </div>
+            </li>
+            <li class="setting_item setting_item-log has-success">
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="請輸入項目名稱">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option></option>
+                        <option>家務及日常生活照顧服務</option>
+                        <option>身體照顧服務</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-success btn-block" id="">新增</button>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>

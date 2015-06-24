@@ -9,17 +9,11 @@
     </div>
     <div class="col-md-6 text-right">
         <input class="btn btn-default" type="button" value="取消">
-        <input class="btn btn-default" type="submit" value="送出">
+        <input class="btn btn-default" type="submit" value="儲存">
     </div>
 </div>
-<div class="row top-buffer">
+<div class="row">
     <form class="col-md-8 col-md-offset-2">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <h3>繳費方式</h3>
-            </div>
-        </div>
-        <hr>
         <ul class="list-unstyled">
             <li class="setting_item setting_item-log">
                 <div class="col-md-1">
@@ -31,32 +25,34 @@
                     <label for="" class="form-group">順位</label>
                 </div>
             </li>
-            <% for i in 1..4 do %>
+            <% for i in 1..2 do %>
             <li class="setting_item setting_item-log">
                 <div class="col-md-1">
                     <a href="javascript:;"><i class="fa fa-2x fa-minus-circle text-danger"></i></a>
                 </div> 
                 <div class="col-md-8">
-                    <input type="text" class="form-control" id="" placeholder="系統帶預設值">
+                    <input type="text" class="form-control" placeholder="系統帶預設值">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" id="" placeholder="<%= i %>">
+                    <input type="text" class="form-control" placeholder="<%= i %>">
                 </div>
             </li>
             <% end %>
             <li class="setting_item setting_item-log">
-                <div class="col-md-12">
-                    <a href="javascript:;" class="text-success"><i class="fa fa-2x fa-plus-circle"></i> 新增項目</a>
+                <div class="col-md-1">
+                </div> 
+                <div class="col-md-8">
+                    <a href="javascript:;" class="text-success">＋ 新增項目</a>
                 </div>
             </li>
             <li class="setting_item setting_item-log has-success">
                 <div class="col-md-1">
                 </div> 
                 <div class="col-md-8">
-                    <input type="text" class="form-control" id="" placeholder="輕輸入項目名稱">
+                    <input type="text" class="form-control" placeholder="輕輸入項目名稱">
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-success btn-block" id="">新增</button>
+                    <button class="btn btn-success btn-block">新增</button>
                 </div>
             </li>
         </ul>
