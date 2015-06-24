@@ -1,0 +1,76 @@
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">居家服務</a>
+            </li>
+            <li>
+                <a href="#">會議職訓</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6 text-right">
+        <div>
+            <button type="submit" class="btn btn-default">新增個案備註</button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <form class="form-horizontal" role="form">
+        <div class="col-md-9">
+            <div class="form-group">
+                <div class="col-md-2">
+                    <p class="form-control-static">查詢條件</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="請輸入長照案號, 個案或居服員姓名">
+                </div>
+                <div class="col-md-2">
+                    <p class="form-control-static">備註類型</p>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>全部類型</option>
+                        <option>服務未遇</option>
+                        <option>居家服務</option>
+                        <option>個案備註</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <p class="form-control-static">時間區間</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="pull-left">
+                        <input type="date" class="form-control" placeholder="">
+                    </div>
+                    <div class="pull-right">
+                        <input type="date" class="form-control" placeholder="">
+                    </div>~</div>
+                <div class="col-md-2">
+                    <p class="form-control-static">查詢區別</p>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>全部地區</option>
+                        <option>信義</option>
+                        <option>大安</option>
+                        <option>文山</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-default">查詢
+                <i class="fa fa-search fa-fw"></i>
+            </button>
+        </div>
+        <div class="col-md-2 text-right">
+            <button class="btn btn-primary">
+                <i class="fa fa-fw fa-table"></i>匯出 excel</button>
+        </div>
+    </form>
+</div>
