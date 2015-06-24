@@ -1,0 +1,67 @@
+.task-card-item {
+	margin-bottom: 30px;
+	@include box-shadow(darken($gray-lighter, 10%) 0 1px 5px,darken($gray-lighter, 10%) 0 0 2px);
+	padding: 20px 15px 10px;
+
+	.space {
+		border-width: 4px;
+		border-color: $brand-info;
+	}
+	&-title {
+		font-size: 2em;
+	}
+	.tags {
+		&-title {
+			color: $gray-light;
+			padding-right: .5em;
+		}
+	}
+	.btn-task {
+		@include is-show-inline;
+		margin-top: 0;
+	}
+	@media screen and (min-width: $screen-md) {
+		.btn-task {
+			display: block;
+			& + .btn-task {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+.tab-page-wrapper {
+	.breadcrumb {
+		@include reset-box-model;
+		background: none;
+	}
+}
+%content-reset {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.add-task {
+	margin-right: -55px;
+	margin-left: -55px;
+	&-left-col {
+		z-index: 1;
+		position: relative;
+		@extend %content-reset;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		@include box-shadow(darken($gray-lighter, 10%) 5px 0 5px,darken($gray-lighter, 10%) 2px 0 2px);
+	}
+	&-right-col {
+		z-index: 0;
+		position: relative;
+		@extend %content-reset;
+		background-color: lighten($gray-lighter, 2%);
+	}
+	.task-card-item-title {
+		margin-left: 10px;
+	}
+}
+%text-middle, .text-middle {
+	vertical-align: middle;
+}
