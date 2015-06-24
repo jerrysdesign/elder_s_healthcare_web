@@ -31,7 +31,8 @@ var vendor = {
     // ],
     iconfont      : config.vendor + '/fontawesome/fonts/**.*',
     iconfontsass  : config.vendor + '/fontawesome/scss/**.*',
-    jQueryValidate: config.vendor + '/jquery-validation/dist/**.*'
+    jQueryValidate: config.vendor + '/jquery-validation/dist/**.*',
+    jQueryFancyBox: config.vendor + '/fancybox/source/**/*'
   },
   dist : {
     bootstrapsass : config.project + '/sass/vendor/bootstrap-sass',
@@ -41,7 +42,8 @@ var vendor = {
     jquery        : config.project + '/js/vendor/jquery',
     iconfont      : config.project + '/fonts',
     iconfontsass  : config.project + '/sass/vendor/fontawesome',
-    jQueryValidate: config.project + '/js/vendor/jquery.validation'
+    jQueryValidate: config.project + '/js/vendor/jquery.validation',
+    jQueryFancyBox: config.project + '/js/vendor/fancybox'
   }
 }
 
@@ -73,6 +75,9 @@ gulp.task('vendor', function() {
     ; 
   gulp.src(vendor.source.jQueryValidate) 
     .pipe(gulp.dest(vendor.dist.jQueryValidate))
+    ; 
+  gulp.src(vendor.source.jQueryFancyBox) 
+    .pipe(gulp.dest(vendor.dist.jQueryFancyBox))
     ; 
   gulp.src('./templates/project/source/styles/vendor/fontawesome/font-awesome.css' ) 
     .pipe(gulp.dest('./templates/project/source/styles/'))
