@@ -1,14 +1,20 @@
 # npm
 node_modules/
 
-# bower
+# bower Vendor
 bower_components/
 
-# bower Vendor
 templates/project/source/sass/vendor/
-	#templates/project/source/js/vendor/bootstrap-sass/
-	#templates/project/source/js/vendor/fontawesome/
+
+templates/project/source/js/js.js
+templates/project/source/js/form-validation.js
+
 templates/project/source/js/vendor/
+    #templates/project/source/js/vendor/bootstrap-sass/
+    #templates/project/source/js/vendor/fontawesome/
+    #templates/project/source/js/vendor/jquery/
+    #templates/project/source/js/vendor/fancybox/
+
 templates/project/source/fonts/FontAwesome.otf
 templates/project/source/fonts/fontawesome-webfont.eot
 templates/project/source/fonts/fontawesome-webfont.svg
@@ -23,4 +29,4 @@ templates/project/source/fire_app_log.txt
 templates/project/source/.sass-cache/
 templates/project/source/styles/
 templates/project/source/.coffeescript-cache/
-templates/project/source/js
+#templates/project/source/js
