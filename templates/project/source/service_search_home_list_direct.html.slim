@@ -8,4 +8,11 @@ aside
 // main-content
 section.main
 	.container-fluid
+		== render :partial => "page/service/nav" , :locals => {:f => "tab1"}
 		== render "page/service/search_home_list_direct.html.erb"
+
+== render :partial => "page/service/partial_modal_direct_add_note.html.erb"
+== render :partial => "page/service/partial_modal_note_direct.html.erb"
+== render :partial => "page/service/partial_modal_case_direct.html.erb"
+== render :partial => "page/service/partial_modal_never_met.html.erb"
+== render :partial => "page/service/partial_modal_task_note.html.erb"
