@@ -1,31 +1,309 @@
-ul class="nav nav-sidebar"
-	li
-		a href="#"
-			i class='fa fa-lg fa-desktop'
-			| 平台管理
-	li class="active"
-		a href="#"
-			i class='fa fa-lg fa-bullseye'
-			| 任務管理
-		ul class="nav nav-sidebar-sub"
-			li: a href='#' 行事曆
-			li: a href='#' 新增事件
-			li: a href='#' 任務列表
-	li
-		a href="#"
-			i class='fa fa-lg fa-trophy'
-			| 成果管理
-	li
-		a href="#"
-			i class='fa fa-lg fa-money'
-			| 費用管理
-	li
-		a href="#"
-			i class='fa fa-lg fa-shopping-cart'
-			| 耗材管理
-	li
-		a href="#"
-			i class='fa fa-lg fa-comment-o'
-			| 訊息管理
+ul.nav.nav-sidebar
+	- if s == "mainnav1"
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+			ul class="nav nav-sidebar-sub"
+				li.active: a href='#' 系統設定
+				li: a href='#' 帳號設定
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
 
-/ a href='#' 登出
+
+	- if s == "mainnav2"
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 系統設定
+				li.active: a href='#' 帳號設定
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav3"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+			ul class="nav nav-sidebar-sub"
+				li.active: a href='#' 行事曆
+				li: a href='#' 派發任務/會議
+				li: a href='#' 任務列表
+				li: a href='#' 結案紀錄
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav4"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 行事曆
+				li.active: a href='#' 派發任務/會議
+				li: a href='#' 任務列表
+				li: a href='#' 結案紀錄
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav5"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 行事曆
+				li: a href='#' 派發任務/會議
+				li.active: a href='#' 任務列表
+				li: a href='#' 結案紀錄
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav6"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 行事曆
+				li: a href='#' 派發任務/會議
+				li: a href='#' 任務列表
+				li.active: a href='#' 結案紀錄
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav7"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+			ul class="nav nav-sidebar-sub"
+				li.active: a href='#' 月報表
+				li: a href='#' 服務成果
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav8"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 月報表
+				li.active: a href='#' 服務成果
+		li
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+
+	- if s == "mainnav9"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+			ul class="nav nav-sidebar-sub"
+				li.active: a href='#' 補助名冊
+				li: a href='#' 費用收取
+				li: a href='#' 在職津貼
+				li: a href='#' 居服薪資
+				li: a href='#' 核銷明細
+
+	- if s == "mainnav10"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 補助名冊
+				li.active: a href='#' 費用收取
+				li: a href='#' 在職津貼
+				li: a href='#' 居服薪資
+				li: a href='#' 核銷明細
+
+	- if s == "mainnav11"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 補助名冊
+				li: a href='#' 費用收取
+				li.active: a href='#' 在職津貼
+				li: a href='#' 居服薪資
+				li: a href='#' 核銷明細
+
+	- if s == "mainnav12"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 補助名冊
+				li: a href='#' 費用收取
+				li: a href='#' 在職津貼
+				li.active: a href='#' 居服薪資
+				li: a href='#' 核銷明細
+
+	- if s == "mainnav13"
+		li
+			a href="#"
+				i class='fa fa-lg fa-desktop'
+				| 平台管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-bullseye'
+				| 任務管理
+		li
+			a href="#"
+				i class='fa fa-lg fa-trophy'
+				| 成果管理
+		li.active
+			a href="#"
+				i class='fa fa-lg fa-money'
+				| 費用管理
+			ul class="nav nav-sidebar-sub"
+				li: a href='#' 補助名冊
+				li: a href='#' 費用收取
+				li: a href='#' 在職津貼
+				li: a href='#' 居服薪資
+				li.active: a href='#' 核銷明細
+
+
+		/ li
+		/ 	a href="#"
+		/ 		i class='fa fa-lg fa-shopping-cart'
+		/ 		| 耗材管理
+		/ li
+		/ 	a href="#"
+		/ 		i class='fa fa-lg fa-comment-o'
+		/ 		| 訊息管理
+
+	/ a href='#' 登出
