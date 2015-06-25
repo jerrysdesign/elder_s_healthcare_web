@@ -29,7 +29,7 @@ html, body {
 	height: 100%;
 }
 body {
-
+	min-width: 1199px;
 }
 
 // Main wrapper
@@ -37,7 +37,7 @@ body {
 .app-container {
 	position: relative;
 	// width: 100%;
-	min-width: 980px;
+	min-width: 1199px;
 	min-height: 100%;
 	height: auto;
 	> header {
