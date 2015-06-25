@@ -9,139 +9,119 @@
 <form class="row top-buffer">
 	<div class="text-right">
 		<input class="btn btn-default" type="button" value="取消">
-		<input class="btn btn-default" type="submit" value="送出">
+		<input class="btn btn-success" type="submit" value="新增">
 	</div>
 	<hr>
-	<div class="row">
-		<div class="col-md-12 form-horizontal">
-			<div class="form-group">
-				<label class="col-md-2 control-label">啟用狀態</label>
-				<div class="col-md-10">
-					<label class="radio-inline">
-						<input type="radio" value="" name="EnableRadios" checked="">啟用
-					</label>
-					<label class="radio-inline">
-						<input type="radio" value="" name="EnableRadios">停用
-					</label>
-				</div>
+	<div class="row col-md-12 form-horizontal">
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">啟用狀態</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="EnableRadios" checked="">啟用</label>
+				<label class="radio-inline"><input type="radio" value="" name="EnableRadios">停用</label>
 			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">個人相片</label>
-				<div class="col-md-10">
-					<img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/200">
-					<input type="file" href="javascript:;">
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">個人相片</label>
+			<div class="col-md-10">
+				<img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/200">
+				<input class="help-block top-buffer" type="file" href="javascript:;">
 			</div>
-			<div class="form-group">
-				<label for="" class="col-md-2 control-label">帳號 Email</label>
-				<div class="col-md-10">
-					<label class="input-inline">
-						<input type="email" class="form-control" placeholder="">
-					</label>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label for="" class="col-md-2 control-label">帳號 Email</label>
+			<div class="col-md-10">
+				<input type="email" class="form-control" placeholder="">
 			</div>
-			<div class="form-group">
-				<label for="" class="col-md-2 control-label">密碼</label>
-				<div class="col-md-10">
-					<label class="input-inline">
-						<input type="password" class="form-control" placeholder="">
-					</label>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label for="" class="col-md-2 control-label">密碼</label>
+			<div class="col-md-10">
+				<input type="password" class="form-control" placeholder="">
 			</div>
-			<div class="form-group">
-				<label for="" class="col-md-2 control-label">姓名</label>
-				<div class="col-md-10">
-					<label class="input-inline">
-						<input type="text" class="form-control" placeholder="">
-					</label>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label for="" class="col-md-2 control-label">姓名</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
 			</div>
-			<div class="form-group">
-				<label for="" class="col-md-2 control-label">手機電話</label>
-				<div class="col-md-10">
-					<label class="input-inline">
-						<input type="tel" class="form-control" placeholder="">
-					</label>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label for="" class="col-md-2 control-label">手機電話</label>
+			<div class="col-md-10">
+				<input type="tel" class="form-control" placeholder="">
 			</div>
-			<div class="form-group">
-				<label for="" class="col-md-2 control-label">市內電話</label>
-				<div class="col-md-10">
-					<label class="input-inline">
-						<input type="tel" class="form-control" placeholder="">
-					</label>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label for="" class="col-md-2 control-label">市內電話</label>
+			<div class="col-md-10">
+				<input type="tel" class="form-control" placeholder="">
 			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">隸屬主管</label>
-				<div class="col-md-10">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" value="">全選</label>
-					</div>
-					<% 5.times do %>
-					<label class="checkbox-inline">
-						<input type="checkbox" value="">張某某</label>
-					<% end %>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">所屬居服員</label>
-				<div class="col-md-10">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" value=""> 全選</label>
-					</div>
-					<% 4.times do %>
-					<% 5.times do %>
-					<label class="checkbox-inline">
-						<input type="checkbox" value="">張某某</label>
-					<% end %>
-					<br>
-					<% end %>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">服務個案</label>
-				<div class="col-md-10">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" value=""> 全選</label>
-					</div>
-					<% 4.times do %>
-					<% 5.times do %>
-					<label class="checkbox-inline">
-						<input type="checkbox" value="">張某某</label>
-					<% end %>
-					<br>
-					<% end %>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">身分別(一)</label>
-				<div class="col-md-10">
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">隸屬主管</label>
+			<div class="col-md-10">
+				<div class="checkbox">
 					<label>
-					<select class="form-control">
-						<option value=""></option>
-						<option value="">一般民眾</option>
-						<option value="">原住民</option>
-						<option value="">低收入戶</option>
-						<option value="">其他</option>
-					</select>
-					</label>
+						<input type="checkbox" value="">全選</label>
 				</div>
+				<% 5.times do %>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="">張某某</label>
+				<% end %>
 			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">身分別(二)</label>
-				<div class="col-md-10">
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">所屬居服員</label>
+			<div class="col-md-10">
+				<div class="checkbox">
 					<label>
-					<select class="form-control">
-						<option value=""></option>
-						<option value="">中高齡</option>
-						<option value="">非中高齡</option>
-					</select>
-					</label>
+						<input type="checkbox" value="">全選</label>
 				</div>
+				<% 4.times do %>
+				<% 5.times do %>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="">張某某</label>
+				<% end %>
+				<br>
+				<% end %>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務個案</label>
+			<div class="col-md-10">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="">全選</label>
+				</div>
+				<% 4.times do %>
+				<% 5.times do %>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="">張某某</label>
+				<% end %>
+				<br>
+				<% end %>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身分別(一)</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option value=""></option>
+					<option value="">一般民眾</option>
+					<option value="">原住民</option>
+					<option value="">低收入戶</option>
+					<option value="">其他</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身分別(二)</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option value=""></option>
+					<option value="">中高齡</option>
+					<option value="">非中高齡</option>
+				</select>
 			</div>
 		</div>
 	</div>
