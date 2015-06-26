@@ -32,11 +32,22 @@
 					.col-md-4
 						input.form-control placeholder="" type="date"
 				.form-group
+					label.col-md-3.control-label 時數區間
+					.col-md-4
+						select.form-control
+							option 全天						
+				.form-group
 					label.col-md-3.control-label 服務時數
 					.col-md-4
 						select.form-control
 							option 4
 					.col-md-2.control-label 小時
+				.row
+					.col-md-4.col-md-offset-3
+						button.btn.btn-default
+							| 查詢
+							i.fa.fa-search.fa-fw
+				hr
 				.form-group
 					label.col-md-3.control-label 開始時間
 					.col-md-4
@@ -49,13 +60,7 @@
 							option 05
 				.form-group
 					label.col-md-3.control-label 結束時間
-					.col-md-1.control-label 12:35
-				.row
-					.col-md-4.col-md-offset-3
-						button.btn.btn-default
-							| 查詢
-							i.fa.fa-search.fa-fw
-				hr
+					.col-md-1.control-label 12:35				
 				.form-group
 					label.col-md-3.control-label 任務週期
 					.col-md-9
@@ -138,9 +143,6 @@
 				.col-md-3
 					select.form-control.control-label
 						option 全部地區
-				.col-md-3.control-label
-					select.form-control
-						option 全天
 				.col-md-2.control-label
 					button.btn.btn-default 篩選
 			.row
