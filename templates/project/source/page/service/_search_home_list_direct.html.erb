@@ -1,1 +1,35 @@
-<a href="service_search_home_list_direct.html.slim">按表格個案查詢</a>
+<%= render :partial => "partial_new_add_direct.html.erb" %>
+<%= render :partial => "search" %>
+<div class="row top-buffer">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>序號</th>
+                <th>雙連案號</th>
+                <th>長照案號</th>
+                <th>照護者</th>
+                <th>服務時間</th>
+                <th>居服員</th>
+                <th>服務項目</th>
+                <th>服務未遇備註</th>
+                <th>居家服務備註</th>
+                <th>個案備註</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td><a href="javascript:;" data-toggle="modal" data-target="#ModalCaseDirect">A123456789</a></td>
+                <td>WXJW44498</td>
+                <td>張爺爺</td>
+                <td>2014-04-17 08:50 ~ 2014-04-17 10:55</td>
+                <td>王小明</td>
+                <td>整理家務 / 帶出門看醫生 / 陪聊天散步 / 買菜煮飯打掃 / 洗澡</td>
+                <td><a href="javascript:;" data-toggle="modal" data-target="#ModalNeverMet">2014-04-17 08:50 個案不受服務</a></td>
+                <td><a href="javascript:;" data-toggle="modal" data-target="#ModalTaskNote">2014-04-17 08:50 案子告知個案送醫治療，醫生提醒血壓偏高，需特別注意</a></td>
+                <td><a href="javascript:;" data-toggle="modal" data-target="#ModalNoteDirect">2014-04-17 08:50 案子告知個案送醫治療，醫生提醒血壓偏高，需特別注意</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
