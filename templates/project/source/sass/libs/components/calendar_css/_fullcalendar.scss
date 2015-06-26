@@ -1122,7 +1122,7 @@ ul,li{list-style:none}
 #filterEvent{position:absolute}
 
 .wrap-cont-attendant,
-.wrap-cont-case{top:51px;right:0;display:none;border:1px solid #d9d9d9;padding:5px 0;background-color:#fff}
+.wrap-cont-case{top:54px;right:0;display:none;border:1px solid #d9d9d9;padding:5px 0;background-color:#fff}
 	
 	.wrap-cont-attendant:before,.wrap-cont-case:before{top:-10px;z-index:999;content:'';width:21px;height:10px;background:url('../img/filter_arrow_t.png') no-repeat 0 0}
 	.wrap-cont-attendant:before{right:46px}
@@ -1135,7 +1135,7 @@ ul,li{list-style:none}
 	.wrap-cont-attendant p,.wrap-cont-case p{margin:24px 0 24px 44px}
 	
 	#filterBox1,#filterBox3{padding-bottom:30px}
-	.cont-attendant,.cont-case{width:625px;margin-left:40px}
+	.cont-attendant,.cont-case{width:70%;margin-left:40px}
 	.cont-attendant li,.cont-case li{float:left;width:125px}
 	.cont-attendant input[type="checkbox"],.cont-case input[type="checkbox"]{margin-right:8px}
 

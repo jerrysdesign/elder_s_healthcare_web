@@ -28,7 +28,7 @@ hcs_calendar = {
 			eventBorderColor: "transparent", // 邊框顏色
 			eventRender: function(event, element){
 				var case_name = event.title;
-				element.find(".fc-content").append('<div class="fc-title">'+ event.case_name +'</div>');
+				element.find(".fc-content").append('<span class="fc-title">'+ event.case_name +'</span>');
 				if(event.wai_name != undefined && $(".fc-view").hasClass("fc-month-view") == false){
 					element.find(".fc-content").append('<div class="fc-staff">居：'+ event.wai_name +'</div>');
 				}
