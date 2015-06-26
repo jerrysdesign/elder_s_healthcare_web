@@ -139,10 +139,12 @@ hcs_calendar = {
 				$.fancybox({
 					"content": fancyContent
 				});
+
 				return false;
 			},
 			events: data_events
 		});
+
 	},
 	filterSlide: function(contWrap, contList){
 		var $cont         = $(contWrap),
@@ -151,6 +153,7 @@ hcs_calendar = {
 			$toolbar      = $(".fc-toolbar"),
 			$btnAtt       = $("#btn-attendant"),
 			$btnCase      = $("#btn-case"),
+			$btnMW        = $(".fc-button-group:eq(1) button"),
 			_attend       = "wrap-cont-attendant",
 			_case         = "wrap-cont-case",
 			_objContList1 = "#filterBox2",
@@ -164,6 +167,7 @@ hcs_calendar = {
 			$cont.slideDown(_speed);
 			$toolbar.stop().animate({"margin-bottom": _conH},_speed);
 			$fEvent.addClass(_blur).find('input[type="checkbox"]').attr("disabled", true);
+			$btnMW.addClass(_blur).attr("disabled", true);
 			if($cont.attr("class") === _attend){
 				$btnCase.addClass(_blur).off("click");
 			} else {
@@ -173,6 +177,7 @@ hcs_calendar = {
 			$cont.slideUp(_speed);
 			$toolbar.stop().animate({"margin-bottom": _defH},_speed);
 			$fEvent.removeClass(_blur).find('input[type="checkbox"]').removeAttr("disabled");
+			$btnMW.removeClass(_blur).removeAttr("disabled");
 			if($cont.attr("class") === _attend){
 				$btnCase.removeClass(_blur).on("click", function(){
 					hcs_calendar.filterSlide("." + _case, _objContList2);
