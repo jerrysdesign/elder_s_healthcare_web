@@ -28,7 +28,7 @@ hcs_calendar = {
 			eventBorderColor: "transparent", // 邊框顏色
 			eventRender: function(event, element){
 				var case_name = event.title;
-				element.find(".fc-content").append('<span class="fc-title">'+ event.case_name +'</span>');
+				element.find(".fc-content").append('<div class="fc-title">'+ event.case_name +'</div>');
 				if(event.wai_name != undefined && $(".fc-view").hasClass("fc-month-view") == false){
 					element.find(".fc-content").append('<div class="fc-staff">居：'+ event.wai_name +'</div>');
 				}
@@ -37,6 +37,8 @@ hcs_calendar = {
 				
 				var $start        = event.start.format("YYYY-MM-DD HH:mm"),
 					$end          = event.end.format("YYYY-MM-DD HH:mm"),
+					$body         = $("body"),
+					$miss         = $(".miss"),
 					_titleTask    = "任務",
 					_topicTask    = "任務名稱",
 					_timeStart    = "開始時間",
@@ -47,15 +49,25 @@ hcs_calendar = {
 					_supervisor   = "督導人員",
 					_note         = "其它備註",
 					_editEvent    = "修改事件",
-					_notMet       = "服務未遇",
+					_miss         = "服務未遇",
 					_done         = "確定",
 					_titleMeeting = "會議/職訓",
 					_topicEvent   = "事件主題",
 					_eventIssue   = "事件議題",
 					_location     = "事件地點",
-					_join         = "參與人員";
+					_join         = "參與人員",
+					_lone_care    = "長照案號",
+					_case_phone   = "個案電話",
+					_eme_name     = "緊急聯絡",
+					_eme_phone    = "聯絡電話",
+					_miss_status  = "事件狀態",
+					_miss_pay     = "自付金額",
+					_miss_subsidy = "補助金額",
+					_miss_note    = "未遇備註",
+					_continue     = "繼續服務";
 
 				if (event.className[0] == 'eventTask'){
+
 					var fancyContent = (
 						'<div class="head">'+ _titleTask +'</div>' + 
 						'<div class="cont">' +
@@ -70,9 +82,42 @@ hcs_calendar = {
 						'</div>' +
 						'<div class="foot">' + 
 							'<a href="#">'+ _editEvent +'</a>' +
-							'<a href="#">'+ _notMet +'</a>' +
+							'<a href="#" class="miss">'+ _miss +'</a>' +
 							'<a href="#">'+ _done +'</a>' +
 						'</div>');
+
+						// missTask
+						$miss.off('click');
+						$body.on("click", ".miss", function() {
+							var fancyContent = (
+								'<div class="head">'+ _miss +'</div>' + 
+								'<div class="cont">' +
+									'<label>'+ _lone_care +':</label>' + event.lone_care + '<br>' +
+									'<label>'+ _topicTask +':</label>' + event.case_name + '<br>' +
+									'<label>'+ _case_phone +':</label>' + event.case_phone + '<br>' +
+									'<label>'+ _eme_name +':</label>' + event.eme_name + '<br>' +
+									'<label>'+ _eme_phone +':</label>' + event.eme_phone + '<br>' +
+									'<label>'+ _attendant +':</label>' + event.wai_name + '<br>' +
+									'<label>'+ _miss_status +':</label>' + '<select class="miss_status"></select>' + '<br>' +
+									'<label>'+ _miss_pay +':</label>' + '<input type="text" value="' + event.miss_pay +'">' + '<br>' +
+									'<label>'+ _miss_subsidy +':</label>' + '<input type="text" value="' + event.miss_subsidy +'">' + '<br>' +
+									'<label>'+ _miss_note +':</label>' + '<textarea cols="30" rows="10">'+ event.miss_note +'</textarea>' +
+								'</div>' +
+								'<div class="foot">' + 
+									'<a href="#">'+ _continue +'</a>' +
+									'<a href="#">'+ _done +'</a>' +
+								'</div>');
+							$.fancybox({
+								"content": fancyContent
+							});
+							var select = $(".miss_status"),
+								myobject = event.miss_status,
+								option = '';
+							for(index in myobject) {
+								option +='<option>'+ myobject[index] +'</option>';
+							};
+							select.html(option);
+						});		
 				} else {
 					var fancyContent = (
 						'<div class="head">'+ _titleMeeting +'</div>' + 
@@ -299,8 +344,7 @@ $(function(){
 		var $checkbox = $filterEvent.find('input[type="checkbox"]'),
 			$checkedLength = $filterEvent.find('input[type="checkbox"]:checked').length,
 			$checkboxLength = $checkbox.length;
-			
-		$("#filterEvent").removeClass("itemblur").find('input[type="checkbox"]').removeAttr("disabled");
+
 		$(".fc-toolbar").stop().animate({"margin-bottom": _defaultH});
 		$btnAttendant.hide();
 		$btnCase.hide();
