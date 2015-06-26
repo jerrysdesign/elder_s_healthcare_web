@@ -1,23 +1,10 @@
-/ <ul class="nav nav-tabs">
-/ 		<li class="active">
-/ 			<a href="#">個案成果</a>
-/ 		</li>
-/ 		<li>
-/ 			<a href="#">投入成果</a>
-/ 		</li>
-/ 		<li>
-/ 			<a href="#">收入區別</a>
-/ 		</li>
-/ 		<li>
-/ 			<a href="#">障礙等級</a>
-/ 		</li>
-/ 	</ul>
+.row
+	.navbar.tab-page-wrapper.bg-secondary
+		ul.nav.nav-tabs.tab-page.navbar-left
+			- if f == "tab1"
+				li.active: a href='javascript:;' 居家服務
+				li: a href='javascript:;' 會議職訓
 
-ul.nav.nav-tabs
-	= nav_link_to("javascript:;", "個案成果")
-	= nav_link_to("javascript:;", "投入成果")
-	= nav_link_to("javascript:;", "收入區別")
-	= nav_link_to("javascript:;", "障礙等級")
-
-
-		
+			- if f == "tab2"
+				li: a href='javascript:;' 居家服務
+				li.active: a href='javascript:;' 會議職訓

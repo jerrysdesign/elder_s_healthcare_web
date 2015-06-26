@@ -8,4 +8,5 @@ aside
 // main-content
 section.main
 	.container-fluid
+		== render :partial => "page/service/nav" , :locals => {:f => "tab2"}
 		== render "page/service/search_home_nevermet_direct.html.erb"

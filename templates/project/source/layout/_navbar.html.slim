@@ -4,6 +4,18 @@ nav class='navbar navbar-default navbar-fixed-top topnavbar'
 		div class='navbar-header'
 			a class='navbar-brand' href='#'
 				img.pull-left src='images/logo.png' alt='雙連安養中心'/
-				span 雙連安養中心
-		.hollo.text-right
-			| 督導員 XXX 您好!
+				span.pull-left 雙連安養中心
+		.collapse.navbar-collapse
+			ul.nav.navbar-nav.navbar-right
+				li.dropdown
+					a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
+						| 督導員 XXX 您好!
+						span.caret
+					ul.dropdown-menu
+						li
+							a.hollo href="#"  修改密碼
+				li
+					a.hollo href="#"  登出
+			/ .hollo.text-right.pull-right
+			/ 	| 
+			/ 	a href='javascript:;' 登出

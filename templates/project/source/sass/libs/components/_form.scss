@@ -1,33 +1,59 @@
 // table {
 //   @include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 0 1px inset);
 // }
-.input-inline input {
-  display: inline-block;
-  width: auto;
-  margin-left: -20px;
-  margin-right: 10px;
-  margin-top: 4px \9;
-}
-
-// Radios and checkboxes on same line
 .input-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
+  &-r {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+
+    input {
+      display: inline-block;
+      width: auto;
+      margin-left: -20px;
+      margin-right: 10px;
+      margin-top: 4px \9;
+    }
+
+    &.disabled,
+    fieldset[disabled] & {
+      cursor: $cursor-disabled;
+    }
+  }
 }
-.input-inline + .input-inline{
+.input-inline {
+  &-f {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+
+    input {
+      display: inline-block;
+      width: auto;
+      margin-right: -20px;
+      margin-top: 4px \9;
+    }
+
+    &.disabled,
+    fieldset[disabled] & {
+      cursor: $cursor-disabled;
+    }
+  }
+}
+.input-inline-r + .input-inline-r, .input-inline-f + .input-inline-f {
   margin-top: 0;
   margin-left: 10px; // space out consecutive inline controls
 }
 
-// These classes are used directly on <label>s
-.input-inline {
-  &.disabled,
-  fieldset[disabled] & {
-    cursor: $cursor-disabled;
-  }
-}
+// 使用結構
+// <label class="input-inline">
+//   <input type="text"></input>
+// </label>
