@@ -22,7 +22,7 @@ hcs_calendar = {
 				month: "dd",
 				week: "M/D dd",
 			},
-			axisFormat: "HH:mm",		     // 側欄時間
+			axisFormat: "HH:mm",             // 側欄時間
 			timeFormat: "HH:mm",             // 事件時間
 			formatDate: "MM-dd-yyyy",
 			eventBorderColor: "transparent", // 邊框顏色
@@ -69,45 +69,130 @@ hcs_calendar = {
 				if (event.className[0] == 'eventTask'){
 
 					var fancyContent = (
-						'<div class="head">'+ _titleTask +'</div>' + 
-						'<div class="cont">' +
-							'<label>'+ _topicTask +':</label>' + event.case_name + '<br>' +
-							'<label>'+ _timeStart +':</label>' + $start + '<br>' +
-							'<label>'+ _timeEnd +':</label>' + $end + '<br>' +
-							'<label>'+ _timeCycle +':</label>' + event.taskCycle + '<br>' +
-							'<label>'+ _taskItme +':</label>' + event.taskItem + '<br>' +
-							'<label>'+ _attendant +':</label>' + event.wai_name + '<br>' +
-							'<label>'+ _supervisor +':</label>' + event.war_name + '<br>' +
-							'<label>'+ _note +':</label>' + '<textarea cols="30" rows="10">'+ event.task_note +'</textarea>' +
+						'<div class="modal-header">' + 
+							'<h4 class="modal-title">'+ _titleTask +'</h4>' +
 						'</div>' +
-						'<div class="foot">' + 
-							'<a href="#">'+ _editEvent +'</a>' +
-							'<a href="#" class="miss">'+ _miss +'</a>' +
-							'<a href="#">'+ _done +'</a>' +
+						'<div class="modal-body">'+
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _topicTask +'</label>' + 
+								'<div class="col-md-10">'+ event.case_name +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _timeStart +'</label>' + 
+								'<div class="col-md-10">'+ $start +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _timeEnd +'</label>' + 
+								'<div class="col-md-10">'+ $end +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _timeCycle +'</label>' + 
+								'<div class="col-md-10">'+ event.taskCycle +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _taskItme +'</label>' + 
+								'<div class="col-md-10">'+ event.taskItem +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _attendant +'</label>' + 
+								'<div class="col-md-10">'+ event.wai_name +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _supervisor +'</label>' + 
+								'<div class="col-md-10">'+ event.war_name +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _note +'</label>' + 
+								'<div class="col-md-10">' +
+									'<textarea class="form-control" rows="3">'+ event.task_note +'</textarea>' +
+								'</div>' +
+							'</div>' +
+						'</div>'+
+						'<div class="modal-footer">'+
+							'<div class="row">' + 
+								'<div class="col-md-2 text-left">' +
+									'<a href="#" class="btn btn-default">'+ _editEvent +'</a>' +
+								'</div>' +
+								'<div class="col-md-2 text-left">' +
+									'<a href="#" class="miss btn btn-default">'+ _miss +'</a>' +
+								'</div>' +
+								'<div class="col-md-8 text-right">' +
+									'<a href="#" class="btn btn-primary">'+ _done +'</a>' +
+								'</div>' +
+							'</div>' +
 						'</div>');
 
 						// missTask
 						$miss.off('click');
 						$body.on("click", ".miss", function() {
 							var fancyContent = (
-								'<div class="head">'+ _miss +'</div>' + 
-								'<div class="cont">' +
-									'<label>'+ _lone_care +':</label>' + event.lone_care + '<br>' +
-									'<label>'+ _topicTask +':</label>' + event.case_name + '<br>' +
-									'<label>'+ _case_phone +':</label>' + event.case_phone + '<br>' +
-									'<label>'+ _eme_name +':</label>' + event.eme_name + '<br>' +
-									'<label>'+ _eme_phone +':</label>' + event.eme_phone + '<br>' +
-									'<label>'+ _attendant +':</label>' + event.wai_name + '<br>' +
-									'<label>'+ _miss_status +':</label>' + '<select class="miss_status"></select>' + '<br>' +
-									'<label>'+ _miss_pay +':</label>' + '<input type="text" value="' + event.miss_pay +'">' + '<br>' +
-									'<label>'+ _miss_subsidy +':</label>' + '<input type="text" value="' + event.miss_subsidy +'">' + '<br>' +
-									'<label>'+ _miss_note +':</label>' + '<textarea cols="30" rows="10">'+ event.miss_note +'</textarea>' +
+								'<div class="modal-header">' + 
+									'<h4 class="modal-title">'+ _miss +'</h4>' +
 								'</div>' +
-								'<div class="foot">' + 
-									'<a href="#">'+ _continue +'</a>' +
-									'<a href="#">'+ _done +'</a>' +
+								'<div class="modal-body">' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _lone_care +'</label>' + 
+										'<div class="col-md-10">'+ event.lone_care +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _topicTask +'</label>' + 
+										'<div class="col-md-10">'+ event.case_name +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _case_phone +'</label>' + 
+										'<div class="col-md-10">'+ event.case_phone +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _eme_name +'</label>' + 
+										'<div class="col-md-10">'+ event.eme_name +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _eme_phone +'</label>' + 
+										'<div class="col-md-10">'+ event.eme_phone +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _attendant +'</label>' + 
+										'<div class="col-md-10">'+ event.wai_name +'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _miss_status +'</label>' + 
+										'<div class="col-md-10">'+
+											'<select class="miss_status"></select>' +
+										'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _miss_pay +'</label>' + 
+										'<div class="col-md-10">'+
+											'<input type="text" value="' + event.miss_pay +'">' +
+										'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _miss_subsidy +'</label>' + 
+										'<div class="col-md-10">'+
+											'<input type="text" value="' + event.miss_subsidy +'">' +
+										'</div>' +
+									'</div>' +
+									'<div class="row">'+
+										'<label class="col-md-2">'+ _miss_note +'</label>' + 
+										'<div class="col-md-10">'+
+											'<textarea class="form-control" rows="3">'+ event.miss_note +'</textarea>' +
+										'</div>' +
+									'</div>' +
+								'</div>' +
+								'<div class="modal-footer">'+
+									'<div class="row">' + 
+										'<div class="col-md-6 text-left">' +
+											'<a href="#" class="btn btn-default">'+ _continue +'</a>' +
+										'</div>' +
+										'<div class="col-md-6 text-right">' +
+											'<a href="#" class="btn btn-primary">'+ _done +'</a>' +
+										'</div>' +
+									'</div>' +
 								'</div>');
 							$.fancybox({
+								"minWidth": 600,
+								"padding": 0,
+								"closeBtn": false,
 								"content": fancyContent
 							});
 							var select = $(".miss_status"),
@@ -117,26 +202,60 @@ hcs_calendar = {
 								option +='<option>'+ myobject[index] +'</option>';
 							};
 							select.html(option);
-						});		
+						});     
 				} else {
 					var fancyContent = (
-						'<div class="head">'+ _titleMeeting +'</div>' + 
-						'<div class="cont">' +
-							'<label>'+ _topicEvent +':</label>' + event.case_name + '<br>' +
-							'<label>'+ _eventIssue +':</label>' + event.issue + '<br>' +
-							'<label>'+ _location +':</label>' + event.eventLocation + '<br>' +
-							'<label>'+ _timeStart +':</label>' + $start + '<br>' +
-							'<label>'+ _timeEnd +':</label>' + $end + '<br>' +
-							'<label>'+ _join +':</label>' + event.participants + '<br>' +
-							'<label>'+ _note +':</label>' + '<textarea cols="30" rows="10">'+ event.task_note +'</textarea>' +
+						'<div class="modal-header">' + 
+							'<h4 class="modal-title">'+ _titleMeeting +'</h4>' +
+						'</div>' +								
+						'<div class="modal-body">' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _topicEvent +'</label>' + 
+								'<div class="col-md-10">'+ event.case_name +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _eventIssue +'</label>' + 
+								'<div class="col-md-10">'+ event.issue +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _location +'</label>' + 
+								'<div class="col-md-10">'+ event.eventLocation +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _timeStart +'</label>' + 
+								'<div class="col-md-10">'+ $start +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _timeEnd +'</label>' + 
+								'<div class="col-md-10">'+ $end +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _join +'</label>' + 
+								'<div class="col-md-10">'+ event.participants +'</div>' +
+							'</div>' +
+							'<div class="row">'+
+								'<label class="col-md-2">'+ _note +'</label>' + 
+								'<div class="col-md-10">'+
+									'<textarea class="form-control" rows="3">'+ event.task_note +'</textarea>' +
+								'</div>' +
+							'</div>' +
 						'</div>' +
-						'<div class="foot">' + 
-							'<a href="#">'+ _editEvent +'</a>' +
-							'<a href="#">'+ _done +'</a>' +
+						'<div class="modal-footer">'+
+							'<div class="row">' + 
+								'<div class="col-md-6 text-left">' +
+									'<a href="#" class="btn btn-default">'+ _editEvent +'</a>' +
+								'</div>' +
+								'<div class="col-md-6 text-right">' +
+									'<a href="#" class="btn btn-primary">'+ _done +'</a>' +
+								'</div>' +
+							'</div>' +
 						'</div>');
 				};
 
 				$.fancybox({
+					"minWidth": 600,
+					"padding": 0,
+					"closeBtn": false,
 					"content": fancyContent
 				});
 
@@ -185,7 +304,7 @@ hcs_calendar = {
 			} else {
 				$btnAtt.removeClass(_blur).on("click", function(){
 					hcs_calendar.filterSlide("." + _attend, _objContList1);
-				});				
+				});             
 			}
 		};
 	},
@@ -371,7 +490,7 @@ $(function(){
 	// filter-case-slide
 	$btnCase.on("click", function(){
 		hcs_calendar.filterSlide(_wrapContCase, _objContList2);
-	});	
+	}); 
 	
 	// filter-case
 	$btnCfCheck.on("click", function(){
