@@ -10,7 +10,7 @@
 
 
 ### Directory Layout
-
+```
 .
 └── templates/
   └── project/                      # 
@@ -43,3 +43,4 @@
       │── config.rb                 # Fire.app  config
       │── data.yml                  # metadata partial
       └── view_helpers.rb           # RB helper
+```
