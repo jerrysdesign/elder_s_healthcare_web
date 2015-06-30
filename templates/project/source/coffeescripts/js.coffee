@@ -4,4 +4,5 @@ $ ->
 	else
 		$('.js_col-l').css 'height', $('.js_col-r').height()
 $ ->
-	$('#datepicker-01 input').datepicker {}
+	$('.datepicker').datepicker
+		format: 'yyyy/mm/dd'
