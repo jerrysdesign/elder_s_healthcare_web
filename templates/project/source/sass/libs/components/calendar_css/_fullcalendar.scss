@@ -1067,13 +1067,7 @@ body{font-family: "Lucida Grande",Helvetica,Arial,'Microsoft JhengHei', '微軟�
 body,div,ul,li,p{margin:0;padding:0}
 ul,li{list-style:none}
 
-.wrap-calendar {
-	position:relative;
-	/*font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;*/
-	font-size: 14px;
-	min-width: 805px;
-	margin: 0 auto;
-}
+.wrap-calendar{position:relative;top:20px;left:0;min-width:805px;margin:0 auto;box-shadow:0 0 5px #ccc;font-size:14px}
 .eventTask{background:rgba(177,206,235,0.6)}
 .eventMeeting{background:rgba(211,240,225,0.6)}
 
@@ -1094,10 +1088,8 @@ ul,li{list-style:none}
 	border-radius: 2px;
 	border: 1px solid #bbb;
 	box-shadow: 0 1px 2px #cbcbcb;
-	/*font-family: arial, 'Microsoft JhengHei', '微軟正黑體';*/
 	font-size: 12px;
 	text-align: center;
-	text-decoration: none;
 	color:#4d4d4d;
 	background: #fff; /* Old browsers */
 	background: -moz-linear-gradient(top, #fff 0%, #f7f7f7 99%); /* FF3.6+ */
@@ -1108,10 +1100,9 @@ ul,li{list-style:none}
 	background: linear-gradient(to bottom, #fff 0%,#f7f7f7 99%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
 }
-
-/* 暫時 */
-/*.wrap-attendant,.wrap-case{position:absolute;top:0;right:0;z-index:999}*/
-/*.fc-toolbar{margin-bottom:200px}*/
+a.bgc01{text-decoration: none}
+a.bgc01:hover,
+a.bgc01:visited{color:#4d4d4d}
 
 /* filter */
 #btn-attendant,#btn-case,
@@ -1124,33 +1115,49 @@ ul,li{list-style:none}
 .wrap-cont-attendant,
 .wrap-cont-case{top:54px;right:0;display:none;border:1px solid #d9d9d9;padding:5px 0;background-color:#fff}
 	
-	.wrap-cont-attendant:before,.wrap-cont-case:before{top:-10px;z-index:999;content:'';width:21px;height:10px;background:url('../img/filter_arrow_t.png') no-repeat 0 0}
+	.wrap-cont-attendant:before,
+	.wrap-cont-case:before{top:-10px;z-index:999;content:'';width:21px;height:10px;background:url('../img/filter_arrow_t.png') no-repeat 0 0}
 	.wrap-cont-attendant:before{right:46px}
 	.wrap-cont-case:before{right:146px}
 	
-	#btn-attendant,#btn-case{top:10px;display:block;width:80px;height:26px;line-height:26px}
-	#btn-attendant,#filterEvent.month{right:14px}
+	#btn-attendant,
+	#btn-case{top:10px;display:block;width:80px;height:26px;line-height:26px}
+	#btn-attendant,
+	#filterEvent.month{right:14px}
 	#btn-case{right:114px}
 	
-	.wrap-cont-attendant p,.wrap-cont-case p{margin:24px 0 24px 44px}
+	.wrap-cont-attendant p,
+	.wrap-cont-case p{margin:24px 0 24px 44px}
 	
-	#filterBox1,#filterBox3{padding-bottom:30px}
-	.cont-attendant,.cont-case{width:70%;margin-left:40px}
-	.cont-attendant li,.cont-case li{float:left;width:125px}
+	#filterBox1,
+	#filterBox3{padding-bottom:30px}
+	.cont-attendant,
+	.cont-case{width:70%;margin-left:40px}
+	.cont-attendant li,
+	.cont-case li{float:left;width:125px}
 	.cont-attendant input[type="checkbox"],.cont-case input[type="checkbox"]{margin-right:8px}
 
-	#btn-af-check,#btn-cf-check{bottom:32px;right:32px;width:40px;height:26px;line-height:26px}
+	#btn-af-check,
+	#btn-cf-check{bottom:32px;right:32px;width:40px;height:26px;line-height:26px}
 	.clear{clear:both}
 	
-	#filterBox2,#filterBox4{display:none}
-	#filterBox2 ul,#filterBox4 ul{margin:0 auto}
-	#filterBox2 ul li,#filterBox4 ul li{float:left;width:60px;margin:0 2px;text-align:center}
+	#filterBox2,
+	#filterBox4{display:none}
+	#filterBox2 ul,
+	#filterBox4 ul{margin:0 auto}
+	#filterBox2 ul li,
+	#filterBox4 ul li{float:left;width:60px;margin:0 2px;text-align:center}
 	.listDot{width:16px;height:16px;margin:2px auto;border-radius:50%}
-	#btn-af-close,#btn-cf-close{bottom:9px;right:32px;width:30px;height:26px;line-height:26px}
-	.itemblur,button.itemblur{cursor:not-allowed}
+	#btn-af-close,
+	#btn-cf-close{bottom:14px;right:32px;width:30px;height:26px;line-height:26px}
 	.itemblur{opacity:0.4}
+	.itemblur,
+	button.itemblur{cursor:not-allowed}
 
 .ui-widget{background-color:#f2f2f2}
 .eventHide{display:none}
 
 #filterEvent{top:13px;right:214px}
+#filterEvent input{margin-left:10px}
+div.fc-toolbar{margin-left:10px}
+div.fc-toolbar button.fc-prev-button{margin-right:5px}

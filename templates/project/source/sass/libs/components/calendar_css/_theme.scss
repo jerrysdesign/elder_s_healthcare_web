@@ -340,3 +340,42 @@ h2,th{font-weight:normal}
 .fc-toolbar{width:50%;margin:0}
 .fc-center h2{font-size:16px;line-height:26px}
 .ui-widget-header.cur{color:#fff;background:#fff url('../img/bg_highlight_th.png') no-repeat 50% 50%}
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border-radius: 2px;
+	border: 1px solid #bbb;
+	box-shadow: 0 1px 2px #cbcbcb;
+	color: #4d4d4d;
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top, #fff 0%, #f7f7f7 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(99%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff 0%,#f7f7f7 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff 0%,#f7f7f7 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff 0%,#f7f7f7 99%); /* IE10+ */
+	background: linear-gradient(to bottom, #fff 0%,#f7f7f7 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active{
+	border: 1px solid #3d85cc;
+	color: #fff;
+	background: #30679f; /* Old browsers */
+	background: -moz-linear-gradient(top, #3d85cc 0%, #30679f 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d85cc), color-stop(99%,#30679f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3d85cc 0%,#30679f 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3d85cc 0%,#30679f 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3d85cc 0%,#30679f 99%); /* IE10+ */
+	background: linear-gradient(to bottom, #3d85cc 0%,#30679f 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-state-default .ui-icon{background-image: url(../img/ui-icon.png)}
+.ui-icon-circle-triangle-w{background-position: 50% -18px}
+.ui-icon-circle-triangle-e{background-position: 50% -70px}
+
+button.fc-agendaWeek-button,
+button.fc-month-button{padding: 0 12px}
