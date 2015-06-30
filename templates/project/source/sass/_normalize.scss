@@ -372,6 +372,15 @@ input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
+/* hide the HTML5 number input’s spin box - 20150630 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /*display: none;<- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
 /**
  * Remove inner padding and border in Firefox 4+.
  */
