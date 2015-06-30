@@ -272,3 +272,10 @@ header {
 	}
 
 }
+
+/* hide the HTML5 number input’s spin box - 20150630 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
