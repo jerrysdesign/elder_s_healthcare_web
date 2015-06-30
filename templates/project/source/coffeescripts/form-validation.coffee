@@ -59,22 +59,6 @@ $ ->
 	msgHide = (currentFormId)->
 		$this = $('#' + currentFormId).find('#msg')
 		$this.hide()
-
-	# 隱藏忘記密碼區塊
-	forgetpasswordHide = ->
-		$('.js--forget-password-content').fadeOut()
-
-	# 顯示忘記密碼區塊
-	forgetpasswordShow = ->
-		$('.js--forget-password-content').delay().fadeIn()
-	
-	# 隱藏登入區塊
-	loginHide = ->
-		$('.js--login-content').fadeOut()
-
-	# 顯示登入區塊
-	loginShow = ->
-		$('.js--login-content').delay().fadeIn()
 	
 	# 隱藏送出選單
 	disabledBtn = ->
@@ -187,14 +171,3 @@ $ ->
 		
 		errorPlacement: (error, element) ->
 			error.appendTo '#msg'
-
-
-	$('.js--forgot-password-toggler').click (e) ->
-		loginHide()
-		forgetpasswordShow()
-		e.preventDefault
-
-	$('.js__back-login-toggler').click (e) ->
-		forgetpasswordHide()
-		loginShow()
-		e.preventDefault

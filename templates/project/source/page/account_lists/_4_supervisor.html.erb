@@ -29,7 +29,14 @@
 				<td>0900-000-000</td>
 				<td>02-0000-0000</td>
 				<td>歐區欠</td>
-				<td>張弓長</td>
+				<td>
+				<!-- 如果超過多筆 -->
+				<ul class="scroll_table_list">
+					<% 99.times do %>
+					<li>張弓長</li>
+					<% end %>
+				</ul>
+				</td>
 				<td>李木子</td>
 				<td>一般民眾</td>
 				<td>中高齡</td>

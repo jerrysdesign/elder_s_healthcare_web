@@ -29,48 +29,7 @@ html lang='zh-TW'
 											input(id='login-submit' class='form-control btn btn-login' name='login-submit' tabindex='3' type='submit' value='登入')
 										.form-group
 											.text-center
-												a.forgot-password.js--forgot-password-toggler href='javascript:;' tabindex='4'  忘記密碼?
-						
-						/ item
-						div(class='panel-item forget-password js--forget-password-content')
-							.row
-								div(class='col-md-4 col-md-offset-4')
-									form(id='forget-password-form' action='' method='post' role='form')
-										
-										.form-group
-											.text-center style='color: #4697D1; font-size: 24pt' 忘記密碼?
-										.form-group.has-state
-											#msg.alert.errorsContainer
-										.form-group.has-state.field
-											input(id='useremail' class='form-control ' name='useremail' placeholder='請輸入 Email 帳號' tabindex='1' type='text' value='')
-										.form-group.has-state
-											input(id='fopw-submit' class='form-control btn btn-forget-password' name='forget-password-submit' tabindex='2' type='submit' value='送出申請')
-										
-										.form-group
-											.text-center
-												.forgot-password style='color: #808080;' 請填寫登入使用的 Email ，稍後將由系統發信並提供更改密碼的連結至您的 Email 信箱，以重新修改密碼
-												a.js__back-login-toggler href='javascript:;' style='color: #337ab7;' tabindex='3' 返回登入畫面
-										/ / success
-										/ .form-group.has-success
-										/ 	.text-center style='color: #6ACA6B; font-size: 24pt'
-										/ 		i.fa.fa-check
-										/ 		|  請到您的信箱收信，以重新設定密碼。
-										/ .form-group.has-success
-										/ 	input(id='username' class='form-control' name='Username' placeholder='請輸入 Email 帳號' tabindex='1' type='text' value='')
-										/ .form-group.has-state
-										/ 	input(id='login-submit' class='form-control btn btn-forget-password' name='forget-password-submit' tabindex='2' type='submit' value='送出申請' disabled)
-										
-										/ / error
-										/ .form-group.has-error
-
-										/ 	.text-center style='color: #FC1268; font-size: 24pt'
-										/ 		i.fa.fa-times
-										/ 		|  Invail email address. 無效的電子郵件地址
-										/ .form-group.has-error
-										/ 	input(id='username' class='form-control' name='Username' placeholder='請輸入 Email 帳號' tabindex='1' type='text' value='')
-										/ .form-group.has-state
-										/ 	input(id='login-submit' class='form-control btn btn-forget-password' name='forget-password-submit' tabindex='2' type='submit' value='送出申請')
-										
+												a.forgot-password href='javascript:;' tabindex='4'  忘記密碼?
 
 		= render 'layout_foot'
 		script src="js/form-validation.js" type="text/javascript"
