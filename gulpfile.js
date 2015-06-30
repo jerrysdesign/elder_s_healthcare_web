@@ -19,6 +19,8 @@ var vendor = {
     bootstrapjs   : config.vendor + '/bootstrap/dist/js/**/*',
     bootstrapcss  : config.vendor + '/bootstrap/dist/css/**/*',
     bootstrapfont : config.vendor + '/bootstrap/dist/fonts/**/*',
+    bootstrapdatepickerjs : config.vendor + '/bootstrap-datepicker/js/**/*',
+    bootstrapdatepickercss : config.vendor + '/bootstrap-datepicker/css/**.*',
     jquery        : config.vendor + '/jquery/dist/**/*',
     // font:
     // [
@@ -39,6 +41,8 @@ var vendor = {
     bootstrapjs   : config.project + '/js/vendor/bootstrap/js',
     bootstrapcss  : config.project + '/styles/vendor/bootstrap/css',
     bootstrapfont : config.project + '/styles/vendor/bootstrap/fonts',
+    bootstrapdatepickerjs : config.project + '/js/vendor/bootstrap-datepicker',
+    bootstrapdatepickercss : config.project + '/styles/vendor/bootstrap-datepicker',
     jquery        : config.project + '/js/vendor/jquery',
     iconfont      : config.project + '/fonts',
     iconfontsass  : config.project + '/sass/vendor/fontawesome',
@@ -63,6 +67,12 @@ gulp.task('vendor', function() {
     ;
   gulp.src(vendor.source.bootstrapcss)
     .pipe(gulp.dest(vendor.dist.bootstrapcss))
+    ;
+  gulp.src(vendor.source.bootstrapdatepickerjs)
+    .pipe(gulp.dest(vendor.dist.bootstrapdatepickerjs))
+    ;
+  gulp.src(vendor.source.bootstrapdatepickercss)
+    .pipe(gulp.dest(vendor.dist.bootstrapdatepickercss))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
