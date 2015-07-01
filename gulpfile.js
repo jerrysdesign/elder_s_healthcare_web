@@ -18,11 +18,11 @@ var vendor = {
     bootstrapsass :           config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
     bootstrapjs :             config.vendor + '/bootstrap/dist/js/**/*',
     bootstrapcss :            config.vendor + '/bootstrap/dist/css/**/*',
-    bootstrapfont :           config.vendor + '/bootstrap/dist/fonts/**/*',
+    bootstrapfont :           config.vendor + '/bootstrap/dist/fonts/**.*',
     bootstrapdatepickerjs :   config.vendor + '/bootstrap-datepicker/js/**/*',
     bootstrapdatepickercss :  config.vendor + '/bootstrap-datepicker/css/**.*',
-    bootstraptimepickerjs :   config.vendor + '/bootstrap-timepicker/js/**.*',
-    bootstraptimepickercss :  config.vendor + '/bootstrap-timepicker/css/**.*',
+    datetimepickerjs :        config.vendor + '/eonasdan-bootstrap-datetimepicker/build/js/**.*',
+    datetimepickercss :       config.vendor + '/eonasdan-bootstrap-datetimepicker/build/css/**.*',
     jquery :                  config.vendor + '/jquery/dist/**/*',
     // font:
     // [
@@ -42,11 +42,11 @@ var vendor = {
     bootstrapsass :           config.project + '/sass/vendor/bootstrap-sass',
     bootstrapjs :             config.project + '/js/vendor/bootstrap/js',
     bootstrapcss :            config.project + '/styles/vendor/bootstrap/css',
-    bootstrapfont :           config.project + '/styles/vendor/bootstrap/fonts',
+    bootstrapfont :           config.project + '/fonts/bootstrap',
     bootstrapdatepickerjs :   config.project + '/js/vendor/bootstrap-datepicker',
     bootstrapdatepickercss :  config.project + '/styles/vendor/bootstrap-datepicker',
-    bootstraptimepickerjs :   config.project + '/js/vendor/bootstrap-timepicker',
-    bootstraptimepickercss :  config.project + '/styles/vendor/bootstrap-timepicker',
+    datetimepickerjs :        config.project + '/js/vendor/bootstrap-datetimepicker',
+    datetimepickercss :       config.project + '/styles/vendor/bootstrap-datetimepicker',
     jquery :                  config.project + '/js/vendor/jquery',
     iconfont :                config.project + '/fonts',
     iconfontsass :            config.project + '/sass/vendor/fontawesome',
@@ -72,17 +72,20 @@ gulp.task('vendor', function() {
   gulp.src(vendor.source.bootstrapcss)
     .pipe(gulp.dest(vendor.dist.bootstrapcss))
     ;
+  gulp.src(vendor.source.bootstrapfont)
+    .pipe(gulp.dest(vendor.dist.bootstrapfont))
+    ;
   gulp.src(vendor.source.bootstrapdatepickerjs)
     .pipe(gulp.dest(vendor.dist.bootstrapdatepickerjs))
     ;
   gulp.src(vendor.source.bootstrapdatepickercss)
     .pipe(gulp.dest(vendor.dist.bootstrapdatepickercss))
     ;
-  gulp.src(vendor.source.bootstraptimepickerjs)
-    .pipe(gulp.dest(vendor.dist.bootstraptimepickerjs))
+  gulp.src(vendor.source.datetimepickerjs)
+    .pipe(gulp.dest(vendor.dist.datetimepickerjs))
     ;
-  gulp.src(vendor.source.bootstraptimepickercss)
-    .pipe(gulp.dest(vendor.dist.bootstraptimepickercss))
+  gulp.src(vendor.source.datetimepickercss)
+    .pipe(gulp.dest(vendor.dist.datetimepickercss))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))

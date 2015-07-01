@@ -21,6 +21,7 @@ templates/project/source/fonts/fontawesome-webfont.svg
 templates/project/source/fonts/fontawesome-webfont.ttf
 templates/project/source/fonts/fontawesome-webfont.woff
 templates/project/source/fonts/fontawesome-webfont.woff2
+templates/project/source/fonts/bootstrap
 
 #fire.app
 templates/project/source/fire_app_log.txt
