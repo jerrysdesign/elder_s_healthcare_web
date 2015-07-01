@@ -15,13 +15,15 @@ var config = {
 
 var vendor = {
   source : {
-    bootstrapsass : config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
-    bootstrapjs   : config.vendor + '/bootstrap/dist/js/**/*',
-    bootstrapcss  : config.vendor + '/bootstrap/dist/css/**/*',
-    bootstrapfont : config.vendor + '/bootstrap/dist/fonts/**/*',
-    bootstrapdatepickerjs : config.vendor + '/bootstrap-datepicker/js/**/*',
-    bootstrapdatepickercss : config.vendor + '/bootstrap-datepicker/css/**.*',
-    jquery        : config.vendor + '/jquery/dist/**/*',
+    bootstrapsass :           config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
+    bootstrapjs :             config.vendor + '/bootstrap/dist/js/**/*',
+    bootstrapcss :            config.vendor + '/bootstrap/dist/css/**/*',
+    bootstrapfont :           config.vendor + '/bootstrap/dist/fonts/**/*',
+    bootstrapdatepickerjs :   config.vendor + '/bootstrap-datepicker/js/**/*',
+    bootstrapdatepickercss :  config.vendor + '/bootstrap-datepicker/css/**.*',
+    bootstraptimepickerjs :   config.vendor + '/bootstrap-timepicker/js/**.*',
+    bootstraptimepickercss :  config.vendor + '/bootstrap-timepicker/css/**.*',
+    jquery :                  config.vendor + '/jquery/dist/**/*',
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -31,23 +33,25 @@ var vendor = {
     //  // config.vendor + '/open-sans-fontface/fonts/Semibold/*',
     //  config.vendor + '/open-sans-fontface/**/*'// **所有目錄 // **/*所有目錄包含檔案
     // ],
-    iconfont      : config.vendor + '/fontawesome/fonts/**.*',
-    iconfontsass  : config.vendor + '/fontawesome/scss/**.*',
-    jQueryValidate: config.vendor + '/jquery-validation/dist/**.*',
-    jQueryFancyBox: config.vendor + '/fancybox/source/**/*'
+    iconfont :        config.vendor + '/fontawesome/fonts/**.*',
+    iconfontsass :    config.vendor + '/fontawesome/scss/**.*',
+    jQueryValidate :  config.vendor + '/jquery-validation/dist/**.*',
+    jQueryFancyBox :  config.vendor + '/fancybox/source/**/*'
   },
   dist : {
-    bootstrapsass : config.project + '/sass/vendor/bootstrap-sass',
-    bootstrapjs   : config.project + '/js/vendor/bootstrap/js',
-    bootstrapcss  : config.project + '/styles/vendor/bootstrap/css',
-    bootstrapfont : config.project + '/styles/vendor/bootstrap/fonts',
-    bootstrapdatepickerjs : config.project + '/js/vendor/bootstrap-datepicker',
-    bootstrapdatepickercss : config.project + '/styles/vendor/bootstrap-datepicker',
-    jquery        : config.project + '/js/vendor/jquery',
-    iconfont      : config.project + '/fonts',
-    iconfontsass  : config.project + '/sass/vendor/fontawesome',
-    jQueryValidate: config.project + '/js/vendor/jquery.validation',
-    jQueryFancyBox: config.project + '/js/vendor/fancybox'
+    bootstrapsass :           config.project + '/sass/vendor/bootstrap-sass',
+    bootstrapjs :             config.project + '/js/vendor/bootstrap/js',
+    bootstrapcss :            config.project + '/styles/vendor/bootstrap/css',
+    bootstrapfont :           config.project + '/styles/vendor/bootstrap/fonts',
+    bootstrapdatepickerjs :   config.project + '/js/vendor/bootstrap-datepicker',
+    bootstrapdatepickercss :  config.project + '/styles/vendor/bootstrap-datepicker',
+    bootstraptimepickerjs :   config.project + '/js/vendor/bootstrap-timepicker',
+    bootstraptimepickercss :  config.project + '/styles/vendor/bootstrap-timepicker',
+    jquery :                  config.project + '/js/vendor/jquery',
+    iconfont :                config.project + '/fonts',
+    iconfontsass :            config.project + '/sass/vendor/fontawesome',
+    jQueryValidate:           config.project + '/js/vendor/jquery.validation',
+    jQueryFancyBox:           config.project + '/js/vendor/fancybox'
   }
 }
 
@@ -73,6 +77,12 @@ gulp.task('vendor', function() {
     ;
   gulp.src(vendor.source.bootstrapdatepickercss)
     .pipe(gulp.dest(vendor.dist.bootstrapdatepickercss))
+    ;
+  gulp.src(vendor.source.bootstraptimepickerjs)
+    .pipe(gulp.dest(vendor.dist.bootstraptimepickerjs))
+    ;
+  gulp.src(vendor.source.bootstraptimepickercss)
+    .pipe(gulp.dest(vendor.dist.bootstraptimepickercss))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
