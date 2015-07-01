@@ -6,3 +6,13 @@ $ ->
 $ ->
 	$('.datepicker').datepicker
 		format: 'yyyy/mm/dd'
+#$ ->
+	# $('.timepicker').timepicker
+	# 	minuteStep: 1
+	# 	template: 'modal'
+	# 	appendWidgetTo: 'body'
+	# 	showSeconds: true
+	# 	showMeridian: false
+	# 	defaultTime: false
+$ ->
+  $('.timepicker').datetimepicker format: 'LT'
