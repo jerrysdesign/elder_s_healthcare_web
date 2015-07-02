@@ -8,3 +8,12 @@ $ ->
 		format: 'yyyy/mm/dd'
 $ ->
   $('.timepicker').datetimepicker format: 'LT'
+
+$ ->
+	$radio = $('.case_new_check').find('input[type="radio"]')
+	$contAll = $('.case_new_checkcont1,.case_new_checkcont2')
+	_cont = 'case_new_checkcont'
+	$radio.change ->
+	  $idx = $(this).parent().index() + 1
+	  $contAll.hide()
+	  $('.' + _cont + $idx).show()
