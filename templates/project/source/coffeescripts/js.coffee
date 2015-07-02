@@ -9,5 +9,5 @@ $ ->
 $ ->
 	$('.timepicker').datetimepicker format: 'LT'
 $ ->
-	$('aside').affix offset:
-		top: 0
+	$('.js--affix--95').affix offset:
+		top: 95
