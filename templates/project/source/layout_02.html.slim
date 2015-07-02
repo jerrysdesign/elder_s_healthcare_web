@@ -1,9 +1,20 @@
-.navbar.tab-page-wrapper
-	ul.nav.nav-tabs.tab-page.navbar-left
-		li.active: a href='javascript:;' 安養中心主管
-		li: a href='javascript:;' 安養中心主管
-		li: a href='javascript:;' 督導員
-		li: a href='javascript:;' 管理員
-	a.btn.btn.btn-default.navbar-right href='javascript:;'
-		i.fa-user-plus
-		| 新增帳號
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav1"}
+			
+// main-content
+section.main
+	.container-fluid
+		// =>>
+		.navbar.tab-page-wrapper
+			ul.nav.nav-tabs.tab-page.navbar-left
+				li.active: a href='javascript:;' 安養中心主管
+				li: a href='javascript:;' 安養中心主管
+				li: a href='javascript:;' 督導員
+				li: a href='javascript:;' 管理員
+			a.btn.btn.btn-default.navbar-right href='javascript:;'
+				i.fa-user-plus
+				| 新增帳號

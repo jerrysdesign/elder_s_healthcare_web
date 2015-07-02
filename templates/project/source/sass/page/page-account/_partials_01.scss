@@ -24,4 +24,9 @@ $tab-page-wrapper-height: 65px;
 	&.bg-secondary {
 		background-color: $secondary;
 	}
+	&.affix {
+		top: 0;
+		width: 100%;
+		z-index: $z-index-header;
+	}
 }
