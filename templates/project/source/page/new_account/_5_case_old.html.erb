@@ -271,54 +271,28 @@
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">身份別（三）</label>
 			<div class="col-md-10 case_new_check">
-				<label class="radio-inline"><input type="radio" value="" name="IDRadios1" checked>老人科</label>
-				<label class="radio-inline"><input type="radio" value="" name="IDRadios1">身障 ICF</label>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios1" checked>身障科</label>
 			</div>
 		</div>
-		<div class="case_new_checkcont1">
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">身份別（四）</label>
-				<div class="col-md-10">
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios2" checked>長十</label>
-				</div>
-			</div>
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">身份別（五）</label>
-				<div class="col-md-10">
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios3" checked>新制</label>
-				</div>
-			</div>
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">補助類別</label>
-				<div class="col-md-10">
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">65 歲老人</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上身心障礙者</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">55 歲以上山地原住民</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">僅 IADL 失能獨居老人</label><br>
-				</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身份別（四）</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios2" checked>非長十</label>
 			</div>
 		</div>
-		<div class="case_new_checkcont2">
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">身份別（四）</label>
-				<div class="col-md-10">
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios4" checked>非長十</label>
-				</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身份別（五）</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios3" checked>舊制</label>
 			</div>
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">身份別（五）</label>
-				<div class="col-md-10">
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios5" checked>新制</label>
-				</div>
-			</div>
-			<div class="form-group form-inline">
-				<label class="col-md-2 control-label">補助類別</label>
-				<div class="col-md-10">				
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">未滿 50 歲身障者</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">64 歲以下未領有手冊之失能者</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上失智者、慢性精神病患、智能障礙者及自閉症者</label><br>
-					<label class="radio-inline"><input type="radio" value="" name="IDRadios">未達常照十年計畫失能標準而適用本補助者</label><br>
-				</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">補助類別</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">未滿 50 歲身障者</label><br>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">64 歲以下未領有手冊之失能者</label><br>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上失智者、慢性精神病患、智能障礙者及自閉症者</label><br>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">未達常照十年計畫失能標準而適用本補助者</label><br>
 			</div>
 		</div>
 		<div class="form-group form-inline">
@@ -534,26 +508,39 @@
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">核定時數</label>
 			<div class="col-md-10">
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="系統帶出(全額)補助+補助70+補助50" disabled>
 				<label class="form-control-static">小時/月</label>
 			</div>
 		</div>
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">補助比例（政府補助額度）</label>
 			<div class="col-md-10">
+				<label class="form-control-static">全額補助</label>
 				<input type="text" class="form-control" placeholder="">
-				<label class="form-control-static">%</label>
+				<label class="form-control-static">小時/月</label>
+				<br>
+				<label class="form-control-static">補助70%</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/月</label>
+				<br>
+				<label class="form-control-static">補助50%</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/月</label>
+				<br>
+				<label class="form-control-static">全額自費</label>
+				<input type="text" class="form-control" placeholder="系統帶出(服務需求-核定時數)" disabled>
+				<label class="form-control-static">小時/月</label>
 			</div>
 		</div>
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">費用</label>
 			<div class="col-md-10">
 				<label class="form-control-static">每月總價</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
 				<label class="form-control-static">元，政府補助</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
 				<label class="form-control-static">元，自費</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
 				<label class="form-control-static">元</label>
 			</div>
 		</div>
