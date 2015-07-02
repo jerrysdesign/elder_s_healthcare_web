@@ -7,4 +7,7 @@ $ ->
 	$('.datepicker').datepicker
 		format: 'yyyy/mm/dd'
 $ ->
-  $('.timepicker').datetimepicker format: 'LT'
+	$('.timepicker').datetimepicker format: 'LT'
+$ ->
+	$('aside').affix offset:
+		top: 0
