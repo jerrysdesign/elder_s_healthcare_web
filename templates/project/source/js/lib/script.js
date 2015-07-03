@@ -1,3 +1,5 @@
+
+
 var hcs_calendar = hcs_calendar || {};
 hcs_calendar = {
 	default_setting : function(){
@@ -39,6 +41,8 @@ hcs_calendar = {
 					$end          = event.end.format("YYYY-MM-DD HH:mm"),
 					$body         = $("body"),
 					$miss         = $(".miss"),
+					$punch        = $(".punch"),
+					$nonarrival   = $(".nonarrival"),
 					_titleTask    = "任務",
 					_topicTask    = "任務名稱",
 					_timeStart    = "開始時間",
@@ -51,6 +55,8 @@ hcs_calendar = {
 					_editEvent    = "修改事件",
 					_miss         = "服務未遇",
 					_done         = "確定",
+					_punch        = "補打卡",
+					_nonarrival   = "居服員未到",
 					_titleMeeting = "會議/職訓",
 					_topicEvent   = "事件主題",
 					_eventIssue   = "事件議題",
@@ -114,16 +120,41 @@ hcs_calendar = {
 									'<a href="#" class="btn btn-default">'+ _editEvent +'</a>' +
 								'</div>' +
 								'<div class="col-md-2 text-left">' +
-									'<a href="#" class="miss btn btn-default">'+ _miss +'</a>' +
+									'<a href="#" class="btn btn-default miss">'+ _miss +'</a>' +
 								'</div>' +
-								'<div class="col-md-8 text-right">' +
+								'<div class="col-md-2 text-left">' +
+									'<a href="#" class="btn btn-default punch">'+ _punch +'</a>' +
+								'</div>' +
+								'<div class="col-md-2 text-left">' +
+									'<a href="#" class="btn btn-default nonarrival">'+ _nonarrival +'</a>' +
+								'</div>' +
+								'<div class="col-md-4 text-right">' +
 									'<a href="#" class="btn btn-primary">'+ _done +'</a>' +
 								'</div>' +
 							'</div>' +
 						'</div>');
 
-						// missTask
-						$miss.off('click');
+						$body.off("click");
+
+						// btn-punch
+						$body.on("click",".punch", function(e){
+							var $cont = confirm("您要補打卡 " + event.start.format("YYYY/MM/DD HH:mm") + '-' + event.end.format("HH:mm") + " ?");
+							if($cont){
+								$.fancybox.close();
+								return false;
+							}
+						});
+
+						// btn-nonarrival
+						$body.on("click",".nonarrival", function(e){
+							var $cont = confirm("請再次確認您要標註居服員未到 ? ");
+							if($cont){
+								$.fancybox.close();
+								return false;
+							}
+						});
+						
+						// btn-missTask
 						$body.on("click", ".miss", function() {
 							var fancyContent = (
 								'<div class="modal-header">' + 
@@ -258,8 +289,6 @@ hcs_calendar = {
 					"closeBtn": false,
 					"content": fancyContent
 				});
-
-				return false;
 			},
 			events: data_events
 		});
