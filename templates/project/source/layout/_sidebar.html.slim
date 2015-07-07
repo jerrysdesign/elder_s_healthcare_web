@@ -1,6 +1,13 @@
 .sidebar__logo
 	== render partial = 'logo'
 ul.nav.nav-sidebar
+	li.dropdown
+		a.dropdown-toggle data-toggle="dropdown" href="javascript:;"
+			| 督導員 XXX 您好!  
+			span.caret
+		ul.dropdown-menu
+			li
+				a.hollo href="#"  修改密碼
 	- if s == "mainnav1"
 		li.active
 			a href="#"
@@ -298,14 +305,7 @@ ul.nav.nav-sidebar
 				li: a href='#' 居服薪資
 				li.active: a href='#' 核銷明細
 
-
-		/ li
-		/ 	a href="#"
-		/ 		i class='fa fa-lg fa-shopping-cart'
-		/ 		| 耗材管理
-		/ li
-		/ 	a href="#"
-		/ 		i class='fa fa-lg fa-comment-o'
-		/ 		| 訊息管理
-
-	/ a href='#' 登出
+	li
+		a href="#"
+			i class='fa fa-lg fa-sign-out'
+			| 登出
