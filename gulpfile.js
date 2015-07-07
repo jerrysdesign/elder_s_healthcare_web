@@ -20,7 +20,7 @@ var bower = {
     bootstrap : config.vendor + '/bootstrap/dist',
     bootstrapdatepicker: config.vendor + '/bootstrap-datepicker',
     datetimepicker: config.vendor + '/eonasdan-bootstrap-datetimepicker/build/',
-    edittable: config.vendor + '/x-editable/dist/bootstrap3-editable',
+    editable: config.vendor + '/x-editable/dist/bootstrap3-editable',
     jquery: config.vendor + '/jquery/dist',
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
@@ -37,9 +37,9 @@ var vendor = {
     bootstrapdatepickercss :  bower.bootstrapdatepicker + '/css' + all_files,
     datetimepickerjs :        bower.datetimepicker + '/js' + all_files,
     datetimepickercss :       bower.datetimepicker + '/css' + all_files,
-    edittablejs:              bower.edittable + '/js' + all_files,
-    edittablecss:             bower.edittable + '/css' + all_files,
-    edittableimg:             bower.edittable + '/img' + all_files,
+    editablejs:               bower.editable + '/js' + all_files,
+    editablecss:              bower.editable + '/css' + all_files,
+    editableimg:              bower.editable + '/img' + all_files,
     jquery :                  bower.jquery + all_folders,
     iconfont :                bower.fontawesome + '/fonts' + all_files,
     iconfontsass :            bower.fontawesome + '/scss' + all_files,
@@ -64,9 +64,9 @@ var vendor = {
     bootstrapdatepickercss :  config.project + '/styles/vendor/bootstrap-datepicker',
     datetimepickerjs :        config.project + '/js/vendor/bootstrap-datetimepicker',
     datetimepickercss :       config.project + '/styles/vendor/bootstrap-datetimepicker',
-    edittablejs :             config.project + '/js/vendor/edittable',
-    edittablecss :            config.project + '/styles/vendor/edittable',
-    edittableimg :            config.project + '/img/',
+    editablejs :              config.project + '/js/vendor/editable',
+    editablecss :             config.project + '/styles/vendor/editable',
+    editableimg :             config.project + '/styles/vendor/img/',
     jquery :                  config.project + '/js/vendor/jquery',
     iconfont :                config.project + '/fonts',
     iconfontsass :            config.project + '/sass/vendor/fontawesome',
@@ -107,14 +107,14 @@ gulp.task('vendor', function() {
   gulp.src(vendor.source.datetimepickercss)
     .pipe(gulp.dest(vendor.dist.datetimepickercss))
     ;
-  gulp.src(vendor.source.edittablejs)
-    .pipe(gulp.dest(vendor.dist.edittablejs))
+  gulp.src(vendor.source.editablejs)
+    .pipe(gulp.dest(vendor.dist.editablejs))
     ;
-  gulp.src(vendor.source.edittablecss)
-    .pipe(gulp.dest(vendor.dist.edittablecss))
+  gulp.src(vendor.source.editablecss)
+    .pipe(gulp.dest(vendor.dist.editablecss))
     ;
-  gulp.src(vendor.source.edittableimg)
-    .pipe(gulp.dest(vendor.dist.edittableimg))
+  gulp.src(vendor.source.editableimg)
+    .pipe(gulp.dest(vendor.dist.editableimg))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
