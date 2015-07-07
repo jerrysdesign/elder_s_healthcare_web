@@ -1,0 +1,11 @@
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav5"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "page/service/search_home_list_direct_caseinfo.html.erb"
