@@ -208,6 +208,19 @@ body {
 			@extend .nav-list;
 		}
 	}
+	.open > a, .open > a:hover, .open > a:focus {
+		background-color: inherit;
+	}
+	.dropdown-menu {
+		right: 0;
+		background-color: lighten(#649dd6, 35%);
+		a {
+			text-align: center;
+		}
+	}
+	span.caret {
+		margin-left: .75em;
+	}
 }
 
 /*
