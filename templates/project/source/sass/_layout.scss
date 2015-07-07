@@ -1,18 +1,15 @@
 /* ========================================================================
 	 Component: layout.scss
  ========================================================================== */
- 
+
 //
 // This file controls the presentation of all components
-// Proposed markup 
+// Proposed markup
 //  .app-container
-//    > header
-//      # topnavbar
 //    > aside
 //      # sidebar
 //    > section
 //      > .app
-//    > footer
 //
 // -------------------------------------------------------------
 
@@ -40,19 +37,13 @@ body {
 	min-width: 1199px;
 	min-height: 100%;
 	height: auto;
-	> header {
-		position: relative;
-		z-index: $z-index-header;
-	}
-	// Contains the main sidebar
 	> aside {
 		top: $header-hg;
 		left: 0;
 		bottom: 0;
-		width: $aside-wd;
-		// padding-top: $header-hg;
 		z-index: $z-index-aside;
 		margin-top: $header-height * -1;
+		@include box-shadow(1px 0 4px rgba(0, 0, 0, 0.15));
 	}
 	// Contains the main content
 	> section {
@@ -94,18 +85,31 @@ body {
 // Fixed layout
 // -----------------------------
 .layout-fixed {
-	overflow-x: scroll;
-	overflow-y: visible;
-	.app-container {
-		> header {
-			width: 100%;
-			height: $header-hg;
-		}
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.aside-collapsed, .layout-fixed  {
+	@include translate3d(0,0,0);
+	@include transition-transform(.5s ease);
+}
+.app-container {
+	.layout-fixed & {
+		@include transition(all 1s ease-in-out);
 		> aside {
 			position: fixed;
+			width: $aside-wd;
 		}
 		> section {
-			// padding-top: $header-hg;
+		}
+	}
+	.aside-collapsed & {
+		@include transition(all 1s ease-in-out);
+		> aside {
+			position: absolute;
+			left: $aside-wd*-1;
+		}
+		> section {
+			margin-left: 0;
 		}
 	}
 }
@@ -154,14 +158,8 @@ body {
 /*
  *  style
  */
-header {
-	min-height: $header-height;
-	background-color: #fff;
-	@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
-}
 .sidebar {
 	background-color: $parimary;
-	border-right: 1px solid darken(desaturate($parimary, 60%), 0.01%);
 	a {
 		color: #fff;
 	}
@@ -172,8 +170,11 @@ header {
 .sidebar__logo {
 	position: relative;
 	display: block;
+	background-color: #fff;
 	@extend header;
 	z-index: $z-index-header;
+	@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
+	@include pie-clearfix;
 }
 .nav-sidebar {
 }
@@ -219,6 +220,8 @@ header {
 	padding-left: $content-padding;
 	padding-right: $content-padding;
 	// font-size: 13px;
+	overflow-x: auto;
+	overflow-y: auto;
 }
 
 .main .page-header {
@@ -265,7 +268,7 @@ header {
 		text-indent: 32px;
 		background: url('../img/nav-sidebar-sub-line.png') no-repeat 50px 0;
 		&:hover {
-			background-color: $secondary;	
+			background-color: $secondary;
 		}
 		&:nth-last-child(1) {
 			background-position: 50px -26px;
@@ -274,14 +277,18 @@ header {
 			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px -52px;
 		}
 		a {
-			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px 0;	
+			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px 0;
 		}
-		
+
 	}
 
 }
 
 /* added account-case */
-.case_new_checkcont2{
+.case_new_checkcont2 {
 	@include is-hidden;
+}
+
+.aside-collapsed {
+
 }

@@ -4,7 +4,7 @@
 </div>
 
 <div class="row top-buffer">
-	<table class="table align-middle-table custom-table-01 reset-list-style">
+	<table class="table align-middle-table custom-table-01 reset-list-style js--spy--width">
 		<thead>
 			<tr>
 				<th>個人相片</th>
@@ -70,6 +70,7 @@
 			</tr>
 		</thead>
 		<tbody>
+		<% 10.times do %>
 			<tr>
 				<td><img alt="64" class="img-circle" src="http://placehold.it/64"></td>
 				<td>email@tw.shuttle.com</td>
@@ -131,7 +132,8 @@
 				<td class="text-center"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
 				<td class="text-center"><a href="#"><i class="fa fa-qrcode fa-2x"></i></a></td>
 				<td class="text-center"><a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a></td>
-			</tr>
+			</tr>   
+		<% end %>
 		</tbody>
 	</table>
 </div>

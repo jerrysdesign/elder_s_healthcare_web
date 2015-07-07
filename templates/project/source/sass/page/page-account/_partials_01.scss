@@ -1,10 +1,15 @@
 $tab-page-wrapper-height: 65px;
-
+.tab-space {
+	height: $tab-page-wrapper-height;
+}
 .tab-page-wrapper {
+	position: fixed;
+	width: 100%;
 	height: $tab-page-wrapper-height;
 	margin: 0 -40px;
 	padding: 20px 40px 0;
 	@include border-radius(0);
+	z-index: 99;
 	.tab-page {
 		border-bottom: 0 solid $secondary;
 		font-size: 16px;
