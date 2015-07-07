@@ -6,27 +6,45 @@ var gulp      = require('gulp'), 
 var src = {};
 var hidden_files = '**/_*.*';
 var ignored_files = '!'+hidden_files;
+var all_folders = '/**/*';
+var all_files = '/**.*';
 
 // Sources config
 var config = {
   vendor  : './bower_components' ,
-  project : './templates/project/source' 
+  project : './templates/project/source' ,
+}
+
+var bower = {
+    bootstrapsass: config.vendor + '/bootstrap-sass/assets/stylesheets',
+    bootstrap : config.vendor + '/bootstrap/dist',
+    bootstrapdatepicker: config.vendor + '/bootstrap-datepicker',
+    datetimepicker: config.vendor + '/eonasdan-bootstrap-datetimepicker/build/',
+    edittable: config.vendor + '/x-editable/dist/bootstrap3-editable',
+    jquery: config.vendor + '/jquery/dist',
+    fontawesome: config.vendor + '/fontawesome',
+    jqueryvalidation: config.vendor + '/jquery-validation/dist',
+    jqueryfancybox: config.vendor + '/fancybox/source'
 }
 
 var vendor = {
   source : {
-    bootstrapsass :           config.vendor + '/bootstrap-sass/assets/stylesheets/**/*',
-    bootstrapjs :             config.vendor + '/bootstrap/dist/js/**/*',
-    bootstrapcss :            config.vendor + '/bootstrap/dist/css/**/*',
-    bootstrapfont :           config.vendor + '/bootstrap/dist/fonts/**.*',
-    bootstrapdatepickerjs :   config.vendor + '/bootstrap-datepicker/js/**/*',
-    bootstrapdatepickercss :  config.vendor + '/bootstrap-datepicker/css/**.*',
-    datetimepickerjs :        config.vendor + '/eonasdan-bootstrap-datetimepicker/build/js/**.*',
-    datetimepickercss :       config.vendor + '/eonasdan-bootstrap-datetimepicker/build/css/**.*',
-    edittablejs:              config.vendor + '/x-editable/dist/bootstrap3-editable/js/**.*',
-    edittablecss:             config.vendor + '/x-editable/dist/bootstrap3-editable/css/**.*',
-    edittableimg:             config.vendor + '/x-editable/dist/bootstrap3-editable/img/**.*',
-    jquery :                  config.vendor + '/jquery/dist/**/*',
+    bootstrapsass :           bower.bootstrapsass + all_folders,
+    bootstrapjs :             bower.bootstrap + '/js' + all_folders,
+    bootstrapcss :            bower.bootstrap + '/css' + all_folders,
+    bootstrapfont :           bower.bootstrap + '/fonts' + all_files,
+    bootstrapdatepickerjs :   bower.bootstrapdatepicker + '/js' + all_files,
+    bootstrapdatepickercss :  bower.bootstrapdatepicker + '/css' + all_files,
+    datetimepickerjs :        bower.datetimepicker + '/js' + all_files,
+    datetimepickercss :       bower.datetimepicker + '/css' + all_files,
+    edittablejs:              bower.edittable + '/js' + all_files,
+    edittablecss:             bower.edittable + '/css' + all_files,
+    edittableimg:             bower.edittable + '/img' + all_files,
+    jquery :                  bower.jquery + all_folders,
+    iconfont :                bower.fontawesome + '/fonts' + all_files,
+    iconfontsass :            bower.fontawesome + '/scss' + all_files,
+    jQueryValidate :          bower.jqueryvalidation + all_files,
+    jQueryFancyBox :          bower.jqueryfancybox + all_folders
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -36,11 +54,6 @@ var vendor = {
     //  // config.vendor + '/open-sans-fontface/fonts/Semibold/*',
     //  config.vendor + '/open-sans-fontface/**/*'// **所有目錄 // **/*所有目錄包含檔案
     // ],
-
-    iconfont :                config.vendor + '/fontawesome/fonts/**.*',
-    iconfontsass :            config.vendor + '/fontawesome/scss/**.*',
-    jQueryValidate :          config.vendor + '/jquery-validation/dist/**.*',
-    jQueryFancyBox :          config.vendor + '/fancybox/source/**/*'
   },
   dist : {
     bootstrapsass :           config.project + '/sass/vendor/bootstrap-sass',
