@@ -1,15 +1,15 @@
 $ ->
 
-  xxx = ->
+  tabsRowfixW = ->
     $fixW = $(window).width()- (220+70)
     $('.js_fix-main-width').width($fixW)
-  xxx()
+  tabsRowfixW()
 
 
-  if $('.js_col-l').height() > $('.js_col-r').height()
-    $('.js_col-r').css 'height', $('.js_col-l').height()
+  if $('.js_col-l').height() > $('.js_col-r').outerHeight()
+    $('.js_col-r').css 'height', $('.js_col-l').outerHeight()
   else
-    $('.js_col-l').css 'height', $('.js_col-r').height()
+    $('.js_col-l').css 'height', $('.js_col-r').outerHeight()
 
 
   $('.datepicker').datepicker
@@ -33,7 +33,7 @@ $ ->
 
 
   $(window).resize ->
-    xxx()
+    tabsRowfixW()
     $winHeight = $(window).height()
     $('.main').css('height', $winHeight)
 
@@ -44,6 +44,24 @@ $ ->
 
 
 #turn to inline mode
-$.fn.editable.defaults.mode = 'inline'
+$.fn.editable.defaults.mode = 'popup'
 $(document).ready ->
   $('.editable').editable()
+  $('.editable_textarea').editable
+    rows: 4
+  $('.editable_timepicker').editable
+    format: 'yyyy-mm-dd'
+    viewformat: 'yyyy-mm-dd'
+    template: 'YYYY - MM - DD'
+    datepicker:
+      weekStart: 1
+    combodate:
+      minYear: 2000
+      minuteStep: 1
+
+  $('.editable_select').editable
+    value: 1
+    source: [
+      {value: 1, text: '未完成'}
+      {value: 2, text: '已完成'}
+    ]
