@@ -23,6 +23,9 @@ var vendor = {
     bootstrapdatepickercss :  config.vendor + '/bootstrap-datepicker/css/**.*',
     datetimepickerjs :        config.vendor + '/eonasdan-bootstrap-datetimepicker/build/js/**.*',
     datetimepickercss :       config.vendor + '/eonasdan-bootstrap-datetimepicker/build/css/**.*',
+    edittablejs:              config.vendor + '/x-editable/dist/bootstrap3-editable/js/**.*',
+    edittablecss:             config.vendor + '/x-editable/dist/bootstrap3-editable/css/**.*',
+    edittableimg:             config.vendor + '/x-editable/dist/bootstrap3-editable/img/**.*',
     jquery :                  config.vendor + '/jquery/dist/**/*',
     // font:
     // [
@@ -33,10 +36,11 @@ var vendor = {
     //  // config.vendor + '/open-sans-fontface/fonts/Semibold/*',
     //  config.vendor + '/open-sans-fontface/**/*'// **所有目錄 // **/*所有目錄包含檔案
     // ],
-    iconfont :        config.vendor + '/fontawesome/fonts/**.*',
-    iconfontsass :    config.vendor + '/fontawesome/scss/**.*',
-    jQueryValidate :  config.vendor + '/jquery-validation/dist/**.*',
-    jQueryFancyBox :  config.vendor + '/fancybox/source/**/*'
+
+    iconfont :                config.vendor + '/fontawesome/fonts/**.*',
+    iconfontsass :            config.vendor + '/fontawesome/scss/**.*',
+    jQueryValidate :          config.vendor + '/jquery-validation/dist/**.*',
+    jQueryFancyBox :          config.vendor + '/fancybox/source/**/*'
   },
   dist : {
     bootstrapsass :           config.project + '/sass/vendor/bootstrap-sass',
@@ -47,6 +51,9 @@ var vendor = {
     bootstrapdatepickercss :  config.project + '/styles/vendor/bootstrap-datepicker',
     datetimepickerjs :        config.project + '/js/vendor/bootstrap-datetimepicker',
     datetimepickercss :       config.project + '/styles/vendor/bootstrap-datetimepicker',
+    edittablejs :             config.project + '/js/vendor/edittable',
+    edittablecss :            config.project + '/styles/vendor/edittable',
+    edittableimg :            config.project + '/img/',
     jquery :                  config.project + '/js/vendor/jquery',
     iconfont :                config.project + '/fonts',
     iconfontsass :            config.project + '/sass/vendor/fontawesome',
@@ -86,6 +93,15 @@ gulp.task('vendor', function() {
     ;
   gulp.src(vendor.source.datetimepickercss)
     .pipe(gulp.dest(vendor.dist.datetimepickercss))
+    ;
+  gulp.src(vendor.source.edittablejs)
+    .pipe(gulp.dest(vendor.dist.edittablejs))
+    ;
+  gulp.src(vendor.source.edittablecss)
+    .pipe(gulp.dest(vendor.dist.edittablecss))
+    ;
+  gulp.src(vendor.source.edittableimg)
+    .pipe(gulp.dest(vendor.dist.edittableimg))
     ;
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
