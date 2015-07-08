@@ -1,10 +1,15 @@
 .tab-page-wrapper-space
 	.tab-page-wrapper.bg-primary
-		button.btn.btn-default.btn-sm.pull-left type="button"
+		a.btn.btn-default.btn-sm> href="javascript:;"
 			i.fa.fa-angle-left
-			| 返回
-		button.btn.btn-default.btn-sm.pull-right type="button"
-			| 確定
+			| &nbsp;返回
+		/* 編輯狀態時出現以下按鈕 提供刪除功能 */
+		a.btn.btn-default.btn-sm< href="javascript:;"
+			i.fa.fa-trash-o
+			| &nbsp;刪除
+		/* 新增狀態時無以上按鈕*/
+		a.btn.btn-default.btn-sm.pull-right href="javascript:;"
+			| 確定&nbsp;
 			i.fa.fa-angle-right
 .tab-page-wrapper-space
 	.tab-page-wrapper.bg-info
