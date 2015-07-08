@@ -12,12 +12,12 @@ $ ->
 
   # tabsRowfixW()
 
-
-  if $('.js_col-l').height() > $('.js_col-r').outerHeight()
-    $('.js_col-r').css 'height', $('.js_col-l').outerHeight()
-  else
-    $('.js_col-l').css 'height', $('.js_col-r').outerHeight()
-
+  lrHeight = ->
+    if $('.js_col-l').height() > $('.js_col-r').outerHeight()
+      $('.js_col-r').css 'height', $('.js_col-l').outerHeight()
+    else
+      $('.js_col-l').css 'height', $('.js_col-r').outerHeight()
+  lrHeight()
 
   $('.datepicker').datepicker
     format: 'yyyy-mm-dd'
@@ -41,6 +41,7 @@ $ ->
   $(window).resize ->
     # tabsRowfixW()
     $('.main').css('height', $winH)
+    lrHeight()
 
 
   $('.trigger').click ->
