@@ -45,8 +45,8 @@ body {
 	}
 	// Contains the main content
 	> section {
-		position: relative;
-		height: 100%;
+		// position: relative;
+		// height: 100%;
 		margin-left: $aside-wd;
 		z-index: $z-index-section;
 	}
