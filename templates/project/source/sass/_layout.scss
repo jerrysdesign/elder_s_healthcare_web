@@ -216,8 +216,6 @@ $logo-radius: 10px;
 			> a {
 				background-color: $secondary;
 				@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
-				// padding-right: 12px;
-				// margin-left: -12px;
 				width: $aside-wd + 5px;
 			}
 		}
@@ -232,9 +230,20 @@ $logo-radius: 10px;
 	}
 	.dropdown-menu {
 		right: 0;
-		background-color: lighten(#649dd6, 35%);
+		background-color: $parimary;
+		margin-top: 0;
+		@include border-radius(0);
+		@include box-shadow(none);
+		border: none;
 		a {
 			text-align: center;
+			cursor: pointer;
+			display: block;
+			color: #fff;
+		}
+		&:hover {
+			background-color: #fff;
+			color: $parimary;
 		}
 	}
 	span.caret {
