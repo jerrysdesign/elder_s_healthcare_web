@@ -1,9 +1,16 @@
 $ ->
+  asideW = $('aside').width()
+  $winW = $(window).width()
+  $winH = $(window).height()
 
-  tabsRowfixW = ->
-    $fixW = $(window).width()- (220+70)
-    $('.js_fix-main-width').width($fixW)
-  tabsRowfixW()
+
+  # tabsRowfixW = ->
+  #   $fixW = $winW - asideW
+  #   console.log($winW)
+  #   console.log(asideW)
+  #   $('.js_fix-main-width').css('width',$fixW)
+
+  # tabsRowfixW()
 
 
   if $('.js_col-l').height() > $('.js_col-r').outerHeight()
@@ -28,14 +35,12 @@ $ ->
     $('.' + _cont + $idx).show()
 
 
-  $winHeight = $(window).height()
-  $('.main').css('height', $winHeight)
+  $('.main').css('height', $winH)
 
 
   $(window).resize ->
-    tabsRowfixW()
-    $winHeight = $(window).height()
-    $('.main').css('height', $winHeight)
+    # tabsRowfixW()
+    $('.main').css('height', $winH)
 
 
   $('.trigger').click ->

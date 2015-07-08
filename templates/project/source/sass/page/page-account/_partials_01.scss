@@ -3,12 +3,17 @@ $tab-page-wrapper-height: 65px;
 	height: $tab-page-wrapper-height;
 }
 .tab-page-wrapper {
+	// width: 100%;
+	min-height: $tab-page-wrapper-height;
+	// margin: 0 -40px;
+	// padding: 20px 40px 0;
 	position: fixed;
-	width: 100%;
-	height: $tab-page-wrapper-height;
-	margin: 0 -40px;
-	padding: 20px 40px 0;
+	top: 0;
+	// width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	@include border-radius(0);
+	@include pie-clearfix;
 	z-index: 99;
 	.tab-page {
 		border-bottom: 0 solid $secondary;
@@ -33,5 +38,18 @@ $tab-page-wrapper-height: 65px;
 		top: 0;
 		width: 100%;
 		z-index: $z-index-header;
+	}
+	&-space {
+		height: $tab-page-wrapper-height;
+		+ .tab-page-wrapper {
+			&-space {
+				.tab-page-wrapper {
+					top: $tab-page-wrapper-height;
+				}
+			}
+		}
+	}
+	&.navbar {
+		padding-bottom: 0;
 	}
 }

@@ -51,20 +51,14 @@ body {
 		z-index: $z-index-section;
 	}
 	// Page Footer
-	// > footer {
-	// 	position: absolute;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	height: $footer-hg;
-	// 	padding: $content-padding;
-	// 	border-top: 1px solid $gray-light;
-	// 	background-color: $body-bg;
-	// 	z-index: $z-index-footer;
-	// 	> p {
-	// 		margin: 0;
-	// 	}
-	// }
+	.tab-page-wrapper {
+		padding-right: $content-padding;
+		padding-left: $content-padding;
+		// margin-right: $content-padding * -1; 
+		// margin-left: $content-padding * -1; 
+		left: $aside-wd;
+		right: 0;
+	}
 }
 
 .sidebar-wrapper {
