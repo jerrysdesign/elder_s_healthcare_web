@@ -47,7 +47,7 @@ $ ->
   $('.trigger').click ->
     $('.layout-fixed').toggleClass 'aside-collapsed'
 
-
+  $('.fm-ctrl').formShowHide()
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
