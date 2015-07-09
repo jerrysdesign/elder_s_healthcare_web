@@ -34,13 +34,13 @@ $ ->
     $contAll.hide()
     $('.' + _cont + $idx).show()
 
-
-  $('.main').css('height', $winH)
-
+  autoH = ->
+    $('.main').css('height', $winH)
+  autoH()
 
   $(window).resize ->
-    # tabsRowfixW()
-    $('.main').css('height', $winH)
+    $winH = $(window).height()
+    autoH()
     lrHeight()
 
 
