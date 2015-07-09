@@ -15,9 +15,38 @@
 	<div class="row col-md-12 form-horizontal">
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">啟用狀態</label>
-			<div class="col-md-10">
-				<label class="radio-inline"><input type="radio" value="" name="EnableRadios">啟用</label>
-				<label class="radio-inline"><input type="radio" value="" name="EnableRadios">停用</label>
+			<div class="col-md-1">
+				<label class="radio-inline"><input type="radio" value="" name="">啟用</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<div class="col-md-1 col-md-offset-2">
+				<label class="radio-inline"><input type="radio" value="" name="">暫停</label>
+			</div>
+			<div class="col-md-7 col-md-offset-1">
+				<label class="form-control-static">日期</label>
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<div class="col-md-1 col-md-offset-2">
+				<label class="radio-inline"><input type="radio" value="" name="">停用</label>
+			</div>
+			<div class="col-md-7 col-md-offset-1">
+				<label class="form-control-static">日期</label>
+				<input type="text" class="form-control datepicker" placeholder="">
+				<label class="form-control-static">原因</label>
+				<select class="form-control">
+					<option></option>
+					<option>個案資料</option>
+					<option>請外籍看護照顧</option>
+					<option>個案遷出本單位服務區域</option>
+					<option>表示無服務需求</option>
+					<option>入駐長照機構</option>
+					<option>由家屬自行照顧</option>
+					<option>依計畫完成服務之提供</option>
+					<option>失能狀況改善</option>
+				</select>
 			</div>
 		</div>
 		<div class="form-group form-inline">
