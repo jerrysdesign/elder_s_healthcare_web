@@ -49,6 +49,11 @@ $ ->
 
   $('.fm-ctrl').formShowHide()
 
+  $('.fixedheadertable').fixedHeaderTable ->
+    footer: false
+    fixedColumns: 1
+
+
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->
