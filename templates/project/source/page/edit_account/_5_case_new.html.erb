@@ -1,0 +1,647 @@
+<div class="row top-buffer">
+	<ol class="breadcrumb">
+		<li class="active"><a href='javascript:;'>平台管理</a></li>
+		<li class="active"><a href='javascript:;'>帳號設定</a></li>
+		<li class="active"><a href='javascript:;'>個案</a></li>
+		<li class="active">編輯帳號</li>
+	</ol>
+</div>
+<form class="row top-buffer">
+	<div class="text-right">
+		<input class="btn btn-default" type="button" value="取消">
+		<input class="btn btn-success" type="submit" value="儲存">
+	</div>
+	<hr>
+	<div class="row col-md-12 form-horizontal">
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">啟用狀態</label>
+			<div class="col-md-1">
+				<label class="radio-inline"><input type="radio" value="" name="">啟用</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<div class="col-md-1 col-md-offset-2">
+				<label class="radio-inline"><input type="radio" value="" name="">暫停</label>
+			</div>
+			<div class="col-md-7 col-md-offset-1">
+				<label class="form-control-static">日期</label>
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<div class="col-md-1 col-md-offset-2">
+				<label class="radio-inline"><input type="radio" value="" name="">停用</label>
+			</div>
+			<div class="col-md-7 col-md-offset-1">
+				<label class="form-control-static">日期</label>
+				<input type="text" class="form-control datepicker" placeholder="">
+				<label class="form-control-static">原因</label>
+				<select class="form-control">
+					<option></option>
+					<option>個案資料</option>
+					<option>請外籍看護照顧</option>
+					<option>個案遷出本單位服務區域</option>
+					<option>表示無服務需求</option>
+					<option>入駐長照機構</option>
+					<option>由家屬自行照顧</option>
+					<option>依計畫完成服務之提供</option>
+					<option>失能狀況改善</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">個人相片</label>
+			<div class="col-md-10">
+				<img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/200">
+				<input class="help-block top-buffer" type="file" href="javascript:;">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">帳號 Email</label>
+			<div class="col-md-10">
+				<input type="email" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">密碼</label>
+			<div class="col-md-10">
+				<input type="password" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">案號</label>
+			<div class="col-md-10">
+				<input type="password" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">長照案號</label>
+			<div class="col-md-10">
+				<input type="password" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">姓名</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">督導員</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option></option>
+					<option>木督導</option>
+					<option>子督導</option>
+					<option>李督導</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">手機電話</label>
+			<div class="col-md-10">
+				<input type="tel" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">市內電話</label>
+			<div class="col-md-10">
+				<input type="tel" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="control-label col-md-2">緊急聯絡人</label>
+			<div class="col-md-10">
+				<label class="form-control-static">姓名</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">關係</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">電話</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="control-label col-md-2">出生年月日</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="control-label col-md-2">年齡</label>
+			<div class="col-md-10">
+				<label class="form-control-static">99</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="control-label col-md-2">身份證字號</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">籍貫</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">稱謂</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="SexRadios">稱謂</label>
+				<label class="radio-inline"><input type="radio" value="" name="SexRadios">稱謂</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">性別</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="SexRadios">男性</label>
+				<label class="radio-inline"><input type="radio" value="" name="SexRadios">女性</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">信仰</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">道教</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">佛教</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">基督教</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">天主教</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">一貫道</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">婚姻狀況</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="">已婚</label>
+				<label class="radio-inline"><input type="radio" value="" name="">未婚</label>
+				<label class="radio-inline"><input type="radio" value="" name="">喪偶</label>
+				<label class="radio-inline"><input type="radio" value="" name="">離婚</label>
+				<label class="radio-inline"><input type="radio" value="" name="">分居</label>
+				<label class="radio-inline"><input type="radio" value="" name="">其他</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">教育程度</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">不識字</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">識字未就學</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">特教-國小</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">特教-國中</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">特教-高中</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">國小</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">國中</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">高中</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">大專</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">研究所以上</label>
+				<label class="radio-inline"><input type="radio" value="" name="EduRadios">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">居住地址</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option>縣市</option>
+					<option>台北市</option>
+					<option>苗栗市</option>
+					<option>台中市</option>
+					<option>台南市</option>
+					<option>高雄市</option>
+				</select>
+				<select class="form-control">
+					<option>區</option>
+					<option>新店區</option>
+					<option>永和區</option>
+					<option>新莊區</option>
+					<option>三重區</option>
+					<option>板橋區</option>
+				</select>
+				<select class="form-control">
+					<option>里</option>
+					<option>中正里</option>
+					<option>三民里</option>
+					<option>頂溪里</option>
+					<option>七張里</option>
+					<option>永安里</option>
+				</select>
+				<input type="text" class="form-control" placeholder="地址">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">戶籍地址</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option>縣市</option>
+					<option>台北市</option>
+					<option>苗栗市</option>
+					<option>台中市</option>
+					<option>台南市</option>
+					<option>高雄市</option>
+				</select>
+				<select class="form-control">
+					<option>區</option>
+					<option>新店區</option>
+					<option>永和區</option>
+					<option>新莊區</option>
+					<option>三重區</option>
+					<option>板橋區</option>
+				</select>
+				<select class="form-control">
+					<option>里</option>
+					<option>中正里</option>
+					<option>三民里</option>
+					<option>頂溪里</option>
+					<option>七張里</option>
+					<option>永安里</option>
+				</select>
+				<input type="text" class="form-control" placeholder="地址">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">職業</label>
+			<div class="col-md-10">
+				<label class="form-control-static">現</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">昔</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">慣用語言</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">國語</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">台語</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">客家語</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">原住民語</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身份別（一）</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">一般戶</label>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">中低 2.5 倍</label>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">中低 1.5 倍</label>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios">低收入戶</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身份別（二）</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">榮民、榮眷</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">原住民</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">身份別（三）</label>
+			<div class="col-md-10 case_new_check">
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios1" checked>老人科</label>
+				<label class="radio-inline"><input type="radio" value="" name="IDRadios1">身障 ICF</label>
+			</div>
+		</div>
+		<div class="case_new_checkcont1">
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">身份別（四）</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios2" checked>長十</label>
+				</div>
+			</div>
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">身份別（五）</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios3" checked>新制</label>
+				</div>
+			</div>
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">補助類別</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">65 歲老人</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上身心障礙者</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">55 歲以上山地原住民</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">僅 IADL 失能獨居老人</label><br>
+				</div>
+			</div>
+		</div>
+		<div class="case_new_checkcont2">
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">身份別（四）</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios4" checked>非長十</label>
+				</div>
+			</div>
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">身份別（五）</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios5" checked>新制</label>
+				</div>
+			</div>
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">補助類別</label>
+				<div class="col-md-10">				
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">未滿 50 歲身障者</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">64 歲以下未領有手冊之失能者</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上失智者、慢性精神病患、智能障礙者及自閉症者</label><br>
+					<label class="radio-inline"><input type="radio" value="" name="IDRadios">未達常照十年計畫失能標準而適用本補助者</label><br>
+				</div>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">領取身心障礙手冊</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios" checked="">無</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios" class="fm-ctrl" data-show-id="ctr_check" >有</label>
+			</div>
+		</div>
+		<div id="ctr_check" class="hiddenbox">
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">障別</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" placeholder="">
+				</div>
+			</div>
+			<div class="form-group form-inline">
+				<label class="col-md-2 control-label">障別等級</label>
+				<div class="col-md-10">
+					<label class="radio-inline"><input type="radio" value="" name="aa">輕度</label>
+					<label class="radio-inline"><input type="radio" value="" name="aa">中度</label>
+					<label class="radio-inline"><input type="radio" value="" name="aa">重度</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">障礙狀況</label>
+			<div class="col-md-10">
+				<select class="form-control">
+					<option></option>
+					<option>失智症者</option>
+					<option>慢性精神病患</option>
+					<option>智能障礙者</option>
+					<option>自閉症者</option>
+					<option>植物人</option>
+					<option>罕見疾病者</option>
+					<option>慢性精神病患</option>
+					<option>其他類身心障礙</option>
+					<option>一般失能者</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">失能狀況</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">輕度</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">中度</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">重度</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">輔具</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">無</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">有</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">疾病史</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">高血壓</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">糖尿病</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">心臟病</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">中風</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">精神疾病</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">巴金森氏症</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">骨質疏鬆症</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">腎臟疾病</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">失智症</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">關節炎</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">白內障</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">重聽</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">氣喘</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">癌症</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">衛生環境</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">無異常狀況</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">異常</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">居住情形</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">獨居</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">配偶同住</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">子女同住</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">子女家輪住</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">親友或孫代子女同住</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">房屋所有權</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">自有</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">租用</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">借用</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">住宅種類</label>
+			<div class="col-md-10">
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">平房</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">透天厝</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">公寓</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">電梯大廈</label>
+				<label class="radio-inline"><input type="radio" value="" name="DLicenseRadios">其他（居住權）</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">經濟來源</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">子女奉養約</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">父母供養約</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">退休俸約</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">儲蓄</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">工作收入</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">社會福利補助</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">元/月</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">社會資源</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">長照中心其他服務</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="checkbox-inline"><input type="checkbox" value="">其他社會福利單位</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="checkbox-inline"><input type="checkbox" value="">其他</label>
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">家系圖</label>
+			<div class="col-md-10">
+		        <img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/800x600">
+		        <br>
+		        <br>
+		        檔案格式：jpg, jpeg, png</p>
+		        檔案尺寸：800 x 600</p>
+		        <input class="help-block top-buffer" type="file" href="javascript:;">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">生態圖</label>
+			<div class="col-md-10">
+		        <img alt="" class="img-responsive img-thumbnail" src="http://placehold.it/800x600">
+		        <br>
+		        <br>
+		        檔案格式：jpg, jpeg, png</p>
+		        檔案尺寸：800 x 600</p>
+		        <input class="help-block top-buffer" type="file" href="javascript:;">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務申請人</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務申請緣由</label>
+			<div class="col-md-10">
+            	<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">個案對於需求與問題的看法</label>
+			<div class="col-md-10">
+            	<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">初次需求評估</label>
+			<div class="col-md-10">
+            	<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">初次處遇計畫</label>
+			<div class="col-md-10">
+            	<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務需求時數</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/月</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">核定時數</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/月</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">補助比例（政府補助額度）</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">%</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">費用</label>
+			<div class="col-md-10">
+				<label class="form-control-static">每月總價</label>
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
+				<label class="form-control-static">元，政府補助</label>
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
+				<label class="form-control-static">元，自費</label>
+				<input type="text" class="form-control" placeholder="系統帶出" disabled>
+				<label class="form-control-static">元</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務項目</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">電話問安</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">到家探訪</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">送餐服務</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">買菜煮飯打掃</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">洗澡</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">整理家務</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">帶出門看醫生</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">陪聊天散步</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">到宅沐浴</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">派案日期</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">重新鑑定日期</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">預定首次服務時間</label>
+			<div class="col-md-10">
+				<input type="text" class="form-control datepicker" placeholder="">
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">服務頻率</label>
+			<div class="col-md-10">
+				<label class="form-control-static">以周計算：</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">天/周</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/天</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">周/月</label>
+				<br>
+				<label class="form-control-static">以周計算：</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">天/周</label>
+				<input type="text" class="form-control" placeholder="">
+				<label class="form-control-static">小時/天</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">上傳回覆單檔案</label>
+			<div class="col-md-10">
+				<input type="file" href="javascript:;">
+			</div>
+		</div>
+	</div>
+</form>
