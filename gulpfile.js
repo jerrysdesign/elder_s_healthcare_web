@@ -13,6 +13,7 @@ var all_files = '/**.*';
 var config = {
   vendor  : './bower_components' ,
   project : './templates/project/source' ,
+  download: './vendor'
 }
 
 var bower = {
@@ -44,7 +45,8 @@ var vendor = {
     iconfont :                bower.fontawesome + '/fonts' + all_files,
     iconfontsass :            bower.fontawesome + '/scss' + all_files,
     jQueryValidate :          bower.jqueryvalidation + all_files,
-    jQueryFancyBox :          bower.jqueryfancybox + all_folders
+    jQueryFancyBox :          bower.jqueryfancybox + all_folders,
+    jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -71,7 +73,8 @@ var vendor = {
     iconfont :                config.project + '/fonts',
     iconfontsass :            config.project + '/sass/vendor/fontawesome',
     jQueryValidate:           config.project + '/js/vendor/jquery.validation',
-    jQueryFancyBox:           config.project + '/js/vendor/fancybox'
+    jQueryFancyBox:           config.project + '/js/vendor/fancybox',
+    jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide'
   }
 }
 
@@ -133,6 +136,9 @@ gulp.task('vendor', function() {
     ; 
   gulp.src('./templates/project/source/styles/vendor/fontawesome/font-awesome.css' ) 
     .pipe(gulp.dest('./templates/project/source/styles/'))
+    ; 
+  gulp.src(vendor.source.jQueryFormShowHidejs) 
+    .pipe(gulp.dest(vendor.dist.jQueryFormShowHidejs))
     ; 
 });
 
