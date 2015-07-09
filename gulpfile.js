@@ -25,7 +25,8 @@ var bower = {
     jquery: config.vendor + '/jquery/dist',
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
-    jqueryfancybox: config.vendor + '/fancybox/source'
+    jqueryfancybox: config.vendor + '/fancybox/source',
+    jqueryfixedheadertable: config.vendor + '/jquery.fixedheadertable'
 }
 
 var vendor = {
@@ -46,7 +47,9 @@ var vendor = {
     iconfontsass :            bower.fontawesome + '/scss' + all_files,
     jQueryValidate :          bower.jqueryvalidation + all_files,
     jQueryFancyBox :          bower.jqueryfancybox + all_folders,
-    jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files
+    jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
+    jqueryfixedheadertablejs :bower.jqueryfixedheadertable + '/jquery.fixedheadertable.min.js',
+    jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -74,7 +77,9 @@ var vendor = {
     iconfontsass :            config.project + '/sass/vendor/fontawesome',
     jQueryValidate:           config.project + '/js/vendor/jquery.validation',
     jQueryFancyBox:           config.project + '/js/vendor/fancybox',
-    jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide'
+    jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
+    jqueryfixedheadertablejs :config.project + '/js/vendor/jquery.fixedheadertable',
+    jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable'
   }
 }
 
@@ -139,6 +144,12 @@ gulp.task('vendor', function() {
     ; 
   gulp.src(vendor.source.jQueryFormShowHidejs) 
     .pipe(gulp.dest(vendor.dist.jQueryFormShowHidejs))
+    ; 
+  gulp.src(vendor.source.jqueryfixedheadertablejs) 
+    .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablejs))
+    ; 
+  gulp.src(vendor.source.jqueryfixedheadertablecss) 
+    .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablecss))
     ; 
 });
 
