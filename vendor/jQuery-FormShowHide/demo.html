@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>jQuery FormShowHide Demo</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+	<div id="container">
+		<h1>jQuery FormShowHide Plugin</h1>
+		
+		<div class="ctrlHolder">
+			<label>Select box with one hidden area</label>
+			<select>
+				<option value="1" selected="selected">Example option</option>
+				<option value="2" class="formShowHide_ctrl" data-show-id="hidden-div-1">Display hidden option number 1</option>
+				<option value="3" class="formShowHide_ctrl" data-hide-id="displayed-div-1">Hide displayed option number 1</option>
+			</select>
+		</div>
+		
+		<div id="hidden-div-1" class="hiddenbox formShowHide_reset">
+			<p>Hidden option number 1</p>
+			
+			<div class="ctrlHolder">
+				<label>Form element with show/hide in hidden.</label>
+				<select>
+					<option value="1" selected="selected">An option.</option>
+					<option value="2" class="formShowHide_ctrl" data-show-id="hidden-div-1-1">Display hidden option number 1 in 1</option>
+				</select>
+			</div>
+			
+			<div id="hidden-div-1-1" class="hiddenbox">
+				<p>Hidden option number 1 inside 1</p>
+			</div>
+			
+			<div class="ctrlHolder">
+				<label>Radio buttons</label>
+				<ul>
+					<li><input type="radio" name="test0" id="test0-1" class="formShowHide_ctrl" data-show-id="hidden-div-1-2" /><label for="test0-1">Display hidden option number 2 in 1</label></li>
+					<li><input type="radio" name="test0" id="test0-2" /><label for="test0-2">Test</label></li>
+				</ul>
+			</div>
+			
+			<div id="hidden-div-1-2" class="hiddenbox">
+				<p>Hidden option number 2 inside 1</p>
+			</div>
+		</div>
+		
+		<div id="displayed-div-1" class="displayedbox">
+			<p>Displayed option number 1</p>
+		</div>
+		
+		<div class="ctrlHolder">
+			<label>Select box with multiple hidden areas.</label>
+			<select>
+				<option value="1" class="formShowHide_ctrl" selected="selected" data-show-id="hidden-div-2">Should be displayed by default on page load.</option>
+				<option value="2">Another example option</option>
+				<option value="3">A longer example option</option>
+			</select>
+		</div>
+		
+		<div id="hidden-div-2" class="hiddenbox">
+			<p>Hidden option number 2. Should be displayed by default on page load.</p>
+		</div>
+		
+		<div class="ctrlHolder">
+			<label>Select box with all valid show-hide targets</label>
+			<select class="formShowHide_ctrl">
+				<option value="1">Not a valid target</option>
+				<option value="2" data-show-id="hidden-div-3">Valid target hidden div 3</option>
+				<option value="3" data-show-id="hidden-div-3 hidden-div-4" selected="selected">Valid target hidden div 3 and hidden div 4</option>
+				<option value="3" data-show-id="hidden-div-incorrectID">Invalid HTML id reference</option>
+			</select>
+		</div>
+		
+		<div id="hidden-div-3" class="hiddenbox">
+			<p>Hidden option number 3.</p>
+		</div>
+		
+		<div id="hidden-div-4" class="hiddenbox">
+			<p>Hidden option number 4.</p>
+			
+			<div class="ctrlHolder">
+				<label>Form element inside a hidden area.</label>
+				<select>
+					<option value="1" selected="selected">An option.</option>
+					<option value="2">Another example option</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="ctrlHolder">
+			<label>Radio buttons</label>
+			<ul>
+				<li><input type="radio" name="test1" id="test1-1" /><label for="test1-1">Don't display</label></li>
+				<li><input type="radio" name="test1" id="test1-2" class="formShowHide_ctrl" data-show-id="hidden-div-5" /><label for="test1-2">Display Hidden option 5</label></li>
+				<li><input type="radio" name="test1" id="test1-3" class="formShowHide_ctrl" data-show-id="hidden-div-5 hidden-div-6"/><label for="test1-3">Display Hidden option 5 and 6</label></li>
+			</ul>
+		</div>
+		
+		<div id="hidden-div-5" class="hiddenbox">
+			<p>Hidden option number 5.</p>
+		</div>
+		
+		<div id="hidden-div-6" class="hiddenbox">
+			<p>Hidden option number 6.</p>
+		</div>
+		
+		<div class="ctrlHolder">
+			<label>Checkboxes</label>
+			<ul>
+				<li><input type="checkbox" name="test2" id="test2-1" class="formShowHide_ctrl" data-show-id="hidden-div-7" /><label for="test2-1">Display Hidden option 7</label></li>
+				<li><input type="checkbox" name="test2" id="test2-2" class="formShowHide_ctrl" data-show-id="hidden-div-8" /><label for="test2-2">Display Hidden option 8</label></li>
+			</ul>
+		</div>
+		
+		<div id="hidden-div-7" class="hiddenbox">
+			<p>Hidden option number 7.</p>
+		</div>
+		
+		<div id="hidden-div-8" class="hiddenbox">
+			<p>Hidden option number 8.</p>
+		</div>
+		
+	</div>
+
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/jquery.formShowHide.js"></script>
+	<script>
+		$('html').removeClass('no-js').addClass('js');
+		
+		$(function(){
+			$('.formShowHide_ctrl').formShowHide();
+		});
+	</script>
+</body>
+</html>
