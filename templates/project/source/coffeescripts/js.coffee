@@ -49,9 +49,9 @@ $ ->
 
   $('.fm-ctrl').formShowHide()
 
-  $('.fixedheadertable').fixedHeaderTable ->
-    footer: false
-    fixedColumns: 1
+  # $('.fixedheadertable').fixedHeaderTable ->
+  #   footer: false
+  #   fixedColumns: 1
 
 
 #turn to inline mode
