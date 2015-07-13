@@ -53,6 +53,11 @@ $ ->
   #   footer: false
   #   fixedColumns: 1
 
+  $('.js__chang_input_pw').click (e) ->
+    e.preventDefault()
+    $js__chang_input_pw = "<input type='password' class='form-control' placeholder=''>"
+    $(this).before($js__chang_input_pw)
+    $(this).hide()
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
