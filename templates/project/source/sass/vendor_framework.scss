@@ -2,3 +2,7 @@
 @import "vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css";
 @import "vendor/editable/bootstrap-editable.css";
 @import "vendor/jquery.fixedheadertable/defaultTheme.css";
+
+.fht-table-wrapper .fht-fixed-body .fht-tbody {
+	position: initial;
+}
