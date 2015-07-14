@@ -37,12 +37,17 @@ $ ->
   autoH = ->
     $('.main').css('height', $winH)
     $('.fixedheadertablemon').css('height', $winH - 191)
-    
   autoH()
+
+  # autoW = ->
+  #   $('.fht-fixed-body').width(100 + "%")
+  #   console.log("autow")
+  # autoW()
 
   $(window).resize ->
     $winH = $(window).height()
     autoH()
+    # autoW()
     lrHeight()
     # $('.fht-fixed-body').width($(window).width() - 187)
 
@@ -54,8 +59,27 @@ $ ->
     footer: false
     fixedColumns: 3
 
+  $('.fixedheadertable_nofixcol').fixedHeaderTable
+    footer: false
+
   $('.fht-tbody').scroll ->
     $('.popover.in').remove()
+    # $('.fixedheadertable_nofixcol').css('left', 0)
+
+$(document).ready ->
+  # tableX = $('#example').DataTable()
+  # new ($.fn.dataTable.FixedHeader)(tableX)
+  # return
+
+$(document).ready ->
+  table = $('#example').DataTable ->
+    scrollY:        "300px"
+    scrollX:        true
+    scrollCollapse: true
+    paging:         false
+
+  new $.fn.dataTable.FixedColumns( table )
+  new $.fn.dataTable.FixedHeader( table )
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
