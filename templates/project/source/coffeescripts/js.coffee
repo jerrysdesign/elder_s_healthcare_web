@@ -36,23 +36,26 @@ $ ->
 
   autoH = ->
     $('.main').css('height', $winH)
+    $('.fixedheadertablemon').css('height', $winH - 191)
+    
   autoH()
 
   $(window).resize ->
     $winH = $(window).height()
     autoH()
     lrHeight()
-
+    # $('.fht-fixed-body').width($(window).width() - 187)
 
   $('.trigger').click ->
     $('.layout-fixed').toggleClass 'aside-collapsed'
 
   $('.fm-ctrl').formShowHide()
-
-  $('.fixedheadertable').fixedHeaderTable ->
+  $('.fixedheadertable').fixedHeaderTable
     footer: false
-    fixedColumns: 1
+    fixedColumns: 3
 
+  $('.fht-tbody').scroll ->
+    $('.popover.in').remove()
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'

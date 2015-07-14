@@ -19,8 +19,8 @@
 	</div>
 	<hr>
 	<div class="row top-buffer">
-		
-			<table class="table align-middle-table custom-table-01 reset-list-style">
+		<div style="width:100%;height:200px;overflow:auto" class="fixedheadertablemon">
+			<table class="table align-middle-table custom-table-01 reset-list-style fixedheadertable">
 				<thead>
 					<tr>
 						<th>序號</th>
@@ -42,13 +42,14 @@
 						<th>流水號</th>
 						<th>總繳款金額</th>
 						<th>繳款方式</th>
-						<th>收款日期 (編輯)</th>
-						<th>經手人(編輯)</th>
-						<th>收費狀態(編輯)</th>
-						<th>備註(編輯)</th>
+						<th>收款日期</th>
+						<th>經手人</th>
+						<th>收費狀態</th>
+						<th>備註</th>
 					</tr>
 				</thead>
 				<tbody>
+					<% 100.times do %>
 					<tr>
 						<td>1</td>
 						<td>淡001</td>
@@ -69,11 +70,12 @@
 						<td>F10401001</td>
 						<td>840</td>
 						<td>交由督導員</td>
-						<td><a href="javascript:;" data-type="combodate" class="editable_timepicker" data-title="Select date">2015-03-01</a></td>
+						<td><a href="javascript:;" data-type="combodate" class="editable_timepicker">2015-03-01</a></td>
 						<td><a href="javascript:;" data-type="text" class="editable">王小明</a></td>
 						<td><a href="javascript:;" data-type="select" class="editable_select">未完成</a></td>
 						<td contenteditable="true"><a href="javascript:;" data-type="textarea" class="editable_textarea">無</a></td>
 					</tr>
+					<% end %>
 				</tbody>
 			</table>
 		</div>
