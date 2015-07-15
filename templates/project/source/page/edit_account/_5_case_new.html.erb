@@ -65,7 +65,8 @@
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">密碼</label>
 			<div class="col-md-10">
-				<input type="password" class="form-control" placeholder="">
+				<!-- <input type="password" class="form-control" placeholder=""> -->
+				<a class="btn btn-default js__chang_input_pw" href="javascript:;" ><i class="fa fa-edit fa-lg"></i>&nbsp;修改密碼</a>
 			</div>
 		</div>
 		<div class="form-group form-inline">
@@ -342,7 +343,7 @@
 			</div>
 			<div class="form-group form-inline">
 				<label class="col-md-2 control-label">補助類別</label>
-				<div class="col-md-10">				
+				<div class="col-md-10">
 					<label class="radio-inline"><input type="radio" value="" name="IDRadios">未滿 50 歲身障者</label><br>
 					<label class="radio-inline"><input type="radio" value="" name="IDRadios">64 歲以下未領有手冊之失能者</label><br>
 					<label class="radio-inline"><input type="radio" value="" name="IDRadios">50 歲以上失智者、慢性精神病患、智能障礙者及自閉症者</label><br>
@@ -543,6 +544,12 @@
 			</div>
 		</div>
 		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">主要照顧者或其他家屬對於需求與問題的看法</label>
+			<div class="col-md-10">
+        <textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">初次需求評估</label>
 			<div class="col-md-10">
             	<textarea class="form-control" rows="3"></textarea>
@@ -552,6 +559,12 @@
 			<label class="col-md-2 control-label">初次處遇計畫</label>
 			<div class="col-md-10">
             	<textarea class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">個案或家屬對服務的反應</label>
+			<div class="col-md-10">
+        <textarea class="form-control" rows="3"></textarea>
 			</div>
 		</div>
 		<div class="form-group form-inline">
@@ -622,15 +635,20 @@
 		<div class="form-group form-inline">
 			<label class="col-md-2 control-label">服務頻率</label>
 			<div class="col-md-10">
+				<input type="radio" value="" name="">
 				<label class="form-control-static">以周計算：</label>
 				<input type="text" class="form-control" placeholder="">
 				<label class="form-control-static">天/周</label>
 				<input type="text" class="form-control" placeholder="">
 				<label class="form-control-static">小時/天</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="5">
 				<label class="form-control-static">周/月</label>
-				<br>
-				<label class="form-control-static">以周計算：</label>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<div class="col-md-10 col-md-offset-2">
+				<input type="radio" value="" name="">
+				<label class="form-control-static">以月計算：</label>
 				<input type="text" class="form-control" placeholder="">
 				<label class="form-control-static">天/周</label>
 				<input type="text" class="form-control" placeholder="">
