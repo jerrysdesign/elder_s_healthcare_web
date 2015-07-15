@@ -1,4 +1,4 @@
-var gulp      = require('gulp'), 
+var gulp      = require('gulp'),
     bower     = require('gulp-bower'),
     rename    = require('gulp-rename'),
     clean     = require('gulp-clean')
@@ -11,8 +11,8 @@ var all_files = '/**.*';
 
 // Sources config
 var config = {
-  vendor  : './bower_components' ,
-  project : './templates/project/source' ,
+  vendor  : './bower_components',
+  project : './templates/project/source',
   download: './vendor'
 }
 
@@ -26,7 +26,9 @@ var bower = {
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
     jqueryfancybox: config.vendor + '/fancybox/source',
-    jqueryfixedheadertable: config.vendor + '/jquery.fixedheadertable'
+    jqueryfixedheadertable: config.vendor + '/jquery.fixedheadertable',
+    jqueryfixedheadertable: config.vendor + '/jquery.fixedheadertable',
+    JQueryDatatalbes: config.vendor + '/datatables/media'
 }
 
 var vendor = {
@@ -49,7 +51,9 @@ var vendor = {
     jQueryFancyBox :          bower.jqueryfancybox + all_folders,
     jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
     jqueryfixedheadertablejs :bower.jqueryfixedheadertable + '/jquery.fixedheadertable.min.js',
-    jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files
+    jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files,
+    gridViewScrolljs:         config.download + '/gridViewScroll/gridviewScroll.min.js',
+    gridViewScrollcss:        config.download + '/gridViewScroll/gridviewScroll.css'
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -79,7 +83,9 @@ var vendor = {
     jQueryFancyBox:           config.project + '/js/vendor/fancybox',
     jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
     jqueryfixedheadertablejs :config.project + '/js/vendor/jquery.fixedheadertable',
-    jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable'
+    jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable',
+    gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
+    gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll'
   }
 }
 
@@ -127,29 +133,35 @@ gulp.task('vendor', function() {
   gulp.src(vendor.source.jquery)
     .pipe(gulp.dest(vendor.dist.jquery))
     ;
-  gulp.src(vendor.source.iconfont) 
+  gulp.src(vendor.source.iconfont)
     .pipe(gulp.dest(vendor.dist.iconfont))
-    ; 
-  gulp.src(vendor.source.iconfontsass) 
+    ;
+  gulp.src(vendor.source.iconfontsass)
     .pipe(gulp.dest(vendor.dist.iconfontsass))
-    ; 
-  gulp.src(vendor.source.jQueryValidate) 
+    ;
+  gulp.src(vendor.source.jQueryValidate)
     .pipe(gulp.dest(vendor.dist.jQueryValidate))
-    ; 
-  gulp.src(vendor.source.jQueryFancyBox) 
+    ;
+  gulp.src(vendor.source.jQueryFancyBox)
     .pipe(gulp.dest(vendor.dist.jQueryFancyBox))
-    ; 
-  gulp.src('./templates/project/source/styles/vendor/fontawesome/font-awesome.css' ) 
+    ;
+  gulp.src('./templates/project/source/styles/vendor/fontawesome/font-awesome.css' )
     .pipe(gulp.dest('./templates/project/source/styles/'))
-    ; 
-  gulp.src(vendor.source.jQueryFormShowHidejs) 
+    ;
+  gulp.src(vendor.source.jQueryFormShowHidejs)
     .pipe(gulp.dest(vendor.dist.jQueryFormShowHidejs))
-    ; 
-  gulp.src(vendor.source.jqueryfixedheadertablejs) 
+    ;
+  gulp.src(vendor.source.jqueryfixedheadertablejs)
     .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablejs))
-    ; 
-  gulp.src(vendor.source.jqueryfixedheadertablecss) 
+    ;
+  gulp.src(vendor.source.jqueryfixedheadertablecss)
     .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablecss))
+    ; 
+  gulp.src(vendor.source.gridViewScrolljs) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrolljs))
+    ; 
+  gulp.src(vendor.source.gridViewScrollcss) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrollcss))
     ; 
 });
 
@@ -163,10 +175,10 @@ gulp.task('clean', function() {
 });
 
 // gulp.task('rename', function() {
-//  gulp.src(vendor.dist.iconfontsass + '/font-awesome.scss') 
+//  gulp.src(vendor.dist.iconfontsass + '/font-awesome.scss')
 //    .pipe(rename('_font-awesome.scss'))
 //    .pipe(gulp.dest(vendor.dist.iconfontsass))
-//    ; 
+//    ;
 // });
 // gulp.task('font', function() {
 //    gulp.src(vendor.source.font)
