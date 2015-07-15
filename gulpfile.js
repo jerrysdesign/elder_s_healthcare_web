@@ -52,8 +52,8 @@ var vendor = {
     jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
     jqueryfixedheadertablejs :bower.jqueryfixedheadertable + '/jquery.fixedheadertable.min.js',
     jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files,
-    JQueryDatatalbesJs:       bower.JQueryDatatalbes + '/js' + '/jquery.dataTables.min.js',
-    JQueryDatatalbesCss:      bower.JQueryDatatalbes + '/css' + '/jquery.dataTables.min.css'
+    gridViewScrolljs:         config.download + '/gridViewScroll/gridviewScroll.min.js',
+    gridViewScrollcss:        config.download + '/gridViewScroll/gridviewScroll.css'
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -84,8 +84,8 @@ var vendor = {
     jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
     jqueryfixedheadertablejs :config.project + '/js/vendor/jquery.fixedheadertable',
     jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable',
-    JQueryDatatalbesJs:       config.project + '/js/vendor/jquery.datatables',
-    JQueryDatatalbesCss:      config.project + '/styles/vendor/jquery.datatables'
+    gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
+    gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll'
   }
 }
 
@@ -156,13 +156,13 @@ gulp.task('vendor', function() {
     ;
   gulp.src(vendor.source.jqueryfixedheadertablecss)
     .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablecss))
-    ;
-  gulp.src(vendor.source.JQueryDatatalbesJs)
-    .pipe(gulp.dest(vendor.dist.JQueryDatatalbesJs))
-    ;
-  gulp.src(vendor.source.JQueryDatatalbesCss)
-    .pipe(gulp.dest(vendor.dist.JQueryDatatalbesCss))
-    ;
+    ; 
+  gulp.src(vendor.source.gridViewScrolljs) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrolljs))
+    ; 
+  gulp.src(vendor.source.gridViewScrollcss) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrollcss))
+    ; 
 });
 
 gulp.task('clean', function() {  
