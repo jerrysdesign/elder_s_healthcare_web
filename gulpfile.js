@@ -49,7 +49,9 @@ var vendor = {
     jQueryFancyBox :          bower.jqueryfancybox + all_folders,
     jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
     jqueryfixedheadertablejs :bower.jqueryfixedheadertable + '/jquery.fixedheadertable.min.js',
-    jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files
+    jqueryfixedheadertablecss:bower.jqueryfixedheadertable + '/css' + all_files,
+    gridViewScrolljs:         config.download + '/gridViewScroll/gridviewScroll.min.js',
+    gridViewScrollcss:        config.download + '/gridViewScroll/gridviewScroll.css'
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -79,7 +81,9 @@ var vendor = {
     jQueryFancyBox:           config.project + '/js/vendor/fancybox',
     jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
     jqueryfixedheadertablejs :config.project + '/js/vendor/jquery.fixedheadertable',
-    jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable'
+    jqueryfixedheadertablecss:config.project + '/styles/vendor/jquery.fixedheadertable',
+    gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
+    gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll'
   }
 }
 
@@ -150,6 +154,12 @@ gulp.task('vendor', function() {
     ; 
   gulp.src(vendor.source.jqueryfixedheadertablecss) 
     .pipe(gulp.dest(vendor.dist.jqueryfixedheadertablecss))
+    ; 
+  gulp.src(vendor.source.gridViewScrolljs) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrolljs))
+    ; 
+  gulp.src(vendor.source.gridViewScrollcss) 
+    .pipe(gulp.dest(vendor.dist.gridViewScrollcss))
     ; 
 });
 
