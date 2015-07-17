@@ -214,6 +214,7 @@ $logo-radius: 10px;
 	&-sub {
 		li > a {
 			@extend .nav-list;
+			padding: 10px 20px 10px 40px;
 		}
 	}
 	.open > a, .open > a:hover, .open > a:focus {
@@ -304,10 +305,10 @@ $logo-radius: 10px;
 			background-position: 50px -26px;
 		}
 		&.active a {
-			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px -52px;
+			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px -60px;
 		}
 		a {
-			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px 0;
+			background: url('../img/nav-sidebar-sub-dot.png') no-repeat 25px -4px;
 		}
 
 	}
