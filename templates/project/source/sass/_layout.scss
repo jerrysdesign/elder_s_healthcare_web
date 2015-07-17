@@ -26,16 +26,12 @@ html, body {
 	height: 100%;
 }
 body {
-	// min-width: 1199px;
 }
 
 // Main wrapper
 // -----------------------------
 .app-container {
 	position: relative;
-	// width: 100%;
-	// min-width: 1199px;
-	// min-height: 100%;
 	height: auto;
 	> aside {
 		top: 0;
@@ -45,8 +41,6 @@ body {
 	}
 	// Contains the main content
 	> section {
-		// position: relative;
-		// height: 100%;
 		margin-left: $aside-wd;
 		z-index: $z-index-section;
 	}
@@ -54,8 +48,6 @@ body {
 	.tab-page-wrapper {
 		padding-right: $content-padding;
 		padding-left: $content-padding;
-		// margin-right: $content-padding * -1; 
-		// margin-left: $content-padding * -1; 
 		left: $aside-wd;
 		right: 0;
 	}
@@ -71,9 +63,6 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	// overflow-x: hidden;
-	// overflow-y: hidden;
-	// -webkit-overflow-scrolling: touch;
 }
 
 // Fixed layout
@@ -81,6 +70,7 @@ body {
 .layout-fixed {
 	overflow-x: hidden;
 	overflow-y: hidden;
+	min-width: 1199px;
 }
 .aside-collapsed, .layout-fixed  {
 	@include translate3d(0,0,0);
