@@ -172,6 +172,7 @@ $logo-radius: 10px;
 		}
 		.logo-img {
 			@extend %center-block;
+			max-width: 100%;
 		}
 		.logo-text {
 			@extend %center-block;
