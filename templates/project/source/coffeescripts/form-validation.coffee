@@ -27,6 +27,11 @@ $ ->
 			error: 'Invail email address. 無效的電子郵件地址'
 		fe:
 			warning: 'Email帳號或密碼格式錯誤!'
+	rsPwMsg =
+		bk:
+			success: '密碼已重新設定'
+		fe:
+			warning: 'Email帳號或密碼格式錯誤!'
 	msgIcon =
 		error: '<i class="fa fa-times"></i>'
 		warning: '<i class="fa fa-exclamation-triangle"></i>'
@@ -52,9 +57,14 @@ $ ->
 	
 	successAuto = (currentFormId)->
 		$this = $('#' + currentFormId).find('#msg')
-		$this.empty().append(msgIcon.sucess + rePwMsg.bk.sucess)
+		$this.empty().append(msgIcon.sucess + rsPwMsg.bk.success)
 		$this.addClass('alert-sucess').show()
 		$this.delay(3000).fadeOut 'slow'
+
+	successRS = (currentFormId)->
+		$this = $('#' + currentFormId).find('#msg')
+		$this.empty().append(msgIcon.sucess + rsPwMsg.bk.success)
+		$this.addClass('alert-sucess').show()
 	
 	msgHide = (currentFormId)->
 		$this = $('#' + currentFormId).find('#msg')
@@ -129,9 +139,6 @@ $ ->
 
 
 	$('#forget-password-form').validate
-		# success: 'valid'
-		# submitHandler: ->
-		# 	hasSuccess()
 
 		# @validation states + elements 
 		# ------------------------------------------- 
@@ -145,6 +152,10 @@ $ ->
 			useremail:
 				required: true
 				email: true
+			password:
+				required: true
+				minlength: 6
+				maxlength: 16
 
 		# @validation error messages 
 		# ---------------------------------------------- 
@@ -152,22 +163,115 @@ $ ->
 			useremail:
 				required: '輸入 email帳號'
 				email: '輸入 email 帳號格式錯誤'
+			password:
+				required: '密碼必填'
+				minlength: '密碼不得少於6個字'
+				maxlength: '密碼不得超過16個字'
+				regex: '/^[0-9a-zA-Z]+$/'
 
+		# 按下submit後，執行驗證，所以驗證都成功，在呼叫form.submit之前
+		submitHandler: (url,data,successCallback) ->
+
+		# 按下submit後，執行驗證，發生錯誤時。
 		invalidHandler: (form, validator) ->
 			currentFormId = this.currentForm.id
-			errorAuto(currentForm.id)
+			errorAuto(currentFormId)
 		
+		# 每一個驗證對向驗證失敗時
+		# fe 驗證格式
 		highlight: (element, errorClass, validClass) ->
 			currentFormId = this.currentForm.id
 			$(element).closest('.field').addClass(errorClass).removeClass validClass
-			if @numberOfInvalids() > 0
+			if this.numberOfInvalids() > 0
 				warningAuto(currentFormId)
 		
+		# 每一個驗證對向驗證成功時
+		# fe 驗證格式
 		unhighlight: (element, errorClass, validClass) ->
 			currentFormId = this.currentForm.id
 			$(element).closest('.field').removeClass(errorClass).addClass validClass
+			# if @numberOfInvalids() == 0
 			if @numberOfInvalids() > 0
 				msgHide(currentFormId)
 		
 		errorPlacement: (error, element) ->
 			error.appendTo '#msg'
+
+	$('#reset-password-form').validate
+		$('.js__login--btn').hide()
+
+		# @validation states + elements 
+		# ------------------------------------------- 
+		errorClass: 'state-error'
+		validClass: 'state-success'
+		errorElement: 'span'
+		
+		# @validation rules 
+		# ------------------------------------------ 
+		rules:
+			# useremail:
+			# 	required: true
+			# 	email: true
+			password:
+				required: true
+				minlength: 6
+				maxlength: 16
+			repeatPassword:
+				required: true
+				minlength: 6
+				maxlength: 16
+				equalTo: '#password'
+
+		# @validation error messages 
+		# ---------------------------------------------- 
+		messages:
+			# useremail:
+			# 	required: '輸入 email帳號'
+			# 	email: '輸入 email 帳號格式錯誤'
+			password:
+				required: '密碼必填'
+				minlength: '密碼不得少於6個字'
+				maxlength: '密碼不得超過16個字'
+				regex: '/^[0-9a-zA-Z]+$/'
+			repeatPassword:
+				required: '二次輸入密碼不吻合'
+				minlength: '二次輸入密碼不吻合'
+				maxlength: '二次輸入密碼不吻合'
+				equalTo: '二次輸入密碼不吻合'
+			
+		
+		# 按下submit後，執行驗證，所以驗證都成功，在呼叫form.submit之前
+		submitHandler: (url,data,successCallback) ->
+			successRS(currentFormId)
+			$('.js__reset--btn').remove()
+			$('.js__login--btn').show()
+
+		# 按下submit後，執行驗證，發生錯誤時。
+		invalidHandler: (form, validator) ->
+			currentFormId = this.currentForm.id
+			errorAuto(currentFormId)
+		
+		# 每一個驗證對向驗證失敗時
+		# fe 驗證格式
+		highlight: (element, errorClass, validClass) ->
+			currentFormId = this.currentForm.id
+			$(element).closest('.field').addClass(errorClass).removeClass validClass
+			if this.numberOfInvalids() > 0
+				warningAuto(currentFormId)
+		
+		# 每一個驗證對向驗證成功時
+		# fe 驗證格式
+		unhighlight: (element, errorClass, validClass) ->
+			currentFormId = this.currentForm.id
+			$(element).closest('.field').removeClass(errorClass).addClass validClass
+			# if @numberOfInvalids() == 0
+			if @numberOfInvalids() > 0
+				msgHide(currentFormId)
+		
+		errorPlacement: (error, element) ->
+			error.appendTo '#msg'
+
+		success: (error) ->
+			successRS(currentFormId)
+			$('.js__reset--btn').remove()
+			$('.js__login--btn').show()
