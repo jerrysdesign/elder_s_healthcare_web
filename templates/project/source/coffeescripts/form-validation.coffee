@@ -270,8 +270,3 @@ $ ->
 		
 		errorPlacement: (error, element) ->
 			error.appendTo '#msg'
-
-		success: (error) ->
-			successRS(currentFormId)
-			$('.js__reset--btn').remove()
-			$('.js__login--btn').show()
