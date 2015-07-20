@@ -1,3 +1,55 @@
+gridviewScroll = ->
+	document.body.style.overflow = 'hidden'
+	gridleftW   = $('.sidebar-wrapper').width() + 80
+	searchRowH  = 60
+	gridtopH    = $('.container-fluid > div:first-child').outerHeight() + searchRowH
+	gridWidth   = $(window).width() - gridleftW
+	gridHeight  = $(window).height() - gridtopH
+	tabsRowH    = 65
+	gridHeight2 = gridHeight - tabsRowH
+
+	$('#tableCost1').gridviewScroll
+		width: gridWidth
+		height: gridHeight
+		headerrowcount: 2
+		freezesize: 4
+		railsize: 16
+		barsize: 16
+
+	$('#tableCost3, #tableCost4').gridviewScroll
+		width: gridWidth
+		height: gridHeight
+		headerrowcount: 2
+		freezesize: 2
+		railsize: 16
+		barsize: 16
+
+	$('#tableResult1_1, #tableResult1_2').gridviewScroll
+		width: gridWidth
+		height: gridHeight2
+		headerrowcount: 2
+		freezesize: 4
+		railsize: 16
+		barsize: 16
+
+	$('#tableAccount3, #tableCost2').gridviewScroll
+		width: gridWidth
+		height: gridHeight2
+		headerrowcount: 1
+		freezesize: 3
+		railsize: 16
+		barsize: 16
+
+	$('#tableAccount5').gridviewScroll
+		width: gridWidth
+		height: gridHeight2
+		headerrowcount: 1
+		freezesize: 5
+		railsize: 16
+		barsize: 16
+
+
+
 $ ->
 	asideW = $('aside').width()
 	$winW = $(window).width()
@@ -66,6 +118,7 @@ $ ->
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->
+	gridviewScroll()
 	$('.editable').editable()
 	$('.editable_textarea').editable
 		rows: 4

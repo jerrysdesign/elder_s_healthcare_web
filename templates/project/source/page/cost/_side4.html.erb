@@ -1,146 +1,141 @@
-
-	<div class="row top-buffer">
-		<div class="col-md-8">
-			<form class="form-inline" role="form">
-				<div class="form-group ">時間區間
-					<input type="text" class="form-control datepicker" placeholder="">~
-					<input type="text" class="form-control datepicker" placeholder="">
-					<button class="btn btn-default">查詢</button>
-				</div>
-			</form>
-		</div>
-		<div class="col-md-4 text-right">
-			<button type="submit" class="btn btn-default">匯出 excel</button>
-		</div>
+<div class="row top-buffer">
+	<div class="col-md-8">
+		<form class="form-inline" role="form">
+			<div class="form-group ">時間區間
+				<input type="text" class="form-control datepicker" placeholder="">~
+				<input type="text" class="form-control datepicker" placeholder="">
+				<button class="btn btn-default">查詢</button>
+			</div>
+		</form>
 	</div>
-	<br>
-	<div class="row top-buffer">
-		<table class="table align-middle-table custom-table-01 reset-list-style">
-			<thead>
-				<tr>
-					<th rowspan="2">序號</th>
-					<th rowspan="2">居服員</th>
-					<th colspan="4">平日服務 / 月</th>
-					<th rowspan="2">平日費用小計</th>
-					<th colspan="4">國定假日服務 / 月</th>
-					<th rowspan="2">國定假日費用小計</th>
-					<th colspan="8">其他費用</th>
-					<th rowspan="2">個人費用合計</th>
-				</tr>
-				<tr>
-					<th>時數</th>
-					<th>次數</th>
-					<th>費用</th>
-					<th>行政費用</th>
-					<th>時數</th>
-					<th>次數</th>
-					<th>費用</th>
-					<th>行政費用</th>
-					<th>加班費</th>
-					<th>服務未遇</th>
-					<th>在職津貼</th>
-					<th>婚喪津貼</th>
-					<th>特休獎金</th>
-					<th>證照津貼</th>
-					<th>旅遊津貼</th>
-					<th>考核獎金</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>王小明</td>
-					<td>30</td>
-					<td>8</td>
-					<td>6000</td>
-					<td>800</td>
-					<td>6800</td>
-					<td>10</td>
-					<td>3</td>
-					<td>4000</td>
-					<td>300</td>
-					<td>4300</td>
-					<td>195</td>
-					<td>130</td>
-					<td>500</td>
-					<td>
-						<a href="javascript:;" data-type="text" class="editable">0</a><!--空值為編輯 -->
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a><!--已有值帶入值與 data-title -->
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td>11230</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>王小明</td>
-					<td>30</td>
-					<td>8</td>
-					<td>6000</td>
-					<td>800</td>
-					<td>6800</td>
-					<td>10</td>
-					<td>3</td>
-					<td>4000</td>
-					<td>300</td>
-					<td>4300</td>
-					<td>195</td>
-					<td>130</td>
-					<td>500</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td>11230</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>王小明</td>
-					<td>30</td>
-					<td>8</td>
-					<td>6000</td>
-					<td>800</td>
-					<td>6800</td>
-					<td>10</td>
-					<td>3</td>
-					<td>4000</td>
-					<td>300</td>
-					<td>4300</td>
-					<td>195</td>
-					<td>130</td>
-					<td>500</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td><a href="javascript:;" data-type="text" class="editable">100</a>
-					</td>
-					<td>11230</td>
-				</tr>
-				<tr>
-					<td colspan="15"></td>
-					<td>總計</td>
-					<td>總計</td>
-					<td>總計</td>
-					<td>總計</td>
-					<td>總計</td>
-					<td>303,210</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="col-md-4 text-right">
+		<button type="submit" class="btn btn-default">匯出 excel</button>
 	</div>
+</div>
+<br>
+<div class="row top-buffer">
+	<table id="tableCost4" class="table align-middle-table custom-table-01 reset-list-style">
+		<tr class="GridviewScrollHeader">
+			<th rowspan="2">序號</th>
+			<th rowspan="2">居服員</th>
+			<th colspan="4">平日服務 / 月</th>
+			<th rowspan="2">平日費用小計</th>
+			<th colspan="4">國定假日服務 / 月</th>
+			<th rowspan="2">國定假日費用小計</th>
+			<th colspan="8">其他費用</th>
+			<th rowspan="2">個人費用合計</th>
+		</tr>
+		<tr class="GridviewScrollHeader">
+			<th>時數</th>
+			<th>次數</th>
+			<th>費用</th>
+			<th>行政費用</th>
+			<th>時數</th>
+			<th>次數</th>
+			<th>費用</th>
+			<th>行政費用</th>
+			<th>加班費</th>
+			<th>服務未遇</th>
+			<th>在職津貼</th>
+			<th>婚喪津貼</th>
+			<th>特休獎金</th>
+			<th>證照津貼</th>
+			<th>旅遊津貼</th>
+			<th>考核獎金</th>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>1</td>
+			<td>王小明</td>
+			<td>30</td>
+			<td>8</td>
+			<td>6000</td>
+			<td>800</td>
+			<td>6800</td>
+			<td>10</td>
+			<td>3</td>
+			<td>4000</td>
+			<td>300</td>
+			<td>4300</td>
+			<td>195</td>
+			<td>130</td>
+			<td>500</td>
+			<td>
+				<a href="javascript:;" data-type="text" class="editable">0</a><!--空值為編輯 -->
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a><!--已有值帶入值與 data-title -->
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td>11230</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>2</td>
+			<td>王小明</td>
+			<td>30</td>
+			<td>8</td>
+			<td>6000</td>
+			<td>800</td>
+			<td>6800</td>
+			<td>10</td>
+			<td>3</td>
+			<td>4000</td>
+			<td>300</td>
+			<td>4300</td>
+			<td>195</td>
+			<td>130</td>
+			<td>500</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td>11230</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>3</td>
+			<td>王小明</td>
+			<td>30</td>
+			<td>8</td>
+			<td>6000</td>
+			<td>800</td>
+			<td>6800</td>
+			<td>10</td>
+			<td>3</td>
+			<td>4000</td>
+			<td>300</td>
+			<td>4300</td>
+			<td>195</td>
+			<td>130</td>
+			<td>500</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td><a href="javascript:;" data-type="text" class="editable">100</a>
+			</td>
+			<td>11230</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td colspan="15"></td>
+			<td>總計</td>
+			<td>總計</td>
+			<td>總計</td>
+			<td>總計</td>
+			<td>總計</td>
+			<td>303,210</td>
+		</tr>
+	</table>
+</div>

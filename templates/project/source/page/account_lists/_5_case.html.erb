@@ -4,136 +4,130 @@
 </div>
 
 <div class="row top-buffer">
-	<table class="table align-middle-table custom-table-01 reset-list-style js--spy--width">
-		<thead>
-			<tr>
-				<th>個人相片</th>
-				<th>帳號 Email</th>
-				<th>案號</th>
-				<th>長照案號</th>
-				<th>姓名</th>
-				<th>督導員</th>
-				<th>手機電話</th>
-				<th>市內電話</th>
-				<th>緊急聯絡人</th>
-				<th>出生年月日</th>
-				<th>年齡</th>
-				<th>身分證字號</th>
-				<th>籍貫</th>
-				<th>稱謂</th>
-				<th>性別</th>
-				<th>信仰</th>
-				<th>婚姻狀況</th>
-				<th>教育程度</th>
-				<th>居住地址</th>
-				<th>戶籍地址</th>
-				<th>職業</th>
-				<th>慣用語言</th>
-				<th>身分別(一)</th>
-				<th>身分別(二)</th>
-				<th>身分別(三)</th>
-				<th>身分別(四)</th>
-				<th>身分別(五)</th>
-				<th>補助類別</th>
-				<th>領取身心障礙手冊</th>
-				<th>障別</th>
-				<th>障礙等級</th>
-				<th>失能狀況</th>
-				<th>輔具</th>
-				<th>疾病史</th>
-				<th>衛生環境</th>
-				<th>居住情形</th>
-				<th>房屋所有權</th>
-				<th>住宅總類</th>
-				<th>經濟來源</th>
-				<th>社會資源</th>
-				<th>家系圖</th>
-				<th>生態圖</th>
-				<th>服務申請人</th>
-				<th>服務申請緣由</th>
-				<th>個案對於需求與問題的看法</th>
-				<th>初次需求評估</th>
-				<th>初次處遇計畫</th>
-				<th>服務需求時數</th>
-				<th>核定時數</th>
-				<th>補助比例（政府補助額度）</th>
-				<th>費用</th>
-				<th>服務項目</th>
-				<th>派案日期</th>
-				<th>重新鑑定日期</th>
-				<th>預定首次服務時間</th>
-				<th>服務頻率</th>
-				<th>啟用狀態</th>
-				<th>上傳回覆單檔案</th>
-				<th>QRCode</th>
-				<th>編輯</th>
-			</tr>
-		</thead>
-		<tbody>
-		<% 10.times do %>
-			<tr>
-				<td><img alt="64" class="img-circle" src="http://placehold.it/64"></td>
-				<td>email@tw.shuttle.com</td>
-				<td>123456789</td>
-				<td>123456789</td>
-				<td>王比利</td>
-				<td>歐區欠</td>
-				<td>0900-000-000</td>
-				<td>02-0000-0000</td>
-				<td>王瑪莉</td>
-				<td>yyyy/mm/dd</td>
-				<td>99</td>
-				<td>A123456789</td>
-				<td>福建省</td>
-				<td>爺爺</td>
-				<td>男性</td>
-				<td>道教</td>
-				<td>已婚</td>
-				<td>小學</td>
-				<td>台北市信義區信義路五段7號</td>
-				<td>台北市信義區信義路五段7號</td>
-				<td>現：忍者龜<br>昔：下水工</td>
-				<td>國語</td>
-				<td>一般戶</td>
-				<td>原住民</td>
-				<td>老人科</td>
-				<td>長十</td>
-				<td>新制</td>
-				<td>50歲以上失智、慢性精神病患、智能障礙者及自閉症者</td>
-				<td>有</td>
-				<td>智能障礙者</td>
-				<td>重度</td>
-				<td>重度</td>
-				<td>有</td>
-				<td>巴金森氏症</td>
-				<td>異常</td>
-				<td>獨居</td>
-				<td>自有</td>
-				<td>平房</td>
-				<td>子女放養約 5 元/月</td>
-				<td>長照中心其他服務___</td>
-				<td><a href="#"><i class="fa fa-file-photo-o fa-2x"></i></a></td>
-				<td><a href="#"><i class="fa fa-file-photo-o fa-2x"></i></a></td>
-				<td>李木子</td>
-				<td>無無</td>
-				<td>無</td>
-				<td>無</td>
-				<td>無</td>
-				<td>5 小時/月</td>
-				<td>5 小時/月</td>
-				<td>100%</td>
-				<td>每月總價 0 元，政府補助 0 元，自費 0 元</td>
-				<td>洗澡</td>
-				<td>yyyy/mm/dd</td>
-				<td>yyyy/mm/dd</td>
-				<td>yyyy/mm/dd</td>
-				<td>以周計算： 0 天/周， 0 小時/天， 0 周/月<br>以月計算： 0 天/周， 0 小時/天</td>
-				<td>啟用</td>
-				<td class="text-center"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
-				<td class="text-center"><a href="#"><i class="fa fa-qrcode fa-2x"></i></a></td>
-				<td class="text-center"><a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a></td>
-			</tr>   
-		<% end %>
-		</tbody>
+	<table id="tableAccount5" class="table align-middle-table custom-table-01 reset-list-style js--spy--width">
+		<tr class="GridviewScrollHeader">
+			<th>個人相片</th>
+			<th>帳號 Email</th>
+			<th>案號</th>
+			<th>長照案號</th>
+			<th>姓名</th>
+			<th>督導員</th>
+			<th>手機電話</th>
+			<th>市內電話</th>
+			<th>緊急聯絡人</th>
+			<th>出生年月日</th>
+			<th>年齡</th>
+			<th>身分證字號</th>
+			<th>籍貫</th>
+			<th>稱謂</th>
+			<th>性別</th>
+			<th>信仰</th>
+			<th>婚姻狀況</th>
+			<th>教育程度</th>
+			<th>居住地址</th>
+			<th>戶籍地址</th>
+			<th>職業</th>
+			<th>慣用語言</th>
+			<th>身分別(一)</th>
+			<th>身分別(二)</th>
+			<th>身分別(三)</th>
+			<th>身分別(四)</th>
+			<th>身分別(五)</th>
+			<th>補助類別</th>
+			<th>領取身心障礙手冊</th>
+			<th>障別</th>
+			<th>障礙等級</th>
+			<th>失能狀況</th>
+			<th>輔具</th>
+			<th>疾病史</th>
+			<th>衛生環境</th>
+			<th>居住情形</th>
+			<th>房屋所有權</th>
+			<th>住宅總類</th>
+			<th>經濟來源</th>
+			<th>社會資源</th>
+			<th>家系圖</th>
+			<th>生態圖</th>
+			<th>服務申請人</th>
+			<th>服務申請緣由</th>
+			<th>個案對於需求與問題的看法</th>
+			<th>初次需求評估</th>
+			<th>初次處遇計畫</th>
+			<th>服務需求時數</th>
+			<th>核定時數</th>
+			<th>補助比例（政府補助額度）</th>
+			<th>費用</th>
+			<th>服務項目</th>
+			<th>派案日期</th>
+			<th>重新鑑定日期</th>
+			<th>預定首次服務時間</th>
+			<th>服務頻率</th>
+			<th>啟用狀態</th>
+			<th>上傳回覆單檔案</th>
+			<th>QRCode</th>
+			<th>編輯</th>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td><img alt="64" class="img-circle" src="http://placehold.it/64"></td>
+			<td>email@tw.shuttle.com</td>
+			<td>123456789</td>
+			<td>123456789</td>
+			<td>王比利</td>
+			<td>歐區欠</td>
+			<td>0900-000-000</td>
+			<td>02-0000-0000</td>
+			<td>王瑪莉</td>
+			<td>yyyy/mm/dd</td>
+			<td>99</td>
+			<td>A123456789</td>
+			<td>福建省</td>
+			<td>爺爺</td>
+			<td>男性</td>
+			<td>道教</td>
+			<td>已婚</td>
+			<td>小學</td>
+			<td>台北市信義區信義路五段7號</td>
+			<td>台北市信義區信義路五段7號</td>
+			<td>現：忍者龜<br>昔：下水工</td>
+			<td>國語</td>
+			<td>一般戶</td>
+			<td>原住民</td>
+			<td>老人科</td>
+			<td>長十</td>
+			<td>新制</td>
+			<td>50歲以上失智、慢性精神病患、智能障礙者及自閉症者</td>
+			<td>有</td>
+			<td>智能障礙者</td>
+			<td>重度</td>
+			<td>重度</td>
+			<td>有</td>
+			<td>巴金森氏症</td>
+			<td>異常</td>
+			<td>獨居</td>
+			<td>自有</td>
+			<td>平房</td>
+			<td>子女放養約 5 元/月</td>
+			<td>長照中心其他服務___</td>
+			<td><a href="#"><i class="fa fa-file-photo-o fa-2x"></i></a></td>
+			<td><a href="#"><i class="fa fa-file-photo-o fa-2x"></i></a></td>
+			<td>李木子</td>
+			<td>無無</td>
+			<td>無</td>
+			<td>無</td>
+			<td>無</td>
+			<td>5 小時/月</td>
+			<td>5 小時/月</td>
+			<td>100%</td>
+			<td>每月總價 0 元，政府補助 0 元，自費 0 元</td>
+			<td>洗澡</td>
+			<td>yyyy/mm/dd</td>
+			<td>yyyy/mm/dd</td>
+			<td>yyyy/mm/dd</td>
+			<td>以周計算： 0 天/周， 0 小時/天， 0 周/月<br>以月計算： 0 天/周， 0 小時/天</td>
+			<td>啟用</td>
+			<td class="text-center"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+			<td class="text-center"><a href="#"><i class="fa fa-qrcode fa-2x"></i></a></td>
+			<td class="text-center"><a href="#"><i class="fa fa-pencil-square-o fa-2x"></i></a></td>
+		</tr>
 	</table>
 </div>

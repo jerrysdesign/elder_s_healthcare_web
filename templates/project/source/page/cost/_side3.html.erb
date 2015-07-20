@@ -1,80 +1,76 @@
-	<div class="row top-buffer">
-		<div class="col-md-8">
-			<form class="form-inline" role="form">
-				<div class="form-group ">時間區間
-					<input type="text" class="form-control datepicker" placeholder="">~
-					<input type="text" class="form-control datepicker" placeholder="">
-					<button class="btn btn-default">查詢</button>
-				</div>
-			</form>
-		</div>
-		<div class="col-md-4 text-right">
-			<button type="submit" class="btn btn-default">匯出 excel</button>
-		</div>
+<div class="row top-buffer">
+	<div class="col-md-8">
+		<form class="form-inline" role="form">
+			<div class="form-group ">時間區間
+				<input type="text" class="form-control datepicker" placeholder="">~
+				<input type="text" class="form-control datepicker" placeholder="">
+				<button class="btn btn-default">查詢</button>
+			</div>
+		</form>
 	</div>
-	<hr>
-	<div class="row top-buffer">
-		<table class="table align-middle-table custom-table-01 reset-list-style">
-			<thead>
-				<tr>
-					<th rowspan="2">序號</th>
-					<th rowspan="2">居服員</th>
-					<th rowspan="2">日期</th>
-					<th colspan="2">會議</th>
-					<th colspan="2">職訓</th>
-					<th rowspan="2">個人時數合計</th>
-					<th rowspan="2">個人費用合計</th>
-				</tr>
-				<tr>
-					<th>時數</th>
-					<th>費用</th>
-					<th>時數</th>
-					<th>費用</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>王小明</td>
-					<td>2015-02-15</td>
-					<td>2</td>
-					<td>200</td>
-					<td>3</td>
-					<td>300</td>
-					<td>5</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>王小明</td>
-					<td>2015-02-15</td>
-					<td>2</td>
-					<td>200</td>
-					<td>3</td>
-					<td>300</td>
-					<td>5</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>王小明</td>
-					<td>2015-02-15</td>
-					<td>2</td>
-					<td>200</td>
-					<td>3</td>
-					<td>300</td>
-					<td>5</td>
-					<td>500</td>
-				</tr>
-				<tr>
-					<td colspan="3">合計</td>
-					<td>56</td>
-					<td>5600</td>
-					<td>84</td>
-					<td>8400</td>
-					<td>140</td>
-					<td>14000</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="col-md-4 text-right">
+		<button type="submit" class="btn btn-default">匯出 excel</button>
 	</div>
+</div>
+<hr>
+<div class="row">
+	<table id="tableCost3" class="table align-middle-table custom-table-01 reset-list-style">
+		<tr class="GridviewScrollHeader">
+			<th rowspan="2">序號</th>
+			<th rowspan="2">居服員</th>
+			<th rowspan="2">日期</th>
+			<th colspan="2">會議</th>
+			<th colspan="2">職訓</th>
+			<th rowspan="2">個人時數合計</th>
+			<th rowspan="2">個人費用合計</th>
+		</tr>
+		<tr class="GridviewScrollHeader">
+			<th>時數</th>
+			<th>費用</th>
+			<th>時數</th>
+			<th>費用</th>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>1</td>
+			<td>王小明</td>
+			<td>2015-02-15</td>
+			<td>2</td>
+			<td>200</td>
+			<td>3</td>
+			<td>300</td>
+			<td>5</td>
+			<td>500</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>2</td>
+			<td>王小明</td>
+			<td>2015-02-15</td>
+			<td>2</td>
+			<td>200</td>
+			<td>3</td>
+			<td>300</td>
+			<td>5</td>
+			<td>500</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td>3</td>
+			<td>王小明</td>
+			<td>2015-02-15</td>
+			<td>2</td>
+			<td>200</td>
+			<td>3</td>
+			<td>300</td>
+			<td>5</td>
+			<td>500</td>
+		</tr>
+		<tr class="GridviewScrollItem">
+			<td colspan="3">合計</td>
+			<td>56</td>
+			<td>5600</td>
+			<td>84</td>
+			<td>8400</td>
+			<td>140</td>
+			<td>14000</td>
+		</tr>
+	</table>
+</div>
