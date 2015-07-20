@@ -25,7 +25,8 @@ var bower = {
     jquery: config.vendor + '/jquery/dist',
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
-    jqueryfancybox: config.vendor + '/fancybox/source'
+    jqueryfancybox: config.vendor + '/fancybox/source',
+    jqueryui: config.vendor + '/jqueryui'
 }
 
 var vendor = {
@@ -47,8 +48,9 @@ var vendor = {
     jQueryValidate :          bower.jqueryvalidation + all_files,
     jQueryFancyBox :          bower.jqueryfancybox + all_folders,
     jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
-    gridViewScrolljs:         config.download + '/gridViewScroll/gridviewScroll.min.js',
-    gridViewScrollcss:        config.download + '/gridViewScroll/gridviewScroll.css'
+    gridViewScrolljs:         config.download + '/GridViewScroll/gridviewScroll.min.js',
+    gridViewScrollcss:        config.download + '/GridViewScroll/gridviewScroll.css',
+    jQueryUi :                bower.jqueryui + '/jquery-ui.min.js'
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -78,7 +80,8 @@ var vendor = {
     jQueryFancyBox:           config.project + '/js/vendor/fancybox',
     jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
     gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
-    gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll'
+    gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll',
+    jQueryUi:                 config.project + '/js/vendor/jqueryui'
   }
 }
 
@@ -150,6 +153,9 @@ gulp.task('vendor', function() {
   gulp.src(vendor.source.gridViewScrollcss) 
     .pipe(gulp.dest(vendor.dist.gridViewScrollcss))
     ; 
+  gulp.src(vendor.source.jQueryUi)
+    .pipe(gulp.dest(vendor.dist.jQueryUi))
+    ;
 });
 
 gulp.task('clean', function() {  
