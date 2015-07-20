@@ -138,3 +138,90 @@ $(document).ready ->
 			{value: 1, text: '未完成'}
 			{value: 2, text: '已完成'}
 		]
+
+
+
+$(window).load ->
+	$cost1     = $('#tableCost1')
+	$cost2     = $('#tableCost2')
+	$cost3     = $('#tableCost3')
+	$cost4     = $('#tableCost4')
+	$result1_1 = $('#tableResult1_1')
+	$result1_2 = $('#tableResult1_2')
+	$account3  = $('#tableAccount3')
+	$account5  = $('#tableAccount5')
+	$barsize   = 16
+	$colgap    = 2
+	if $cost1
+		$('#tableCost1PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			if !$(this).find('td').attr('colspan')
+				$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableCost1PanelItemContentFreeze').css 'width', $('#tableCost1CopyFreeze').width() - $colgap
+
+	if $cost2
+		$('#tableCost2PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			if !$(this).find('td').attr('colspan')
+				$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableCost2PanelItemContentFreeze').css 'width', $('#tableCost2CopyFreeze').width() - $colgap
+		$('#tableCost2PanelItem').css 'overflow', 'inherit'
+		$('#tableResult1_2PanelItemContent').scroll ->
+			$('.popover.in').remove()
+
+	if $cost3
+		$('#tableCost3PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			if !$(this).find('td').attr('colspan')
+				$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableCost3PanelItemContentFreeze').css 'width', $('#tableCost3CopyFreeze').width() - $colgap
+
+	if $cost4
+		$('#tableCost4PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			if !$(this).find('td').attr('colspan')
+				$(this).find('td').eq(0).height contH
+
+		$('#tableCost4PanelItemContentFreeze').css 'width', $('#tableCost4CopyFreeze').width() - $colgap
+		$('#tableCost4PanelItem').css 'overflow', 'inherit'
+		$('#tableCost4PanelItemContent').scroll ->
+			$('.popover.in').remove()
+
+	if $result1_1
+		$('#tableResult1_1PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableResult1_1PanelItemContentFreeze').css 'width', $('#tableResult1_1CopyFreeze').width() - $colgap
+		$('#tableResult1_1PanelItem').css 'overflow', 'inherit'
+		$('#tableResult1_1PanelItemContent').scroll ->
+			$('.popover.in').remove()
+
+	if $result1_2
+		$('#tableResult1_2PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableResult1_2PanelItemContentFreeze').css 'width', $('#tableResult1_2CopyFreeze').width() - $colgap
+		$('#tableResult1_2PanelItem').css 'overflow', 'inherit'
+		$('#tableResult1_2PanelItemContent').scroll ->
+			$('.popover.in').remove()
+
+	if $account3
+		$('#tableAccount3PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableAccount3PanelItemContentFreeze').css 'width', $('#tableAccount3CopyFreeze').width() - $colgap
+		$('#tableAccount3PanelItem').css 'overflow', 'inherit'
+
+	if $account5
+		$('#tableAccount5PanelItemContentFreeze .GridviewScrollItem').each ->
+			contH = $(this).find('td').eq(1).height()
+			$(this).find('td').eq(0).height contH + $barsize
+
+		$('#tableAccount5PanelItemContentFreeze').css 'width', $('#tableAccount5CopyFreeze').width() - $colgap
+		$('#tableAccount5PanelItem').css 'overflow', 'inherit'

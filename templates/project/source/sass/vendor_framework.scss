@@ -1,3 +1,15 @@
 @import "vendor/bootstrap-datepicker/datepicker3.css";
 @import "vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css";
 @import "vendor/editable/bootstrap-editable.css";
+@import "vendor/GridViewScroll/gridviewScroll.css";
+
+.custom-table-01 {
+	margin-bottom: 0
+}
+
+.GridviewScrollHeader th, .GridviewScrollHeader td {
+    white-space: nowrap;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(240,240,240);
+}
