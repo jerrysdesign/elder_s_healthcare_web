@@ -197,8 +197,8 @@ $ ->
 		errorPlacement: (error, element) ->
 			error.appendTo '#msg'
 
+	$('.js__login--btn').hide()
 	$('#reset-password-form').validate
-		$('.js__login--btn').hide()
 
 		# @validation states + elements 
 		# ------------------------------------------- 
