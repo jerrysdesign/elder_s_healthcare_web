@@ -22,7 +22,6 @@
     "jquery-validation": "^1.13.1",
     "bootstrap": "=3.3.4",
     "jquery.fixedheadertable": "*",
-    "datatables": "=1.10.7",
     "jqueryui": "~1.11.4"
     },
   "homepage": "https://github.com/jerrysdesign/elder_s_healthcare_web"
