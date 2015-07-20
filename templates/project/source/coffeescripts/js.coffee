@@ -91,16 +91,15 @@ $ ->
 		$('.main').css('height', $winH)
 	autoH()
 
-	autoW = ->
-		console.log("autow")
-	autoW()
-
+	timer = 0
 	$(window).resize ->
-		$winH = $(window).height()
-		autoH()
-		autoW()
-		lrHeight()
-
+		if timer
+			clearTimeout timer
+			timer = 0
+		timer = setTimeout((->
+			location.reload()
+		), 300)
+		
 	$('.trigger').click ->
 		$('.layout-fixed').toggleClass 'aside-collapsed'
 
