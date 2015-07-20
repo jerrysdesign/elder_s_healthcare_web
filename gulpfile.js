@@ -25,8 +25,7 @@ var bower = {
     jquery: config.vendor + '/jquery/dist',
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
-    jqueryfancybox: config.vendor + '/fancybox/source',
-    JQueryDatatalbes: config.vendor + '/datatables/media'
+    jqueryfancybox: config.vendor + '/fancybox/source'
 }
 
 var vendor = {
