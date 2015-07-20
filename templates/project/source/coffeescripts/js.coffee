@@ -37,11 +37,9 @@ $ ->
 
 	autoH = ->
 		$('.main').css('height', $winH)
-		$('.fixedheadertablemon').css('height', $winH - 191)
 	autoH()
 
 	autoW = ->
-		$('.fht-fixed-body').width(100 + "%")
 		console.log("autow")
 	autoW()
 
@@ -55,18 +53,15 @@ $ ->
 		$('.layout-fixed').toggleClass 'aside-collapsed'
 
 	$('.fm-ctrl').formShowHide()
-	$('.fixedheadertable').fixedHeaderTable
-		footer: false
-		fixedColumns: 3
 
-	$('.fht-tbody').scroll ->
-		$('.popover.in').remove()
+	# $('.fht-tbody').scroll ->
+	# 	$('.popover.in').remove()
 
-  $('.js__chang_input_pw').click (e) ->
-    e.preventDefault()
-    $js__chang_input_pw = "<input type='password' class='form-control' placeholder=''>"
-    $(this).before($js__chang_input_pw)
-    $(this).hide()
+	$('.js__chang_input_pw').click (e) ->
+		e.preventDefault()
+		$js__chang_input_pw = "<input type='password' class='form-control' placeholder=''>"
+		$(this).before($js__chang_input_pw)
+		$(this).hide()
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
