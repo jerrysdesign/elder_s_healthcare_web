@@ -74,6 +74,11 @@ $ ->
 	$('.datepicker').datepicker
 		format: 'yyyy-mm-dd'
 
+	$('.datepicker-months').datepicker
+		viewMode: "months"
+		minViewMode: "months"
+		format: 'yyyy-mm'
+
 
 	$('.timepicker').datetimepicker format: 'LT'
 
