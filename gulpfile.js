@@ -26,8 +26,7 @@ var bower = {
     fontawesome: config.vendor + '/fontawesome',
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
     jqueryfancybox: config.vendor + '/fancybox/source',
-    jqueryui: config.vendor + '/jqueryui',
-    bootstrapvalidator: config.vendor + '/bootstrap-validator'
+    jqueryui: config.vendor + '/jqueryui'
 }
 
 var vendor = {
@@ -51,9 +50,7 @@ var vendor = {
     jQueryFormShowHidejs :    config.download + '/jQuery-FormShowHide/js' + all_files,
     gridViewScrolljs:         config.download + '/GridViewScroll/gridviewScroll.min.js',
     gridViewScrollcss:        config.download + '/GridViewScroll/gridviewScroll.css',
-    jQueryUi :                bower.jqueryui + '/jquery-ui.min.js',
-    bootstrapvalidatorjs:     bower.bootstrapvalidator + '/dist/validator.min.js'
-
+    jQueryUi :                bower.jqueryui + '/jquery-ui.min.js'
     // font:
     // [
     //  // config.vendor + '/open-sans-fontface/open-sans.css',
@@ -84,8 +81,7 @@ var vendor = {
     jQueryFormShowHidejs :    config.project + '/js/vendor/jquery.formShowHide',
     gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
     gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll',
-    jQueryUi:                 config.project + '/js/vendor/jqueryui',
-    bootstrapvalidatorjs:     config.project + '/js/vendor/bootstrap-validator'
+    jQueryUi:                 config.project + '/js/vendor/jqueryui'
   }
 }
 
@@ -159,9 +155,6 @@ gulp.task('vendor', function() {
     ; 
   gulp.src(vendor.source.jQueryUi)
     .pipe(gulp.dest(vendor.dist.jQueryUi))
-    ;
-  gulp.src(vendor.source.bootstrapvalidatorjs)
-    .pipe(gulp.dest(vendor.dist.bootstrapvalidatorjs))
     ;
 });
 
