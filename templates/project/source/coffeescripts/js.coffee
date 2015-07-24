@@ -72,12 +72,12 @@ $ ->
 	lrHeight()
 
 	$('.datepicker').datepicker
-		format: 'yyyy-mm-dd'
+		format: 'YYYY-MM-DD'
 
 	$('.datepicker-months').datepicker
 		viewMode: "months"
 		minViewMode: "months"
-		format: 'yyyy-mm'
+		format: 'YYYY-MM'
 
 	$('.timepicker').datetimepicker format: 'LT'
 
@@ -121,8 +121,8 @@ $(document).ready ->
 	$('.editable_textarea').editable
 		rows: 4
 	$('.editable_timepicker').editable
-		format: 'yyyy-mm-dd'
-		viewformat: 'yyyy-mm-dd'
+		format: 'YYYY-MM-DD'
+		viewformat: 'YYYY-MM-DD'
 		template: 'YYYY - MM - DD'
 		datepicker:
 			weekStart: 1
@@ -131,10 +131,10 @@ $(document).ready ->
 			minuteStep: 1
 
 	$('.editable_select').editable
-		value: 1
+		value: 0
 		source: [
-			{value: 1, text: '未完成'}
-			{value: 2, text: '已完成'}
+			{value: 0, text: '未完成'}
+			{value: 1, text: '已完成'}
 		]
 
 
