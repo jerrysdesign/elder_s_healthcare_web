@@ -54,8 +54,7 @@ $ ->
 	asideW = $('aside').width()
 	$winW = $(window).width()
 	$winH = $(window).height()
-	$('.xxxform').validator()
-
+	$('.bootstrap-validator').validator()
 
 	# tabsRowfixW = ->
 	#   $fixW = $winW - asideW
@@ -80,9 +79,7 @@ $ ->
 		minViewMode: "months"
 		format: 'yyyy-mm'
 
-
 	$('.timepicker').datetimepicker format: 'LT'
-
 
 	$radio = $('.case_new_check').find('input[type="radio"]')
 	$contAll = $('.case_new_checkcont1,.case_new_checkcont2')
@@ -91,7 +88,6 @@ $ ->
 		$idx = $(this).parent().index() + 1
 		$contAll.hide()
 		$('.' + _cont + $idx).show()
-
 
 	autoH = ->
 		$('.main').css('height', $winH)
@@ -110,9 +106,6 @@ $ ->
 		$('.layout-fixed').toggleClass 'aside-collapsed'
 
 	$('.fm-ctrl').formShowHide()
-
-	# $('.fht-tbody').scroll ->
-	# 	$('.popover.in').remove()
 
 	$('.js__chang_input_pw').click (e) ->
 		e.preventDefault()
