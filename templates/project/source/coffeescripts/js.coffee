@@ -54,6 +54,7 @@ $ ->
 	asideW = $('aside').width()
 	$winW = $(window).width()
 	$winH = $(window).height()
+	$('.xxxform').validator()
 
 
 	# tabsRowfixW = ->
@@ -142,7 +143,6 @@ $(document).ready ->
 			{value: 1, text: '未完成'}
 			{value: 2, text: '已完成'}
 		]
-
 
 
 $(window).load ->

@@ -53,6 +53,7 @@ var vendor = {
     gridViewScrollcss:        config.download + '/GridViewScroll/gridviewScroll.css',
     jQueryUi :                bower.jqueryui + '/jquery-ui.min.js',
     bootstrapvalidatorjs:     bower.bootstrapvalidator + '/dist/validator.min.js'
+    // bootstrapvalidatorjs:     bower.bootstrapvalidator + all_folders
 
     // font:
     // [
