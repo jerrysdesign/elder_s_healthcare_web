@@ -72,12 +72,12 @@ $ ->
 	lrHeight()
 
 	$('.datepicker').datepicker
-		format: 'YYYY-MM-DD'
+		format: 'yyyy-mm-dd'
 
 	$('.datepicker-months').datepicker
 		viewMode: "months"
 		minViewMode: "months"
-		format: 'YYYY-MM'
+		format: 'yyyy-mm'
 
 	$('.timepicker').datetimepicker format: 'LT'
 
