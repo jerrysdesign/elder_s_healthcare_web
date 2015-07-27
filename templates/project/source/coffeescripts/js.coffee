@@ -109,7 +109,7 @@ $ ->
 
 	$('.js__chang_input_pw').click (e) ->
 		e.preventDefault()
-		$js__chang_input_pw = "<input type='password' class='form-control' placeholder=''>"
+		$js__chang_input_pw = "<input id='password' type='password' class='form-control' placeholder=''>"
 		$(this).before($js__chang_input_pw)
 		$(this).hide()
 
