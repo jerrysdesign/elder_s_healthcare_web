@@ -9,7 +9,7 @@
 			| &nbsp;刪除
 		/* 新增狀態時無以上按鈕*/
 		a.btn.btn-default.btn-sm.pull-right href="javascript:;"
-			| 確定&nbsp;
+			| 派發任務&nbsp;
 			i.fa.fa-angle-right
 .tab-page-wrapper-space
 	.tab-page-wrapper.bg-info
@@ -47,22 +47,19 @@
 						select.form-control
 							option 4
 					.col-md-2.control-label 小時
-				.row
-					.col-md-4.col-md-offset-3
-						button.btn.btn-default
+				.row.text-right
+					.col-md-9.col-md-offset-3
+						button.btn.btn-primary.btn-lg
 							| 查詢
 							i.fa.fa-search.fa-fw
 				hr
 				.form-group
 					label.col-md-3.control-label 開始時間
 					.col-md-4
-						select.form-control
-							option 08
-					.col-md-1
-						| :
-					.col-md-4
-						select.form-control
-							option 05
+						.input-group.inline-block.timepicker
+							input.form-control type="text"
+							span.input-group-addon
+								span.fa.fa-clock-o
 				.form-group
 					label.col-md-3.control-label 結束時間
 					.col-md-1.control-label 12:35
