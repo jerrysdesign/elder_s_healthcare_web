@@ -107,9 +107,10 @@ $ ->
 
 	$('.fm-ctrl').formShowHide()
 
+	# 修改密碼欄位, 驗證規則若有變更需通知RD,以免規則不同步
 	$('.js__chang_input_pw').click (e) ->
 		e.preventDefault()
-		$js__chang_input_pw = "<input id='password' type='password' class='form-control' placeholder=''>"
+		$js__chang_input_pw = "<input id='password' type='password' class='form-control' placeholder='' minlength='6' maxlength='24' data-error='請填入6-24位英數密碼，含特殊符號' required><span class='glyphicon form-control-feedback' aria-hidden='true'></span><div class='help-block with-errors'></div>"
 		$(this).before($js__chang_input_pw)
 		$(this).hide()
 
