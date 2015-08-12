@@ -1,0 +1,101 @@
+
+	<div class="row top-buffer">
+		<form class="form-inline" role="form">
+			<div class="form-group col-md-12">時間區間
+				<input type="text" class="form-control datepicker" placeholder="">~
+				<input type="text" class="form-control datepicker" placeholder="">
+				<select class="form-control">
+					<option>全部地區</option>
+					<option>松山</option>
+					<option>信義</option>
+					<option>大安</option>
+					<option>文山</option>
+				</select>
+				<button class="btn btn-default">查詢</button>
+				<button class="btn btn-primary pull-right">
+					<i class="fa fa-fw fa-table"></i>匯出 excel</button>
+			</div>
+		</form>
+	</div>
+	<hr>
+	<div class="row top-buffer task_unfinished">
+		<h5>任務異常</h5>
+		<hr>
+		<p class="note">未完成下列任務相關確認，系統報表將無法正確顯示，報表將無法匯出</p>
+		<table class="table align-middle-table custom-table-01 reset-list-style">
+			<tr>
+				<th width="91">序號</th>
+				<th width="91">案號</th>
+				<th width="91">姓名</th>
+				<th width="91">督導員</th>
+				<th>異常時間</th>
+				<th width="134">異常原因</th>
+			</tr>
+			<% 5.times do %>
+			<tr>
+				<td>1</td>
+				<td>淡001</td>
+				<td>林爺爺</td>
+				<td>羅蕾蕾</td>
+				<td><a href="#">2014-04-03</a> , <a href="#">2014-04-11</a></td>
+				<td>服務未遇原因未確認</td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+	<div class="row top-buffer">
+		<table class="table align-middle-table custom-table-01 reset-list-style">
+			<tr class="GridviewScrollHeader">
+				<th>序號</th>
+				<th>案號</th>
+				<th>姓名</th>
+				<th>區別</th>
+				<th>居服員</th>
+				<th>日期</th>
+				<th>用途</th>
+				<th>政府完全補助時數</th>
+				<th>國定假日期間服務單價</th>
+				<th>國定假日期間服務時數</th>
+				<th>服務未遇費用</th>
+				<th>部分自費單價</th>
+				<th>部分自費時數</th>
+				<th>全自費單價</th>
+				<th>全自費時數</th>
+				<th>總服務時數</th>
+				<th>流水號</th>
+				<th>總繳款金額</th>
+				<th>繳款方式</th>
+				<th>收款日期</th>
+				<th>經手人</th>
+				<th>收費狀態</th>
+				<th>備註</th>
+			</tr>
+			<% 10.times do %>
+			<tr class="GridviewScrollItem">
+				<td>1</td>
+				<td>淡001</td>
+				<td>林爺爺</td>
+				<td>淡水</td>
+				<td>王小明</td>
+				<td>104.02.18</td>
+				<td>104年2月份 &nbsp;居家照顧服務服務費</td>
+				<td>0</td>
+				<td>60</td>
+				<td>0</td>
+				<td>30</td>
+				<td>60</td>
+				<td>14</td>
+				<td>210</td>
+				<td>0</td>
+				<td>14</td>
+				<td>F10401001</td>
+				<td>840</td>
+				<td>交由督導員</td>
+				<td><a href="javascript:;" data-type="combodate" class="editable_timepicker">2015-03-01</a></td>
+				<td><a href="javascript:;" data-type="text" class="editable">王小明</a></td>
+				<td><a href="javascript:;" data-type="select" class="editable_select">未完成</a></td>
+				<td contenteditable="true"><a href="javascript:;" data-type="textarea" class="editable_textarea">無</a></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>

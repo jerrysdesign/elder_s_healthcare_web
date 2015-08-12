@@ -12,6 +12,22 @@
     border-bottom: 1px solid #ddd;
     background-color: rgb(240,240,240);
 }
+
 .duck_gap {
 	padding: 10px 30px 
+}
+
+.task_unfinished th{
+	white-space: nowrap;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+	background-color: #fecccd;
+}
+
+.task_unfinished h5, .task_unfinished .note{
+	color: red;
+}
+
+.task_unfinished .note {
+    margin-bottom: 15px;
 }
