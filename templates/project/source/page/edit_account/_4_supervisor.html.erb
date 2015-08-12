@@ -9,7 +9,8 @@
 <form class="row top-buffer" data-toggle="validator" role="form">
 	<div class="text-right">
 		<input class="btn btn-default" type="button" value="取消">
-		<input class="btn btn-success" type="submit" value="儲存">
+		<a class="btn btn-success" id="change_supervisor">儲存</a>
+		<!-- <input class="btn btn-success" type="submit" value="儲存" id="change_supervisor"> -->
 	</div>
 	<hr>
 	<div class="row col-md-12 form-horizontal">
@@ -136,5 +137,44 @@
 				<label class="radio-inline"><input type="radio" value="" name="SexRadios">女性</label>
 			</div>
 		</div>
+
+
+		<div id="change_supervisor_box">
+			<div class="modal-header">
+				<h4 class="modal-title">變更督導員</h4>
+			</div>
+			<div class="modal-body">
+				<% 3.times do %>
+				<div class="row">
+					<label class="col-md-2 text-right">
+						<span>姓名</span>
+					</label>
+					<div class="col-md-3">
+						<input type="text" class="form-control" value="張某某" disabled>
+					</div>
+					<label class="col-md-2 text-right">
+						<span>督導員</span>
+					</label>
+					<div class="col-md-5">
+						<select class="form-control">
+							<option>李督導</option>
+							<option>李督導</option>
+							<option>李督導</option>
+						</select>
+					</div>
+				</div>
+				<% end %>
+			</div>
+			<div class="modal-footer">
+				<div class="row">
+					<div class="col-md-12 text-right">
+						<a href="#" class="btn btn-default">取消</a>
+						<a href="#" class="btn btn-primary">儲存</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 </form>

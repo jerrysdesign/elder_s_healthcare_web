@@ -31,3 +31,14 @@
 .task_unfinished .note {
     margin-bottom: 15px;
 }
+
+#change_supervisor_box {
+    display: none;
+    .modal-body .row {
+        margin: 5px auto
+    }
+    label {
+        top: 8px
+    }
+}
+
