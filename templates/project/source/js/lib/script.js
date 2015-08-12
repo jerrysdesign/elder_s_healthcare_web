@@ -47,14 +47,14 @@ hcs_calendar = {
 					_timeEnd      = "結束時間",
 					_timeCycle    = "任務週期",
 					_taskItme     = "任務項目",
-					_attendant    = "居服人員",
+					_attendant    = "服務人員",
 					_supervisor   = "督導人員",
 					_note         = "其它備註",
 					_editEvent    = "修改事件",
 					_miss         = "服務未遇",
 					_done         = "確定",
 					_punch        = "補打卡",
-					_nonarrival   = "居服員未到",
+					_nonarrival   = "服務員未到",
 					_titleMeeting = "會議/職訓",
 					_topicEvent   = "事件主題",
 					_eventIssue   = "事件議題",
@@ -69,13 +69,30 @@ hcs_calendar = {
 					_miss_subsidy = "補助金額",
 					_miss_note    = "未遇備註",
 					_continue     = "繼續服務";
-
+				
 				if (event.className[0] == 'eventTask'){
+
+					// task_state	
+					var $this = $(this);
+					var task_state_text = {
+						task_miss     : _miss,
+						task_continue : _continue,
+						task_punch    : _punch,
+						wai_yet       : _nonarrival,
+					};
+
+					task_state = '';
+					for (var key in task_state_text){
+						 if($this.hasClass(key)){
+							var task_state = '<div class="'+ key +'_title">'+ task_state_text[key] +'</div>';
+						}
+					}
 
 					var fancyContent = (
 						'<div class="modal-header">' +
-							'<h4 class="modal-title">'+ _titleTask +'</h4>' +
+							'<h4 class="modal-title">'+ _titleTask + task_state +'</h4>' +
 						'</div>' +
+
 						'<div class="modal-body">'+
 							'<div class="row">'+
 								'<label class="col-md-2">'+ _topicTask +'</label>' +
@@ -147,7 +164,7 @@ hcs_calendar = {
 
 						// btn-nonarrival
 						$body.on("click",".nonarrival", function(e){
-							var $cont = confirm("請再次確認您要標註居服員未到 ? ");
+							var $cont = confirm("請再次確認您要標註服務員未到 ? ");
 							if($cont){
 								$.fancybox.close();
 								return false;

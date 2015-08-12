@@ -20,7 +20,7 @@ data_events =
 		miss_note: 'miss_note',
 	},
 	{
-		className: ['eventTask','attendant02','case01'],
+		className: ['eventTask','attendant02','case01','task_miss'],
 		lone_care: 'SL12345678',
 		case_name: '曹爺爺',
 		case_phone: '0912345678',
@@ -39,7 +39,7 @@ data_events =
 		miss_note: 'miss_note',
 	},
 	{
-		className: ['eventTask','attendant06','case02'],
+		className: ['eventTask','attendant06','case02','task_continue'],
 		lone_care: 'SL12345678',
 		case_name: '張爺爺',
 		case_phone: '0912345678',
@@ -58,7 +58,7 @@ data_events =
 		miss_note: 'miss_note',
 	},
 	{
-		className: ['eventTask','attendant03','case03'],
+		className: ['eventTask','attendant03','case03','task_punch'],
 		lone_care: 'SL12345678',
 		case_name: '張奶奶',
 		case_phone: '0912345678',
@@ -77,7 +77,7 @@ data_events =
 		miss_note: 'miss_note',
 	},
 	{
-		className: ['eventTask','attendant02','case04'],
+		className: ['eventTask','attendant02','case04','wai_yet'],
 		lone_care: 'SL12345678',
 		case_name: '黃王奶奶',
 		case_phone: '0912345678',

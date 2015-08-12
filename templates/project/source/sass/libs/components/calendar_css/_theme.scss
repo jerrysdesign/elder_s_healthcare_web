@@ -373,9 +373,31 @@ h2,th{font-weight:normal}
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
 }
 
-.ui-state-default .ui-icon{background-image: url(../img/ui-icon.png)}
+.ui-state-default .ui-icon{background-image: url("../img/ui-icon.png")}
 .ui-icon-circle-triangle-w{background-position: 50% -18px}
 .ui-icon-circle-triangle-e{background-position: 50% -70px}
 
 button.fc-agendaWeek-button,
 button.fc-month-button{padding: 0 12px}
+
+
+/* task-state */
+.task_miss,
+.task_continue,
+.task_punch,
+.wai_yet{background-repeat: no-repeat; background-position: right top}
+
+.task_miss{background-image:url("../img/status_a1.png")}
+.task_continue{background-image:url("../img/status_b1.png")}
+.task_punch{background-image:url("../img/status_c1.png")}
+.wai_yet{background-image:url("../img/status_d1.png")}
+
+.task_miss_title,
+.task_continue_title,
+.task_punch_title,
+.wai_yet_title{float:right;padding-left:22px;background-repeat: no-repeat; background-position: 0 38%}
+
+.task_miss_title{background-image:url("../img/status_a2.png")}
+.task_continue_title{background-image:url("../img/status_b2.png")}
+.task_punch_title{background-image:url("../img/status_c2.png")}
+.wai_yet_title{background-image:url("../img/status_d2.png")}
