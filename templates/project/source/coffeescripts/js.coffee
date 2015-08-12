@@ -95,12 +95,14 @@ $ ->
 
 	timer = 0
 	$(window).resize ->
-		if timer
-			clearTimeout timer
-			timer = 0
-		timer = setTimeout((->
-			location.reload()
-		), 300)
+		autoH()
+		lrHeight()
+		# if timer
+		# 	clearTimeout timer
+		# 	timer = 0
+		# timer = setTimeout((->
+		# 	location.reload()
+		# ), 300)
 		
 	$('.trigger').click ->
 		$('.layout-fixed').toggleClass 'aside-collapsed'
