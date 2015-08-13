@@ -15,4 +15,9 @@ $(function(){
 	$("#change_supervisor").click(function(){
 		common_popup_init("#change_supervisor_box")
 	});
+
+	// change_service_task
+	$("#change_service_task").click(function(){
+		common_popup_init("#change_service_task_box")
+	});
 });

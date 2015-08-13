@@ -9,7 +9,7 @@
 <form class="row top-buffer" data-toggle="validator" role="form">
 	<div class="text-right">
 		<input class="btn btn-default" type="button" value="取消">
-		<input class="btn btn-success" type="submit" value="儲存">
+		<a class="btn btn-success" id="change_service_task">儲存</a>
 	</div>
 	<hr>
 	<div class="row col-md-12 form-horizontal">
@@ -264,141 +264,168 @@
 			<label class="col-md-2 control-label">所屬督導員</label>
 			<div class="col-md-10">
 				<div class="radio">
-					<label>
-						<input type="checkbox" value=""> 全選</label>
-					</div>
-					<br>
-					<% 4.times do %>
-					<% 5.times do %>
-						<label class="checkbox-inline">
-							<input type="checkbox" value="">張某某</label>
-					<% end %>
-					<br>
-					<% end %>
-					</div>
+					<label><input type="checkbox" value="">全選</label>
 				</div>
-				<div class="form-group form-inline">
-					<label class="col-md-2 control-label">可服務時間</label>
-					<div class="col-md-10">
-						<label class="checkbox-inline"><input type="checkbox" value="">一</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">二</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">三</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">四</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">五</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">六</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-						<label class="checkbox-inline"><input type="checkbox" value="">日</label>
-						<label class="form-control-static">開始時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<label class="form-control-static">結束時間</label>
-						<div class='input-group inline-block timepicker'>
-							<input type='text' class="form-control">
-							<span class="input-group-addon">
-								<span class="fa fa-clock-o"></span>
-							</span>
-						</div>
-						<br>
-					</div>
+				<br>
+				<% 4.times do %>
+				<% 5.times do %>
+				<label class="checkbox-inline"><input type="checkbox" value="">張某某</label>
+				<% end %>
+				<br>
+				<% end %>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">可服務時間</label>
+			<div class="col-md-10">
+				<label class="checkbox-inline"><input type="checkbox" value="">一</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
 				</div>
-				<div class="form-group form-inline">
-					<label class="col-md-2 control-label">人事資料表</label>
-					<div class="col-md-10">
-						<input type="file" href="javascript:;">
-					</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">二</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">三</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">四</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">五</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">六</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+				<label class="checkbox-inline"><input type="checkbox" value="">日</label>
+				<label class="form-control-static">開始時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<label class="form-control-static">結束時間</label>
+				<div class='input-group inline-block timepicker'>
+					<input type='text' class="form-control">
+					<span class="input-group-addon">
+						<span class="fa fa-clock-o"></span>
+					</span>
+				</div>
+				<br>
+			</div>
+		</div>
+		<div class="form-group form-inline">
+			<label class="col-md-2 control-label">人事資料表</label>
+			<div class="col-md-10">
+				<input type="file" href="javascript:;">
+			</div>
+		</div>
+	</div>
+	<div id="change_service_task_box">
+		<div class="modal-header">
+			<h4 class="modal-title">變更服務員已派發任務</h4>
+		</div>
+		<div class="modal-body task_unfinished">
+			<table class="table align-middle-table custom-table-01 reset-list-style">
+				<tr>
+					<th>序號</th>
+					<th>姓名</th>
+					<th>任務編號</th>
+				</tr>
+				<% 5.times do %>
+				<tr>
+					<td>1</td>
+					<td>林爺爺</td>
+					<td><a href="#">2014-04-03</a> , <a href="#">2014-04-11</a></td>
+				</tr>
+				<% end %>
+			</table>
+		</div>
+		<div class="modal-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<a href="#" class="btn btn-default">取消</a>
+					<a href="#" class="btn btn-primary">儲存</a>
 				</div>
 			</div>
-		</form>
+		</div>
+	</div>
+</form>
