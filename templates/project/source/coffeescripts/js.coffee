@@ -65,6 +65,7 @@ $ ->
 	# tabsRowfixW()
 
 	lrHeight = ->
+		$('.js_col-l,.js_col-r').css("min-height", $winH);
 		if $('.js_col-l').height() > $('.js_col-r').outerHeight()
 			$('.js_col-r').css 'height', $('.js_col-l').outerHeight()
 		else
