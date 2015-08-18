@@ -7,10 +7,10 @@
 }
 
 .GridviewScrollHeader th, .GridviewScrollHeader td {
-    white-space: nowrap;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    background-color: rgb(240,240,240);
+	white-space: nowrap;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: rgb(240,240,240);
 }
 
 .duck_gap {
@@ -19,8 +19,8 @@
 
 .task_unfinished th{
 	white-space: nowrap;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	background-color: #fecccd;
 }
 
@@ -29,32 +29,32 @@
 }
 
 .task_unfinished .note {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 #change_supervisor_box {
-    display: none;
-    .modal-body .row {
-        margin: 5px auto
-    }
-    label {
-        top: 8px
-    }
+	display: none;
+	.modal-body .row {
+		margin: 5px auto
+	}
+	label {
+		top: 8px
+	}
 }
 
 #change_service_task_box{
-    display: none;
+	display: none;
 }
 
 .container-fluid ::-webkit-input-placeholder {
- color: #d5d5d5;
+	color: #d5d5d5;
 }
 .container-fluid :-moz-placeholder { 
- color: #d5d5d5;
+	color: #d5d5d5;
 }
 .container-fluid ::-moz-placeholder { 
- color: #d5d5d5;
+	color: #d5d5d5;
 }
 .container-fluid :-ms-input-placeholder { 
- color: #d5d5d5;
+	color: #d5d5d5;
 }
