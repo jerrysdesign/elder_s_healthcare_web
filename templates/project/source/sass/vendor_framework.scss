@@ -45,3 +45,16 @@
 #change_service_task_box{
     display: none;
 }
+
+.container-fluid ::-webkit-input-placeholder {
+ color: #d5d5d5;
+}
+.container-fluid :-moz-placeholder { 
+ color: #d5d5d5;
+}
+.container-fluid ::-moz-placeholder { 
+ color: #d5d5d5;
+}
+.container-fluid :-ms-input-placeholder { 
+ color: #d5d5d5;
+}
