@@ -27,7 +27,8 @@ var bower = {
     jqueryvalidation: config.vendor + '/jquery-validation/dist',
     jqueryfancybox: config.vendor + '/fancybox/source',
     jqueryui: config.vendor + '/jqueryui',
-    bootstrapvalidator: config.vendor + '/bootstrap-validator'
+    bootstrapvalidator: config.vendor + '/bootstrap-validator',
+    datatables: config.vendor + '/datatables/media'
 }
 
 var vendor = {
@@ -52,7 +53,10 @@ var vendor = {
     gridViewScrolljs:         config.download + '/GridViewScroll/gridviewScroll.min.js',
     gridViewScrollcss:        config.download + '/GridViewScroll/gridviewScroll.css',
     jQueryUi :                bower.jqueryui + '/jquery-ui.min.js',
-    bootstrapvalidatorjs:     bower.bootstrapvalidator + '/dist/validator.min.js'
+    bootstrapvalidatorjs:     bower.bootstrapvalidator + '/dist/validator.min.js',
+    datatablesjs:             bower.datatables + '/js' + all_files,
+    datatablescss:            bower.datatables + '/css' + all_files,
+    datatablesimg:            bower.datatables + '/images' + all_files
 
     // font:
     // [
@@ -85,7 +89,10 @@ var vendor = {
     gridViewScrolljs:         config.project + '/js/vendor/GridViewScroll',
     gridViewScrollcss:        config.project + '/styles/vendor/GridViewScroll',
     jQueryUi:                 config.project + '/js/vendor/jqueryui',
-    bootstrapvalidatorjs:     config.project + '/js/vendor/bootstrap-validator'
+    bootstrapvalidatorjs:     config.project + '/js/vendor/bootstrap-validator',
+    datatablesjs:             config.project + '/js/vendor/datatables',
+    datatablescss:            config.project + '/styles/vendor/datatables',
+    datatablesimg:            config.project + '/styles/vendor/images/'
   }
 }
 
@@ -162,6 +169,15 @@ gulp.task('vendor', function() {
     ;
   gulp.src(vendor.source.bootstrapvalidatorjs)
     .pipe(gulp.dest(vendor.dist.bootstrapvalidatorjs))
+    ;
+  gulp.src(vendor.source.datatablesjs)
+    .pipe(gulp.dest(vendor.dist.datatablesjs))
+    ;
+  gulp.src(vendor.source.datatablescss)
+    .pipe(gulp.dest(vendor.dist.datatablescss))
+    ;
+  gulp.src(vendor.source.datatablesimg)
+    .pipe(gulp.dest(vendor.dist.datatablesimg))
     ;
 });
 

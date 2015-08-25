@@ -140,7 +140,27 @@ $(document).ready ->
 			{value: 0, text: '未完成'}
 			{value: 1, text: '已完成'}
 		]
-
+	$('.datatables').DataTable
+		'bLengthChange': false
+		'bInfo': false
+		# 取消欄排序
+		# 'aoColumnDefs': [{
+		# 	'bSortable': false
+		# 	'aTargets': [1]
+		# }]
+		'oLanguage':
+			'sProcessing': '處理中...'
+			'sLengthMenu': '顯示 _MENU_ 項結果'
+			'sZeroRecords': '沒有匹配結果'
+			'sInfo': '共 _TOTAL_ 筆資料。'
+			'sInfoEmpty': '顯示第 0 至 0 項結果，共 0 項'
+			'sInfoFiltered': '(從 _MAX_ 項結果過濾)'
+			'sSearch': '搜索: '
+			'oPaginate':
+				'sFirst': '首頁'
+				'sPrevious': '上頁'
+				'sNext': '下頁'
+				'sLast': '尾頁'
 
 $(window).load ->
 	$cost1     = $('#tableCost1')

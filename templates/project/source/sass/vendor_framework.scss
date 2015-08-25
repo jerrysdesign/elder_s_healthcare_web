@@ -1,6 +1,8 @@
 @import "vendor/bootstrap-datepicker/datepicker3.css";
 @import "vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css";
 @import "vendor/editable/bootstrap-editable.css";
+// @import "vendor/datatables/jquery.dataTables.min.css";
+@import "vendor/datatables/dataTables.bootstrap.min.css";
 
 .custom-table-01 {
 	margin-bottom: 0
@@ -57,4 +59,14 @@
 }
 .container-fluid :-ms-input-placeholder { 
 	color: #d5d5d5;
+}
+
+/* datatable */
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
+}
+div.dataTables_wrapper .col-sm-6,
+div.dataTables_wrapper .col-sm-7 {
+	width: 100%;
 }
