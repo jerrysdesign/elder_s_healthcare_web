@@ -143,6 +143,7 @@ $(document).ready ->
 	# $('.datatables').DataTable
 	# 	'bLengthChange': false
 	# 	'bInfo': false
+	#	'order': [[ 3, "desc" ]]
 	# 	取消欄排序
 	# 	'aoColumnDefs': [{
 	# 		'bSortable': false
