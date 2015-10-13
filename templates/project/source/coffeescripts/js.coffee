@@ -117,6 +117,23 @@ $ ->
 		$(this).before($js__chang_input_pw)
 		$(this).hide()
 
+	# 系統設定 / 耗材庫存 列表收合
+	$tabs_04_2     = $('#tabs_04_2_slide')
+	$tabs_04_2_btn = $tabs_04_2.find('.slide_btn')
+	$tabs_04_2.find('ul').not(":eq(0)").find('.setting_item-log').slideUp();
+	$tabs_04_2_btn.css('cursor','pointer').click ->
+		$(this).siblings().slideToggle()
+
+	# 系統設定 / 耗材庫存 新增、刪除庫存項目
+	$tabs_04_2_additem    = $('#tabs_04_2_additem')
+	$tabs_04_2_clone_item = $('#tabs_04_2_additem').children().eq(1)
+	$tabs_04_2_added_btn  = $tabs_04_2_additem.find('.added_btn')
+	$tabs_04_2_remove_btn = $tabs_04_2_additem.find('.remove_btn')
+	$tabs_04_2_added_btn.click ->
+		$tabs_04_2_additem.append($tabs_04_2_clone_item.clone().find('input[type=text]').val("").end())
+	$('body').on 'click', '.remove_btn', ->
+		$(this).parents('li').remove()
+
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->

@@ -1,0 +1,91 @@
+<div class="row top-buffer">
+	<div class="col-md-6 text-left">
+		<ol class="breadcrumb">
+			<li>
+				<a href="#">系統設定</a>
+			</li>
+			<li class="active">庫存管理</li>
+		</ol>
+	</div>
+	<div class="col-md-6 text-right">
+		<input class="btn btn-default" type="button" value="取消">
+		<input class="btn btn-default" type="submit" value="儲存">
+	</div>
+</div>
+<div class="row">
+	<div id="tabs_04_2_slide" class="col-md-5">
+		<h4>庫存列表</h4>
+		<ul class="list-unstyled">
+			<li class="setting_item slide_btn">
+				<div class="col-md-10">中衛檢驗手套(無粉/PVC) - M</div>
+				<div class="col-md-2 text-right"><span class="text-primary">500</span></div>
+			</li>
+			<% 4.times do %>
+			<li class="setting_item setting_item-log">
+				<div class="col-md-10 text-right">
+					yyyy/mm
+				</div>
+				<div class="col-md-2 text-right">
+					<span class="text-primary">+999</span>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+		<ul class="list-unstyled">
+			<li class="setting_item slide_btn">
+				<div class="col-md-10">中衛檢驗手套(無粉/PVC) - L</div>
+				<div class="col-md-2 text-right"><span class="text-danger">0</span></div>
+			</li>
+			<% 4.times do %>
+			<li class="setting_item setting_item-log">
+				<div class="col-md-10 text-right">
+					yyyy/mm
+				</div>
+				<div class="col-md-2 text-right">
+					<span class="text-danger">-999</span>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="form-group col-md-7">
+		<form class="col-md-12">
+			<h4>新增庫存</h4>
+			<ul id="tabs_04_2_additem" class="list-unstyled">
+                <li class="setting_item">
+                	<div class="col-md-1"></div>
+                    <div class="col-md-8">項目名稱</div> 
+                    <div class="col-md-3">新增數量</div>
+                </li>				
+				<% for i in 1..2 do %>
+				<li class="setting_item setting_item-log text-right">
+					<div class="col-md-1">
+						<a href="javascript:;" class="remove_btn"><i class="fa fa-2x fa-minus-circle text-danger"></i></a>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control">
+							<option>中衛檢驗手套(無粉/PVC) - M</option>
+							<option>中衛檢驗手套(無粉/PVC) - L</option>
+							<option>不織布平面口罩</option>
+							<option>單色乳膠手套-8.5</option>
+							<option>雙色乳膠手套-7.5</option>
+							<option>雙色乳膠手套-8</option>
+							<option>雙色乳膠手套-8.5</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<input type="text" class="form-control">
+					</div>
+				</li>
+				<% end %>
+				<li class="setting_item setting_item-log">
+					<div class="col-md-1">
+					</div>
+					<div class="col-md-8">
+						<a href="javascript:;" class="added_btn text-success">＋ 新增項目</a>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
