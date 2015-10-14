@@ -1,25 +1,61 @@
 <div class="row top-buffer">
-    <div class="col-md-6 text-left">
-        <ol class="breadcrumb">
-            <li>
-                <a href="#">系統設定</a>
-            </li>
-            <li class="active">案號原則</li>
-        </ol>
-    </div>
-    <div class="col-md-6 text-right">點選日期以設定 / 取消國定假日。
-        <input class="btn btn-default" type="submit" value="儲存">
-    </div>
+	<div class="col-md-6 text-left">
+		<ol class="breadcrumb">
+			<li>
+				<a href="#">系統設定</a>
+			</li>
+			<li class="active">假日設定</li>
+		</ol>
+	</div>
+
+	<div class="col-md-6 text-right">
+		<input class="btn btn-default" type="submit" value="儲存">
+	</div>
+</div>
+<div class="alert alert-warning alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert"><span class="sr-only">Close</span></button>
+	<strong>點選日期</strong> 以設定 / 取消國定假日。
 </div>
 <div class="row top-buffer">
-    <div class="row">
-        <div class="col-md-4 text-eft">Pre Year</div>
-        <div class="col-md-4 text-center">2015</div>
-        <div class="col-md-4 text-right">Next Year</div>
-    </div>
+	<div class="col-md-12">
+		<h4>新增假日</h4>
+		<hr>
+		<div class="form-inline col-md-12">
+			<label>選擇日期</label>
+			<input type="text" class="form-control datepicker" placeholder="">
+			<span> 星期四 </span>
+			<input type="text" class="form-control" placeholder="請輸入假日名稱...">
+			<button class="btn btn-default">新增</button>
+		</div>
+	</div>
 </div>
-<div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
+<div class="row top-buffer">
+	<div class="col-md-12">
+		<h4>假日清單</h4>
+		<hr>
+		<table class="table align-middle-table custom-table-01 reset-list-style">
+			<thead>
+				<tr>
+					<th width="30%">日期</th>
+					<th width="30%">星期</th>
+					<th width="35%">假日名稱</th>
+					<th width="5%" class="text-center">刪除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2015-01-01</td>
+					<td>星期四</td>
+					<td contenteditable="true"><a href="javascript:;" data-type="text" class="editable_textarea">元旦</a></td>
+					<td class="text-center"><a href="#" class="text-danger"><i class="fa fa-trash fa-3x"></i></a></td>
+				</tr>
+				<tr>
+					<td>2015-05-01</td>
+					<td>星期五</td>
+					<td contenteditable="true"><a href="javascript:;" data-type="text" class="editable_textarea">勞動節(勞工適用)</a></td>
+					<td class="text-center"><a href="#" class="text-danger"><i class="fa fa-trash fa-3x"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
