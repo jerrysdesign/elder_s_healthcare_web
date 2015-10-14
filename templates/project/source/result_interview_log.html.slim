@@ -1,0 +1,12 @@
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav20"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "layout/page_tab_wrapper"
+		== render "page/result/interview_log.html.erb"
