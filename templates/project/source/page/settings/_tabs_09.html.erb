@@ -1,0 +1,397 @@
+<div class="row top-buffer">
+	<div class="col-md-6 text-left">
+		<ol class="breadcrumb">
+			<li>
+				<a href="#">系統設定</a>
+			</li>
+			<li class="active">評鑑訪問</li>
+		</ol>
+	</div>
+	<div class="col-md-6 text-right">
+		<input class="btn btn-default" type="button" value="取消">
+		<input class="btn btn-default" type="submit" value="儲存">
+	</div>
+</div>
+<div class="row">
+	<form class="form-horizontal col-md-8 col-md-offset-2" role="form">
+		<div class="row">
+			<h4>評鑑設定</h4>
+			<hr>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label class="control-label">有效期限</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label class="control-label form-inline">服務完成後 <input type="text" class="form-control"> 天</label>
+				</div>
+			</div>
+		</div>
+		<div class="row top-buffer">
+			<h4>例行訪問設定</h4>
+			<hr>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label class="control-label">訪問頻率</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label class="control-label form-inline">
+						家訪 <input type="text" class="form-control"> 月 / 次 &nbsp;&nbsp;
+						電訪 <input type="text" class="form-control"> 月 / 次
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row top-buffer">
+			<h4>提醒設定</h4>
+			<hr>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label class="control-label">提醒起始時間計算</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-12">
+					<label><input type="radio" name="remind_set"></input> 個案初次服務後</label>
+				</div>
+				<div class="col-md-12">
+					<label><input type="radio" name="remind_set"></input> 每月第1天</label>
+				</div>
+				<div class="col-md-12">
+					<label><input type="radio" name="remind_set"></input> 每月最後1天</label>
+				</div>
+			</div>
+		</div>
+		<div class="row top-buffer">
+			<h4>問卷內容</h4>
+			<hr>
+			<!-- 問卷內容頁籤 -->
+			<ul class="nav nav-tabs" role="tablist" id="tabs_09_questionnaire">
+				<li class="active">
+					<a href="#tabs_09_q1" aria-controls="tabs_09_q1" role="tab" data-toggle="tab">服務滿意度調查</a>
+				</li>
+				<li>
+					<a href="#tabs_09_q2" aria-controls="tabs_09_q2" role="tab" data-toggle="tab">例行訪問</a>
+				</li>
+			</ul>
+			<!-- 問卷內容頁籤 //-->
+
+			<div class="tab-content">
+
+				<!-- 服務滿意度調查內容 -->
+				<div id="tabs_09_q1" role="tabpanel" class="top-buffer tab-pane active">
+					<table class="table align-middle-table custom-table-01 reset-list-style">
+						<tbody>
+							<tr class="info">
+								<td class=""></td>
+								<td colspan="2"><strong>基本資料</strong></td>
+							</tr>							
+							<tr>
+								<td width="2%" class="text-center">1</td>
+								<td width="48%"><strong>填表者</strong></th>
+								<td width="50%">
+									<li><label><input type="radio" name="questionnaire1"></input> 個案本人</label></li>
+									<li><label><input type="radio" name="questionnaire1"></input> 家屬</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">2</td>
+								<td><strong>已使用服務時間</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire2"></input> 六個月以內</label></li>
+									<li><label><input type="radio" name="questionnaire2"></input> 六個月以上至一年以內</label></li>
+									<li><label><input type="radio" name="questionnaire2"></input> 一年以上至兩年以內 </label></li>
+									<li><label><input type="radio" name="questionnaire2"></input> 二年以上</label></li>
+								</td>
+							</tr>
+							<tr class="info">
+								<td></td>
+								<td colspan="2"><strong>對本基金會居家照顧服務之滿意度</strong></td>
+							</tr>
+							<tr>
+								<td class="text-center">3</td>
+								<td><strong>服務時間安排</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire3"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire3"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire3"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire3"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire3"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">4</td>
+								<td><strong>服務時數安排 <br>勾選不足者，請回答題號5問題</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire4"></input> 恰當</label></li>
+									<li><label><input type="radio" name="questionnaire4"></input> 不足</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">5</td>
+								<td><strong>服務時數不足之原因 <br>勾選政府核定時數不敷使用者，請回答6問題</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire5"></input> 政府核定時數不敷使用</label></li>
+									<li><label><input type="radio" name="questionnaire5"></input> 受限居服員人力因素</label></li>
+									<li><label><input type="radio" name="questionnaire5"></input> 其他</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">6</td>
+								<td><strong>是否願意使用自費服務</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire6"></input> 願意</label></li>
+									<li><label><input type="radio" name="questionnaire6"></input> 不願意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">7</td>
+								<td><strong>對居服員的工作態度</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire7"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire7"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire7"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire7"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire7"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">8</td>
+								<td><strong>對居服員的服務專業度</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire8"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire8"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire8"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire8"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire8"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">9</td>
+								<td><strong>對督導員的服務態度</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire9"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire9"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire9"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire9"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire9"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">10</td>
+								<td><strong>對督導員的服務專業度</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire10"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire10"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire10"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire10"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire10"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">11</td>
+								<td><strong>對服務單位的服務滿意度</strong></td>
+								<td>
+									<li><label><input type="radio" name="questionnaire11"></input> 非常滿意</label></li>
+									<li><label><input type="radio" name="questionnaire11"></input> 滿意</label></li>
+									<li><label><input type="radio" name="questionnaire11"></input> 尚可</label></li>
+									<li><label><input type="radio" name="questionnaire11"></input> 不滿意</label></li>
+									<li><label><input type="radio" name="questionnaire11"></input> 非常不滿意</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" class="text-center"><strong>意見與建議</strong></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<textarea class="form-control" rows="3"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 服務滿意度調查內容 //-->
+
+				<!-- 例行訪問內容 -->
+				<div id="tabs_09_q2" role="tabpanel" class="top-buffer tab-pane">
+					<table class="table align-middle-table custom-table-01 reset-list-style">
+						<tbody>
+							<tr class="info">
+								<td class=""></td>
+								<td colspan="2"><strong>基本資料</strong></td>
+							</tr>
+							<tr>
+								<td width="2%" class="text-center">1</td>
+								<td width="48%"><strong>身份別</strong></th>
+								<td width="50%">
+									<li><label><input type="radio" name="questionnaire12"></input> 長十</label></li>
+									<li><label><input type="radio" name="questionnaire12"></input> 非長十</label></li>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">2</td>
+								<td><strong>訪談對象</strong></td>
+								<td>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 本人</label>
+										<div class="col-md-8"></div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 家屬</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 親戚</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 朋友</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 鄰居</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2"><input type="radio" name="questionnaire13"></input> 其他</label>
+										<div class="col-md-8">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="info">
+								<td class=""></td>
+								<td colspan="2"><strong>訪談與處遇</strong></td>
+							</tr>
+							<tr>
+								<td class="text-center">3</td>
+								<td><strong>生理狀況</strong></td>
+								<td>
+									<div class="form-inline">
+										<label class="col-md-4"><input type="radio" name="questionnaire14"></input> 穩定</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire14"></input> 尚可</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire14"></input> 差</label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">說明：</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">4</td>
+								<td><strong>心理狀況</strong></td>
+								<td>
+									<div class="form-inline">
+										<label class="col-md-4"><input type="radio" name="questionnaire15"></input> 穩定</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire15"></input> 尚可</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire15"></input> 差</label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">說明：</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">5</td>
+								<td><strong>家庭狀況</strong></td>
+								<td>
+									<div class="form-inline">
+										<label class="col-md-4"><input type="radio" name="questionnaire16"></input> 穩定</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire16"></input> 尚可</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire16"></input> 差</label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">說明：</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">6</td>
+								<td><strong>其他狀況</strong></td>
+								<td>
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">說明：</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">7</td>
+								<td><strong>居服員服務內容執行情形</strong></td>
+								<td>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire17"></input> 良好、皆執行</label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire17"></input> 部分執行</label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire17"></input> 未確實執行</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">8</td>
+								<td><strong>居服員出勤狀況</strong></td>
+								<td>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire18"></input> 皆準時</label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire18"></input> 偶爾未準時但會補足時數</label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-12"><input type="radio" name="questionnaire18"></input> 經常遲到、早退</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center">9</td>
+								<td><strong>居服員服務提供狀況</strong></td>
+								<td>
+									<div class="form-inline">
+										<label class="col-md-4"><input type="radio" name="questionnaire19"></input> 良好、滿意</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire19"></input> 尚可</label>
+										<label class="col-md-4"><input type="radio" name="questionnaire19"></input> 差</label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">說明：</label>
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<!-- 例行訪問內容 //-->
+
+			</div>
+		</div>		
+	</form>
+</div>

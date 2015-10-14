@@ -134,6 +134,9 @@ $ ->
 	$('body').on 'click', '.remove_btn', ->
 		$(this).parents('li').remove()
 
+	# 系統設定 / 評鑑訪問 問卷調查頁籤
+	$('#tabs_09_questionnaire a:first').tab('show')
+
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->

@@ -1,0 +1,12 @@
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav1"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render "layout/page_tab_wrapper"
+		== render "page/settings/tabs_09.html.erb"
