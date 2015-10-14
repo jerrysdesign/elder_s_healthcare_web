@@ -1,0 +1,531 @@
+<div class="row top-buffer form-horizontal well clearfix">
+	<form class="form-horizontal" role="form">
+		<div class="col-md-9">
+			<div class="form-group">
+				<div class="">
+					<lable class="col-md-2 form-control-static">日期區間</lable>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-5">
+							<input type="text" class="form-control datepicker" placeholder=""></div>
+						<div class="col-md-2">~</div>
+						<div class="col-md-5">
+							<input type="text" class="form-control datepicker" placeholder=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-2">
+					<p class="form-control-static">查詢區別</p>
+				</div>
+				<div class="col-md-6">
+					<select class="form-control">
+						<option>全部地區</option>
+						<option>信義</option>
+						<option>大安</option>
+						<option>文山</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+			<button class="btn btn-default">
+				查詢 <i class="fa fa-search fa-fw"></i>
+			</button>
+		</div>
+		<div class="col-md-2 text-right">
+			<button class="btn btn-primary"> <i class="fa fa-fw fa-table"></i>
+				匯出 excel
+			</button>
+		</div>
+	</form>
+</div>
+<hr>          
+<div class="row top-buffer">
+	<table class="table align-middle-table custom-table-01 reset-list-style">
+		<thead>
+			<tr>
+				<th rowspan="2"></th>
+				<th rowspan="2">03月</th>
+				<th rowspan="2">04月</th>
+				<th rowspan="2">05月</th>
+				<th rowspan="2">06月</th>
+				<th rowspan="2">07月</th>
+				<th rowspan="2">08月</th>
+				<th rowspan="2">合計</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{區域名稱}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>長十（男）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>長十（女）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>非長十（男）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>非長十（女）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">個案年齡</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>0- 20 歲</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>21-40 歲</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>41-60 歲</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>61-80 歲</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>81-100 歲</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>101 歲以上</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">個案福利身分別</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>低收（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 1.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>低收（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">失能情形</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>輕度（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中度（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>重度（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>輕度（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中度（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>重度（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">服務人次</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>低收（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 1.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>低收（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">服務時數</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>低收（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 1.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>低收（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>中低 2.5（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>一般戶（非長十）</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">新增個案數</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>男</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>女</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="8" class="text-center">結案個案數</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>結案原因A (系統帶)</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>結案原因B (系統帶)</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td>{數量}</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

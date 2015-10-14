@@ -1,0 +1,12 @@
+//main
+aside
+	.sidebar-wrapper
+		// sidebar
+		.sidebar
+			== render :partial => "layout/sidebar" , :locals => {:s => "mainnav19"}
+			
+// main-content
+section.main
+	.container-fluid
+		== render :partial => "layout/page_tab_semi_annual" , :locals => {:f => "menu2"}
+		== render "page/result/semi_annual_02.html.erb"
