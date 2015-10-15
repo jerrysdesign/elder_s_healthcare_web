@@ -137,6 +137,15 @@ $ ->
 	# 系統設定 / 評鑑訪問 問卷調查頁籤
 	$('#tabs_09_questionnaire a:first').tab('show')
 
+	# 表格內容自動收合、顯示更多
+	$('.dspmore').each ->
+		_dsprows = 3
+		if $(this).children('li').length > _dsprows
+			$(this).css('overflow', 'hidden').after('<a class="dsp_btn dsp_n" href="#">more..</a>').height $('.dspmore li').height() * _dsprows
+		
+	$('body').on 'click', '.dsp_btn', ->
+		$(this).text('').prev().height('auto').end().removeClass 'dsp_n'
+
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->
