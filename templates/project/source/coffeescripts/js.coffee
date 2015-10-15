@@ -140,11 +140,14 @@ $ ->
 	# 表格內容自動收合、顯示更多
 	$('.dspmore').each ->
 		_dsprows = 3
+		_dsptext = 'more..'
 		if $(this).children('li').length > _dsprows
-			$(this).css('overflow', 'hidden').after('<a class="dsp_btn dsp_n" href="#">more..</a>').height $('.dspmore li').height() * _dsprows
+			$(this).css('overflow', 'hidden').after('<a class="dsp_btn" href="#">' + _dsptext + '</a>').height $('.dspmore li').height() * _dsprows
+		return
 		
 	$('body').on 'click', '.dsp_btn', ->
-		$(this).text('').prev().height('auto').end().removeClass 'dsp_n'
+		$(this).text('').prev().height 'auto'
+		return
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
