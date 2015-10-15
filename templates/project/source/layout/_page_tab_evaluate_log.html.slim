@@ -1,0 +1,10 @@
+.tab-page-wrapper-space
+	.navbar.tab-page-wrapper.bg-secondary
+		ul.nav.nav-tabs.tab-page.navbar-left
+			- if f == "menu1"
+				li.active: a href='javascript:;' 單次評鑑
+				li: a href='javascript:;' 服務滿意度
+
+			- if f == "menu2"
+				li: a href='javascript:;' 單次評鑑
+				li.active: a href='javascript:;' 服務滿意度

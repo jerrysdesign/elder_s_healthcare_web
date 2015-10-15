@@ -1,0 +1,171 @@
+<div class="row top-buffer form-horizontal well clearfix">
+	<form class="form-horizontal" role="form">
+		<div class="col-md-9">
+			<div class="form-group">
+				<div class="col-md-2">
+					<lable class="form-control-static">查詢條件</lable>
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="請輸入督導員、居服員、案號或個案姓名"></div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-2">
+					<p class="form-control-static">日期區間</p>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-5">
+							<input type="text" class="form-control datepicker" placeholder=""></div>
+						<div class="col-md-2">~</div>
+						<div class="col-md-5">
+							<input type="text" class="form-control datepicker" placeholder=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+			<button class="btn btn-default">
+				查詢 <i class="fa fa-search fa-fw"></i>
+			</button>
+		</div>
+		<div class="col-md-2 text-right">
+			<button class="btn btn-primary"> <i class="fa fa-fw fa-table"></i>
+				匯出 excel
+			</button>
+		</div>
+	</form>
+</div>
+<hr>
+<div class="row top-buffer">
+	<table class="table align-middle-table custom-table-01 reset-list-style">
+		<thead>
+			<tr>
+				<th rowspan="2">序號</th>
+				<th rowspan="2">案號</th>
+				<th rowspan="2">姓名</th>
+				<th rowspan="7">服務時間</th>
+				<th rowspan="2">服務員</th>
+				<th rowspan="2">督導員</th>
+				<th rowspan="2">服務項目</th>
+				<th rowspan="2">單項服務評分</th>
+				<th rowspan="2">所有項目平均</th>
+				<th colspan="9">單次服務評分</th>
+				<th rowspan="2">督導員評分(編輯)</th>
+				<th rowspan="2">個案備註</th>
+				<th rowspan="2">督導備註</th>
+			</tr>
+			<tr>
+				<th>電話問安</th>
+				<th>到家探訪</th>
+				<th>送餐服務</th>
+				<th>買菜煮飯打掃</th>
+				<th>洗澡</th>
+				<th>整理家務</th>
+				<th>帶出門看醫生</th>
+				<th>陪聊天散步</th>
+				<th>到宅沐浴</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>淡001</td>
+				<td>王</td>
+				<td>103.01.18</td>
+				<td>陳小明</td>
+				<td>林督導</td>
+				<td>整理家務 / 帶出門看醫生 / 陪聊天散步 / 買菜煮飯打掃 / 洗澡</td>
+				<td>5</td>
+				<td>4</td>
+				<td>5</td>
+				<td>1</td>
+				<td>3</td>
+				<td>2</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>3.22</td>
+				<td>4</td>
+				<td>
+					<select class="form-control">
+						<option>5分 非常滿意</option>
+						<option>4分 湳意</option>
+						<option>3分 尚可</option>
+						<option>2分 不滿意</option>
+						<option>1分 非常不滿意</option>
+					</select>
+				</td>
+				<td></td>
+				<td contenteditable="true">
+					<a href="javascript:;" data-type="textarea" class="editable_textarea editable editable-pre-wrapped editable-click" data-original-title="">無</a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>淡001</td>
+				<td>王</td>
+				<td>103.01.18</td>
+				<td>陳小明</td>
+				<td>林督導</td>
+				<td>買菜煮飯打掃 / 洗澡</td>
+				<td>5</td>
+				<td>4</td>
+				<td>5</td>
+				<td>1</td>
+				<td>3</td>
+				<td>2</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>3.22</td>
+				<td>4</td>
+				<td>
+					<select class="form-control">
+						<option>5分 非常滿意</option>
+						<option>4分 湳意</option>
+						<option>3分 尚可</option>
+						<option>2分 不滿意</option>
+						<option>1分 非常不滿意</option>
+					</select>
+				</td>
+				<td>逾期未評</td>
+				<td contenteditable="true">
+					<a href="javascript:;" data-type="textarea" class="editable_textarea editable editable-pre-wrapped editable-click" data-original-title="">無</a>
+				</td>
+			</tr>
+			<tr>
+				<td draggable="true">3</td>
+				<td>淡001</td>
+				<td>王</td>
+				<td>103.01.18</td>
+				<td>陳小明</td>
+				<td>林督導</td>
+				<td>整理家務 / 陪聊天散步</td>
+				<td>5</td>
+				<td>4</td>
+				<td>5</td>
+				<td>1</td>
+				<td>3</td>
+				<td>2</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>3.22</td>
+				<td>4</td>
+				<td>
+					<select class="form-control">
+						<option>5分 非常滿意</option>
+						<option>4分 湳意</option>
+						<option>3分 尚可</option>
+						<option>2分 不滿意</option>
+						<option>1分 非常不滿意</option>
+					</select>
+				</td>
+				<td></td>
+				<td contenteditable="true">
+					<a href="javascript:;" data-type="textarea" class="editable_textarea editable editable-pre-wrapped editable-click" data-original-title="">無</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
