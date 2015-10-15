@@ -1,0 +1,296 @@
+.tab-page-wrapper-space
+  .tab-page-wrapper.bg-primary
+	a.btn.btn-default.btn-sm href="javascript:;" 
+	  i.fa.fa-angle-left
+	  | &nbsp;返回
+	a.btn.btn-default.btn-sm.pull-right href="javascript:;" 
+	  | 確認&nbsp;
+	  i.fa.fa-angle-right
+.tab-page-wrapper-space
+  .tab-page-wrapper.bg-info
+	ol.breadcrumb
+	  li
+		a href="#"  任務列表
+	  li.active
+		| 例行家訪電訪
+.row.top-buffer
+  .col-md-12.form-horizontal
+	.form-group.form-inline
+	  label.col-md-2.control-label 個案
+	  .col-md-2
+		img.img-circle.img-thumbnail alt="120" src="http://placehold.it/120"
+	  .col-md-8
+		li
+		  span.tags-title
+		  | 雙連案號 : SL12345678
+		li
+		  span.tags-title
+		  | 長照案號 : WXJW44498
+		li
+		  span.tags-title
+		  | 照護者 : 張大春
+		li
+		  span.tags-title
+		  | 地址 : 新北市淡水區竿蓁里淡金路 38 巷 86 號 2 樓"
+		li
+		  span.tags-title
+		  | 督導員 : 李大仁
+		li
+		  span.tags-title
+		  | 居服員 : 王小明
+	hr
+	.form-group.form-inline
+	  label.col-md-2.control-label 時間
+	  .col-md-2
+		input.form-control.datepicker type="text"
+	  .col-md-8
+		.input-group.inline-block.timepicker
+		  input.form-control type="text"
+		  span.input-group-addon
+			span.fa.fa-clock-o
+	hr
+	.form-group.form-inline
+	  label.col-md-2.control-label 類型
+	  .col-md-10
+		label.radio-inline
+		  input checked="" name="" type="radio" value=""
+		  | 例行家訪
+	hr
+	.form-group
+	  label.col-md-2.control-label 內容
+	  .col-md-10
+		form.form-horizontal role="form" 
+		  .form-group
+			.col-md-12
+			  table.table.align-middle-table.custom-table-01.reset-list-style
+				tbody
+				  tr.info
+					td
+					td colspan="2" 
+					  strong 基本資料
+				  tr
+					td.text-center width="2%" 1
+					td width="18%" 
+					  strong 身份別
+					td width="80%" 
+					  li
+						label
+						  input name="questionnaire12" type="radio"
+						  | 長十
+					  li
+						label
+						  input name="questionnaire12" type="radio"
+						  | 非長十
+				  tr
+					td.text-center 2
+					td
+					  strong 訪談對象
+					td
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio" checked="checked"
+						  | 本人
+						.col-md-8
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio"
+						  | 家屬
+						.col-md-8
+						  input.interview_input.form-control placeholder="" type="text" disabled="true"
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio"
+						  | 親戚
+						.col-md-8
+						  input.interview_input.form-control placeholder="" type="text" disabled="true"
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio"
+						  | 朋友
+						.col-md-8
+						  input.interview_input.form-control placeholder="" type="text" disabled="true"
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio"
+						  | 鄰居
+						.col-md-8
+						  input.interview_input.form-control placeholder="" type="text" disabled="true"
+					  .form-group
+						label.col-md-2
+						  input.interview_radio name="questionnaire13" type="radio"
+						  | 其他
+						.col-md-8
+						  input.interview_input.form-control placeholder="" type="text" disabled="true"
+				  tr.info
+					td
+					td colspan="2" 
+					  strong 訪談與處遇
+				  tr
+					td.text-center 3
+					td
+					  strong 生理狀況
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire14" type="radio"
+						  | 穩定
+						label.col-md-4
+						  input name="questionnaire14" type="radio"
+						  | 尚可
+						label.col-md-4
+						  input name="questionnaire14" type="radio"
+						  | 差
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 4
+					td
+					  strong 心理狀況
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire15" type="radio"
+						  | 穩定
+						label.col-md-4
+						  input name="questionnaire15" type="radio"
+						  | 尚可
+						label.col-md-4
+						  input name="questionnaire15" type="radio"
+						  | 差
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 5
+					td
+					  strong 家庭狀況
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire16" type="radio"
+						  | 穩定
+						label.col-md-4
+						  input name="questionnaire16" type="radio"
+						  | 尚可
+						label.col-md-4
+						  input name="questionnaire16" type="radio"
+						  | 差
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 6
+					td
+					  strong 其他狀況
+					td
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 7
+					td
+					  strong 居服員服務內容執行情形
+					td
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire17" type="radio"
+						  | 良好、皆執行
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire17" type="radio"
+						  | 部分執行
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire17" type="radio"
+						  | 未確實執行
+				  tr
+					td.text-center 8
+					td
+					  strong 居服員出勤狀況
+					td
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire18" type="radio"
+						  | 皆準時
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire18" type="radio"
+						  | 偶爾未準時但會補足時數
+					  .form-group
+						label.col-md-12
+						  input name="questionnaire18" type="radio"
+						  | 經常遲到、早退
+				  tr
+					td.text-center 9
+					td
+					  strong 居服員服務提供狀況
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 良好、滿意
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 尚可
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 差
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 10
+					td
+					  strong 服務待調整改善事項
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 無
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 有
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 11
+					td
+					  strong 具體建議事項
+					td
+					  .form-inline
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 無
+						label.col-md-4
+						  input name="questionnaire19" type="radio"
+						  | 有
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 12
+					td
+					  strong 其他狀況
+					td
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 
+				  tr
+					td.text-center 13
+					td
+					  strong 處遇
+					td
+					  .form-group
+						.col-md-12
+						  label.control-label 說明：
+						  textarea.form-control rows="3" 

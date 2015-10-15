@@ -137,17 +137,22 @@ $ ->
 	# 系統設定 / 評鑑訪問 問卷調查頁籤
 	$('#tabs_09_questionnaire a:first').tab('show')
 
-	# 表格內容自動收合、顯示更多
+	# 共用元件 / 表格內容自動收合、顯示更多
 	$('.dspmore').each ->
 		_dsprows = 3
-		_dsptext = 'more..'
+		_dsptext = '+ 顯示更多'
 		if $(this).children('li').length > _dsprows
-			$(this).css('overflow', 'hidden').after('<a class="dsp_btn" href="#">' + _dsptext + '</a>').height $('.dspmore li').height() * _dsprows
+			$(this).css('overflow', 'hidden').after('<a class="dsp_btn text-muted" href="#">' + _dsptext + '</a>').height $('.dspmore li').height() * _dsprows
 		return
 		
 	$('body').on 'click', '.dsp_btn', ->
 		$(this).text('').prev().height 'auto'
 		return
+
+	# 個案家訪電訪 / 選取radio 、 input取得焦點
+	$('.interview_radio').click ->
+		$('.interview_input').prop('disabled', 'disabled')
+		$(this).parent().next().children().prop('disabled', '')
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
