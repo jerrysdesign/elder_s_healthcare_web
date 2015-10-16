@@ -64,9 +64,31 @@
 /* datatable */
 div.dataTables_wrapper div.dataTables_filter,
 div.dataTables_wrapper div.dataTables_paginate {
-    text-align: left;
+	text-align: left;
 }
 div.dataTables_wrapper .col-sm-6,
 div.dataTables_wrapper .col-sm-7 {
 	width: 100%;
+}
+
+/* supplies_apply_sv */
+.supplies_rows > form > .row {
+	> .form-group {
+	position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0.6em;
+			width: 0.7em;
+			height: 0;
+			background-color: transparent;
+			transition: top 0.4s, height 0.4s, background-color 0.4s;
+		}
+	}
+	&:hover > .form-group:before {
+		top: -1.4em;
+		height: 13em;
+		background-color: #b1ceeb;
+	}
 }
