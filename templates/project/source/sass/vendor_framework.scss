@@ -72,14 +72,14 @@ div.dataTables_wrapper .col-sm-7 {
 }
 
 /* supplies_apply_sv */
-.supplies_rows > form > .row {
+.supplies_rows > form > div > .row {
 	> .form-group {
 	position: relative;
 		&:before {
 			content: "";
 			position: absolute;
 			top: 50%;
-			left: 0.6em;
+			left: -0.6em;
 			width: 0.7em;
 			height: 0;
 			background-color: transparent;
