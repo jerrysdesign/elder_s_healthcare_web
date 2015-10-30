@@ -154,6 +154,9 @@ $ ->
 		$('.interview_input').prop('disabled', 'disabled')
 		$(this).parent().next().children().prop('disabled', '')
 
+	# tooltip
+	$('[data-toggle="tooltip"]').tooltip()
+
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
 $(document).ready ->
