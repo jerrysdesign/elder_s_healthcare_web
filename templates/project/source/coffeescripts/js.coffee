@@ -155,7 +155,10 @@ $ ->
 		$(this).parent().next().children().prop('disabled', '')
 
 	# tooltip
-	$('[data-toggle="tooltip"]').tooltip()
+	$('[data-toggle="tooltip"]').each ->
+		$(this).tooltip
+			container: 'body',
+			placement: 'bottom'
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
