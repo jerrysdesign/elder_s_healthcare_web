@@ -3,6 +3,7 @@
 @import "vendor/editable/bootstrap-editable.css";
 // @import "vendor/datatables/jquery.dataTables.min.css";
 @import "vendor/datatables/dataTables.bootstrap.min.css";
+@import 'libs/03variables';
 
 .custom-table-01 {
 	margin-bottom: 0
@@ -91,4 +92,27 @@ div.dataTables_wrapper .col-sm-7 {
 		height: 13em;
 		background-color: #b1ceeb;
 	}
+}
+
+
+/* bootstarp tooltip */
+.tooltip-inner {
+	background-color: $primary;
+	color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: $primary;
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: $primary;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: $primary;
+}
+
+.tooltip.left .tooltip-arrow {
+	border-left-color: $primary;
 }
