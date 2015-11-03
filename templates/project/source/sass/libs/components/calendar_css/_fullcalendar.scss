@@ -1110,7 +1110,8 @@ a.bgc01:visited{color:#4d4d4d}
 .wrap-cont-case,.wrap-cont-case:before,
 #btn-af-check,#btn-af-close,
 #btn-cf-check,#btn-cf-close,
-#filterEvent{position:absolute}
+#filterEvent,
+#exportExcel{position:absolute}
 
 .wrap-cont-attendant,
 .wrap-cont-case{top:54px;right:0;display:none;border:1px solid #d9d9d9;padding:5px 0;background-color:#fff}
@@ -1123,8 +1124,9 @@ a.bgc01:visited{color:#4d4d4d}
 	#btn-attendant,
 	#btn-case{top:10px;display:block;width:80px;height:26px;line-height:26px}
 	#btn-attendant,
-	#filterEvent.month{right:14px}
-	#btn-case{right:114px}
+	#btn-attendant.month{right:14px}
+	#btn-case,
+	#filterEvent.month{right:114px}
 	
 	.wrap-cont-attendant p,
 	.wrap-cont-case p{margin:24px 0 24px 44px}
@@ -1161,3 +1163,5 @@ a.bgc01:visited{color:#4d4d4d}
 #filterEvent input{margin-left:10px}
 div.fc-toolbar{margin-left:10px}
 div.fc-toolbar button.fc-prev-button{margin-right:5px}
+
+#exportExcel{top:9px;right:260px;display:none}

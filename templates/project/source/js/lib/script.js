@@ -1,8 +1,8 @@
 var hcs_calendar = hcs_calendar || {};
 hcs_calendar = {
-	default_setting : function(){
+	default_setting : function( input_boolean , input_boolean2 ) {
 		var currentLangCode = "zh-tw";
-		$("#calendar").fullCalendar({
+		var calendar_init ={
 			lang: currentLangCode,
 			theme: true,
 			header: {
@@ -309,17 +309,30 @@ hcs_calendar = {
 				});
 			},
 			events: data_events
-		});
-
+		}
+		if(input_boolean!= undefined) {
+			calendar_init.eventLimit  = input_boolean;
+			calendar_init.defaultView = "month";      // 停留頁籤
+			if (input_boolean2 != undefined) {
+				calendar_init.eventRender = function(event, element) {
+					var case_name = event.title;
+					element.find(".fc-time").text( event.start.format("HH:mm") + " - " +  event.end.format("HH:mm"));
+					element.find(".fc-content").append('<span class="fc-title">'+ event.case_name +'</span>');
+				}
+			}
+		};
+		$("#calendar").fullCalendar(calendar_init);
 	},
-	filterSlide: function(contWrap, contList){
+	filterSlide: function(contWrap, contList) {
 		var $cont         = $(contWrap),
 			$fList        = $(contList),
 			$fEvent       = $("#filterEvent"),
 			$toolbar      = $(".fc-toolbar"),
 			$btnAtt       = $("#btn-attendant"),
 			$btnCase      = $("#btn-case"),
+			$btnPV        = $(".fc-button-group:eq(0) button"),
 			$btnMW        = $(".fc-button-group:eq(1) button"),
+			$btnT         = $(".fc-today-button"),
 			_attend       = "wrap-cont-attendant",
 			_case         = "wrap-cont-case",
 			_objContList1 = "#filterBox2",
@@ -329,36 +342,46 @@ hcs_calendar = {
 			_defH         = 0,
 			_speed        = 300;
 
-		if($cont.is(":hidden") || $fList.is(":visible")){
+		// 判斷物件外層是否為關閉狀態，依狀態收合內容
+		if($cont.is(":hidden")) {
+			// 打開比對區塊
 			$cont.slideDown(_speed);
 			$toolbar.stop().animate({"margin-bottom": _conH},_speed);
 			$fEvent.addClass(_blur).find('input[type="checkbox"]').attr("disabled", true);
+			$btnPV.addClass(_blur).attr("disabled", true);
 			$btnMW.addClass(_blur).attr("disabled", true);
+			$btnT.addClass(_blur).attr("disabled", true);
 			if($cont.attr("class") === _attend){
 				$btnCase.addClass(_blur).off("click");
 			} else {
 				$btnAtt.addClass(_blur).off("click");
 			}
 		} else {
+			// 收合比對區塊
 			$cont.slideUp(_speed);
 			$toolbar.stop().animate({"margin-bottom": _defH},_speed);
 			$fEvent.removeClass(_blur).find('input[type="checkbox"]').removeAttr("disabled");
+			$btnPV.removeClass(_blur).removeAttr("disabled");
 			$btnMW.removeClass(_blur).removeAttr("disabled");
+			$btnT.removeClass(_blur).removeAttr("disabled");
+			// 將開合按鈕狀態設置為致能
 			if($cont.attr("class") === _attend){
-				$btnCase.removeClass(_blur).on("click", function(){
+				// 居服
+				$btnCase.removeClass(_blur).on("click", function() {
 					hcs_calendar.filterSlide("." + _case, _objContList2);
 				});
 			} else {
-				$btnAtt.removeClass(_blur).on("click", function(){
+				// 個案
+				$btnAtt.removeClass(_blur).on("click", function() {
 					hcs_calendar.filterSlide("." + _attend, _objContList1);
 				});
-			}
+			};
 		};
 	},
-	checkContAutoWidth: function(){
+	checkContAutoWidth: function() {
 		$("#filterBox1,#filterBox2,#filterBox3,#filterBox4").width($("#calendar").width() - 1);
 	},
-	listContAutoWidth: function(autoObj){
+	listContAutoWidth: function(autoObj) {
 		var $obj   = $(autoObj).children(":eq(0)"),
 			$item  = $obj.children(),
 			$oneW  = $item.outerWidth(true),
@@ -366,40 +389,50 @@ hcs_calendar = {
 
 		$obj.width($allW);
 	},
-	todayTH: function(){
+	todayTH: function() {
 		var $index       = $(".ui-state-highlight").index(),
 			$highlightTh = $(".ui-widget-header").find("th"),
 			_cur         = "cur";
 
 		if($index >= 0){
-			$highlightTh.eq($index).addClass(_cur);
+			$(".ui-widget-header").find("th").eq($index).addClass(_cur);
 		}
 	},
-	filterEvent: function(){
+	filterEvent: function() {
 		var $this   = $(this),
 			$evnet  = $this.attr("id"),
 			$fcMore = $(".fc-more"),
 			$task   = "eventTask",
 			$hide   = "eventHide";
-		if(!$this.is(":checked")){
-			$("." + $evnet).addClass($hide);
-			if($evnet === $task){
-				$fcMore.addClass($hide);
-			}
-		} else {
+		// 將符合取消勾選項目隱藏
+		if($this.is(":checked")){
+			// 隱藏
 			$("." + $evnet).removeClass($hide);
 			if($evnet === $task){
 				$fcMore.removeClass($hide);
 			}
+		} else {
+			// 顯示
+			$("." + $evnet).addClass($hide);
+			if($evnet === $task){
+				$fcMore.addClass($hide);
+			}
+
 		}
 	},
-	filterUser: function(filterObj, listObj){
+	filterUser: function(filterObj, listObj) {
 		var $checked   = $(filterObj).find("input[type=checkbox]:checked"),
 			$listbox   = $(listObj).children(":eq(0)"),
 			$length    = $checked.length,
 			$eventtask = $(".eventTask"),
 			$c_head    = $(".fc-toolbar"),
+			$btnAtt    = $("#btn-attendant"),
+			$btnCase   = $("#btn-case"),
+			$btnPV     = $(".fc-button-group:eq(0) button"),
+			$btnMW     = $(".fc-button-group:eq(1) button"),
+			$btnT      = $(".fc-today-button"),
 			$hide      = "eventHide",
+			_blur      = "itemblur",
 			_maxStint  = 10,
 			_speed     = 300,
 			_listH     = 51,
@@ -411,7 +444,10 @@ hcs_calendar = {
 			var checkName = [],
 				listName  = [];
 
+			// 隱藏無勾選到事件
 			$eventtask.addClass($hide);
+
+			// 依序以勾選人員樣式名稱，取得需顯示事件樣式名稱
 			$checked.each(function(){
 				var $this = $(this);
 				if ($this.is(":checked")){
@@ -420,13 +456,13 @@ hcs_calendar = {
 				};
 			});
 
-			// added BackgroundColor
+			// 依序將需顯示事件新增事件顏色
 			for (var key in checkName){
 				$("." + checkName[key]).addClass(_filterbgc[key]);
 				$("." + checkName[key]).removeClass($hide);
 			};
 
-			// userList
+			// 清空勾選顯示列表內容後依序填入勾選者與相符事件顏色，並重整區塊寬度
 			$listbox.empty();
 			var list = [];
 			for (var key2 in listName){
@@ -435,18 +471,64 @@ hcs_calendar = {
 			$listbox.html(list.join(''));
 			hcs_calendar.listContAutoWidth(listObj);
 
-			// filterSlide
+			// 收合進行比對區塊，顯示比對結果並重整篩選區塊高度
 			$(filterObj).slideUp(_speed).children().hide();
 			$(listObj).slideDown(_speed);
 			$c_head.stop().animate({"margin-bottom": _listH},_speed);
 
+			// 將按鈕狀態設置為除能
+			$btnAtt.off("click");
+			$btnCase.off("click");
+			$btnMW.addClass(_blur).attr("disabled", true);
+
+			// 將按鈕狀態設置為致能
+			$btnPV.removeClass(_blur).attr("disabled", false);
+			$btnT.removeClass(_blur).attr("disabled", false);
+
+
+		// 判斷勾選比數大小值
 		} else if($length > _maxStint){
 			alert(_maxNote);
 		} else {
 			alert(_minNote);
 		};
 	},
-	runEvent: function(){
+	filterClose: function(contWrap, contList) {
+		var $cont         = $(contWrap),
+			$fList        = $(contList),
+			$toolbar      = $(".fc-toolbar"),
+			$btnAtt       = $("#btn-attendant"),
+			$btnCase      = $("#btn-case"),
+			$fEvent       = $("#filterEvent"),
+			$btnMW        = $(".fc-button-group:eq(1) button"),
+			_attend       = ".wrap-cont-attendant",
+			_case         = ".wrap-cont-case",
+			_objContWrap1 = "#filterBox1", // 居服進行比對區塊
+			_objContList1 = "#filterBox2", // 居服比對結果區塊
+			_objContWrap2 = "#filterBox3", // 個案進行比對區塊
+			_objContList2 = "#filterBox4", // 個案比對結果區塊
+			_blur         = "itemblur",
+			_conH         = $cont.outerHeight(),
+			_defH         = 0,
+			_speed        = 300;
+
+		// 收合比對結果，還原比對區塊初始狀態
+		$fList.slideUp(0);
+		$fList.siblings().slideDown(0).children().show().find("input[type=checkbox]").prop("checked", false);
+		$cont.slideUp(0);
+		$toolbar.stop().animate({"margin-bottom": _defH},_speed);
+		$fEvent.removeClass(_blur).find('input[type="checkbox"]').removeAttr("disabled");
+		$btnMW.removeClass(_blur).removeAttr("disabled");
+
+		// 將開合按鈕狀態設置為致能
+		$btnAtt.removeClass(_blur).on("click", function() {
+			hcs_calendar.filterSlide(_attend, _objContList1);
+		});
+		$btnCase.removeClass(_blur).on("click", function() {
+			hcs_calendar.filterSlide(_case, _objContList2);
+		});
+	},
+	runEvent: function() {
 		var $checked_a        = $("#filterBox1"),
 			$listbox_a        = $("#filterBox2"),
 			$checked_c        = $("#filterBox3"),
@@ -458,8 +540,8 @@ hcs_calendar = {
 			$checked_c_length = $checked_c.find("input[type=checkbox]:checked").length,
 			_speed = 300;
 
-		if($listbox_a.is(":visible") && $checked_a_length > 0){
-			$btn_af_check.click();
+		if($("#filterBox2").is(":visible") && $checked_a_length > 0){
+			$("#btn-af-check").click();
 		};
 		if($listbox_c.is(":visible") && $checked_c_length > 0){
 			$btn_cf_check.click();
@@ -468,13 +550,14 @@ hcs_calendar = {
 			hcs_calendar.todayTH();
 		};
 	},
-	loc_reload: function(){
-		location.reload();
+	loc_reload: function() {
+		$('#calendar').fullCalendar('destroy');
+		hcs_calendar.default_setting();
 	}
 };
 
 // change_supervisor_popup
-function change_supervisor_popup(){
+function change_supervisor_popup() {
 	var $cont = $("#change_supervisor_box");
 	$.fancybox({
 		"minWidth": 600,
@@ -487,7 +570,8 @@ function change_supervisor_popup(){
 // Dom Ready
 $(function(){
 
-	var $btnAttendant        = $("#btn-attendant"),
+	var $body                = $("body"),
+		$btnAttendant        = $("#btn-attendant"),
 		$btnCase             = $("#btn-case"),
 		$wrapContAttendant   = $(".wrap-cont-attendant"),
 		$wrapContCase        = $(".wrap-cont-case"),
@@ -496,13 +580,14 @@ $(function(){
 		$btnAfClose          = $("#btn-af-close"),
 		$btnCfClose          = $("#btn-cf-close"),
 		$filterEvent         = $("#filterEvent"),
+		$exportExcel         = $("#exportExcel"),
 		$filterEventCheckbox = $filterEvent.find('input[type="checkbox"]'),
 		_wrapContAttendant   = ".wrap-cont-attendant",
 		_wrapContCase        = ".wrap-cont-case",
-		_objContWrap1        = "#filterBox1",
-		_objContList1        = "#filterBox2",
-		_objContWrap2        = "#filterBox3",
-		_objContList2        = "#filterBox4",
+		_objContWrap1        = "#filterBox1", // 居服進行比對區塊
+		_objContList1        = "#filterBox2", // 居服比對結果區塊
+		_objContWrap2        = "#filterBox3", // 個案進行比對區塊
+		_objContList2        = "#filterBox4", // 個案比對結果區塊
 		_defaultH            = 0,
 		_speed               = 300;
 
@@ -512,62 +597,116 @@ $(function(){
 	// resize
 	$(window).resize(hcs_calendar.checkContAutoWidth);
 
-	// tabs-prev
-	$(".fc-prev-button").on("click", hcs_calendar.runEvent);
+	// 行事暦 - prev
+	$body.on("click",".fc-prev-button", function() {
+		// 月
+		if($(".fc-month-button").hasClass("ui-state-active") && $(_wrapContAttendant).is(":visible")) {
+			hcs_calendar.filterUser(_objContWrap1, _objContList1);
+		// 週
+		} else {
+			hcs_calendar.runEvent();
+		}
+	});
 
-	// tabs-next
-	$(".fc-next-button").on("click", hcs_calendar.runEvent);
+	// 行事暦 - next
+	$body.on("click",".fc-next-button", function() {
+		// 月
+		if($(".fc-month-button").hasClass("ui-state-active") && $(_wrapContAttendant).is(":visible")) {
+			hcs_calendar.filterUser(_objContWrap1, _objContList1);
+		// 週
+		} else {
+			hcs_calendar.runEvent();
+		}
+	});
 
-	// tabs-agendaWeek
-	$(".fc-agendaWeek-button").on("click", hcs_calendar.loc_reload);
+	// 行事暦 - 週
+	$body.on("click", ".fc-agendaWeek-button", function() {
+		$("#btn-case").show().removeClass("month itemblur").on("click");
+		$filterEvent.removeClass("month");
+	});
 
-	// tabs-month
-	$(".fc-month-button").on("click", function(){
+	// 行事暦 - 月
+	$body.on("click",".fc-month-button", function() {
 		var $checkbox = $filterEvent.find('input[type="checkbox"]'),
 			$checkedLength = $filterEvent.find('input[type="checkbox"]:checked').length,
 			$checkboxLength = $checkbox.length;
 
 		$(".fc-toolbar").stop().animate({"margin-bottom": _defaultH});
-		$btnAttendant.hide();
-		$btnCase.hide();
+		// $btnAttendant.hide();
+		$("#btn-case").hide();
+
+		// 居服、個案進行比對內容頁面關閉
 		$wrapContAttendant.slideUp(_speed);
 		$wrapContCase.slideUp(_speed);
-		$filterEvent.show().addClass("month");
+
+		$btnCase.addClass("month");
+		$filterEvent.addClass("month");
+
 		if($checkedLength < $checkboxLength){
 			$checkbox.not(':checked').click();
 		}
 		hcs_calendar.todayTH();
 	});
 
-	// tabs-today
+	// 行事暦 - 今天
 	$('.fc-today-button').on("click", hcs_calendar.todayTH);
 
-	// filterEvent
+	// 任務 & 會議 / 職訓 篩選
 	$filterEventCheckbox.on("click", hcs_calendar.filterEvent);
 
-	// filter-case-slide
-	$btnCase.on("click", function(){
+	// 個案比對 - 收合
+	$btnCase.on("click", function() {
 		hcs_calendar.filterSlide(_wrapContCase, _objContList2);
 	});
 
-	// filter-case
-	$btnCfCheck.on("click", function(){
+	// 個案比對 > 進行比對 - 確定
+	$btnCfCheck.on("click", function() {
 		hcs_calendar.filterUser(_objContWrap2, _objContList2);
 	});
 
-	// filter-case-close
-	$btnCfClose.on("click", hcs_calendar.loc_reload);
+	// 個案比對 > 比對結果 - 關閉
+	$btnCfClose.on("click", function() {
+		hcs_calendar.filterClose(_wrapContCase, _objContList2);
+		hcs_calendar.loc_reload();
+		$filterEvent.find('input[type="checkbox"]').prop("checked", true);
+	});
 
-	// filter-attendant-slide
-	$btnAttendant.on("click", function(){
+	// 居服員比對 - 收合
+	$btnAttendant.on("click", function() {
 		hcs_calendar.filterSlide(_wrapContAttendant, _objContList1);
 	});
 
-	// filter-attendant
-	$btnAfCheck.on("click", function(){
-		hcs_calendar.filterUser(_objContWrap1, _objContList1);
+	// 居服員比對 > 進行比對 - 確定
+	$btnAfCheck.on("click", function() {
+		// 月
+		if($(".fc-month-button").hasClass("ui-state-active")) {
+			hcs_calendar.filterUser(_objContWrap1, _objContList1);
+			var _checked = $("#filterBox1").find('input[type="checkbox"]:checked').length;
+			// 比對項目符合則變更月暦基本設定
+			if(_checked >= 1 && _checked <= 10) {
+				$('#calendar').fullCalendar('destroy');
+				hcs_calendar.default_setting(false, true);
+				hcs_calendar.filterUser(_objContWrap1, _objContList1);
+				$exportExcel.show();
+			}
+		// 週
+		} else {
+			hcs_calendar.filterUser(_objContWrap1, _objContList1);
+		}
 	});
 
-	// filter-attendant-close
-	$btnAfClose.on("click", hcs_calendar.loc_reload);
+	// 居服員比對 > 比對結果 - 關閉
+	$btnAfClose.on("click", function() {
+		hcs_calendar.filterClose(_wrapContAttendant, _objContList1);
+		$filterEvent.find('input[type="checkbox"]').prop("checked", true);
+		// 月
+		if($(".fc-month-button").hasClass("ui-state-active")) {
+			$('#calendar').fullCalendar('destroy');
+			hcs_calendar.default_setting(true);
+			$exportExcel.hide();
+		// 週
+		} else {
+			hcs_calendar.loc_reload();
+		}
+	});
 });
