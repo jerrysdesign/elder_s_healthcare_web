@@ -158,7 +158,7 @@ $ ->
 	$('[data-toggle="tooltip"]').each ->
 		$(this).tooltip
 			container: 'body',
-			placement: 'bottom'
+			placement: 'top'
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
