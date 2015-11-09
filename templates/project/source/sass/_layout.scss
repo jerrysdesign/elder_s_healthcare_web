@@ -236,6 +236,9 @@ $logo-radius: 10px;
 		&:hover {
 			background-color: #fff;
 			color: $parimary;
+			a {
+				color: inherit
+			}
 		}
 	}
 	span.caret {
