@@ -6,7 +6,7 @@
 		<li class="active">新增帳號</li>
 	</ol>
 </div>
-<form class="row top-buffer">
+<form class="row top-buffer bootstrap-validator" data-toggle="validator">
 	<div class="text-right">
 		<input class="btn btn-default" type="button" value="取消">
 		<input class="btn btn-success" type="submit" value="新增">
@@ -558,20 +558,23 @@
 			<label class="col-md-2 control-label">補助比例（政府補助額度）</label>
 			<div class="col-md-10">
 				<label class="form-control-static">全額補助</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="" value="0" placeholder="" required="" min="0">
 				<label class="form-control-static">小時/月</label>
 				<br>
 				<label class="form-control-static">補助70%</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="" value="0" placeholder="" required="" min="0">
 				<label class="form-control-static">小時/月</label>
 				<br>
 				<label class="form-control-static">補助50%</label>
-				<input type="text" class="form-control" placeholder="">
+				<input type="text" class="form-control" placeholder="" value="0" placeholder="" required="" min="0">
 				<label class="form-control-static">小時/月</label>
 				<br>
 				<label class="form-control-static">全額自費</label>
 				<input type="text" class="form-control" placeholder="系統帶出(服務需求-核定時數)" disabled>
 				<label class="form-control-static">小時/月</label>
+				
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<span class="help-block with-errors"></span>
 			</div>
 		</div>
 		<div class="form-group form-inline">
