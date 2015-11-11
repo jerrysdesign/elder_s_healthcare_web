@@ -162,6 +162,14 @@ $ ->
 
 #turn to inline mode
 $.fn.editable.defaults.mode = 'popup'
+
+
+# datapicker scroll hide
+# datePicker = $('.datepicker').datepicker();
+# $(".main").scroll ->
+# 	datePicker.datepicker('hide')
+# 	$('.datepicker').blur()
+
 $(document).ready ->
 	gridviewScroll()
 	$('.editable').editable()
