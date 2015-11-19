@@ -194,8 +194,8 @@ $(document).ready ->
 	# $('.datatables').DataTable
 	# 	'bLengthChange': false
 	# 	'bInfo': false
-	#	'order': [[ 3, "desc" ]]
-	# 	取消欄排序
+	# 	'order': [[ 3, "desc" ]]
+	# 	# 取消欄排序
 	# 	'aoColumnDefs': [{
 	# 		'bSortable': false
 	# 		'aTargets': [1]
@@ -213,6 +213,7 @@ $(document).ready ->
 	# 			'sPrevious': '上頁'
 	# 			'sNext': '下頁'
 	# 			'sLast': '尾頁'
+				
 
 $(window).load ->
 	$cost1     = $('#tableCost1')
@@ -298,3 +299,115 @@ $(window).load ->
 
 		$('#tableAccount5PanelItemContentFreeze').css 'width', $('#tableAccount5CopyFreeze').width() - $colgap
 		$('#tableAccount5PanelItem').css 'overflow', 'inherit'
+
+
+# Updates "Select all" control in a data table
+updateDataTableSelectAllCtrl = (table) ->
+  $table = table.table().node()
+  $chkbox_all = $('tbody input[type="checkbox"]', $table)
+  $chkbox_checked = $('tbody input[type="checkbox"]:checked', $table)
+  chkbox_select_all = $('thead input[name="select_all"]', $table).get(0)
+  # If none of the checkboxes are checked
+  if $chkbox_checked.length == 0
+    chkbox_select_all.checked = false
+    if 'indeterminate' of chkbox_select_all
+      chkbox_select_all.indeterminate = false
+    # If all of the checkboxes are checked
+  else if $chkbox_checked.length == $chkbox_all.length
+    chkbox_select_all.checked = true
+    if 'indeterminate' of chkbox_select_all
+      chkbox_select_all.indeterminate = false
+    # If some of the checkboxes are checked
+  else
+    chkbox_select_all.checked = true
+    if 'indeterminate' of chkbox_select_all
+      chkbox_select_all.indeterminate = true
+  return
+
+$ ->
+  # Array holding selected row IDs
+  rows_selected = []
+  table = $('#list_case_export').DataTable(
+    'order': [
+      2
+      'asc'
+    ]
+    'bAutoWidth': true
+    'bLengthChange': false
+    'oLanguage':
+      'sProcessing': '處理中...'
+      'sLengthMenu': '顯示 _MENU_ 項結果'
+      'sZeroRecords': '沒有匹配結果'
+      'sInfo': '共 _TOTAL_ 筆資料。'
+      'sInfoEmpty': '顯示第 0 至 0 項結果，共 0 項'
+      'sInfoFiltered': '(從 _MAX_ 項結果過濾)'
+      'sSearch': '搜索:'
+      'oPaginate':
+        'sFirst': '首頁'
+        'sPrevious': '上頁'
+        'sNext': '下頁'
+        'sLast': '尾頁'
+    'columnDefs': [ {
+      'targets': 0
+      'searchable': false
+      'orderable': false
+      'className': 'dt-body-center'
+      'render': (data, type, full, meta) ->
+        '<input type="checkbox">'
+
+    } ]
+    'rowCallback': (row, data, dataIndex) ->
+      # Get row ID
+      rowId = data[0]
+      # If row ID is in the list of selected row IDs
+      if $.inArray(rowId, rows_selected) != -1
+        $(row).find('input[type="checkbox"]').prop 'checked', true
+        $(row).addClass 'selected'
+      return
+  )
+  # Handle click on checkbox
+  $('#list_case_export tbody').on 'click', 'input[type="checkbox"]', (e) ->
+    $row = $(this).closest('tr')
+    # Get row data
+    data = table.row($row).data()
+    # Get row ID
+    rowId = data[0]
+    # Determine whether row ID is in the list of selected row IDs 
+    index = $.inArray(rowId, rows_selected)
+    # If checkbox is checked and row ID is not in list of selected row IDs
+    if @checked and index == -1
+      rows_selected.push rowId
+      # Otherwise, if checkbox is not checked and row ID is in list of selected row IDs
+    else if !@checked and index != -1
+      rows_selected.splice index, 1
+    if @checked
+      $row.addClass 'selected'
+    else
+      $row.removeClass 'selected'
+    # Update state of "Select all" control
+    updateDataTableSelectAllCtrl table
+    # Prevent click event from propagating to parent
+    e.stopPropagation()
+    return
+  # Handle click on table cells with checkboxes
+  $('#list_case_export').on 'click', 'tbody td, thead th:first-child', (e) ->
+    $(this).parent().find('input[type="checkbox"]').trigger 'click'
+    return
+  # Handle click on "Select all" control
+  $('#list_case_export thead input[name="select_all"]').on 'click', (e) ->
+    if @checked
+      $('#list_case_export tbody input[type="checkbox"]:not(:checked)').trigger 'click'
+    else
+      $('#list_case_export tbody input[type="checkbox"]:checked').trigger 'click'
+    # Prevent click event from propagating to parent
+    e.stopPropagation()
+    return
+  $('#list_case_export_btn').click ->
+    $select_row_id = []
+    $.each rows_selected, (index, rowId) ->
+      $select_row_id.push rowId
+      return
+    # 將每列第一欄塞入key值即可
+    console.log $select_row_id
+    return
+  return
