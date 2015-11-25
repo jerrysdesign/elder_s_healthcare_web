@@ -161,3 +161,7 @@ table.dataTable.display tbody tr.selected > .sorting_3 {
 .tooltip.left .tooltip-arrow {
 	border-left-color: $primary;
 }
+
+/* evaluate_btn_col */
+.evaluate_btn_col > .btn,.evaluate_btn_col:hover > span{display:none}
+.btn,.evaluate_btn_col > span, .evaluate_btn_col:hover > .btn{display:block}
